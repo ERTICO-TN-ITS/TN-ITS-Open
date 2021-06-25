@@ -1,0 +1,31 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list ParkingSiteTypeCode"@en ;
+	dcterms:title "TN-ITS ParkingSiteTypeCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the types of parking sites" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode#urbanParkingSite> a tnits:ParkingSiteType ;
+         rdfs:label "urbanParkingSite"@en ;
+         skos:definition "parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode#interUrbanParkingSite> a tnits:ParkingSiteType ;
+         rdfs:label "interUrbanParkingSite"@en ;
+         skos:definition "A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/ParkingSiteTypeCode#specialLocationParkingSite> a tnits:ParkingSiteType ;
+         rdfs:label "specialLocationParkingSite"@en ;
+         skos:definition "A parking site which is located at a special location, often associated with some building"@en .
+         
+

@@ -1,0 +1,1096 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list RoadSignTypeCode"@en ;
+	dcterms:title "TN-ITS RoadSignTypeCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_111> a tnits:RoadSignType ;
+         rdfs:label "11_111"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Crossroads)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_112> a tnits:RoadSignType ;
+         rdfs:label "11_112"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Side road right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_113> a tnits:RoadSignType ;
+         rdfs:label "11_113"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Side road left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_115> a tnits:RoadSignType ;
+         rdfs:label "11_115"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Forked Intersection)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_116> a tnits:RoadSignType ;
+         rdfs:label "11_116"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (T junction)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_117> a tnits:RoadSignType ;
+         rdfs:label "11_117"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Y intersection)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_118> a tnits:RoadSignType ;
+         rdfs:label "11_118"@en ;
+         skos:definition "Intersection where the priority is prescribed by the general priority rule (Staggered intersection)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_132> a tnits:RoadSignType ;
+         rdfs:label "11_132"@en ;
+         skos:definition "Intersection with a road the users of which must give way"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_133> a tnits:RoadSignType ;
+         rdfs:label "11_133"@en ;
+         skos:definition "Intersection with a road the users of which must give way  T-shaped crossing left "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_134> a tnits:RoadSignType ;
+         rdfs:label "11_134"@en ;
+         skos:definition "Intersection with a road the users of which must give way  T-shaped crossing righ "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_135> a tnits:RoadSignType ;
+         rdfs:label "11_135"@en ;
+         skos:definition "Intersection with a road the users of which must give way T-shaped crossing of folk type Lower left"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_136> a tnits:RoadSignType ;
+         rdfs:label "11_136"@en ;
+         skos:definition "Intersection with a road the users of which must give way T-shaped crossing of folk type Lower right"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_148> a tnits:RoadSignType ;
+         rdfs:label "11_148"@en ;
+         skos:definition "Warning of roundabout (Clockwise)   "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_149> a tnits:RoadSignType ;
+         rdfs:label "11_149"@en ;
+         skos:definition "Warning of roundabout (Anti-clockwise)   "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_161> a tnits:RoadSignType ;
+         rdfs:label "11_161"@en ;
+         skos:definition "Right bend"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_162> a tnits:RoadSignType ;
+         rdfs:label "11_162"@en ;
+         skos:definition "Left Bend"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_174> a tnits:RoadSignType ;
+         rdfs:label "11_174"@en ;
+         skos:definition "Right turn"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_175> a tnits:RoadSignType ;
+         rdfs:label "11_175"@en ;
+         skos:definition "Left turn "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_187> a tnits:RoadSignType ;
+         rdfs:label "11_187"@en ;
+         skos:definition "Reverse curve (Right and left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_188> a tnits:RoadSignType ;
+         rdfs:label "11_188"@en ;
+         skos:definition "Reverse curve (Left and right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_211> a tnits:RoadSignType ;
+         rdfs:label "11_211"@en ;
+         skos:definition "Double bend, right"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_212> a tnits:RoadSignType ;
+         rdfs:label "11_212"@en ;
+         skos:definition "Double bend, left"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_224> a tnits:RoadSignType ;
+         rdfs:label "11_224"@en ;
+         skos:definition "Winding road (First to the right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_225> a tnits:RoadSignType ;
+         rdfs:label "11_225"@en ;
+         skos:definition "Winding road (First to the left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_236> a tnits:RoadSignType ;
+         rdfs:label "11_236"@en ;
+         skos:definition "Level crossing with gate"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_237> a tnits:RoadSignType ;
+         rdfs:label "11_237"@en ;
+         skos:definition "Other level-crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_238> a tnits:RoadSignType ;
+         rdfs:label "11_238"@en ;
+         skos:definition "Intersection with a tramway line"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_239> a tnits:RoadSignType ;
+         rdfs:label "11_239"@en ;
+         skos:definition "Children"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_241> a tnits:RoadSignType ;
+         rdfs:label "11_241"@en ;
+         skos:definition "Pedestrian crossing(right) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_242> a tnits:RoadSignType ;
+         rdfs:label "11_242"@en ;
+         skos:definition "Elderly or disabled pedestrians likely to cross ahead"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_244> a tnits:RoadSignType ;
+         rdfs:label "11_244"@en ;
+         skos:definition "Children(left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_245> a tnits:RoadSignType ;
+         rdfs:label "11_245"@en ;
+         skos:definition "Pedestrians (left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_246> a tnits:RoadSignType ;
+         rdfs:label "11_246"@en ;
+         skos:definition "Pedestrian crossing (left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_247> a tnits:RoadSignType ;
+         rdfs:label "11_247"@en ;
+         skos:definition "Pedestrian crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_253> a tnits:RoadSignType ;
+         rdfs:label "11_253"@en ;
+         skos:definition "Light signals"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_254> a tnits:RoadSignType ;
+         rdfs:label "11_254"@en ;
+         skos:definition "Slippery Road"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_255> a tnits:RoadSignType ;
+         rdfs:label "11_255"@en ;
+         skos:definition "Falling rocks"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_256> a tnits:RoadSignType ;
+         rdfs:label "11_256"@en ;
+         skos:definition "Loose gravel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_257> a tnits:RoadSignType ;
+         rdfs:label "11_257"@en ;
+         skos:definition "Dangerous shoulder"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_258> a tnits:RoadSignType ;
+         rdfs:label "11_258"@en ;
+         skos:definition "Falling rocks(right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_268> a tnits:RoadSignType ;
+         rdfs:label "11_268"@en ;
+         skos:definition "Uneven road"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_269> a tnits:RoadSignType ;
+         rdfs:label "11_269"@en ;
+         skos:definition "Uneven road(hump)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_271> a tnits:RoadSignType ;
+         rdfs:label "11_271"@en ;
+         skos:definition "Uneven road(dip)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_283> a tnits:RoadSignType ;
+         rdfs:label "11_283"@en ;
+         skos:definition "Traffic merging from the right"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_285> a tnits:RoadSignType ;
+         rdfs:label "11_285"@en ;
+         skos:definition "Traffic merging from left ahead"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_296> a tnits:RoadSignType ;
+         rdfs:label "11_296"@en ;
+         skos:definition "Carriageway narrows from the right"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_297> a tnits:RoadSignType ;
+         rdfs:label "11_297"@en ;
+         skos:definition "Carriageway narrows from the left"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_319> a tnits:RoadSignType ;
+         rdfs:label "11_319"@en ;
+         skos:definition "Carriageway narrows"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_332> a tnits:RoadSignType ;
+         rdfs:label "11_332"@en ;
+         skos:definition "Two-way traffic "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_346> a tnits:RoadSignType ;
+         rdfs:label "11_346"@en ;
+         skos:definition "Steep ascent"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_347> a tnits:RoadSignType ;
+         rdfs:label "11_347"@en ;
+         skos:definition "Dangerous descent"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_348> a tnits:RoadSignType ;
+         rdfs:label "11_348"@en ;
+         skos:definition "Road works"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_361> a tnits:RoadSignType ;
+         rdfs:label "11_361"@en ;
+         skos:definition "Cross-wind"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_362> a tnits:RoadSignType ;
+         rdfs:label "11_362"@en ;
+         skos:definition "Airfiled"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_363> a tnits:RoadSignType ;
+         rdfs:label "11_363"@en ;
+         skos:definition "Cattle or other animals crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_364> a tnits:RoadSignType ;
+         rdfs:label "11_364"@en ;
+         skos:definition "Cattle or other animals crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_365> a tnits:RoadSignType ;
+         rdfs:label "11_365"@en ;
+         skos:definition "Cross-wind(left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_366> a tnits:RoadSignType ;
+         rdfs:label "11_366"@en ;
+         skos:definition "Airfiled(left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_367> a tnits:RoadSignType ;
+         rdfs:label "11_367"@en ;
+         skos:definition "Cattle or other animals crossing(left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_368> a tnits:RoadSignType ;
+         rdfs:label "11_368"@en ;
+         skos:definition "Cattle or other animals crossing(left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_378> a tnits:RoadSignType ;
+         rdfs:label "11_378"@en ;
+         skos:definition "Swing bridge"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_379> a tnits:RoadSignType ;
+         rdfs:label "11_379"@en ;
+         skos:definition "Road leads on to quar or river"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_381> a tnits:RoadSignType ;
+         rdfs:label "11_381"@en ;
+         skos:definition "Cyclist entering or crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_382> a tnits:RoadSignType ;
+         rdfs:label "11_382"@en ;
+         skos:definition "Cyclist entering or crossing, left"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_395> a tnits:RoadSignType ;
+         rdfs:label "11_395"@en ;
+         skos:definition "Give way "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_396> a tnits:RoadSignType ;
+         rdfs:label "11_396"@en ;
+         skos:definition "Distance to 'Give Way' line ahead"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_398> a tnits:RoadSignType ;
+         rdfs:label "11_398"@en ;
+         skos:definition "Attention wrong way driver"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_411> a tnits:RoadSignType ;
+         rdfs:label "11_411"@en ;
+         skos:definition "Signs to be placed in the immediate vicinity of level-crossings(vertical)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_412> a tnits:RoadSignType ;
+         rdfs:label "11_412"@en ;
+         skos:definition "Signs to be placed in the immediate vicinity of level-crossings (horizontal)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_413> a tnits:RoadSignType ;
+         rdfs:label "11_413"@en ;
+         skos:definition "Signs to be placed in the immediate vicinity of level-crossings Two or more tracks (vertical)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_414> a tnits:RoadSignType ;
+         rdfs:label "11_414"@en ;
+         skos:definition "Signs to be placed in the immediate vicinity of level-crossings  Two or more Tracks (horizontal)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_998> a tnits:RoadSignType ;
+         rdfs:label "11_998"@en ;
+         skos:definition "Caution"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#11_999> a tnits:RoadSignType ;
+         rdfs:label "11_999"@en ;
+         skos:definition "Other danger"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_111> a tnits:RoadSignType ;
+         rdfs:label "12_111"@en ;
+         skos:definition "Priority for oncoming traffic "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_112> a tnits:RoadSignType ;
+         rdfs:label "12_112"@en ;
+         skos:definition "STOP"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_113> a tnits:RoadSignType ;
+         rdfs:label "12_113"@en ;
+         skos:definition "Compulsory stopping XXm ahead"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_114> a tnits:RoadSignType ;
+         rdfs:label "12_114"@en ;
+         skos:definition "Assigned lane for light vehicles or motor cycles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_115> a tnits:RoadSignType ;
+         rdfs:label "12_115"@en ;
+         skos:definition "Assigned lane for trucks"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_116> a tnits:RoadSignType ;
+         rdfs:label "12_116"@en ;
+         skos:definition "Assigned lane on motorway for trailers"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_117> a tnits:RoadSignType ;
+         rdfs:label "12_117"@en ;
+         skos:definition "Give way"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_127> a tnits:RoadSignType ;
+         rdfs:label "12_127"@en ;
+         skos:definition "Assigned lane for trailers"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_128> a tnits:RoadSignType ;
+         rdfs:label "12_128"@en ;
+         skos:definition "With-flow bus lane which pedal cycles may also use"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_129> a tnits:RoadSignType ;
+         rdfs:label "12_129"@en ;
+         skos:definition "Exclusive lane for route bus"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_131> a tnits:RoadSignType ;
+         rdfs:label "12_131"@en ;
+         skos:definition "Buses and pedal cycles only"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_132> a tnits:RoadSignType ;
+         rdfs:label "12_132"@en ;
+         skos:definition "Priority lane for route bus"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_133> a tnits:RoadSignType ;
+         rdfs:label "12_133"@en ;
+         skos:definition "Vehicles under XXt are permitted "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_134> a tnits:RoadSignType ;
+         rdfs:label "12_134"@en ;
+         skos:definition "High occupancy vehicle lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_154> a tnits:RoadSignType ;
+         rdfs:label "12_154"@en ;
+         skos:definition "Centre line"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_155> a tnits:RoadSignType ;
+         rdfs:label "12_155"@en ;
+         skos:definition "Turning restriction on a multi-lane approach to an intersection"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_156> a tnits:RoadSignType ;
+         rdfs:label "12_156"@en ;
+         skos:definition "Stop line"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_157> a tnits:RoadSignType ;
+         rdfs:label "12_157"@en ;
+         skos:definition "Two-step right turn for mopeds"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_158> a tnits:RoadSignType ;
+         rdfs:label "12_158"@en ;
+         skos:definition "Do not make two-step right turn "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_176> a tnits:RoadSignType ;
+         rdfs:label "12_176"@en ;
+         skos:definition "Slow down"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_177> a tnits:RoadSignType ;
+         rdfs:label "12_177"@en ;
+         skos:definition "Yield right of way "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_178> a tnits:RoadSignType ;
+         rdfs:label "12_178"@en ;
+         skos:definition "Priority road"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_411> a tnits:RoadSignType ;
+         rdfs:label "12_411"@en ;
+         skos:definition "No entry for all vehicles, mopeds, cycles, pedestrians"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_412> a tnits:RoadSignType ;
+         rdfs:label "12_412"@en ;
+         skos:definition "No entry"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_413> a tnits:RoadSignType ;
+         rdfs:label "12_413"@en ;
+         skos:definition "No entry into the designated direction"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_414> a tnits:RoadSignType ;
+         rdfs:label "12_414"@en ;
+         skos:definition "No vehicles crossing (except for vehicles turning left to enter or exit a facility off the road) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_415> a tnits:RoadSignType ;
+         rdfs:label "12_415"@en ;
+         skos:definition "Closed to all vehicles in both directions"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_416> a tnits:RoadSignType ;
+         rdfs:label "12_416"@en ;
+         skos:definition "No entry for for any power driven vehicle except two wheeled motor cycles without a side-car"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_417> a tnits:RoadSignType ;
+         rdfs:label "12_417"@en ;
+         skos:definition "No entry for motor cycles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_418> a tnits:RoadSignType ;
+         rdfs:label "12_418"@en ;
+         skos:definition "No entry for cycles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_419> a tnits:RoadSignType ;
+         rdfs:label "12_419"@en ;
+         skos:definition "No entry for mopeds"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_421> a tnits:RoadSignType ;
+         rdfs:label "12_421"@en ;
+         skos:definition "No entry for goods vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_422> a tnits:RoadSignType ;
+         rdfs:label "12_422"@en ;
+         skos:definition "No entry for any power driven vehicle drawing a trailer include a semi-trailer or a single axle trailer "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_423> a tnits:RoadSignType ;
+         rdfs:label "12_423"@en ;
+         skos:definition "No entry for pedestrians"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_424> a tnits:RoadSignType ;
+         rdfs:label "12_424"@en ;
+         skos:definition "No entry for animal-drawn vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_425> a tnits:RoadSignType ;
+         rdfs:label "12_425"@en ;
+         skos:definition "No entry for handcarts."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_426> a tnits:RoadSignType ;
+         rdfs:label "12_426"@en ;
+         skos:definition "No entry for power driven agricultural vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_427> a tnits:RoadSignType ;
+         rdfs:label "12_427"@en ;
+         skos:definition "No buses"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_429> a tnits:RoadSignType ;
+         rdfs:label "12_429"@en ;
+         skos:definition "No entry for any power driven vehicle drawing a trailer other than a semi-trailer or a single axle trailer"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_431> a tnits:RoadSignType ;
+         rdfs:label "12_431"@en ;
+         skos:definition "No ridden or accompanied horses"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_433> a tnits:RoadSignType ;
+         rdfs:label "12_433"@en ;
+         skos:definition "No vehicles that cannot exceed 25 km/h"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_434> a tnits:RoadSignType ;
+         rdfs:label "12_434"@en ;
+         skos:definition "No entry for any power-driven vehicle drawing a trailer"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_451> a tnits:RoadSignType ;
+         rdfs:label "12_451"@en ;
+         skos:definition "No entry for power driven vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_452> a tnits:RoadSignType ;
+         rdfs:label "12_452"@en ;
+         skos:definition "No entry for power driven vehicles or animal-drawn vehicles "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_453> a tnits:RoadSignType ;
+         rdfs:label "12_453"@en ;
+         skos:definition "No entry for goods vehicles and buses"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_454> a tnits:RoadSignType ;
+         rdfs:label "12_454"@en ;
+         skos:definition "No entry for bicycles, mopeds and disabled drivers vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_455> a tnits:RoadSignType ;
+         rdfs:label "12_455"@en ;
+         skos:definition "No entry for vehicles that are not able or aloud to go faster than 25 km/h, no microcars, bikes, mopeds and disabled drivers vehicles."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_475> a tnits:RoadSignType ;
+         rdfs:label "12_475"@en ;
+         skos:definition "No entry for vehicles carrying more than a certain quantity of explosives or readily inflammable substances"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_476> a tnits:RoadSignType ;
+         rdfs:label "12_476"@en ;
+         skos:definition "No entry for  vehicles carrying dangerous goods for which special sign plating is required"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_477> a tnits:RoadSignType ;
+         rdfs:label "12_477"@en ;
+         skos:definition "No entry for vehicles carrying more than a certain quantity of substances liable to cause water pollution"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_499> a tnits:RoadSignType ;
+         rdfs:label "12_499"@en ;
+         skos:definition "No entry for vehicles having an overall width exceeding X metres"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_511> a tnits:RoadSignType ;
+         rdfs:label "12_511"@en ;
+         skos:definition "No entry for vehicles having an overall height exceeding X metres"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_512> a tnits:RoadSignType ;
+         rdfs:label "12_512"@en ;
+         skos:definition "No entry for vehicles exceeding XX t laden mass"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_513> a tnits:RoadSignType ;
+         rdfs:label "12_513"@en ;
+         skos:definition "No entry for vehicles having a mass exceeding XX t on one axle "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_514> a tnits:RoadSignType ;
+         rdfs:label "12_514"@en ;
+         skos:definition "No entry for vehicles or combinations of vehicles exceeding XXm in length"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_515> a tnits:RoadSignType ;
+         rdfs:label "12_515"@en ;
+         skos:definition "Driving of vehicles less than XX m apart prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_527> a tnits:RoadSignType ;
+         rdfs:label "12_527"@en ;
+         skos:definition "No left turns"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_528> a tnits:RoadSignType ;
+         rdfs:label "12_528"@en ;
+         skos:definition "No right turns"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_529> a tnits:RoadSignType ;
+         rdfs:label "12_529"@en ;
+         skos:definition "No U-turns"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_542> a tnits:RoadSignType ;
+         rdfs:label "12_542"@en ;
+         skos:definition "Overtaking prohibited "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_543> a tnits:RoadSignType ;
+         rdfs:label "12_543"@en ;
+         skos:definition "End of overtaking prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_544> a tnits:RoadSignType ;
+         rdfs:label "12_544"@en ;
+         skos:definition "Overtaking by goods vehicles prohibited "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_545> a tnits:RoadSignType ;
+         rdfs:label "12_545"@en ;
+         skos:definition "End of overtaking by goods vehicles prohibited "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_557> a tnits:RoadSignType ;
+         rdfs:label "12_557"@en ;
+         skos:definition "Maximum speed limited to the figure indicated"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_558> a tnits:RoadSignType ;
+         rdfs:label "12_558"@en ;
+         skos:definition "Use of audible warning devices prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_561> a tnits:RoadSignType ;
+         rdfs:label "12_561"@en ;
+         skos:definition "Passing without stopping prohibited (Customs) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_562> a tnits:RoadSignType ;
+         rdfs:label "12_562"@en ;
+         skos:definition "Stop for (Military police check)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_563> a tnits:RoadSignType ;
+         rdfs:label "12_563"@en ;
+         skos:definition "Stop for (Police check) ) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_564> a tnits:RoadSignType ;
+         rdfs:label "12_564"@en ;
+         skos:definition "Stop for (Toll gate)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_565> a tnits:RoadSignType ;
+         rdfs:label "12_565"@en ;
+         skos:definition "Pedestrians crossover prohibited "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_577> a tnits:RoadSignType ;
+         rdfs:label "12_577"@en ;
+         skos:definition "Parking prohibited "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_578> a tnits:RoadSignType ;
+         rdfs:label "12_578"@en ;
+         skos:definition "Standing and parking prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_579> a tnits:RoadSignType ;
+         rdfs:label "12_579"@en ;
+         skos:definition "Alternate parking(1st to 15th days) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_581> a tnits:RoadSignType ;
+         rdfs:label "12_581"@en ;
+         skos:definition "Alternate parking (16th to 31st days)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_592> a tnits:RoadSignType ;
+         rdfs:label "12_592"@en ;
+         skos:definition "Emergency parking only"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_593> a tnits:RoadSignType ;
+         rdfs:label "12_593"@en ;
+         skos:definition "Entrance to a controlled parking zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_594> a tnits:RoadSignType ;
+         rdfs:label "12_594"@en ;
+         skos:definition "Limited duration no parking zone "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_711> a tnits:RoadSignType ;
+         rdfs:label "12_711"@en ;
+         skos:definition "Direction to be followed (Left)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_712> a tnits:RoadSignType ;
+         rdfs:label "12_712"@en ;
+         skos:definition "Direction to be followed (Right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_713> a tnits:RoadSignType ;
+         rdfs:label "12_713"@en ;
+         skos:definition "Direction to be followed  (straight ahead)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_714> a tnits:RoadSignType ;
+         rdfs:label "12_714"@en ;
+         skos:definition "Direction to be followed (Right turn)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_715> a tnits:RoadSignType ;
+         rdfs:label "12_715"@en ;
+         skos:definition "Direction to be followed (Left turn) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_716> a tnits:RoadSignType ;
+         rdfs:label "12_716"@en ;
+         skos:definition "Direction to be followed (Right, straight)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_717> a tnits:RoadSignType ;
+         rdfs:label "12_717"@en ;
+         skos:definition "Direction to be followed (Left, straight) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_718> a tnits:RoadSignType ;
+         rdfs:label "12_718"@en ;
+         skos:definition "Pass this side  (right side)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_719> a tnits:RoadSignType ;
+         rdfs:label "12_719"@en ;
+         skos:definition "Pass this side  left side"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_721> a tnits:RoadSignType ;
+         rdfs:label "12_721"@en ;
+         skos:definition "Pass this side (Right turn, left turn) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_723> a tnits:RoadSignType ;
+         rdfs:label "12_723"@en ;
+         skos:definition "Pass this side  (both sides)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_724> a tnits:RoadSignType ;
+         rdfs:label "12_724"@en ;
+         skos:definition "Compulsory direction for vehicles carrying dangerous goods"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_743> a tnits:RoadSignType ;
+         rdfs:label "12_743"@en ;
+         skos:definition "Direction to be followed (Two-way traffic) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_744> a tnits:RoadSignType ;
+         rdfs:label "12_744"@en ;
+         skos:definition "Direction to be followed (One-way street)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_745> a tnits:RoadSignType ;
+         rdfs:label "12_745"@en ;
+         skos:definition "Direction to be followed (Left) (One-way road) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_746> a tnits:RoadSignType ;
+         rdfs:label "12_746"@en ;
+         skos:definition "Compulsory roundabout (Clockwise)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_747> a tnits:RoadSignType ;
+         rdfs:label "12_747"@en ;
+         skos:definition "Compulsory roundabout "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_748> a tnits:RoadSignType ;
+         rdfs:label "12_748"@en ;
+         skos:definition "Road for motor vehicles only"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_749> a tnits:RoadSignType ;
+         rdfs:label "12_749"@en ;
+         skos:definition "Compulsary cycle track"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_751> a tnits:RoadSignType ;
+         rdfs:label "12_751"@en ;
+         skos:definition "Abreast riding permitted "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_752> a tnits:RoadSignType ;
+         rdfs:label "12_752"@en ;
+         skos:definition "Bicycle crossing zone "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_753> a tnits:RoadSignType ;
+         rdfs:label "12_753"@en ;
+         skos:definition "Compulsary footpath"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_754> a tnits:RoadSignType ;
+         rdfs:label "12_754"@en ;
+         skos:definition "Compulsay track for riders on horseback"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_772> a tnits:RoadSignType ;
+         rdfs:label "12_772"@en ;
+         skos:definition "Pedestrian and bicycle crossing zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_773> a tnits:RoadSignType ;
+         rdfs:label "12_773"@en ;
+         skos:definition "Compulsary cycle track and Compulsary footpath"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_795> a tnits:RoadSignType ;
+         rdfs:label "12_795"@en ;
+         skos:definition "Compulsory minimum speed"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_796> a tnits:RoadSignType ;
+         rdfs:label "12_796"@en ;
+         skos:definition "Snow chains compulsory"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_851> a tnits:RoadSignType ;
+         rdfs:label "12_851"@en ;
+         skos:definition "End of priority"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_852> a tnits:RoadSignType ;
+         rdfs:label "12_852"@en ;
+         skos:definition "Distance plate indicating end of priority"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_853> a tnits:RoadSignType ;
+         rdfs:label "12_853"@en ;
+         skos:definition "Priority for oncoming trafic"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_861> a tnits:RoadSignType ;
+         rdfs:label "12_861"@en ;
+         skos:definition "End of all local prohibition imposed on moving vehicles "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_862> a tnits:RoadSignType ;
+         rdfs:label "12_862"@en ;
+         skos:definition "End of prohibition of overtaking"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_863> a tnits:RoadSignType ;
+         rdfs:label "12_863"@en ;
+         skos:definition "End of prohibition of overtaking for goods vehicles "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_864> a tnits:RoadSignType ;
+         rdfs:label "12_864"@en ;
+         skos:definition "End of speed limit"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_865> a tnits:RoadSignType ;
+         rdfs:label "12_865"@en ;
+         skos:definition "End of compulsory minimum speed "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_871> a tnits:RoadSignType ;
+         rdfs:label "12_871"@en ;
+         skos:definition "Driving on tram track permitted"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_872> a tnits:RoadSignType ;
+         rdfs:label "12_872"@en ;
+         skos:definition "Stopping permitted "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_111> a tnits:RoadSignType ;
+         rdfs:label "13_111"@en ;
+         skos:definition "Advance direction signs "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_112> a tnits:RoadSignType ;
+         rdfs:label "13_112"@en ;
+         skos:definition "Advance sign showing the direction of places "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_121> a tnits:RoadSignType ;
+         rdfs:label "13_121"@en ;
+         skos:definition "Advance direction signs(root to be followe) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_133> a tnits:RoadSignType ;
+         rdfs:label "13_133"@en ;
+         skos:definition "Advance direction signs showing the common road name "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_168> a tnits:RoadSignType ;
+         rdfs:label "13_168"@en ;
+         skos:definition "Motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_169> a tnits:RoadSignType ;
+         rdfs:label "13_169"@en ;
+         skos:definition "Advance signs showing the morotway with place name"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_171> a tnits:RoadSignType ;
+         rdfs:label "13_171"@en ;
+         skos:definition "Advance direction signs showing the exit of motorway with road number"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_172> a tnits:RoadSignType ;
+         rdfs:label "13_172"@en ;
+         skos:definition "Advance direction signs showing the exit of motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_173> a tnits:RoadSignType ;
+         rdfs:label "13_173"@en ;
+         skos:definition "Advance signs showing the service area on motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_174> a tnits:RoadSignType ;
+         rdfs:label "13_174"@en ;
+         skos:definition "End of motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_184> a tnits:RoadSignType ;
+         rdfs:label "13_184"@en ;
+         skos:definition "Multiple destinations and distances"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_185> a tnits:RoadSignType ;
+         rdfs:label "13_185"@en ;
+         skos:definition "Sign showing the direction of places"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_186> a tnits:RoadSignType ;
+         rdfs:label "13_186"@en ;
+         skos:definition "Sign showing the direction of places with road number"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_187> a tnits:RoadSignType ;
+         rdfs:label "13_187"@en ;
+         skos:definition "Sign showing the direction of places on the following road "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_188> a tnits:RoadSignType ;
+         rdfs:label "13_188"@en ;
+         skos:definition "Sign showing the direction of places with junction layout"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_189> a tnits:RoadSignType ;
+         rdfs:label "13_189"@en ;
+         skos:definition "Sign showing the direction of places with common road names"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_222> a tnits:RoadSignType ;
+         rdfs:label "13_222"@en ;
+         skos:definition "Direction signs showing the entrance of motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_223> a tnits:RoadSignType ;
+         rdfs:label "13_223"@en ;
+         skos:definition "Direction signs showing the exit of motorway with the place name"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_224> a tnits:RoadSignType ;
+         rdfs:label "13_224"@en ;
+         skos:definition " Direction signs showing the exit of motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_225> a tnits:RoadSignType ;
+         rdfs:label "13_225"@en ;
+         skos:definition " Lane for the place on the motorway "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_226> a tnits:RoadSignType ;
+         rdfs:label "13_226"@en ;
+         skos:definition " Service area on motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_326> a tnits:RoadSignType ;
+         rdfs:label "13_326"@en ;
+         skos:definition "National/State motorway number"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_327> a tnits:RoadSignType ;
+         rdfs:label "13_327"@en ;
+         skos:definition "Local motorway number"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_525> a tnits:RoadSignType ;
+         rdfs:label "13_525"@en ;
+         skos:definition "No through road(front)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_526> a tnits:RoadSignType ;
+         rdfs:label "13_526"@en ;
+         skos:definition "No through road(right)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_538> a tnits:RoadSignType ;
+         rdfs:label "13_538"@en ;
+         skos:definition "Vehicles from opposite direction must give priority"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_539> a tnits:RoadSignType ;
+         rdfs:label "13_539"@en ;
+         skos:definition "Access permitted"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_611> a tnits:RoadSignType ;
+         rdfs:label "13_611"@en ;
+         skos:definition " Number and direction of traffic lanes"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_612> a tnits:RoadSignType ;
+         rdfs:label "13_612"@en ;
+         skos:definition "Lane ends "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_613> a tnits:RoadSignType ;
+         rdfs:label "13_613"@en ;
+         skos:definition "Lane divergence"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_614> a tnits:RoadSignType ;
+         rdfs:label "13_614"@en ;
+         skos:definition "Trucks prohibited from this lane "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_615> a tnits:RoadSignType ;
+         rdfs:label "13_615"@en ;
+         skos:definition "Trucks prohibited from main lanes"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_616> a tnits:RoadSignType ;
+         rdfs:label "13_616"@en ;
+         skos:definition "Trucks prohibited from diverging lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_617> a tnits:RoadSignType ;
+         rdfs:label "13_617"@en ;
+         skos:definition "Advance direction sign for route to be followed"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_618> a tnits:RoadSignType ;
+         rdfs:label "13_618"@en ;
+         skos:definition "Detour"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_619> a tnits:RoadSignType ;
+         rdfs:label "13_619"@en ;
+         skos:definition "Crawler lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_621> a tnits:RoadSignType ;
+         rdfs:label "13_621"@en ;
+         skos:definition "Escape lane (Right type 1) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_622> a tnits:RoadSignType ;
+         rdfs:label "13_622"@en ;
+         skos:definition "Escape lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_623> a tnits:RoadSignType ;
+         rdfs:label "13_623"@en ;
+         skos:definition "One-way street"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_624> a tnits:RoadSignType ;
+         rdfs:label "13_624"@en ;
+         skos:definition "Lane convergence"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_643> a tnits:RoadSignType ;
+         rdfs:label "13_643"@en ;
+         skos:definition "Directional flows"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_644> a tnits:RoadSignType ;
+         rdfs:label "13_644"@en ;
+         skos:definition "Directional flows and lane convergence"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_645> a tnits:RoadSignType ;
+         rdfs:label "12_645"@en ;
+         skos:definition "Rush hour lane open 3/1"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_646> a tnits:RoadSignType ;
+         rdfs:label "12_646"@en ;
+         skos:definition "End of rush hour lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_647> a tnits:RoadSignType ;
+         rdfs:label "12_647"@en ;
+         skos:definition "End of rush hour lane 3/1"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_648> a tnits:RoadSignType ;
+         rdfs:label "12_648"@en ;
+         skos:definition "Clear rush hour lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#12_649> a tnits:RoadSignType ;
+         rdfs:label "12_649"@en ;
+         skos:definition "Clear rush hour lane 3/1"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_651> a tnits:RoadSignType ;
+         rdfs:label "13_651"@en ;
+         skos:definition " Closure of a traffic lane, two lanes to one (right lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_652> a tnits:RoadSignType ;
+         rdfs:label "13_652"@en ;
+         skos:definition "Closure of a traffic lane, three lanes to two (right lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_653> a tnits:RoadSignType ;
+         rdfs:label "13_653"@en ;
+         skos:definition "Lane convergence, four lanes to three (right lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_654> a tnits:RoadSignType ;
+         rdfs:label "13_654"@en ;
+         skos:definition "Closure of a traffic lane, two lanes to one (left lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_655> a tnits:RoadSignType ;
+         rdfs:label "13_655"@en ;
+         skos:definition "Closure of a traffic lane, three lanes to two (left lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_656> a tnits:RoadSignType ;
+         rdfs:label "13_656"@en ;
+         skos:definition "Closure of a traffic lane, four lanes to three  (left lane ends)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_657> a tnits:RoadSignType ;
+         rdfs:label "13_657"@en ;
+         skos:definition "Left lane shift onto oncoming lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_658> a tnits:RoadSignType ;
+         rdfs:label "13_658"@en ;
+         skos:definition "Two lane right shift onto hard shoulder"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_768> a tnits:RoadSignType ;
+         rdfs:label "13_768"@en ;
+         skos:definition "Lane closed"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_769> a tnits:RoadSignType ;
+         rdfs:label "13_769"@en ;
+         skos:definition "Lane free"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_771> a tnits:RoadSignType ;
+         rdfs:label "13_771"@en ;
+         skos:definition "Clear lane to left"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_772> a tnits:RoadSignType ;
+         rdfs:label "13_772"@en ;
+         skos:definition "Clear lane to right"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_773> a tnits:RoadSignType ;
+         rdfs:label "13_773"@en ;
+         skos:definition "End of all restrictions by electronic signs"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_781> a tnits:RoadSignType ;
+         rdfs:label "13_781"@en ;
+         skos:definition "compulsory minimum speed applying to different lanes"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_782> a tnits:RoadSignType ;
+         rdfs:label "13_782"@en ;
+         skos:definition "compulsory minimum speed applying to one lane"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_783> a tnits:RoadSignType ;
+         rdfs:label "13_783"@en ;
+         skos:definition "speed limits applying to different lanes"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_784> a tnits:RoadSignType ;
+         rdfs:label "13_784"@en ;
+         skos:definition "lanes reserved for buses"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_785> a tnits:RoadSignType ;
+         rdfs:label "13_785"@en ;
+         skos:definition "One-way"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_786> a tnits:RoadSignType ;
+         rdfs:label "13_786"@en ;
+         skos:definition "Preselection sign"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_811> a tnits:RoadSignType ;
+         rdfs:label "13_811"@en ;
+         skos:definition "Road for motor vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_812> a tnits:RoadSignType ;
+         rdfs:label "13_812"@en ;
+         skos:definition "End of road for motor vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_813> a tnits:RoadSignType ;
+         rdfs:label "13_813"@en ;
+         skos:definition "Tunnel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_814> a tnits:RoadSignType ;
+         rdfs:label "13_814"@en ;
+         skos:definition "End of tunnel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_815> a tnits:RoadSignType ;
+         rdfs:label "13_815"@en ;
+         skos:definition "Pedestrian crossing"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_821> a tnits:RoadSignType ;
+         rdfs:label "13_821"@en ;
+         skos:definition "Safety evacuation area "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_822> a tnits:RoadSignType ;
+         rdfs:label "13_822"@en ;
+         skos:definition "Emergency exit "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_823> a tnits:RoadSignType ;
+         rdfs:label "13_823"@en ;
+         skos:definition "Fire extinguisher "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_824> a tnits:RoadSignType ;
+         rdfs:label "13_824"@en ;
+         skos:definition "Emergency roadside telephone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_825> a tnits:RoadSignType ;
+         rdfs:label "13_825"@en ;
+         skos:definition "Emergency call button"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_826> a tnits:RoadSignType ;
+         rdfs:label "13_826"@en ;
+         skos:definition "Emergency stopping place"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_827> a tnits:RoadSignType ;
+         rdfs:label "13_827"@en ;
+         skos:definition "Waiting area for slower traffic "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_828> a tnits:RoadSignType ;
+         rdfs:label "13_828"@en ;
+         skos:definition "Safety zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_829> a tnits:RoadSignType ;
+         rdfs:label "13_829"@en ;
+         skos:definition "Hospital"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_831> a tnits:RoadSignType ;
+         rdfs:label "13_831"@en ;
+         skos:definition "Toll gate"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_832> a tnits:RoadSignType ;
+         rdfs:label "13_832"@en ;
+         skos:definition "Toll zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_833> a tnits:RoadSignType ;
+         rdfs:label "13_833"@en ;
+         skos:definition "Automatic toll gate "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_834> a tnits:RoadSignType ;
+         rdfs:label "13_834"@en ;
+         skos:definition "Manual toll gate "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_835> a tnits:RoadSignType ;
+         rdfs:label "13_835"@en ;
+         skos:definition "Bicycle"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_836> a tnits:RoadSignType ;
+         rdfs:label "13_836"@en ;
+         skos:definition "Aircraft/ Airport"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_837> a tnits:RoadSignType ;
+         rdfs:label "13_837"@en ;
+         skos:definition "Departures "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_838> a tnits:RoadSignType ;
+         rdfs:label "13_838"@en ;
+         skos:definition "Arrivals"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_839> a tnits:RoadSignType ;
+         rdfs:label "13_839"@en ;
+         skos:definition "Helicopter/ Heliport"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_841> a tnits:RoadSignType ;
+         rdfs:label "13_841"@en ;
+         skos:definition "Railway/ Railway station"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_842> a tnits:RoadSignType ;
+         rdfs:label "13_842"@en ;
+         skos:definition "Rent a car"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_843> a tnits:RoadSignType ;
+         rdfs:label "13_843"@en ;
+         skos:definition "Taxi stop"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_844> a tnits:RoadSignType ;
+         rdfs:label "13_844"@en ;
+         skos:definition "Bus stop "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_845> a tnits:RoadSignType ;
+         rdfs:label "13_845"@en ;
+         skos:definition "Tramway stop "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_846> a tnits:RoadSignType ;
+         rdfs:label "13_846"@en ;
+         skos:definition "Road open or closed "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_847> a tnits:RoadSignType ;
+         rdfs:label "13_847"@en ;
+         skos:definition "Parking space for vehicles with permission "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_851> a tnits:RoadSignType ;
+         rdfs:label "13_851"@en ;
+         skos:definition "Parking"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_852> a tnits:RoadSignType ;
+         rdfs:label "13_852"@en ;
+         skos:definition "Parking (Machine-charged) "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_853> a tnits:RoadSignType ;
+         rdfs:label "13_853"@en ;
+         skos:definition "Park-and-ride point"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_854> a tnits:RoadSignType ;
+         rdfs:label "13_854"@en ;
+         skos:definition "Car ferry"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_855> a tnits:RoadSignType ;
+         rdfs:label "13_855"@en ;
+         skos:definition "Car train "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_861> a tnits:RoadSignType ;
+         rdfs:label "13_861"@en ;
+         skos:definition "Beginning of a built-up area"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_862> a tnits:RoadSignType ;
+         rdfs:label "13_862"@en ;
+         skos:definition "End of a built-up area"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_863> a tnits:RoadSignType ;
+         rdfs:label "13_863"@en ;
+         skos:definition "Zone in which parking is prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_864> a tnits:RoadSignType ;
+         rdfs:label "13_864"@en ;
+         skos:definition "Zone in which parking is prohibited at certain times"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_865> a tnits:RoadSignType ;
+         rdfs:label "13_865"@en ;
+         skos:definition "Parking zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_866> a tnits:RoadSignType ;
+         rdfs:label "13_866"@en ;
+         skos:definition "Maximum speed zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_867> a tnits:RoadSignType ;
+         rdfs:label "13_867"@en ;
+         skos:definition "End of zone in which parking is prohibited"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_868> a tnits:RoadSignType ;
+         rdfs:label "13_868"@en ;
+         skos:definition "End of zone in which parking is prohibited at certain times"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_869> a tnits:RoadSignType ;
+         rdfs:label "13_869"@en ;
+         skos:definition "End of parking zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_871> a tnits:RoadSignType ;
+         rdfs:label "13_871"@en ;
+         skos:definition "End of maximum speed zone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_872> a tnits:RoadSignType ;
+         rdfs:label "13_872"@en ;
+         skos:definition "Residential area"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_873> a tnits:RoadSignType ;
+         rdfs:label "13_873"@en ;
+         skos:definition "End of residential area"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_881> a tnits:RoadSignType ;
+         rdfs:label "13_881"@en ;
+         skos:definition " Direction of an airfield"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_882> a tnits:RoadSignType ;
+         rdfs:label "13_882"@en ;
+         skos:definition "Direction of a camping site."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_883> a tnits:RoadSignType ;
+         rdfs:label "13_883"@en ;
+         skos:definition " Direction of a youth hostel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_884> a tnits:RoadSignType ;
+         rdfs:label "13_884"@en ;
+         skos:definition "Direction of public transport"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_885> a tnits:RoadSignType ;
+         rdfs:label "13_885"@en ;
+         skos:definition "Confirmatory signs"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_886> a tnits:RoadSignType ;
+         rdfs:label "13_886"@en ;
+         skos:definition "Chains or snow tyres recommended"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_887> a tnits:RoadSignType ;
+         rdfs:label "13_887"@en ;
+         skos:definition "Advisory speed\""@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_889> a tnits:RoadSignType ;
+         rdfs:label "13_889"@en ;
+         skos:definition "Advised itinerary for heavy vehicles"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_891> a tnits:RoadSignType ;
+         rdfs:label "13_891"@en ;
+         skos:definition " Pedestrian  underpass."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_892> a tnits:RoadSignType ;
+         rdfs:label "13_892"@en ;
+         skos:definition "Pedestrian overpass"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_893> a tnits:RoadSignType ;
+         rdfs:label "13_893"@en ;
+         skos:definition " Exit from a motorway"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#13_894> a tnits:RoadSignType ;
+         rdfs:label "13_894"@en ;
+         skos:definition "Direction and distance of the nearest emergency exits"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_111> a tnits:RoadSignType ;
+         rdfs:label "21_111"@en ;
+         skos:definition "Tourist information"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_112> a tnits:RoadSignType ;
+         rdfs:label "21_112"@en ;
+         skos:definition "Police"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_113> a tnits:RoadSignType ;
+         rdfs:label "21_113"@en ;
+         skos:definition "Facilities for wheelchair user"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_114> a tnits:RoadSignType ;
+         rdfs:label "21_114"@en ;
+         skos:definition "Telephone"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_115> a tnits:RoadSignType ;
+         rdfs:label "21_115"@en ;
+         skos:definition "First-aid station"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_125> a tnits:RoadSignType ;
+         rdfs:label "21_125"@en ;
+         skos:definition "Maintenance service"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_126> a tnits:RoadSignType ;
+         rdfs:label "21_126"@en ;
+         skos:definition "Breakdown service"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_128> a tnits:RoadSignType ;
+         rdfs:label "21_128"@en ;
+         skos:definition "Filling station"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_129> a tnits:RoadSignType ;
+         rdfs:label "21_129"@en ;
+         skos:definition "Filling station (+GPL)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_145> a tnits:RoadSignType ;
+         rdfs:label "21_145"@en ;
+         skos:definition "Washroom/Restroom"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_146> a tnits:RoadSignType ;
+         rdfs:label "21_146"@en ;
+         skos:definition "Restroom for wheelchair user"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_161> a tnits:RoadSignType ;
+         rdfs:label "21_161"@en ;
+         skos:definition "Restaurant"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_162> a tnits:RoadSignType ;
+         rdfs:label "21_162"@en ;
+         skos:definition "Refreshment stand/ Caféteria"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_163> a tnits:RoadSignType ;
+         rdfs:label "21_163"@en ;
+         skos:definition "Service area"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_164> a tnits:RoadSignType ;
+         rdfs:label "21_164"@en ;
+         skos:definition "Postal office"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_181> a tnits:RoadSignType ;
+         rdfs:label "21_181"@en ;
+         skos:definition "Hotel or Motel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_183> a tnits:RoadSignType ;
+         rdfs:label "21_183"@en ;
+         skos:definition "Youth hostel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_185> a tnits:RoadSignType ;
+         rdfs:label "21_185"@en ;
+         skos:definition "Camping site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_186> a tnits:RoadSignType ;
+         rdfs:label "21_186"@en ;
+         skos:definition "Caravan site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_187> a tnits:RoadSignType ;
+         rdfs:label "21_187"@en ;
+         skos:definition "Camping and caravan site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_188> a tnits:RoadSignType ;
+         rdfs:label "21_188"@en ;
+         skos:definition "Recreational vehicle sanitary station"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_189> a tnits:RoadSignType ;
+         rdfs:label "21_189"@en ;
+         skos:definition "Picnic site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_191> a tnits:RoadSignType ;
+         rdfs:label "21_191"@en ;
+         skos:definition "Amusement park"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_192> a tnits:RoadSignType ;
+         rdfs:label "21_192"@en ;
+         skos:definition "Starting-point for walks"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_193> a tnits:RoadSignType ;
+         rdfs:label "21_193"@en ;
+         skos:definition "Jogging course"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_194> a tnits:RoadSignType ;
+         rdfs:label "21_194"@en ;
+         skos:definition "Skiing site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_195> a tnits:RoadSignType ;
+         rdfs:label "21_195"@en ;
+         skos:definition "Ski lift"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_196> a tnits:RoadSignType ;
+         rdfs:label "21_196"@en ;
+         skos:definition "Cable car"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_198> a tnits:RoadSignType ;
+         rdfs:label "21_198"@en ;
+         skos:definition "Canoeing site"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_199> a tnits:RoadSignType ;
+         rdfs:label "21_199"@en ;
+         skos:definition "Cultural assets"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_211> a tnits:RoadSignType ;
+         rdfs:label "21_211"@en ;
+         skos:definition "Natural assets"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_212> a tnits:RoadSignType ;
+         rdfs:label "21_212"@en ;
+         skos:definition "Museum"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_213> a tnits:RoadSignType ;
+         rdfs:label "21_213"@en ;
+         skos:definition "View point"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#21_214> a tnits:RoadSignType ;
+         rdfs:label "21_214"@en ;
+         skos:definition "Park"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_111> a tnits:RoadSignType ;
+         rdfs:label "31_111"@en ;
+         skos:definition "Rainfall"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_112> a tnits:RoadSignType ;
+         rdfs:label "31_112"@en ;
+         skos:definition "Slippery due to snow / ice"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_114> a tnits:RoadSignType ;
+         rdfs:label "31_114"@en ;
+         skos:definition "Poor visibility through snow, rain or fog"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_113> a tnits:RoadSignType ;
+         rdfs:label "31_113"@en ;
+         skos:definition "Fog"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_359> a tnits:RoadSignType ;
+         rdfs:label "31_359"@en ;
+         skos:definition "Strong side-wind"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#31_361> a tnits:RoadSignType ;
+         rdfs:label "31_361"@en ;
+         skos:definition "Flood"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_111> a tnits:RoadSignType ;
+         rdfs:label "32_111"@en ;
+         skos:definition "Traffic congestion"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_112> a tnits:RoadSignType ;
+         rdfs:label "32_112"@en ;
+         skos:definition "Accident"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_113> a tnits:RoadSignType ;
+         rdfs:label "32_113"@en ;
+         skos:definition "Vehicle on fire"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_114> a tnits:RoadSignType ;
+         rdfs:label "32_114"@en ;
+         skos:definition "Shed loads"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_115> a tnits:RoadSignType ;
+         rdfs:label "32_115"@en ;
+         skos:definition "Slow moving maintenance vehicle"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadSignTypeCode#32_116> a tnits:RoadSignType ;
+         rdfs:label "32_116"@en ;
+         skos:definition "Breakdown vehicle"@en .
+         
+

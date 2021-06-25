@@ -1,0 +1,83 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list FuzzyTimeTypeCode"@en ;
+	dcterms:title "TN-ITS FuzzyTimeTypeCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#external> a tnits:FuzzyTimeType ;
+         rdfs:label "external"@en ;
+         skos:definition "Starting period controlled by external device "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#dawn> a tnits:FuzzyTimeType ;
+         rdfs:label "dawn"@en ;
+         skos:definition "Starts at dawn"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#dusk> a tnits:FuzzyTimeType ;
+         rdfs:label "dusk"@en ;
+         skos:definition "Starts at dusk"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#school> a tnits:FuzzyTimeType ;
+         rdfs:label "school"@en ;
+         skos:definition "Starts at any school period (date and hour)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#holiday> a tnits:FuzzyTimeType ;
+         rdfs:label "holiday"@en ;
+         skos:definition "Starts at any holiday"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#winter> a tnits:FuzzyTimeType ;
+         rdfs:label "winter"@en ;
+         skos:definition "Beginning of winter"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#spring> a tnits:FuzzyTimeType ;
+         rdfs:label "spring"@en ;
+         skos:definition "Beginning of spring"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#summer> a tnits:FuzzyTimeType ;
+         rdfs:label "summer"@en ;
+         skos:definition "Beginning of summer"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#autumn> a tnits:FuzzyTimeType ;
+         rdfs:label "autumn"@en ;
+         skos:definition "Beginning of autumn"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#highTide> a tnits:FuzzyTimeType ;
+         rdfs:label "highTide"@en ;
+         skos:definition "Beginning of high tide"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#lowTide> a tnits:FuzzyTimeType ;
+         rdfs:label "lowTide"@en ;
+         skos:definition "Beginning of low tide"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#highWater> a tnits:FuzzyTimeType ;
+         rdfs:label "highWater"@en ;
+         skos:definition "Beginning of high water"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#lowWater> a tnits:FuzzyTimeType ;
+         rdfs:label "lowWater"@en ;
+         skos:definition "Beginning of low water"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#wetSeason> a tnits:FuzzyTimeType ;
+         rdfs:label "wetSeason"@en ;
+         skos:definition "Beginning of wet season"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#drySeason> a tnits:FuzzyTimeType ;
+         rdfs:label "drySeason"@en ;
+         skos:definition "Beginning of dry season"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#peakHours> a tnits:FuzzyTimeType ;
+         rdfs:label "peakHours"@en ;
+         skos:definition "Start of peak hours, peak hours include rush hour and activity/ scheduled event based times. These would vary by location and by season"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#offPeakHours> a tnits:FuzzyTimeType ;
+         rdfs:label "offPeakHours"@en ;
+         skos:definition "start of off-peak hours"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#day> a tnits:FuzzyTimeType ;
+         rdfs:label "day"@en ;
+         skos:definition "Start of day"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuzzyTimeTypeCode#night> a tnits:FuzzyTimeType ;
+         rdfs:label "night"@en ;
+         skos:definition "Start of night"@en .
+         
+

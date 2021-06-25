@@ -1,0 +1,58 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list VehicleUsageCode"@en ;
+	dcterms:title "TN-ITS VehicleUsageCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for types of usage of vehicles." .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#agricultural> a tnits:VehicleUsage ;
+         rdfs:label "agricultural"@en ;
+         skos:definition "Vehicle used for agricultural purposes. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#carSharing> a tnits:VehicleUsage ;
+         rdfs:label "carSharing"@en ;
+         skos:definition "Vehicles operated by a car-sharing company."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#cityLogistics> a tnits:VehicleUsage ;
+         rdfs:label "cityLogistics"@en ;
+         skos:definition "Vehicles that are used to deliver goods in a city area."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#commercial> a tnits:VehicleUsage ;
+         rdfs:label "commercial"@en ;
+         skos:definition "Vehicle which is limited to non-private usage or public transport usage.   "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#emergencyServices> a tnits:VehicleUsage ;
+         rdfs:label "emergencyServices"@en ;
+         skos:definition "Vehicle used by the emergency services. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#military> a tnits:VehicleUsage ;
+         rdfs:label "military"@en ;
+         skos:definition "Vehicle used by the military. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#nonCommercial> a tnits:VehicleUsage ;
+         rdfs:label "nonCommercial"@en ;
+         skos:definition "Vehicle used for non-commercial or private purposes.    "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#patrol> a tnits:VehicleUsage ;
+         rdfs:label "patrol"@en ;
+         skos:definition "Vehicle used as part of a patrol service, e.g. road operator or automobile association patrol vehicle.   "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#recoveryServices> a tnits:VehicleUsage ;
+         rdfs:label "recoveryServices"@en ;
+         skos:definition "Vehicle used to provide a recovery service. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#roadMaintenanceOrConstruction> a tnits:VehicleUsage ;
+         rdfs:label "roadMaintenanceOrConstruction"@en ;
+         skos:definition "Vehicle used for road maintenance or construction work purposes. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#roadOperator> a tnits:VehicleUsage ;
+         rdfs:label "roadOperator"@en ;
+         skos:definition "Vehicle used by the road operator. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleUsageCode#taxi> a tnits:VehicleUsage ;
+         rdfs:label "taxi"@en ;
+         skos:definition "Vehicle used to provide an authorised taxi service."@en .
+         
+

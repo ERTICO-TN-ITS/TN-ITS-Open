@@ -1,0 +1,37 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list RoadFeatureSourceCode"@en ;
+	dcterms:title "TN-ITS RoadFeatureSourceCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the various types source concerning road features" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#fixedPlateRoadSign> a tnits:RoadFeatureSource ;
+         rdfs:label "fixedPlateRoadSign"@en ;
+         skos:definition "Fixed (permanent, often metal) road sign, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#variableMessageSign> a tnits:RoadFeatureSource ;
+         rdfs:label "variableMessageSign"@en ;
+         skos:definition "Road sign displayed on a variable message sign or other dynamic display equipment, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#temporaryRoadSign> a tnits:RoadFeatureSource ;
+         rdfs:label "temporaryRoadSign"@en ;
+         skos:definition "Temporary (non-permanent) road sign, as recognised under the Vienna Convention on Road Signs and Signals, 1968"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#regulation> a tnits:RoadFeatureSource ;
+         rdfs:label "regulation"@en ;
+         skos:definition "Road traffic regulation"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureSourceCode#otherRoadFeature> a tnits:RoadFeatureSource ;
+         rdfs:label "otherRoadFeature"@en ;
+         skos:definition "Other road feature, not covered by the other enumerations"@en .
+         
+

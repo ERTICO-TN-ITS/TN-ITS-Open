@@ -1,0 +1,40 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list VehicleEquipmentCode"@en ;
+	dcterms:title "TN-ITS VehicleEquipmentCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the vehicle equipment types" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#notUsingSnowChains> a tnits:VehicleEquipment ;
+         rdfs:label "notUsingSnowChains"@en ;
+         skos:definition "Vehicle not using snow chains."@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#notUsingSnowChainsOrTyres> a tnits:VehicleEquipment ;
+         rdfs:label "notUsingSnowChainsOrTyres"@en ;
+         skos:definition "Vehicle not using either snow tyres or snow chains"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#snowChainsInUse> a tnits:VehicleEquipment ;
+         rdfs:label "snowChainsInUse"@en ;
+         skos:definition "Vehicle using snow chains. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#snowTyresInUse> a tnits:VehicleEquipment ;
+         rdfs:label "snowTyresInUse"@en ;
+         skos:definition "Vehicle using snow tyres or snow chains. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#snowChainsOrTyresInUse> a tnits:VehicleEquipment ;
+         rdfs:label "snowChainsOrTyresInUse"@en ;
+         skos:definition "Vehicle using snow tyres. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/VehicleEquipmentCode#withoutSnowTyresOrChainsOnBoard> a tnits:VehicleEquipment ;
+         rdfs:label "withoutSnowTyresOrChainsOnBoard"@en ;
+         skos:definition "Vehicle which is not carrying on board snow tyres orchains"@en .
+         
+

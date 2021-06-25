@@ -1,0 +1,43 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list WeatherTypeCode"@en ;
+	dcterms:title "TN-ITS WeatherTypeCode"@en ;
+	dcterms:abstract "Types of weather conditions which affect driving conditions." .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#fog> a tnits:WeatherType ;
+         rdfs:label "fog"@en ;
+         skos:definition "Fog, with reduced visibility"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#ice> a tnits:WeatherType ;
+         rdfs:label "ice"@en ;
+         skos:definition "Increased skid risk due to ice (of any kind)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#rain> a tnits:WeatherType ;
+         rdfs:label "rain"@en ;
+         skos:definition "Rain, with reduced visibility, and increased skid risk"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#airPollution> a tnits:WeatherType ;
+         rdfs:label "airPollution"@en ;
+         skos:definition "Air pollution"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#snow> a tnits:WeatherType ;
+         rdfs:label "snow"@en ;
+         skos:definition "Snow, with reduced visibility, and increased skid risk"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#wind> a tnits:WeatherType ;
+         rdfs:label "wind"@en ;
+         skos:definition "Wind conditions on the road"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/WeatherTypeCode#wet> a tnits:WeatherType ;
+         rdfs:label "wet"@en ;
+         skos:definition "Road surface is wet"@en .
+         
+

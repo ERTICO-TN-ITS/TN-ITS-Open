@@ -1,0 +1,34 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list PaymentMethodCode"@en ;
+	dcterms:title "TN-ITS PaymentMethodCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the methods of payment" .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode#cash> a tnits:PaymentMethod ;
+         rdfs:label "cash"@en ;
+         skos:definition "Payment using cash"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode#creditCard> a tnits:PaymentMethod ;
+         rdfs:label "creditCard"@en ;
+         skos:definition "Payment using credit card"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode#tollStickers> a tnits:PaymentMethod ;
+         rdfs:label "tollStickers"@en ;
+         skos:definition "Payment using (pre-paid) toll stickers"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/PaymentMethodCode#electronicTollPayment> a tnits:PaymentMethod ;
+         rdfs:label "electronicTollPayment"@en ;
+         skos:definition "Payment using some electronic form"@en .
+         
+

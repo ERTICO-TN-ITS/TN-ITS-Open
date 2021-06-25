@@ -1,0 +1,76 @@
+﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode> .
+
+<http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode> a owl:Ontology ;
+	dc:creator "TN-ITS" ;
+	dc:date "20210622" ;
+	dc:description "Code list values for the TN-ITS code list FuelTypeCode"@en ;
+	dcterms:title "TN-ITS FuelTypeCode"@en ;
+	dcterms:abstract "Specifies the available list of enumerations for the type of fuel used by the vehicle." .
+    
+    
+<http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#all> a tnits:FuelType ;
+         rdfs:label "all"@en ;
+         skos:definition "All fuel types"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#battery> a tnits:FuelType ;
+         rdfs:label "battery"@en ;
+         skos:definition "Battery"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#biodiesel> a tnits:FuelType ;
+         rdfs:label "biodiesel"@en ;
+         skos:definition "Biodiesel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#diesel> a tnits:FuelType ;
+         rdfs:label "diesel"@en ;
+         skos:definition "Diesel"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#dieselBatteryHybrid> a tnits:FuelType ;
+         rdfs:label "dieselBatteryHybrid"@en ;
+         skos:definition "Diesel and battery hybrid"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#ethanol> a tnits:FuelType ;
+         rdfs:label "ethanol"@en ;
+         skos:definition "Ethanol"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#hydrogen> a tnits:FuelType ;
+         rdfs:label "hydrogen"@en ;
+         skos:definition "Hydrogen"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#liquidGas> a tnits:FuelType ;
+         rdfs:label "liquidGas"@en ;
+         skos:definition "Liquid gas of any type including LPG. "@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#lpg> a tnits:FuelType ;
+         rdfs:label "lpg"@en ;
+         skos:definition "Liquid petroleum gas"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#methane> a tnits:FuelType ;
+         rdfs:label "methane"@en ;
+         skos:definition "Methane gas"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrol> a tnits:FuelType ;
+         rdfs:label "petrol"@en ;
+         skos:definition "Petrol"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrol95Octane> a tnits:FuelType ;
+         rdfs:label "petrol95Octane"@en ;
+         skos:definition "Petrol (95 Octane)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrol98Octane> a tnits:FuelType ;
+         rdfs:label "petrol98Octane"@en ;
+         skos:definition "Petrol (98 Octane)"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrolBatteryHybrid> a tnits:FuelType ;
+         rdfs:label "petrolBatteryHybrid"@en ;
+         skos:definition "Petrol and battery hybrid"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrolLeaded> a tnits:FuelType ;
+         rdfs:label "petrolLeaded"@en ;
+         skos:definition "Leaded petrol"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#petrolUnleaded> a tnits:FuelType ;
+         rdfs:label "petrolUnleaded"@en ;
+         skos:definition "Unleaded petrol"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#unknown> a tnits:FuelType ;
+         rdfs:label "unknown"@en ;
+         skos:definition "Unknown"@en .
+         <http://spec.tn-its.eu/owl/tnits-owl/FuelTypeCode#other> a tnits:FuelType ;
+         rdfs:label "other"@en ;
+         skos:definition "Other forms of fuel, not otherwise listed"@en .
+         
+
