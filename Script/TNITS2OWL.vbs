@@ -2,21 +2,12 @@ option explicit
 
 !INC Local Scripts.EAConstants-VBScript
 
-'
-' This code has been included from the default Workflow template.
-' If you wish to modify this template, it is located in the Config\Script Templates
-' directory of your EA install path.   
-'
 ' Script Name: TNITS2OWL
 ' Author: Knut Jetlund
 ' Purpose: Export the TN-ITS UML Model to OWL
 ' Date: 20210615
 '
-const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
-const owlPath = "C:\DATA\GitHub\vegvesen\TN-ITS\OWL"
-const filename = "tnits-owl"
-const coreClass = "tnitsClass"
-const strPrefix = "tnits"
+!INC TN-ITS.Parameters
 
 dim objFSO, objOTLFile
 dim thePackage as EA.Package
@@ -60,7 +51,7 @@ sub heading
 	' --------------------------------------------------------------------
 	
 	'objOTLFile.WriteText "	owl:versionInfo ""2.23"" ;" & vbCrLf
-	objOTLFile.WriteText "	dc:creator :TN-ITS ;" & vbCrLf
+	objOTLFile.WriteText "	dc:creator ""TN-ITS"" ;" & vbCrLf
 	objOTLFile.WriteText "	dc:date """ & left(Now,10) & """ ;" & vbCrLf
 	objOTLFile.WriteText "	dc:description ""Ontology for the TN-ITS model for exchange of changes in road attributes""@en ;" & vbCrLf
 	objOTLFile.WriteText "	dcterms:title ""TN-ITS""@en ;" & vbCrLf
@@ -353,72 +344,6 @@ sub main
 		objOTLFile.WriteText "         rdfs:label """ & lstDP.GetKey(i) & """@en ." & vbCrLf 	
 	next
 	
-	'*********************************
-	'Assign properties with multiplicities and ranges to classes (restrictions)
-	'nvdb:vot99 rdfs:subClassOf [ a owl:Restriction ;
-	'			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-	'			owl:onDataRange xsd:double ;
-	'			owl:onProperty nvdb:et1371 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl8392_votkat303 ;
-	'			owl:onProperty nvdb:et8392 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl1295_votkat303 ;
-	'			owl:onProperty nvdb:et1295 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl4517_votkat303 ;
-	'			owl:onProperty nvdb:et4517 ],
-	'		[ a owl:Restriction ;
-	'			owl:onClass nvdb:kl1152_votkat303 ;
-	'			owl:onProperty nvdb:et1152 ;
-	'			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-	'		[ a owl:Restriction ;
-	'			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-	'			owl:onClass nvdb:kl4517_votkat303 ;
-	'			owl:onProperty nvdb:et4517 ],
-	'		[ a owl:Restriction ;
-	'			owl:onClass nvdb:kl2266_votkat303 ;
-	'			owl:onProperty nvdb:et2266 ;
-	'			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom xsd:integer ;
-	'			owl:onProperty nvdb:et2260 ],
-	'		[ a owl:Restriction ;
-	'			owl:onClass nvdb:kl4520_votkat303 ;
-	'			owl:onProperty nvdb:et4520 ;
-	'			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl4520_votkat303 ;
-	'			owl:onProperty nvdb:et4520 ],
-	'		[ a owl:Restriction ;
-	'			owl:onClass nvdb:kl4514_votkat303 ;
-	'			owl:onProperty nvdb:et4514 ;
-	'			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-	'		[ a owl:Restriction ;
-	'			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-	'			owl:onClass nvdb:kl8392_votkat303 ;
-	'			owl:onProperty nvdb:et8392 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl2266_votkat303 ;
-	'			owl:onProperty nvdb:et2266 ],
-	'		[ a owl:Restriction ;
-	'			owl:onClass nvdb:kl1295_votkat303 ;
-	'			owl:onProperty nvdb:et1295 ;
-	'			owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom xsd:double ;
-	'			owl:onProperty nvdb:et1371 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl4514_votkat303 ;
-	'			owl:onProperty nvdb:et4514 ],
-	'		[ a owl:Restriction ;
-	'			owl:allValuesFrom nvdb:kl1152_votkat303 ;
-	'			owl:onProperty nvdb:et1152 ],
-	'		[ a owl:Restriction ;
-	'			owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-	'			owl:onDataRange xsd:integer ;
-    '       owl:onProperty nvdb:et2260 ] .
-
 	dim fn
 	'filename = owlPath & "\" & filetime & "_" & filename & ".ttl"
 	fn = owlPath & "\" & filename & ".ttl"
