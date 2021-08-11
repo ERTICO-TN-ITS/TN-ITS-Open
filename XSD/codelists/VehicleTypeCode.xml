@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="VehicleTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for types of vehicle.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">VehicleTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="anyVehicle">
+			<gml:description>Vehicle of any type.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">anyVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="articulatedVehicle">
+			<gml:description>Transport vehicle with articulation between component carriage parts of the vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">articulatedVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="bicycle">
+			<gml:description>Pedal-driven two-wheeled vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">bicycle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="moped">
+			<gml:description>Moped (a two wheeled motor vehicle characterized by a small engine typically less than 50cc and by normally having pedals). </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">moped</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorcycle">
+			<gml:description>Two-wheeled motor vehicle without pedal propulsion</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">motorcycle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorscooter">
+			<gml:description>Motorscooter (a two wheeled motor vehicle characterized by a step-through frame and small diameter wheels). </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">motorscooter</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorcycleWithSideCar">
+			<gml:description>Three wheeled vehicle comprising a motorcycle with an attached side car. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">motorcycleWithSideCar</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="car">
+			<gml:description>Small, often privately owned, typically four wheel vehicle for transport of persons and limited goods.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">car</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="largeCar">
+			<gml:description>See car, typically greater than 4.5 metres in length</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">largeCar</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="passengerCar">
+			<gml:description>See car</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">passengerCar</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="smallCar">
+			<gml:description>See car, typically greater than 3.75 metres in length</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">smallCar</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="caravan">
+			<gml:description>Non-motorised trailer for towing, intended for human occupancy </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">caravan</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="carOrLightVehicle">
+			<gml:description>Car or light vehicle. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">carOrLightVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="carWithCaravan">
+			<gml:description>Car towing a caravan. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">carWithCaravan</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="carWithTrailer">
+			<gml:description>Car towing a trailer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">carWithTrailer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="bus">
+			<gml:description>Vehicle for mass road transport</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">bus</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="articulatedBus">
+			<gml:description>Articulated vehicle. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">articulatedBus</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="fourWheelDrive">
+			<gml:description>Four wheel drive vehicle. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">fourWheelDrive</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="highSidedVehicle">
+			<gml:description>High sided vehicle. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">highSidedVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="heavyGoodsVehicle">
+			<gml:description>Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">heavyGoodsVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="heavyGoodsVehicleWithTrailer">
+			<gml:description>Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods with attached towed trailer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">heavyGoodsVehicleWithTrailer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="heavyDutyTransporter">
+			<gml:description>Large road vehicle, primarily intended for the transport of other vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">heavyDutyTransporter</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="heavyVehicle">
+			<gml:description>See Heavy Goods Vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">heavyVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lightCommercialVehicle">
+			<gml:description>Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">lightCommercialVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="largeGoodsVehicle">
+			<gml:description>See Heavy Goods Vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">largeGoodsVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lightCommercialVehicleWithTrailer">
+			<gml:description>Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods, with attached towed trailer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">lightCommercialVehicleWithTrailer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="longHeavyLorry">
+			<gml:description>See Heavy Goods Vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">longHeavyLorry</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lorry">
+			<gml:description>Lorry of any type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">lorry</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="van">
+			<gml:description>See light commercial vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">van</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="minibus">
+			<gml:description>Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of peoeple</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">minibus</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorhome">
+			<gml:description>Motorised vehicle, intended for human occupancy </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">motorhome</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="agriculturalVehicle">
+			<gml:description>Vehicle normally used for agricultural purposes, e.g. tractor, combined harvester etc. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">agriculturalVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="constructionOrMaintenanceVehicle">
+			<gml:description>Vehicle normally used for construction or maintenance purposes, e.g. digger, excavator, bulldozer, lorry mounted crane etc.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">constructionOrMaintenanceVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="tanker">
+			<gml:description>Vehicle with large tank for carrying bulk liquids. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">tanker</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="twoWheeledVehicle">
+			<gml:description>Two wheeled vehicle of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">twoWheeledVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="threeWheeledVehicle">
+			<gml:description>Three wheeled vehicle of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">threeWheeledVehicle</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="vehicleWithCaravan">
+			<gml:description>Vehicle (of unspecified type) towing a caravan. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">vehicleWithCaravan</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="vehicleWithCatalyticConverter">
+			<gml:description>Vehicle with catalytic converter. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">vehicleWithCatalyticConverter</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="vehicleWithoutCatalyticConverter">
+			<gml:description>Vehicle without catalytic converter. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">vehicleWithoutCatalyticConverter</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="vehicleWithTrailer">
+			<gml:description>Vehicle (of unspecified type) towing a trailer. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">vehicleWithTrailer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="withEvenNumberedRegistrationPlates">
+			<gml:description>Vehicle with even numbered registration plate. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">withEvenNumberedRegistrationPlates</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="withOddNumberedRegistrationPlates">
+			<gml:description>Vehicle with odd numbered registration plate. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">withOddNumberedRegistrationPlates</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="metro">
+			<gml:description>Train-like transport vehicle limited to a rail network within a limited area; at surface, below surface or above surface</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">metro</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lightRail">
+			<gml:description>Train-like transport vehicle limited to a rail network within a limited area; does not include heavy rail lines</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">lightRail</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="trailer">
+			<gml:description>Non-motorised vehicle, intended to be towed</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">trailer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="tram">
+			<gml:description>Train-like mass transport vehicle, running on rails, typically partially or wholly on the road network</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">tram</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="trolleyBus">
+			<gml:description>Bus-like mass transport vehicle hocked up to an electrical network for power supply</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">trolleyBus</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="articulatedTrolleyBus">
+			<gml:description>Bus-like mass transport vehicle hocked up to an electrical network for power supply, with articulation between component carriage parts of the vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">articulatedTrolleyBus</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="unknown">
+			<gml:description>Unknown vehicle type</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">unknown</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="other">
+			<gml:description>Other than as defined in this enumeration. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleTypeCode">other</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

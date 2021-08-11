@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="22.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="22.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="TN-ITS.xpr">
+        <folder path="../../../ISO%20TC211/"/>
+        <folder path="../../../jetgeo/"/>
+        <folder path="../Trafikverket/"/>
+        <folder path="../UML%20(EA)/"/>
+        <folder path="."/>
+        <folder path="../../../../../Users/knjetl/Downloads/"/>
+        <folder path="../../../../../Users/knjetl/OneDrive%20-%20Statens%20Vegvesen/PhD/Forskning/XSDs/SCHEMAS_OPENGIS_NET/"/>
+    </projectTree>
+</project>

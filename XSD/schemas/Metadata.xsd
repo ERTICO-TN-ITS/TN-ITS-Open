@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Change history:-->
+<!--Date             Version           Author     Change-->
+<!--==============================================================================================-->
+<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<!--2019-10-30                 KJe      Set new URLs to ISO 19115 schema    -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:tnits="http://spec.tn-its.eu/schemas/" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+  elementFormDefault="qualified" targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="TNITS.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+    schemaLocation="https://schemas.isotc211.org/19115/-3/mdb/2.0/metadataBase.xsd"/>
+
+  <element name="Metadata" substitutionGroup="gml:AbstractObject" type="tnits:MetadataType"/>
+  <complexType name="MetadataType">
+    <sequence>
+      <element name="datasetId" type="string"/>
+      <element name="datasetCreationTime" type="dateTime"/>
+      <element name="iso19115Metadata" type="mdb:MD_Metadata_PropertyType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="MetadataPropertyType">
+    <sequence>
+      <element ref="tnits:Metadata"/>
+    </sequence>
+  </complexType>
+</schema>

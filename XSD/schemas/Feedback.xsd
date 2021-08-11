@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Change history:-->
+<!--Date             Version           Author     Change-->
+<!--==============================================================================================-->
+<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<!--2018-01-10        01                 KJe      Manually change from gml:CodeType to gml:ReferenceType     -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:tnits="http://spec.tn-its.eu/schemas/" elementFormDefault="qualified"
+  targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="RoadFeatures.xsd"/>
+  <include schemaLocation="TNITS.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FeedbackInformation" substitutionGroup="gml:AbstractFeature"
+    type="tnits:FeedbackInformationType"/>
+  <complexType name="FeedbackInformationType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="datasetIdentifier" type="string"/>
+          <element name="processed" type="dateTime"/>
+          <element name="log">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="tnits:FeedbackLog"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeedbackInformationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:FeedbackInformation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FeedbackLog" substitutionGroup="gml:AbstractFeature" type="tnits:FeedbackLogType"/>
+  <complexType name="FeedbackLogType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="events">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="tnits:FeedbackLogEvent"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element name="summary" type="tnits:SummaryInfoPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeedbackLogPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:FeedbackLog"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="FeedbackLogEvent" substitutionGroup="gml:AbstractFeature"
+    type="tnits:FeedbackLogEventType"/>
+  <complexType abstract="true" name="FeedbackLogEventType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeedbackLogEventPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:FeedbackLogEvent"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FreeTextEvent" substitutionGroup="tnits:FeedbackLogEvent"
+    type="tnits:FreeTextEventType"/>
+  <complexType name="FreeTextEventType">
+    <complexContent>
+      <extension base="tnits:FeedbackLogEventType">
+        <sequence>
+          <element name="text" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FreeTextEventPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:FreeTextEvent"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeneralFeedbackEvent" substitutionGroup="tnits:FeedbackLogEvent"
+    type="tnits:GeneralFeedbackEventType"/>
+  <complexType name="GeneralFeedbackEventType">
+    <complexContent>
+      <extension base="tnits:FeedbackLogEventType">
+        <sequence>
+          <element name="eventCode" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2"
+                  >tnits:GeneralFeedbackEventCode</targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeneralFeedbackEventPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:GeneralFeedbackEvent"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadFeatureEvent" substitutionGroup="tnits:FeedbackLogEvent"
+    type="tnits:RoadFeatureEventType"/>
+  <complexType name="RoadFeatureEventType">
+    <complexContent>
+      <extension base="tnits:FeedbackLogEventType">
+        <sequence>
+          <element name="roadFeatureId" type="tnits:RoadFeatureIdPropertyType"/>
+          <element name="roadFeaturePropertyType" type="gml:ReferenceType"/>
+          <element name="eventCode" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadFeatureEventPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:RoadFeatureEvent"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SummaryInfo" substitutionGroup="gml:AbstractObject" type="tnits:SummaryInfoType"/>
+  <complexType name="SummaryInfoType">
+    <sequence>
+      <element name="nrSuccess" type="integer"/>
+      <element name="nrFail" type="integer"/>
+    </sequence>
+  </complexType>
+  <complexType name="SummaryInfoPropertyType">
+    <sequence>
+      <element ref="tnits:SummaryInfo"/>
+    </sequence>
+  </complexType>
+</schema>

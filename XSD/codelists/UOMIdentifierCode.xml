@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="UOMIdentifierCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of preferred enumerations for identifiers for units of measure</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">UOMIdentifierCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="kph">
+			<gml:description>Kilometres per hour</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">kph</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="mph">
+			<gml:description>Miles per hour</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">mph</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="m">
+			<gml:description>Metres</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">m</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="yd">
+			<gml:description>Yards</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">yd</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="mi">
+			<gml:description>Miles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">mi</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="km">
+			<gml:description>Kilometres</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">km</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ftin">
+			<gml:description>Feet and inches
+
+Note: To enable this to be coded into a single value the following convention shall be followed.  The feet value is encoded as an integer value and the is suffixed by the inches value which is given as a two digit decimal value, where leading zeros are maintained [e.g. .00, .01, .02, .03, .04, .05, .06, .07, .08, .09, .10, .11, .12].  The value .99 shall indicate the no inches value is provided. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">ftin</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="t">
+			<gml:description>Tonnes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">t</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="kg">
+			<gml:description>Kilogrammes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/UOMIdentifierCode">kg</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

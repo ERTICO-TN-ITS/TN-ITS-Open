@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadFeatureTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the various types of road features</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeatureTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="pedestrianCrossing">
+			<gml:description>A specified part of a road where pedestrians have right of way to cross</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">pedestrianCrossing</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="restrictionForVehicles">
+			<gml:description>Restriction for vehicles regarding weight, height or length</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">restrictionForVehicles</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="speedLimit">
+			<gml:description>Location of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">speedLimit</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfSpeedLimit">
+			<gml:description>Location of the start of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfSpeedLimit</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfSpeedLimit">
+			<gml:description>Location of the end of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfSpeedLimit</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="prohibitionOfOvertaking">
+			<gml:description>Indicating a zone where overtaking of other vehicles is prohibited.
+
+NOTE: Overtaking is normally interpreted as crossing the central dividing line of a single carriageway two-way road, to facilitate the overtaking of another slower-moving vehicle, but can also involve other forms of restriction such as lorries being limited to use of specified slower lanes, and not being permitted to move to other lanes.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">prohibitionOfOvertaking</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfProhibitionOfOvertaking">
+			<gml:description>Indicating the start of a zone which is subject to a prohibition of overtaking.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfProhibitionOfOvertaking</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="useOfAudibleWarningDevicesProhibited">
+			<gml:description>Indicating a zone which is subject to a prohibition on the use of audible warning devices.
+
+NOTE: Audible warning devices include vehicle horns.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">useOfAudibleWarningDevicesProhibited</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfUseOfAudibleWarningDevicesProhibited">
+			<gml:description>The start of a zone which is subject to a prohibition on the use of audible warning devices.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfUseOfAudibleWarningDevicesProhibited</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfProhibitionOrRestriction">
+			<gml:description>A zone which is the end of prohibition or restriction.
+
+NOTE: This is considered to apply to any single or multiple prohibitions or restrictions. In the case where the end of prohibitions or restrictions coincide, this location reference is used to indicate the end of at least one prohibition or restriction.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfProhibitionOrRestriction</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="prohibitedTurn">
+			<gml:description>Indicating a prohibited turning motion and a junction of roads.
+
+NOTE: Turn restrictions types come in many forms and can be dependent of the type of vehicle; its usage; its load; vehicle occupancy; the capabilities permitted under the licence of the vehicle driver’s driver licence permissions; vehicle physical characteristics; propulsion type; the restrictions may also be time and day dependent, weather dependent, etc.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">prohibitedTurn</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="passingWithoutStoppingProhibited">
+			<gml:description>Indicating a zone which is subject to a prohibition of continuing without coming to a stop.
+
+Note: this may be in common use at toll plazas, police and other checkpoints, custom checkpoints, etc</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">passingWithoutStoppingProhibited</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorway">
+			<gml:description>Indicating the presence of a motorway.
+
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+ 
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+ 
+     (i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means; 
+ 
+    (ii) Does not cross at level with any road, railway or tramway track, or footpath; and 
+ 
+   (iii) Is specially signposted as a motorway;</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">motorway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfMotorway">
+			<gml:description>indicating the start of a motorway.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfMotorway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfMotorway">
+			<gml:description>indicating the end of a motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfMotorway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="noEntry">
+			<gml:description>indicating no entry to a section of road.
+
+NOTE: No entry restrictions may be qualified by a range of conditions, including but not limited to: time/day/date; vehicle type; vehicle usage, etc</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">noEntry</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="closedToAllVehiclesInBothDirections">
+			<gml:description>indicating a section of road is closed to all vehicles in both directions of travel.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">closedToAllVehiclesInBothDirections</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="directionToBeFollowed">
+			<gml:description>indicating a mandatory route or turn to be followed.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">directionToBeFollowed</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="snowChainsCompulsory">
+			<gml:description>indicating a zone where the use of snow chains or equivalent winter equipment is mandatory.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">snowChainsCompulsory</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="compulsoryDirectionForVehicleCarryingDangerousGoods">
+			<gml:description>indicating a mandatory route or turn to be followed for vehicles carrying Dangerous Goods.
+
+Note: See European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR) in Europe.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">compulsoryDirectionForVehicleCarryingDangerousGoods</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadForMotorVehicles">
+			<gml:description>indicating a zone which is a road intended for use by motor vehicles.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">roadForMotorVehicles</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfRoadForMotorVehicles">
+			<gml:description>indicating the start of a zone which is a road intended for use by motor vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfRoadForMotorVehicles</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfRoadForMotorVehicles">
+			<gml:description>indicating the end of a zone which is a road intended for use by motor vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfRoadForMotorVehicles</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="builtUpArea">
+			<gml:description>indicating a zone which is of an urban developed nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a built-up area.
+
+NOTE: Taking into account e.g. the UK Highway Code, a built-up area is a settled area in which the speed limit of a road is automatically 30 mph (48 km/h). These roads are known as 'restricted roads' and are identified by the presence of street lights.
+
+That means that there is a traffic regulation existing that assigns automatically a speed limit to a specific road (by law).</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">builtUpArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfBuiltUpArea">
+			<gml:description>indicating the start of a zone which is of an urban developed nature.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfBuiltUpArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfBuiltUpArea">
+			<gml:description>indicating the end of a zone which is of an urban developed nature.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfBuiltUpArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="residentialArea">
+			<gml:description>indicating a zone which is of a residential housing nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a residential area.
+
+A residential area is a road or a zone where most of the buildings are houses and is mostly a traffic-calmed sector, where automatically specific traffic regulations apply, like speed limits.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">residentialArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="startOfResidentialArea">
+			<gml:description>indicating the start of a zone which is of a residential housing nature</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">startOfResidentialArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="endOfResidentialArea">
+			<gml:description>indicating the end of a zone which is of a residential housing nature.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">endOfResidentialArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadSign">
+			<gml:description>indicating the presence of a road sign </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">roadSign</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="tollStation">
+			<gml:description>Toll or road usage fee collection point known as toll booths, toll houses, plazas, stations or gates</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">tollStation</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="tollRoad">
+			<gml:description>Public or private roadway for which a road-usage fee or toll is assessed for passage. There are various fee charging concepts and toll collection methods available</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">tollRoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="parkingSite">
+			<gml:description>named according to DATEX II Package ParkingSite</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">parkingSite</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="chargingPoint">
+			<gml:description>Electric vehicle charging point, also called EV charging station (element in an infrastructure that supplies electric energy for the recharging of electric vehicles).</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">chargingPoint</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="refillPointGas">
+			<gml:description>Refill point for gas is an element in an infrastructure that supplies different kind of gas fuels for recharging for natural gas vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">refillPointGas</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="publicTransportStop">
+			<gml:description>Public transport stop</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">publicTransportStop</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="transferNodeStopPoint">
+			<gml:description>Stop point at a transfer node, e.g. Airport, Railway station, where people or goods may change mode of transport (ISO 19147)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">transferNodeStopPoint</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="numberOfLanes">
+			<gml:description>The total number of lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">numberOfLanes</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadName">
+			<gml:description>The official name of the road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">roadName</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

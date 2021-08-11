@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<schema xmlns:tnitsapi="http://www.ptvag.com/tnits/dataexchange/rest"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:tnits="http://spec.tn-its.eu"
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ptvag.com/rosatte/dataexchange/rest" elementFormDefault="qualified"
+	version="2009-05-20">
+	<import namespace="http://www.w3.org/1999/xlink"
+		schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+	<annotation>
+		<documentation>Main schema file for the TN-ITS RESTful API, version 1.0</documentation>
+	</annotation>
+	<complexType name="RestDatasetRefType">
+		<attributeGroup ref="xlink:simpleAttrs"/>
+	</complexType>
+	<complexType name="RestFeedbackRefType">
+		<attributeGroup ref="xlink:simpleAttrs"/>
+	</complexType>
+	<element name="RestDatasetRefList">
+		<complexType>
+			<sequence>
+				<element name="RestDatasetRef" type="RestDatasetRefType"
+					minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="RestFeedbackRefList">
+		<complexType>
+			<sequence>
+				<element name="RestFeedbackRef" type="RestFeedbackRefType"
+					minOccurs="0" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

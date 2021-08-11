@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:tnits="http://spec.tn-its.eu/schemas/" elementFormDefault="qualified"
+  targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="TNITS.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <element name="UpdateInfo" substitutionGroup="gml:AbstractObject" type="tnits:UpdateInfoType"/>
+  <complexType name="UpdateInfoType">
+    <sequence>
+      <element name="type" type="tnits:UpdateTypeType"/>
+    </sequence>
+  </complexType>
+  <complexType name="UpdateInfoPropertyType">
+    <sequence>
+      <element ref="tnits:UpdateInfo"/>
+    </sequence>
+  </complexType>
+  <simpleType name="UpdateTypeType">
+    <restriction base="string">
+      <enumeration value="Add"/>
+      <enumeration value="Modify"/>
+      <enumeration value="Remove"/>
+    </restriction>
+  </simpleType>
+</schema>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadFeatureEventTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the types of Road Feature Events</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeatureEventTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="decodeLocationError">
+			<gml:description>An error occured when trying to decode the location for the given safety feature</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode">decodeLocationError</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="decodeLocationErrorGeometryMismatch">
+			<gml:description>An error occured when trying to decode the location for the given safety feature due to geometry mismatch</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode">decodeLocationErrorGeometryMismatch</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="decodeLocationRoadDescriptorMismatch">
+			<gml:description>An error occured when trying to decode the location for the given safety feature due to road descriptor mismatch</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode">decodeLocationRoadDescriptorMismatch</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="illegalPropertyValue">
+			<gml:description>An error occured due to an illegal properfty value for the given safety feature</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode">illegalPropertyValue</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="success">
+			<gml:description>The safty feature was successfully integrated on the receiver side</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode">success</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

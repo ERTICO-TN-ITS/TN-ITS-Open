@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="TunnelCategoryCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the categories of tunnel access</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">TunnelCategoryCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="a">
+			<gml:description>No sign</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/TunnelCategoryCode">a</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="b">
+			<gml:description>Sign with an additional panel bearing a letter B</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/TunnelCategoryCode">b</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="c">
+			<gml:description>Sign with an additional panel bearing a letter C</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/TunnelCategoryCode">c</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="d">
+			<gml:description>Sign with an additional panel bearing a letter D</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/TunnelCategoryCode">d</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="e">
+			<gml:description>Sign with an additional panel bearing a letter E</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/TunnelCategoryCode">e</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

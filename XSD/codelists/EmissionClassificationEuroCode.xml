@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EmissionClassificationEuroCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">EmissionClassificationEuroCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro5">
+			<gml:description>Euro 5</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro5</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro5a">
+			<gml:description>Euro 5a</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro5a</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro5b">
+			<gml:description>Euro 5b</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro5b</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro6">
+			<gml:description>Euro 6</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro6</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro6a">
+			<gml:description>Euro 6a</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro6a</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro6b">
+			<gml:description>Euro 6b</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro6b</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euro6c">
+			<gml:description>Euro 6c</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euro6c</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euroV">
+			<gml:description>Euro V</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euroV</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="euroVI">
+			<gml:description>Euro VI</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">euroVI</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="other">
+			<gml:description>Other Euro classifications</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode">other</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

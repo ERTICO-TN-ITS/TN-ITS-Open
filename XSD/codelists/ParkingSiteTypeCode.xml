@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ParkingSiteTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the types of parking sites</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">ParkingSiteTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="urbanParkingSite">
+			<gml:description>parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ParkingSiteTypeCode">urbanParkingSite</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="interUrbanParkingSite">
+			<gml:description>A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ParkingSiteTypeCode">interUrbanParkingSite</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="specialLocationParkingSite">
+			<gml:description>A parking site which is located at a special location, often associated with some building</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ParkingSiteTypeCode">specialLocationParkingSite</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

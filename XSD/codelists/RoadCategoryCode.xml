@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadCategoryCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the road category types</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadCategoryCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="motorway">
+			<gml:description>Indicating the presence of a motorway.
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+(i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means;  
+(ii) Does not cross at level with any road, railway or tramway track, or footpath; and  
+(iii) Is specially signposted as a motorway;</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">motorway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadWithDualCarriageway">
+			<gml:description>Road with more than one divided carriageway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">roadWithDualCarriageway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadWithSingleCarriageway">
+			<gml:description>Road with only one carriageway. NOTE: May be with traffic in one direction or two.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">roadWithSingleCarriageway</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="urbanRoad">
+			<gml:description>Road in an urban environment</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">urbanRoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="residentialAreaRoad">
+			<gml:description>Road in a residential zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">residentialAreaRoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="otherRoad">
+			<gml:description>Road of a category other than the above</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadCategoryCode">otherRoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

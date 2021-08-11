@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="VehicleUsageCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for types of usage of vehicles.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">VehicleUsageCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="agricultural">
+			<gml:description>Vehicle used for agricultural purposes. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">agricultural</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="carSharing">
+			<gml:description>Vehicles operated by a car-sharing company.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">carSharing</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="cityLogistics">
+			<gml:description>Vehicles that are used to deliver goods in a city area.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">cityLogistics</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="commercial">
+			<gml:description>Vehicle which is limited to non-private usage or public transport usage.   </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">commercial</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="emergencyServices">
+			<gml:description>Vehicle used by the emergency services. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">emergencyServices</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="military">
+			<gml:description>Vehicle used by the military. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">military</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="nonCommercial">
+			<gml:description>Vehicle used for non-commercial or private purposes.    </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">nonCommercial</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="patrol">
+			<gml:description>Vehicle used as part of a patrol service, e.g. road operator or automobile association patrol vehicle.   </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">patrol</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="recoveryServices">
+			<gml:description>Vehicle used to provide a recovery service. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">recoveryServices</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadMaintenanceOrConstruction">
+			<gml:description>Vehicle used for road maintenance or construction work purposes. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">roadMaintenanceOrConstruction</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadOperator">
+			<gml:description>Vehicle used by the road operator. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">roadOperator</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="taxi">
+			<gml:description>Vehicle used to provide an authorised taxi service.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/VehicleUsageCode">taxi</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

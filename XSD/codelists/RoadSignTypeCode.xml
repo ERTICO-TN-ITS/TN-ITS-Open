@@ -1,0 +1,2191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadSignTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadSignTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_111">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Crossroads)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_112">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Side road right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_113">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Side road left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_113</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_115">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Forked Intersection)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_115</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_116">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(T junction)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_116</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_117">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Y intersection)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_117</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_118">
+			<gml:description>Intersection where the priority is prescribed by the general priority rule
+(Staggered intersection)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_118</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_132">
+			<gml:description>Intersection with a road the users of which must give way</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_132</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_133">
+			<gml:description>Intersection with a road the users of which must give way
+ T-shaped crossing left </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_133</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_134">
+			<gml:description>Intersection with a road the users of which must give way
+ T-shaped crossing righ </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_134</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_135">
+			<gml:description>Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower left</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_135</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_136">
+			<gml:description>Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower right</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_136</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_148">
+			<gml:description>Warning of roundabout
+(Clockwise)   </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_148</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_149">
+			<gml:description>Warning of roundabout
+(Anti-clockwise)   </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_149</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_161">
+			<gml:description>Right bend</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_161</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_162">
+			<gml:description>Left Bend</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_162</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_174">
+			<gml:description>Right turn</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_174</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_175">
+			<gml:description>Left turn </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_175</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_187">
+			<gml:description>Reverse curve (Right and left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_187</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_188">
+			<gml:description>Reverse curve (Left and right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_188</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_211">
+			<gml:description>Double bend, right</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_211</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_212">
+			<gml:description>Double bend, left</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_212</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_224">
+			<gml:description>Winding road (First to the right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_224</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_225">
+			<gml:description>Winding road (First to the left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_225</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_236">
+			<gml:description>Level crossing with gate</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_236</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_237">
+			<gml:description>Other level-crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_237</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_238">
+			<gml:description>Intersection with a tramway line</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_238</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_239">
+			<gml:description>Children</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_239</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_241">
+			<gml:description>Pedestrian crossing(right) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_241</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_242">
+			<gml:description>Elderly or disabled pedestrians likely to cross ahead</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_242</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_244">
+			<gml:description>Children(left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_244</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_245">
+			<gml:description>Pedestrians (left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_245</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_246">
+			<gml:description>Pedestrian crossing (left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_246</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_247">
+			<gml:description>Pedestrian crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_247</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_253">
+			<gml:description>Light signals</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_253</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_254">
+			<gml:description>Slippery Road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_254</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_255">
+			<gml:description>Falling rocks</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_255</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_256">
+			<gml:description>Loose gravel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_256</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_257">
+			<gml:description>Dangerous shoulder</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_257</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_258">
+			<gml:description>Falling rocks(right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_258</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_268">
+			<gml:description>Uneven road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_268</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_269">
+			<gml:description>Uneven road(hump)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_269</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_271">
+			<gml:description>Uneven road(dip)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_271</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_283">
+			<gml:description>Traffic merging from the right</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_283</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_285">
+			<gml:description>Traffic merging from left ahead</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_285</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_296">
+			<gml:description>Carriageway narrows from the right</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_296</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_297">
+			<gml:description>Carriageway narrows from the left</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_297</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_319">
+			<gml:description>Carriageway narrows</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_319</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_332">
+			<gml:description>Two-way traffic </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_332</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_346">
+			<gml:description>Steep ascent</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_346</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_347">
+			<gml:description>Dangerous descent</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_347</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_348">
+			<gml:description>Road works</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_348</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_361">
+			<gml:description>Cross-wind</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_361</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_362">
+			<gml:description>Airfiled</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_362</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_363">
+			<gml:description>Cattle or other animals crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_363</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_364">
+			<gml:description>Cattle or other animals crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_364</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_365">
+			<gml:description>Cross-wind(left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_365</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_366">
+			<gml:description>Airfiled(left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_366</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_367">
+			<gml:description>Cattle or other animals crossing(left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_367</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_368">
+			<gml:description>Cattle or other animals crossing(left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_368</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_378">
+			<gml:description>Swing bridge</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_378</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_379">
+			<gml:description>Road leads on to quar or river</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_379</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_381">
+			<gml:description>Cyclist entering or crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_381</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_382">
+			<gml:description>Cyclist entering or crossing, left</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_382</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_395">
+			<gml:description>Give way </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_395</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_396">
+			<gml:description>Distance to 'Give Way' line ahead</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_396</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_398">
+			<gml:description>Attention wrong way driver</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_398</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_411">
+			<gml:description>Signs to be placed in the immediate vicinity of level-crossings(vertical)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_411</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_412">
+			<gml:description>Signs to be placed in the immediate vicinity of level-crossings (horizontal)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_412</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_413">
+			<gml:description>Signs to be placed in the immediate vicinity of level-crossings
+Two or more tracks (vertical)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_413</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_414">
+			<gml:description>Signs to be placed in the immediate vicinity of level-crossings 
+Two or more Tracks (horizontal)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_414</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_998">
+			<gml:description>Caution</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_998</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11_999">
+			<gml:description>Other danger</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">11_999</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_111">
+			<gml:description>Priority for oncoming traffic </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_112">
+			<gml:description>STOP</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_113">
+			<gml:description>Compulsory stopping XXm ahead</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_113</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_114">
+			<gml:description>Assigned lane for light vehicles or motor cycles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_114</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_115">
+			<gml:description>Assigned lane for trucks</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_115</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_116">
+			<gml:description>Assigned lane on motorway for trailers</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_116</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_117">
+			<gml:description>Give way</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_117</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_127">
+			<gml:description>Assigned lane for trailers</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_127</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_128">
+			<gml:description>With-flow bus lane which pedal cycles may also use</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_128</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_129">
+			<gml:description>Exclusive lane for route bus</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_129</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_131">
+			<gml:description>Buses and pedal cycles only</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_131</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_132">
+			<gml:description>Priority lane for route bus</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_132</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_133">
+			<gml:description>Vehicles under XXt are permitted </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_133</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_134">
+			<gml:description>High occupancy vehicle lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_134</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_154">
+			<gml:description>Centre line</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_154</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_155">
+			<gml:description>Turning restriction on a multi-lane approach to an intersection</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_155</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_156">
+			<gml:description>Stop line</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_156</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_157">
+			<gml:description>Two-step right turn for mopeds</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_157</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_158">
+			<gml:description>Do not make two-step right turn </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_158</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_176">
+			<gml:description>Slow down</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_176</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_177">
+			<gml:description>Yield right of way </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_177</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_178">
+			<gml:description>Priority road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_178</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_411">
+			<gml:description>No entry for all vehicles, mopeds, cycles, pedestrians</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_411</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_412">
+			<gml:description>No entry</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_412</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_413">
+			<gml:description>No entry into the designated direction</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_413</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_414">
+			<gml:description>No vehicles crossing (except for vehicles turning left to enter or exit a facility off the road) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_414</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_415">
+			<gml:description>Closed to all vehicles in both directions</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_415</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_416">
+			<gml:description>No entry for for any power driven vehicle except two wheeled motor cycles without a side-car</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_416</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_417">
+			<gml:description>No entry for motor cycles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_417</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_418">
+			<gml:description>No entry for cycles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_418</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_419">
+			<gml:description>No entry for mopeds</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_419</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_421">
+			<gml:description>No entry for goods vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_421</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_422">
+			<gml:description>No entry for any power driven vehicle drawing a trailer include a semi-trailer or a single axle trailer </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_422</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_423">
+			<gml:description>No entry for pedestrians</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_423</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_424">
+			<gml:description>No entry for animal-drawn vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_424</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_425">
+			<gml:description>No entry for handcarts.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_425</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_426">
+			<gml:description>No entry for power driven agricultural vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_426</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_427">
+			<gml:description>No buses</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_427</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_429">
+			<gml:description>No entry for any power driven vehicle drawing a trailer other than a semi-trailer or a single axle trailer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_429</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_431">
+			<gml:description>No ridden or
+accompanied
+horses</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_431</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_433">
+			<gml:description>No vehicles that cannot exceed 25 km/h</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_433</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_434">
+			<gml:description>No entry for any power-driven vehicle drawing a trailer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_434</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_451">
+			<gml:description>No entry for power driven vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_451</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_452">
+			<gml:description>No entry for power driven vehicles or animal-drawn vehicles </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_452</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_453">
+			<gml:description>No entry for goods vehicles and buses</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_453</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_454">
+			<gml:description>No entry for bicycles, mopeds and disabled drivers vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_454</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_455">
+			<gml:description>No entry for vehicles that are not able or aloud to go faster than 25 km/h, no microcars, bikes, mopeds and disabled drivers vehicles.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_455</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_475">
+			<gml:description>No entry for vehicles carrying more than a certain
+quantity of explosives or readily inflammable substances</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_475</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_476">
+			<gml:description>No entry for  vehicles carrying dangerous goods for which special sign plating is required</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_476</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_477">
+			<gml:description>No entry for vehicles carrying more than a certain
+quantity of substances liable to cause water pollution</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_477</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_499">
+			<gml:description>No entry for vehicles having an overall width exceeding X
+metres</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_499</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_511">
+			<gml:description>No entry for vehicles having an overall height exceeding X
+metres</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_511</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_512">
+			<gml:description>No entry for vehicles exceeding XX t laden mass</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_512</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_513">
+			<gml:description>No entry for vehicles having a mass exceeding XX t on one axle </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_513</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_514">
+			<gml:description>No entry for vehicles or combinations of vehicles exceeding XXm in length</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_514</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_515">
+			<gml:description>Driving of vehicles less than XX m apart prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_515</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_527">
+			<gml:description>No left turns</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_527</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_528">
+			<gml:description>No right turns</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_528</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_529">
+			<gml:description>No U-turns</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_529</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_542">
+			<gml:description>Overtaking prohibited </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_542</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_543">
+			<gml:description>End of overtaking prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_543</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_544">
+			<gml:description>Overtaking by goods vehicles prohibited </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_544</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_545">
+			<gml:description>End of overtaking by goods vehicles prohibited </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_545</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_557">
+			<gml:description>Maximum speed
+limited to the figure indicated</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_557</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_558">
+			<gml:description>Use of audible warning devices prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_558</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_561">
+			<gml:description>Passing without stopping prohibited (Customs) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_561</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_562">
+			<gml:description>Stop for (Military police check)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_562</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_563">
+			<gml:description>Stop for (Police check) ) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_563</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_564">
+			<gml:description>Stop for (Toll gate)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_564</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_565">
+			<gml:description>Pedestrians crossover prohibited </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_565</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_577">
+			<gml:description>Parking prohibited </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_577</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_578">
+			<gml:description>Standing and parking prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_578</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_579">
+			<gml:description>Alternate parking(1st to 15th days) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_579</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_581">
+			<gml:description>Alternate parking (16th to 31st days)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_581</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_592">
+			<gml:description>Emergency parking only</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_592</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_593">
+			<gml:description>Entrance to a
+controlled
+parking zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_593</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_594">
+			<gml:description>Limited duration no parking zone </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_594</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_711">
+			<gml:description>Direction to be followed (Left)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_711</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_712">
+			<gml:description>Direction to be followed (Right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_712</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_713">
+			<gml:description>Direction to be followed  (straight ahead)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_713</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_714">
+			<gml:description>Direction to be followed (Right turn)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_714</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_715">
+			<gml:description>Direction to be followed (Left turn) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_715</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_716">
+			<gml:description>Direction to be followed (Right, straight)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_716</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_717">
+			<gml:description>Direction to be followed (Left, straight) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_717</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_718">
+			<gml:description>Pass this side 
+(right side)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_718</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_719">
+			<gml:description>Pass this side
+ left side</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_719</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_721">
+			<gml:description>Pass this side (Right turn, left turn) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_721</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_723">
+			<gml:description>Pass this side
+ (both sides)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_723</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_724">
+			<gml:description>Compulsory direction for vehicles carrying dangerous goods</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_724</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_743">
+			<gml:description>Direction to be followed
+(Two-way traffic) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_743</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_744">
+			<gml:description>Direction to be followed
+(One-way street)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_744</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_745">
+			<gml:description>Direction to be followed (Left) (One-way road) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_745</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_746">
+			<gml:description>Compulsory roundabout (Clockwise)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_746</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_747">
+			<gml:description>Compulsory roundabout </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_747</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_748">
+			<gml:description>Road for motor vehicles only</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_748</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_749">
+			<gml:description>Compulsary cycle track</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_749</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_751">
+			<gml:description>Abreast riding permitted </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_751</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_752">
+			<gml:description>Bicycle crossing zone </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_752</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_753">
+			<gml:description>Compulsary footpath</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_753</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_754">
+			<gml:description>Compulsay track for riders on horseback</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_754</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_772">
+			<gml:description>Pedestrian and bicycle crossing zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_772</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_773">
+			<gml:description>Compulsary cycle track and Compulsary footpath</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_773</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_795">
+			<gml:description>Compulsory minimum speed</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_795</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_796">
+			<gml:description>Snow chains compulsory</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_796</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_851">
+			<gml:description>End of priority</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_851</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_852">
+			<gml:description>Distance plate indicating end of priority</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_852</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_853">
+			<gml:description>Priority for oncoming trafic</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_853</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_861">
+			<gml:description>End of all local prohibition imposed on moving vehicles </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_861</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_862">
+			<gml:description>End of prohibition of overtaking</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_862</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_863">
+			<gml:description>End of prohibition of overtaking for goods vehicles </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_863</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_864">
+			<gml:description>End of speed limit</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_864</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_865">
+			<gml:description>End of compulsory minimum speed </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_865</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_871">
+			<gml:description>Driving on tram track permitted</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_871</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_872">
+			<gml:description>Stopping permitted </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_872</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_111">
+			<gml:description>Advance direction signs </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_112">
+			<gml:description>Advance sign showing the direction of places </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_121">
+			<gml:description>Advance direction signs(root to be followe) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_121</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_133">
+			<gml:description>Advance direction signs showing the common road name </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_133</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_168">
+			<gml:description>Motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_168</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_169">
+			<gml:description>Advance signs showing the morotway with place name</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_169</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_171">
+			<gml:description>Advance direction signs showing the exit of motorway with road number</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_171</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_172">
+			<gml:description>Advance direction signs showing the exit of motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_172</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_173">
+			<gml:description>Advance signs showing the service area on motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_173</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_174">
+			<gml:description>End of motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_174</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_184">
+			<gml:description>Multiple destinations and distances</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_184</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_185">
+			<gml:description>Sign showing the direction of places</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_185</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_186">
+			<gml:description>Sign showing the direction of places with road number</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_186</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_187">
+			<gml:description>Sign showing the direction of places on the following road </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_187</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_188">
+			<gml:description>Sign showing the direction of places with junction layout</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_188</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_189">
+			<gml:description>Sign showing the direction of places with common road names</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_189</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_222">
+			<gml:description>Direction signs showing the entrance of motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_222</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_223">
+			<gml:description>Direction signs showing the exit of motorway with the place name</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_223</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_224">
+			<gml:description> Direction signs showing the exit of motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_224</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_225">
+			<gml:description> Lane for the place on the motorway </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_225</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_226">
+			<gml:description> Service area on motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_226</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_326">
+			<gml:description>National/State motorway number</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_326</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_327">
+			<gml:description>Local motorway number</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_327</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_525">
+			<gml:description>No through road(front)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_525</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_526">
+			<gml:description>No through road(right)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_526</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_538">
+			<gml:description>Vehicles from opposite direction must give priority</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_538</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_539">
+			<gml:description>Access permitted</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_539</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_611">
+			<gml:description> Number and direction of traffic lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_611</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_612">
+			<gml:description>Lane ends </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_612</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_613">
+			<gml:description>Lane divergence</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_613</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_614">
+			<gml:description>Trucks prohibited from this lane </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_614</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_615">
+			<gml:description>Trucks prohibited from main lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_615</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_616">
+			<gml:description>Trucks prohibited from diverging lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_616</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_617">
+			<gml:description>Advance direction sign for route to be followed</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_617</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_618">
+			<gml:description>Detour</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_618</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_619">
+			<gml:description>Crawler lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_619</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_621">
+			<gml:description>Escape lane (Right type 1) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_621</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_622">
+			<gml:description>Escape lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_622</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_623">
+			<gml:description>One-way street</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_623</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_624">
+			<gml:description>Lane convergence</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_624</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_643">
+			<gml:description>Directional flows</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_643</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_644">
+			<gml:description>Directional flows and lane convergence</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_644</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_645">
+			<gml:description>Rush hour lane open 3/1</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_645</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_646">
+			<gml:description>End of rush hour lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_646</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_647">
+			<gml:description>End of rush hour lane 3/1</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_647</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_648">
+			<gml:description>Clear rush hour lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_648</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12_649">
+			<gml:description>Clear rush hour lane 3/1</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">12_649</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_651">
+			<gml:description> Closure of a traffic lane, two lanes to one (right lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_651</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_652">
+			<gml:description>Closure of a traffic lane, three lanes to two (right lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_652</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_653">
+			<gml:description>Lane convergence, four lanes to three (right lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_653</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_654">
+			<gml:description>Closure of a traffic lane, two lanes to one (left lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_654</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_655">
+			<gml:description>Closure of a traffic lane, three lanes to two (left lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_655</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_656">
+			<gml:description>Closure of a traffic lane, four lanes to three  (left lane ends)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_656</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_657">
+			<gml:description>Left lane shift onto oncoming lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_657</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_658">
+			<gml:description>Two lane right shift onto hard shoulder</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_658</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_768">
+			<gml:description>Lane closed</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_768</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_769">
+			<gml:description>Lane free</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_769</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_771">
+			<gml:description>Clear lane to left</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_771</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_772">
+			<gml:description>Clear lane to right</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_772</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_773">
+			<gml:description>End of all restrictions by electronic signs</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_773</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_781">
+			<gml:description>compulsory minimum speed applying to
+different lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_781</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_782">
+			<gml:description>compulsory minimum speed applying to one
+lane</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_782</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_783">
+			<gml:description>speed limits applying to different lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_783</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_784">
+			<gml:description>lanes reserved for buses</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_784</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_785">
+			<gml:description>One-way</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_785</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_786">
+			<gml:description>Preselection sign</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_786</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_811">
+			<gml:description>Road for motor vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_811</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_812">
+			<gml:description>End of road for motor vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_812</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_813">
+			<gml:description>Tunnel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_813</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_814">
+			<gml:description>End of tunnel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_814</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_815">
+			<gml:description>Pedestrian crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_815</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_821">
+			<gml:description>Safety evacuation area </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_821</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_822">
+			<gml:description>Emergency exit </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_822</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_823">
+			<gml:description>Fire extinguisher </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_823</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_824">
+			<gml:description>Emergency roadside telephone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_824</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_825">
+			<gml:description>Emergency call button</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_825</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_826">
+			<gml:description>Emergency stopping place</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_826</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_827">
+			<gml:description>Waiting area for slower traffic </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_827</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_828">
+			<gml:description>Safety zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_828</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_829">
+			<gml:description>Hospital</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_829</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_831">
+			<gml:description>Toll gate</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_831</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_832">
+			<gml:description>Toll zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_832</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_833">
+			<gml:description>Automatic toll gate </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_833</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_834">
+			<gml:description>Manual toll gate </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_834</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_835">
+			<gml:description>Bicycle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_835</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_836">
+			<gml:description>Aircraft/ Airport</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_836</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_837">
+			<gml:description>Departures </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_837</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_838">
+			<gml:description>Arrivals</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_838</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_839">
+			<gml:description>Helicopter/ Heliport</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_839</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_841">
+			<gml:description>Railway/ Railway station</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_841</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_842">
+			<gml:description>Rent a car</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_842</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_843">
+			<gml:description>Taxi stop</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_843</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_844">
+			<gml:description>Bus stop </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_844</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_845">
+			<gml:description>Tramway stop </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_845</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_846">
+			<gml:description>Road open or closed </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_846</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_847">
+			<gml:description>Parking space for vehicles with permission </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_847</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_851">
+			<gml:description>Parking</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_851</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_852">
+			<gml:description>Parking (Machine-charged) </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_852</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_853">
+			<gml:description>Park-and-ride point</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_853</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_854">
+			<gml:description>Car ferry</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_854</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_855">
+			<gml:description>Car train </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_855</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_861">
+			<gml:description>Beginning of a built-up area</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_861</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_862">
+			<gml:description>End of a built-up area</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_862</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_863">
+			<gml:description>Zone in which parking is prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_863</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_864">
+			<gml:description>Zone in which parking is prohibited at certain times</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_864</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_865">
+			<gml:description>Parking zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_865</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_866">
+			<gml:description>Maximum speed zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_866</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_867">
+			<gml:description>End of zone in which parking is prohibited</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_867</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_868">
+			<gml:description>End of zone in which parking is prohibited at certain times</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_868</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_869">
+			<gml:description>End of parking zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_869</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_871">
+			<gml:description>End of maximum speed zone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_871</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_872">
+			<gml:description>Residential area</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_872</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_873">
+			<gml:description>End of residential
+area</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_873</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_881">
+			<gml:description> Direction of an airfield</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_881</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_882">
+			<gml:description>Direction of a camping site.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_882</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_883">
+			<gml:description> Direction of a youth hostel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_883</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_884">
+			<gml:description>Direction of public transport</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_884</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_885">
+			<gml:description>Confirmatory signs</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_885</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_886">
+			<gml:description>Chains or snow tyres recommended</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_886</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_887">
+			<gml:description>Advisory speed"</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_887</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_889">
+			<gml:description>Advised itinerary for heavy vehicles</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_889</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_891">
+			<gml:description> Pedestrian  underpass.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_891</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_892">
+			<gml:description>Pedestrian overpass</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_892</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_893">
+			<gml:description> Exit from a motorway</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_893</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13_894">
+			<gml:description>Direction
+and distance of the nearest emergency exits</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">13_894</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_111">
+			<gml:description>Tourist information</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_112">
+			<gml:description>Police</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_113">
+			<gml:description>Facilities for wheelchair user</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_113</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_114">
+			<gml:description>Telephone</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_114</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_115">
+			<gml:description>First-aid station</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_115</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_125">
+			<gml:description>Maintenance service</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_125</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_126">
+			<gml:description>Breakdown service</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_126</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_128">
+			<gml:description>Filling station</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_128</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_129">
+			<gml:description>Filling station (+GPL)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_129</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_145">
+			<gml:description>Washroom/Restroom</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_145</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_146">
+			<gml:description>Restroom for wheelchair user</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_146</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_161">
+			<gml:description>Restaurant</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_161</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_162">
+			<gml:description>Refreshment stand/ Caféteria</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_162</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_163">
+			<gml:description>Service area</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_163</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_164">
+			<gml:description>Postal office</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_164</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_181">
+			<gml:description>Hotel or Motel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_181</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_183">
+			<gml:description>Youth hostel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_183</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_185">
+			<gml:description>Camping site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_185</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_186">
+			<gml:description>Caravan site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_186</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_187">
+			<gml:description>Camping and caravan site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_187</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_188">
+			<gml:description>Recreational vehicle sanitary station</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_188</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_189">
+			<gml:description>Picnic site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_189</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_191">
+			<gml:description>Amusement park</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_191</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_192">
+			<gml:description>Starting-point for walks</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_192</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_193">
+			<gml:description>Jogging course</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_193</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_194">
+			<gml:description>Skiing site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_194</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_195">
+			<gml:description>Ski lift</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_195</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_196">
+			<gml:description>Cable car</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_196</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_198">
+			<gml:description>Canoeing site</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_198</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_199">
+			<gml:description>Cultural assets</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_199</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_211">
+			<gml:description>Natural assets</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_211</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_212">
+			<gml:description>Museum</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_212</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_213">
+			<gml:description>View point</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_213</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21_214">
+			<gml:description>Park</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">21_214</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_111">
+			<gml:description>Rainfall</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_112">
+			<gml:description>Slippery due to snow / ice</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_114">
+			<gml:description>Poor visibility through snow, rain or fog</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_114</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_113">
+			<gml:description>Fog</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_113</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_359">
+			<gml:description>Strong side-wind</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_359</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31_361">
+			<gml:description>Flood</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">31_361</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_111">
+			<gml:description>Traffic congestion</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_111</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_112">
+			<gml:description>Accident</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_112</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_113">
+			<gml:description>Vehicle on fire</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_113</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_114">
+			<gml:description>Shed loads</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_114</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_115">
+			<gml:description>Slow moving maintenance vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_115</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd32_116">
+			<gml:description>Breakdown vehicle</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadSignTypeCode">32_116</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

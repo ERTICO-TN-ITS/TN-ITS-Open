@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Change history:-->
+<!--Date             Version           Author     Change-->
+<!--==============================================================================================-->
+<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<!--2018-01-10        01                 KJe      Manually add gml 3.3 namespace, schema and datatype     -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:gmllr="http://www.opengis.net/gml/3.3/lr" xmlns:tnits="http://spec.tn-its.eu/schemas/"
+  elementFormDefault="qualified" targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="Metadata.xsd"/>
+  <include schemaLocation="RoadFeatures.xsd"/>
+  <include schemaLocation="TNITS.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/lr"
+    schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element abstract="true" name="Dataset" substitutionGroup="gml:AbstractFeature"
+    type="tnits:DatasetType"/>
+  <complexType abstract="true" name="DatasetType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="metadata" type="tnits:MetadataPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DatasetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:Dataset"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="DatasetTypeType">
+    <restriction base="string">
+      <enumeration value="Update"/>
+      <enumeration value="Snapshot"/>
+    </restriction>
+  </simpleType>
+  <element name="FeedbackDataset" substitutionGroup="tnits:Dataset" type="tnits:FeedbackDatasetType"/>
+  <complexType name="FeedbackDatasetType">
+    <complexContent>
+      <extension base="tnits:DatasetType">
+        <sequence>
+          <element name="feedbackInfo">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="tnits:FeedbackInformation"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeedbackDatasetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:FeedbackDataset"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadFeatureDataset" substitutionGroup="tnits:Dataset"
+    type="tnits:RoadFeatureDatasetType"/>
+  <complexType name="RoadFeatureDatasetType">
+    <complexContent>
+      <extension base="tnits:DatasetType">
+        <sequence>
+          <element name="type" type="tnits:DatasetTypeType"/>
+          <element minOccurs="0" name="defaultLRM" type="gmllr:LinearReferencingMethodPropertyType" />
+          <element maxOccurs="unbounded" name="roadFeatures">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="tnits:RoadFeature"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadFeatureDatasetPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:RoadFeatureDataset"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

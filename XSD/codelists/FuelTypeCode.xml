@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FuelTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the type of fuel used by the vehicle.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">FuelTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="all">
+			<gml:description>All fuel types</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">all</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="battery">
+			<gml:description>Battery</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">battery</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="biodiesel">
+			<gml:description>Biodiesel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">biodiesel</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="diesel">
+			<gml:description>Diesel</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">diesel</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="dieselBatteryHybrid">
+			<gml:description>Diesel and battery hybrid</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">dieselBatteryHybrid</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ethanol">
+			<gml:description>Ethanol</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">ethanol</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="hydrogen">
+			<gml:description>Hydrogen</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">hydrogen</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="liquidGas">
+			<gml:description>Liquid gas of any type including LPG. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">liquidGas</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lpg">
+			<gml:description>Liquid petroleum gas</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">lpg</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="methane">
+			<gml:description>Methane gas</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">methane</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrol">
+			<gml:description>Petrol</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrol</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrol95Octane">
+			<gml:description>Petrol (95 Octane)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrol95Octane</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrol98Octane">
+			<gml:description>Petrol (98 Octane)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrol98Octane</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrolBatteryHybrid">
+			<gml:description>Petrol and battery hybrid</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrolBatteryHybrid</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrolLeaded">
+			<gml:description>Leaded petrol</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrolLeaded</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrolUnleaded">
+			<gml:description>Unleaded petrol</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">petrolUnleaded</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="unknown">
+			<gml:description>Unknown</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">unknown</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="other">
+			<gml:description>Other forms of fuel, not otherwise listed</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuelTypeCode">other</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

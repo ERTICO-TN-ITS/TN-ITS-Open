@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WeatherTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Types of weather conditions which affect driving conditions.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">WeatherTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="fog">
+			<gml:description>Fog, with reduced visibility</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">fog</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ice">
+			<gml:description>Increased skid risk due to ice (of any kind)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">ice</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="rain">
+			<gml:description>Rain, with reduced visibility, and increased skid risk</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">rain</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="airPollution">
+			<gml:description>Air pollution</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">airPollution</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="snow">
+			<gml:description>Snow, with reduced visibility, and increased skid risk</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">snow</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="wind">
+			<gml:description>Wind conditions on the road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">wind</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="wet">
+			<gml:description>Road surface is wet</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/WeatherTypeCode">wet</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

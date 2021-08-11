@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LinkDirectionValueCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for types of propellant gas.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">LinkDirectionValueCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="bothDirections">
+			<gml:description>Both directions</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LinkDirectionValueCode">all</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="inDirection">
+			<gml:description>In direction</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LinkDirectionValueCode">cNG</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="inOppositeDirection">
+			<gml:description>In opposite direction</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LinkDirectionValueCode">lPG</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

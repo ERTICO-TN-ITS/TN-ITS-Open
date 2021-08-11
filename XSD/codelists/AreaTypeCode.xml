@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="AreaTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the area type condition for a road feature </gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">AreaTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="inNationalPark">
+			<gml:description>Within the boundary of a recognised national park</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">inNationalPark</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="insideCities">
+			<gml:description>Within the notional or actual boundary of a city</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">insideCities</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="nearRailroadCrossing">
+			<gml:description>In close proximity to a railway level crossing</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">nearRailroadCrossing</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="nearSchool">
+			<gml:description>In close proximity to a school</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">nearSchool</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="outsideCities">
+			<gml:description>Outside the notional or actual boundary of a city</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">outsideCities</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="trafficCalmingArea">
+			<gml:description>In a zone which is subject to traffic calming measures</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/AreaTypeCode">trafficCalmingArea</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

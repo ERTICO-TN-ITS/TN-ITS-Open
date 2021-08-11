@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearReferencingMethod xmlns="http://www.opengis.net/gml/3.3/lr"
+	xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="defaultLRM"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd">
+	<name>kilometre-point</name>
+	<type>absolute</type>
+	<units>m</units>
+</LinearReferencingMethod>

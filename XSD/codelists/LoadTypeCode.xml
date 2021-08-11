@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LoadTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for types of vehicle loads</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">LoadTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="abnormalLoad">
+			<gml:description>A load that exceeds normal vehicle dimensions in terms of height, length, width, gross vehicle weight or axle weight or any combination of these.
+Generally termed an "abnormal load".</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">abnormalLoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ammunition">
+			<gml:description>Ammunition. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">ammunition</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="chemicals">
+			<gml:description>Chemicals of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">chemicals</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="combustibleMaterials">
+			<gml:description>Combustible materials of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">combustibleMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="corrosiveMaterials">
+			<gml:description>Corrosive materials of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">corrosiveMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="debris">
+			<gml:description>Debris of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">debris</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="empty">
+			<gml:description>No load</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">empty</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="explosiveMaterials">
+			<gml:description>Explosive materials of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">explosiveMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="extraHighLoad">
+			<gml:description>A load of exceptional height. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">extraHighLoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="extraLongLoad">
+			<gml:description>A load of exceptional length. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">extraLongLoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="extraWideLoad">
+			<gml:description>A load of exceptional width. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">extraWideLoad</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="fuel">
+			<gml:description>Fuel of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">fuel</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="glass">
+			<gml:description>Glass. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">glass</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="goods">
+			<gml:description>Any goods of a commercial nature. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">goods</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="hazardousMaterials">
+			<gml:description>Materials classed as being of a hazardous nature. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">hazardousMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="liquid">
+			<gml:description>Liquid of an unspecified nature. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">liquid</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="livestock">
+			<gml:description>Livestock. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">livestock</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="materials">
+			<gml:description>General materials of unspecified type. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">materials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="materialsDangerousForPeople">
+			<gml:description>Materials classed as being of a danger to people or animals.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">materialsDangerousForPeople</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="materialsDangerousForTheEnvironment">
+			<gml:description>Materials classed as being potentially dangerous to the environment. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">materialsDangerousForTheEnvironment</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="materialsDangerousForWater">
+			<gml:description>Materials classed as being dangerous when exposed to water (e.g. materials which may react exothermically with water). </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">materialsDangerousForWater</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="oil">
+			<gml:description>Oil. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">oil</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ordinary">
+			<gml:description>Materials that present limited environmental or health risk. Non-combustible, non-toxic, non-corrosive. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">ordinary</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="perishableProducts">
+			<gml:description>Products or produce that will significantly degrade in quality or freshness over a short period of time. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">perishableProducts</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="petrol">
+			<gml:description>Petrol or petroleum. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">petrol</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="pharmaceuticalMaterials">
+			<gml:description>Pharmaceutical materials. </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">pharmaceuticalMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="radioactiveMaterials">
+			<gml:description>Materials that emit significant quantities of electromagnetic radiation that may present a risk
+to people, animals or the environment</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">radioactiveMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="refrigeratedGoods">
+			<gml:description>Refrigerated goods.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">refrigeratedGoods</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="refuse">
+			<gml:description>Refuse.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">refuse</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="toxicMaterials">
+			<gml:description>Materials of a toxic nature which may damage the
+environment or endanger public health.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">toxicMaterials</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="vehicles">
+			<gml:description>Vehicles of any type which are being transported.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">vehicles</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="other">
+			<gml:description>Other than as defined in this enumeration.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/LoadTypeCode">other</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

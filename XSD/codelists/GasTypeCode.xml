@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GasTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for types of propellant gas.</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">GasTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="all">
+			<gml:description>All</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">all</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="cNG">
+			<gml:description>Compressed natural gas</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">cNG</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lPG">
+			<gml:description>Liquified petroleum gas</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">lPG</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lNG">
+			<gml:description>Liquified natural gas</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">lNG</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="other">
+			<gml:description>Other</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">other</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="unknown">
+			<gml:description>Unknown</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/GasTypeCode">unknown</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

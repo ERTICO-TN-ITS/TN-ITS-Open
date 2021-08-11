@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application 	xmlns="http://wadl.dev.java.net/2009/02"
+					xmlns:tnits="http://www.ptvag.com/tnits/dataexchange/rest" 
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:schemaLocation="http://wadl.dev.java.net/2009/02
+					https://www.w3.org/Submission/wadl/wadl.xsd http://www.ptvag.com/tnist/dataexchange/rest
+					.\\TN-ITS.xsd">
+    <doc xmlns:jersey="http://jersey.dev.java.net/" jersey:generatedBy="Jersey: 1.1.0-ea 04/30/2009 05:54 PM"/>
+    <resources base="http://localhost:8080/data-exchange-service/">
+        <resource path="/download">
+            <resource path="/queryDataSets">
+                <method name="GET" id="getQueryDataSets">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" default="{0,0}" type="xs:string" style="query" name="lastValidDataSetID"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/xml" element="tnits:TNITSRestDatasetRefList"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/readDataSet">
+                <method name="GET" id="getReadDataSet">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="dataSetID"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/xml" element="tnits:RoadFeatureDataset"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+        <resource path="/feedback">
+            <resource path="/queryFeedbacks">
+                <method name="GET" id="getQueryFeedbacks">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="dataSetID"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/xml" element="tnits:RestFeedbackRefList"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/readFeedback">
+                <method name="GET" id="readFeedback">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="dataSetID"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="feedbackID"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/xml" element="tnits:FeedbackDataset"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/sendFeedback">
+                <method name="PUT" id="sendFeedback">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="dataSetID"/>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="feedback"/>
+                    </request>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>

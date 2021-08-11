@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FuzzyTimeTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">FuzzyTimeTypeCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="external">
+			<gml:description>Starting period controlled by external device </gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">external</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="dawn">
+			<gml:description>Starts at dawn</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">dawn</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="dusk">
+			<gml:description>Starts at dusk</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">dusk</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="school">
+			<gml:description>Starts at any school period (date and hour)</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">school</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="holiday">
+			<gml:description>Starts at any holiday</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">holiday</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="winter">
+			<gml:description>Beginning of winter</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">winter</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="spring">
+			<gml:description>Beginning of spring</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">spring</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="summer">
+			<gml:description>Beginning of summer</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">summer</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="autumn">
+			<gml:description>Beginning of autumn</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">autumn</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="highTide">
+			<gml:description>Beginning of high tide</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">highTide</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lowTide">
+			<gml:description>Beginning of low tide</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">lowTide</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="highWater">
+			<gml:description>Beginning of high water</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">highWater</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="lowWater">
+			<gml:description>Beginning of low water</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">lowWater</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="wetSeason">
+			<gml:description>Beginning of wet season</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">wetSeason</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="drySeason">
+			<gml:description>Beginning of dry season</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">drySeason</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="peakHours">
+			<gml:description>Start of peak hours, peak hours include rush hour and activity/ scheduled event based times. These would vary by location and by season</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">peakHours</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="offPeakHours">
+			<gml:description>start of off-peak hours</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">offPeakHours</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="day">
+			<gml:description>Start of day</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">day</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="night">
+			<gml:description>Start of night</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode">night</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

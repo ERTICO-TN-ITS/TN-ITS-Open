@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Change history:-->
+<!--Date             Version           Author     Change-->
+<!--==============================================================================================-->
+<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<!--2018-01-10        01                 KJe      Manually change from gml:CodeType to gml:ReferenceType     -->
+<!--2018-01-10        01                 KJe      Manually remove  references     -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:tnits="http://spec.tn-its.eu/schemas/" elementFormDefault="qualified"
+  targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="TNITS.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AreaCondition" substitutionGroup="tnits:Condition" type="tnits:AreaConditionType"/>
+  <complexType name="AreaConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="areaType" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AreaConditionPropertyType">
+    <sequence>
+      <element ref="tnits:AreaCondition"/>
+    </sequence>
+  </complexType>
+  <simpleType name="ComparisonOperatorType">
+    <restriction base="string">
+      <enumeration value="equalTo"/>
+      <enumeration value="greaterThan"/>
+      <enumeration value="greaterThanOrEqualTo"/>
+      <enumeration value="lessThan"/>
+      <enumeration value="lessThanOrEqualTo"/>
+    </restriction>
+  </simpleType>
+  <element abstract="true" name="Condition" substitutionGroup="gml:AbstractObject"
+    type="tnits:ConditionType"/>
+  <complexType abstract="true" name="ConditionType">
+    <sequence>
+      <element minOccurs="0" name="negate" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="ConditionPropertyType">
+    <sequence>
+      <element ref="tnits:Condition"/>
+    </sequence>
+  </complexType>
+  <simpleType name="ConditionOperatorType">
+    <restriction base="string">
+      <enumeration value="OR"/>
+      <enumeration value="XOR"/>
+      <enumeration value="AND"/>
+    </restriction>
+  </simpleType>
+  <element name="ConditionSet" substitutionGroup="tnits:Condition" type="tnits:ConditionSetType"/>
+  <complexType name="ConditionSetType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="operator" type="tnits:ConditionOperatorType"/>
+          <element maxOccurs="unbounded" name="conditions" type="tnits:ConditionPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ConditionSetPropertyType">
+    <sequence>
+      <element ref="tnits:ConditionSet"/>
+    </sequence>
+  </complexType>
+  <simpleType name="DayOfWeekType">
+    <restriction base="string">
+      <enumeration value="monday"/>
+      <enumeration value="tuesday"/>
+      <enumeration value="wednesday"/>
+      <enumeration value="thursday"/>
+      <enumeration value="friday"/>
+      <enumeration value="saturday"/>
+      <enumeration value="sunday"/>
+    </restriction>
+  </simpleType>
+  <element name="DayWeekMonth" substitutionGroup="gml:AbstractObject" type="tnits:DayWeekMonthType"/>
+  <complexType name="DayWeekMonthType">
+    <sequence>
+      <element maxOccurs="7" minOccurs="0" name="applicableDay" type="tnits:DayOfWeekType"/>
+      <element maxOccurs="5" minOccurs="0" name="applicableWeek" type="tnits:WeekOfMonthType"/>
+      <element maxOccurs="12" minOccurs="0" name="applicableMonth" type="tnits:MonthOfYearType"/>
+    </sequence>
+  </complexType>
+  <complexType name="DayWeekMonthPropertyType">
+    <sequence>
+      <element ref="tnits:DayWeekMonth"/>
+    </sequence>
+  </complexType>
+  <element name="Emissions" substitutionGroup="gml:AbstractObject" type="tnits:EmissionsType"/>
+  <complexType name="EmissionsType">
+    <sequence>
+      <element minOccurs="0" name="emissionClassificationEuro" type="gml:ReferenceType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="emissionClassificationOther" type="string"/>
+      <element minOccurs="0" name="emissionLevel" type="gml:ReferenceType"/>
+    </sequence>
+  </complexType>
+  <complexType name="EmissionsPropertyType">
+    <sequence>
+      <element ref="tnits:Emissions"/>
+    </sequence>
+  </complexType>
+  <element name="FuzzyTimePeriod" substitutionGroup="gml:AbstractObject"
+    type="tnits:FuzzyTimePeriodType">
+    <annotation>
+      <documentation>Time described with a fuzzy time. </documentation>
+    </annotation>
+  </element>
+  <complexType name="FuzzyTimePeriodType">
+    <sequence>
+      <element name="beginOrDuration" type="gml:ReferenceType"/>
+      <element name="endOrDuration" type="gml:ReferenceType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="FuzzyTimePeriodPropertyType">
+    <sequence>
+      <element ref="tnits:FuzzyTimePeriod"/>
+    </sequence>
+  </complexType>
+  <element name="GrossWeightCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:GrossWeightCharacteristicType"/>
+  <complexType name="GrossWeightCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="grossVehicleWeight" type="gml:MeasureType"/>
+      <element name="typeOfWeight" type="gml:ReferenceType"/>
+    </sequence>
+  </complexType>
+  <complexType name="GrossWeightCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:GrossWeightCharacteristic"/>
+    </sequence>
+  </complexType>
+  <element name="HeaviestAxleWeightCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:HeaviestAxleWeightCharacteristicType"/>
+  <complexType name="HeaviestAxleWeightCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="heaviestAxleWeight" type="gml:MeasureType"/>
+    </sequence>
+  </complexType>
+  <complexType name="HeaviestAxleWeightCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:HeaviestAxleWeightCharacteristic"/>
+    </sequence>
+  </complexType>
+  <element name="HeightCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:HeightCharacteristicType"/>
+  <complexType name="HeightCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="vehicleHeight" type="gml:MeasureType"/>
+    </sequence>
+  </complexType>
+  <complexType name="HeightCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:HeightCharacteristic"/>
+    </sequence>
+  </complexType>
+  <element name="LaneCondition" substitutionGroup="tnits:Condition" type="tnits:LaneConditionType"/>
+  <complexType name="LaneConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="startLane" type="integer"/>
+          <element name="laneExtension" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LaneConditionPropertyType">
+    <sequence>
+      <element ref="tnits:LaneCondition"/>
+    </sequence>
+  </complexType>
+  <element name="LengthCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:LengthCharacteristicType"/>
+  <complexType name="LengthCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="vehicleLength" type="gml:MeasureType"/>
+    </sequence>
+  </complexType>
+  <complexType name="LengthCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:LengthCharacteristic"/>
+    </sequence>
+  </complexType>
+  <simpleType name="MonthOfYearType">
+    <restriction base="string">
+      <enumeration value="january"/>
+      <enumeration value="february"/>
+      <enumeration value="march"/>
+      <enumeration value="april"/>
+      <enumeration value="may"/>
+      <enumeration value="june"/>
+      <enumeration value="july"/>
+      <enumeration value="august"/>
+      <enumeration value="september"/>
+      <enumeration value="october"/>
+      <enumeration value="november"/>
+      <enumeration value="december"/>
+    </restriction>
+  </simpleType>
+  <element name="NumberOfAxlesCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:NumberOfAxlesCharacteristicType"/>
+  <complexType name="NumberOfAxlesCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="numberOfAxles" type="integer"/>
+    </sequence>
+  </complexType>
+  <complexType name="NumberOfAxlesCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:NumberOfAxlesCharacteristic"/>
+    </sequence>
+  </complexType>
+  <element name="OverallPeriod" substitutionGroup="gml:AbstractObject"
+    type="tnits:OverallPeriodType"/>
+  <complexType name="OverallPeriodType">
+    <sequence>
+      <element name="overallStartTime" type="dateTime"/>
+      <element minOccurs="0" name="overallEndTime" type="dateTime"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="validPeriod"
+        type="tnits:PeriodPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="exceptionPeriod"
+        type="tnits:PeriodPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="OverallPeriodPropertyType">
+    <sequence>
+      <element ref="tnits:OverallPeriod"/>
+    </sequence>
+  </complexType>
+  <element name="Period" substitutionGroup="gml:AbstractObject" type="tnits:PeriodType"/>
+  <complexType name="PeriodType">
+    <sequence>
+      <element minOccurs="0" name="startOfPeriod" type="dateTime"/>
+      <element minOccurs="0" name="endOfPeriod" type="dateTime"/>
+      <element minOccurs="0" name="periodName" type="string"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="recurringDayWeekMonthPeriod"
+        type="tnits:DayWeekMonthPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="recurringFuzzyTimePeriod"
+        type="tnits:FuzzyTimePeriodPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="recurringTimePeriodOfDay"
+        type="tnits:TimePeriodOfDayPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="recurringSpecialDay"
+        type="tnits:SpecialDayPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="PeriodPropertyType">
+    <sequence>
+      <element ref="tnits:Period"/>
+    </sequence>
+  </complexType>
+  <element name="PublicHoliday" substitutionGroup="tnits:SpecialDay" type="tnits:PublicHolidayType"/>
+  <complexType name="PublicHolidayType">
+    <complexContent>
+      <extension base="tnits:SpecialDayType">
+        <sequence>
+          <element name="publicHolidayName" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PublicHolidayPropertyType">
+    <sequence>
+      <element ref="tnits:PublicHoliday"/>
+    </sequence>
+  </complexType>
+  <element name="RoadCategoryCondition" substitutionGroup="tnits:Condition"
+    type="tnits:RoadCategoryConditionType"/>
+  <complexType name="RoadCategoryConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="roadCategory" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadCategoryConditionPropertyType">
+    <sequence>
+      <element ref="tnits:RoadCategoryCondition"/>
+    </sequence>
+  </complexType>
+  <element name="SpecialDay" substitutionGroup="gml:AbstractObject" type="tnits:SpecialDayType"/>
+  <complexType name="SpecialDayType">
+    <sequence>
+      <element name="intersectWithApplicableDays" type="boolean"/>
+      <element name="specialDayType" type="gml:ReferenceType"/>
+      <element minOccurs="0" name="publicEvent" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="SpecialDayPropertyType">
+    <sequence>
+      <element ref="tnits:SpecialDay"/>
+    </sequence>
+  </complexType>
+  <element name="TimeCondition" substitutionGroup="tnits:Condition" type="tnits:TimeConditionType"/>
+  <complexType name="TimeConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="validityPeriod" type="tnits:ValidityPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TimeConditionPropertyType">
+    <sequence>
+      <element ref="tnits:TimeCondition"/>
+    </sequence>
+  </complexType>
+  <element name="TimePeriodOfDay" substitutionGroup="gml:AbstractObject"
+    type="tnits:TimePeriodOfDayType"/>
+  <complexType name="TimePeriodOfDayType">
+    <sequence>
+      <element name="startTimeOfPeriod" type="time"/>
+      <element name="endTimeOfPeriod" type="time"/>
+    </sequence>
+  </complexType>
+  <complexType name="TimePeriodOfDayPropertyType">
+    <sequence>
+      <element ref="tnits:TimePeriodOfDay"/>
+    </sequence>
+  </complexType>
+  <element name="Validity" substitutionGroup="gml:AbstractObject" type="tnits:ValidityType"/>
+  <complexType name="ValidityType">
+    <sequence>
+      <element name="validityTimeSpecification" type="tnits:OverallPeriodPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="ValidityPropertyType">
+    <sequence>
+      <element ref="tnits:Validity"/>
+    </sequence>
+  </complexType>
+  <element name="VehicleCharacteristics" substitutionGroup="gml:AbstractObject"
+    type="tnits:VehicleCharacteristicsType"/>
+  <complexType name="VehicleCharacteristicsType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="fuelType" type="gml:ReferenceType"/>
+      <element minOccurs="0" name="loadType" type="gml:ReferenceType"/>
+      <element minOccurs="0" name="vehicleEquipment" type="gml:ReferenceType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="vehicleType" type="gml:ReferenceType"/>
+      <element minOccurs="0" name="vehicleUsage" type="gml:ReferenceType"/>
+      <element minOccurs="0" name="yearOfFirstRegistration" type="integer"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="heightCharacteristic"
+        type="tnits:HeightCharacteristicPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="widthCharacteristic"
+        type="tnits:WidthCharacteristicPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="heaviestAxleWeightCharacteristic"
+        type="tnits:HeaviestAxleWeightCharacteristicPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="grossWeightCharacteristic"
+        type="tnits:GrossWeightCharacteristicPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="numberOfAxlesCharacteristic"
+        type="tnits:NumberOfAxlesCharacteristicPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="emissions"
+        type="tnits:EmissionsPropertyType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="lengthCharacteristic"
+        type="tnits:LengthCharacteristicPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="VehicleCharacteristicsPropertyType">
+    <sequence>
+      <element ref="tnits:VehicleCharacteristics"/>
+    </sequence>
+  </complexType>
+  <element name="VehicleCondition" substitutionGroup="tnits:Condition"
+    type="tnits:VehicleConditionType"/>
+  <complexType name="VehicleConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="vehicleCharacteristics" type="tnits:VehicleCharacteristicsPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VehicleConditionPropertyType">
+    <sequence>
+      <element ref="tnits:VehicleCondition"/>
+    </sequence>
+  </complexType>
+  <element name="WeatherCondition" substitutionGroup="tnits:Condition"
+    type="tnits:WeatherConditionType"/>
+  <complexType name="WeatherConditionType">
+    <complexContent>
+      <extension base="tnits:ConditionType">
+        <sequence>
+          <element name="weatherType" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WeatherConditionPropertyType">
+    <sequence>
+      <element ref="tnits:WeatherCondition"/>
+    </sequence>
+  </complexType>
+  <simpleType name="WeekOfMonthType">
+    <restriction base="string">
+      <enumeration value="firstWeek"/>
+      <enumeration value="secondWeek"/>
+      <enumeration value="thirdWeek"/>
+      <enumeration value="fourthWeek"/>
+      <enumeration value="fifthWeek"/>
+      <enumeration value="sixthWeek"/>
+      <enumeration value="lastWeek"/>
+    </restriction>
+  </simpleType>
+  <element name="WidthCharacteristic" substitutionGroup="gml:AbstractObject"
+    type="tnits:WidthCharacteristicType"/>
+  <complexType name="WidthCharacteristicType">
+    <sequence>
+      <element name="comparisonOperator" type="tnits:ComparisonOperatorType"/>
+      <element name="vehicleWidth" type="gml:MeasureType"/>
+    </sequence>
+  </complexType>
+  <complexType name="WidthCharacteristicPropertyType">
+    <sequence>
+      <element ref="tnits:WidthCharacteristic"/>
+    </sequence>
+  </complexType>
+</schema>

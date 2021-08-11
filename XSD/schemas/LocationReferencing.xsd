@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Change history:-->
+<!--Date             Version           Author     Change-->
+<!--==============================================================================================-->
+<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+<!--2018-01-28        01                 KJe      Manually change from gml:CodeType to gml:ReferenceType     -->
+<!--2018-01-28        01                 KJe      Manually add gml 3.3 namespace, schema and datatype     -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:gmllr="http://www.opengis.net/gml/3.3/lr" xmlns:tnits="http://spec.tn-its.eu/schemas/" elementFormDefault="qualified"
+  targetNamespace="http://spec.tn-its.eu/schemas/" version="2018-01">
+  <include schemaLocation="TNITS.xsd"/>
+  <include schemaLocation="openlr.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/lr"
+    schemaLocation="http://schemas.opengis.net/gml/3.3/linearRef.xsd"/>
+ 
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AgoraLocationReference" substitutionGroup="tnits:DynamicLocationReference"
+    type="tnits:AgoraLocationReferenceType"/>
+  <complexType name="AgoraLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:DynamicLocationReferenceType">
+        <sequence>
+          <element name="base64String" type="string"/>
+          <element name="agoraBinaryVersion" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AgoraLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:AgoraLocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="BinaryLocationReference" substitutionGroup="gml:AbstractObject"
+    type="tnits:BinaryLocationReferenceType"/>
+  <complexType name="BinaryLocationReferenceType">
+    <sequence>
+      <element name="base64String" type="string"/>
+      <element name="openLRBinaryVersion" type="gml:ReferenceType"/>
+    </sequence>
+  </complexType>
+  <complexType name="BinaryLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:BinaryLocationReference"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="DynamicLocationReference"
+    substitutionGroup="tnits:LocationReference" type="tnits:DynamicLocationReferenceType"/>
+  <complexType abstract="true" name="DynamicLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:LocationReferenceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DynamicLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:DynamicLocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="GeometryLocationReference" substitutionGroup="tnits:LocationReference"
+    type="tnits:GeometryLocationReferenceType"/>
+  <complexType name="GeometryLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:LocationReferenceType">
+        <sequence>
+          <element name="encodedGeometry" type="gml:GeometricPrimitivePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeometryLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:GeometryLocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="Identifier" substitutionGroup="gml:AbstractObject" type="tnits:IdentifierType">
+    <annotation>
+      <documentation>External unique object identifier published by the responsible body, which may
+        be used by external applications to reference the spatial object.</documentation>
+    </annotation>
+  </element>
+  <complexType name="IdentifierType">
+    <sequence>
+      <element name="localId" type="string">
+        <annotation>
+          <documentation>A local identifier, assigned by the data provider. The local identifier is
+            unique within the namespace, that is no other spatial object carries the same unique
+            identifier.</documentation>
+        </annotation>
+      </element>
+      <element name="namespace" type="string">
+        <annotation>
+          <documentation>Namespace uniquely identifying the data source of the spatial
+            object.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="versionId" type="string">
+        <annotation>
+          <documentation>The identifier of the particular version of the spatial object, with a
+            maximum length of 25 characters. If the specification of a spatial object type with an
+            external object identifier includes life-cycle information, the version identifier is
+            used to distinguish between the different versions of a spatial object. Within the set
+            of all versions of a spatial object, the version identifier is unique.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifierPropertyType">
+    <sequence>
+      <element ref="tnits:Identifier"/>
+    </sequence>
+  </complexType>
+  <element name="LinearLocationReference" substitutionGroup="tnits:PreCodedLocationReference"
+    type="tnits:LinearLocationReferenceType"/>
+  <complexType name="LinearLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:PreCodedLocationReferenceType">
+        <sequence>
+          <element minOccurs="0" name="name" type="string"/>
+          <element minOccurs="0" name="description" type="string"/>
+          <element maxOccurs="unbounded" name="networkReference"
+            type="tnits:NetworkReferencePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LinearLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:LinearLocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="LinkReference" substitutionGroup="tnits:NetworkReference"
+    type="tnits:LinkReferenceType">
+    <annotation>
+      <documentation>A network reference to a linear network element.</documentation>
+    </annotation>
+  </element>
+  <complexType name="LinkReferenceType">
+    <complexContent>
+      <extension base="tnits:NetworkReferenceType">
+        <sequence>
+          <element name="applicableDirection" type="gml:ReferenceType">
+            <annotation>
+              <documentation>The directions of the link to which the reference applies. In cases
+                where a property does not apply &lt;i&gt;to&lt;/i&gt; a direction along a link, but
+                represents a phenomenon &lt;i&gt;along&lt;/i&gt; a link, “inDirection” refers to the
+                right side in the direction of the link.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LinkReferencePropertyType">
+    <sequence>
+      <element ref="tnits:LinkReference"/>
+    </sequence>
+  </complexType>
+  <element name="LocationByExternalReference" substitutionGroup="tnits:PreCodedLocationReference"
+    type="tnits:LocationByExternalReferenceType"/>
+  <complexType name="LocationByExternalReferenceType">
+    <complexContent>
+      <extension base="tnits:PreCodedLocationReferenceType">
+        <sequence>
+          <element name="predefinedLocationReference" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LocationByExternalReferencePropertyType">
+    <sequence>
+      <element ref="tnits:LocationByExternalReference"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="LocationReference" substitutionGroup="gml:AbstractObject"
+    type="tnits:LocationReferenceType"/>
+  <complexType abstract="true" name="LocationReferenceType">
+    <sequence/>
+  </complexType>
+  <complexType name="LocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:LocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="NetworkElement" substitutionGroup="gml:AbstractFeature"
+    type="tnits:NetworkElementType"/>
+  <complexType name="NetworkElementType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="id" type="tnits:IdentifierPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="tnits:NetworkElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="NetworkReference" substitutionGroup="gml:AbstractObject"
+    type="tnits:NetworkReferenceType">
+    <annotation>
+      <documentation>A reference to a network element.</documentation>
+    </annotation>
+  </element>
+  <complexType name="NetworkReferenceType">
+    <sequence>
+      <element minOccurs="0" name="overridingLRM" type="gmllr:LinearReferencingMethodPropertyType">
+        <annotation>
+          <documentation>linear referencing method overriding defalult method for the data
+            set</documentation>
+        </annotation>
+      </element>
+      <element name="element" type="tnits:NetworkElementPropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="NetworkReferencePropertyType">
+    <sequence>
+      <element ref="tnits:NetworkReference"/>
+    </sequence>
+  </complexType>
+  <element name="OpenLRLocationReference" substitutionGroup="tnits:DynamicLocationReference"
+    type="tnits:OpenLRLocationReferenceType"/>
+  <complexType name="OpenLRLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:DynamicLocationReferenceType">
+        <sequence>
+          <element minOccurs="0" name="binaryLocationReference"
+            type="tnits:BinaryLocationReferencePropertyType"/>
+          <element minOccurs="0" name="xMLLocationReference"
+            type="tnits:XMLLocationReference"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OpenLRLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:OpenLRLocationReference"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="PreCodedLocationReference"
+    substitutionGroup="tnits:LocationReference" type="tnits:PreCodedLocationReferenceType"/>
+  <complexType abstract="true" name="PreCodedLocationReferenceType">
+    <complexContent>
+      <extension base="tnits:LocationReferenceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PreCodedLocationReferencePropertyType">
+    <sequence>
+      <element ref="tnits:PreCodedLocationReference"/>
+    </sequence>
+  </complexType>
+  <element name="SimpleLinearReference" substitutionGroup="tnits:LinkReference"
+    type="tnits:SimpleLinearReferenceType">
+    <annotation>
+      <documentation>A network reference that is restricted to part of a linear network element. The
+        part is the part of the network element between fromPosition and toPosition.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SimpleLinearReferenceType">
+    <complexContent>
+      <extension base="tnits:LinkReferenceType">
+        <sequence>
+          <element name="fromPosition" type="gmllr:DistanceExpressionPropertyType">
+            <annotation>
+              <documentation>The start position of the linear element, expressed as the distance
+                along the linear network element.</documentation>
+            </annotation>
+          </element>
+          <element name="toPosition" type="gmllr:DistanceExpressionPropertyType">
+            <annotation>
+              <documentation>The end position of the linear element, expressed as the distance along
+                the linear network element.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SimpleLinearReferencePropertyType">
+    <sequence>
+      <element ref="tnits:SimpleLinearReference"/>
+    </sequence>
+  </complexType>
+  <element name="SimplePointReference" substitutionGroup="tnits:LinkReference"
+    type="tnits:SimplePointReferenceType">
+    <annotation>
+      <documentation>A network reference that is restricted to a point on a linear network element.
+        The point is the location on the network element at the position atPosition along the
+        network.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SimplePointReferenceType">
+    <complexContent>
+      <extension base="tnits:LinkReferenceType">
+        <sequence>
+          <element name="atPosition" type="gmllr:DistanceExpressionPropertyType">
+            <annotation>
+              <documentation>Position of the point, expressed as the distance along the linear
+                network element.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SimplePointReferencePropertyType">
+    <sequence>
+      <element ref="tnits:SimplePointReference"/>
+    </sequence>
+  </complexType>
+</schema>
