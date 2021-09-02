@@ -12,7 +12,7 @@
 					<events>
 						<!-- Example FreeTextEvent -->
 						<FreeTextEvent>
-							<text>A free text error</text>
+							<text>Some free text error</text>
 						</FreeTextEvent>
 					</events>
 					<events>
@@ -26,10 +26,10 @@
 						<!-- Example RoadFeatureEvent, reporting a feedback concerning a specific property of a specific feature -->
 						<RoadFeatureEvent>
 							<roadFeatureId>
-								<!-- identifier for the feature: N3 from the example file  Example_FeatureCollection.xml-->
+								<!-- Reference to a specific feature in the dataset -->
 								<RoadFeatureId>
-									<providerId>SomeProvider</providerId>
-									<id>N3</id>
+									<providerId>SE.TrV.NVDB</providerId>
+									<id>63CA5D0E-7CF9-48A4-9932-ECED3FDCED7A</id>
 								</RoadFeatureId>
 							</roadFeatureId>
 							<roadFeaturePropertyType xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight"/>
