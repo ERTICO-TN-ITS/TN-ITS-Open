@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FeedbackDataset xmlns="http://spec.tn-its.eu/schemas/" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmllr="http://www.opengis.net/gml/3.3/lr"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xsi:schemaLocation="http://spec.tn-its.eu/schemas/ http://spec.tn-its.eu/schemas/TNITS.xsd">
+	<feedbackInfo>
+		<FeedbackInformation>
+			<datasetIdentifier>Example</datasetIdentifier>
+			<processed>2021-09-02T08:13:00</processed>
+			<log>
+				<FeedbackLog>
+					<events>
+						<!-- Example FreeTextEvent -->
+						<FreeTextEvent>
+							<text>A free text error</text>
+						</FreeTextEvent>
+					</events>
+					<events>
+						<!-- Example GeneralFeedBackEvent, reporting feedback concerning no specific feature -->
+						<GeneralFeedbackEvent>
+							<!-- Code value for the type of feedback -->
+							<eventCode xlink:href="http://spec.tn-its.eu/codelists/GeneralFeedbackEventTypeCode#SchemaVersionMismatch" />
+						</GeneralFeedbackEvent>
+					</events>
+					<events>
+						<!-- Example RoadFeatureEvent, reporting a feedback concerning a specific property of a specific feature -->
+						<RoadFeatureEvent>
+							<roadFeatureId>
+								<!-- identifier for the feature: N3 from the example file  Example_FeatureCollection.xml-->
+								<RoadFeatureId>
+									<providerId>SomeProvider</providerId>
+									<id>N3</id>
+								</RoadFeatureId>
+							</roadFeatureId>
+							<roadFeaturePropertyType xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight"/>
+							<!-- Code value for the feedback: decoding error  -->
+							<eventCode xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationError" />
+						</RoadFeatureEvent>
+					</events>
+					<summary>
+						<!-- Example summary -->
+						<SummaryInfo>
+							<nrSuccess>2</nrSuccess>
+							<nrFail>1</nrFail>
+						</SummaryInfo>
+					</summary>
+				</FeedbackLog>
+			</log>
+		</FeedbackInformation>
+	</feedbackInfo>
+</FeedbackDataset>
