@@ -13,7 +13,6 @@ option explicit
 const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
 const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\core"
 const filename = "tnits-owl"
-const coreClass = "tnits"
 const strPrefix = "tnits"
 '-----------------------------------------------------------------------------------------------------------------------------------
 'Global parameters
@@ -79,11 +78,14 @@ sub heading
 end sub
 
 sub coreClasses
+	dim coreClass
+	coreClass = strPrefix 
 	'Create core classes for the ontology
 	'---------------------------------------------------------------------------------------------------
 	'Root class
 	objOTLFile.WriteText "### " & owlURI & "#" & coreClass & vbCrLf
 	objOTLFile.WriteText ":" & coreClass &  " a owl:Class ;" & vbCrLf
+	objOTLFile.WriteText "         owl:disjointUnionOf ( :" & strPrefix & "Feature :" & strPrefix & "CodeList :" & strPrefix & "Enumeration :" & strPrefix & "DataType" & " )" & vbCrLf 		
 	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Root""@en ." & vbCrLf 	
 	'TN-ITS Feature as subtype of ISO 19109 AnyFeature and GeoSPARQL Feature
 	objOTLFile.WriteText "### " & owlURI & "#Feature" & vbCrLf
