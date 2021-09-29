@@ -5,10 +5,18 @@ option explicit
 ' Script Name: TNITS2OWL
 ' Author: Knut Jetlund
 ' Purpose: Export the TN-ITS UML Model to OWL
-' Date: 20210615
+' Date: 20210927
 '
-!INC TN-ITS.Parameters
 
+'-----------------------------------------------------------------------------------------------------------------------------------
+'Constants
+const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
+const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\core"
+const filename = "tnits-owl"
+const coreClass = "tnits"
+const strPrefix = "tnits"
+'-----------------------------------------------------------------------------------------------------------------------------------
+'Global parameters
 dim objFSO, objOTLFile
 dim thePackage as EA.Package
 dim pck as EA.Package
@@ -21,16 +29,23 @@ dim attr as EA.Attribute
 dim aTag as EA.AttributeTag
 dim lstOP, lstDP
 dim definition, rangeName
+'-----------------------------------------------------------------------------------------------------------------------------------
 
 
 sub heading
-	'Create heading for the ontology
+	'Heading for the ontology - content should be configurable
+	'---------------------------------------------------------------------------------------------------------------------------
+	'Namespaces for the ontology
 	'objOTLFile.WriteText "" & vbCrLf
 	objOTLFile.WriteText "@prefix : <" & owlURI & "#> ." & vbCrLf
 	objOTLFile.WriteText "@prefix dc: <http://purl.org/dc/elements/1.1/> ." & vbCrLf
+	'ISO 19148 from the INTERLINK Ontologies
 	objOTLFile.WriteText "@prefix lr: <http://www.roadotl.eu/iso19148/def/> ." & vbCrLf
+	'OGC Simple feature
 	objOTLFile.WriteText "@prefix sf: <http://www.opengis.net/ont/sf#> ." & vbCrLf
+	'OGC GeoSPARQL
 	objOTLFile.WriteText "@prefix gsp: <http://www.opengis.net/ont/geosparql#> ." & vbCrLf
+	'W3C Core ontologies
 	objOTLFile.WriteText "@prefix owl: <http://www.w3.org/2002/07/owl#> ." & vbCrLf
 	objOTLFile.WriteText "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ." & vbCrLf
 	objOTLFile.WriteText "@prefix xml: <http://www.w3.org/XML/1998/namespace> ." & vbCrLf
@@ -41,16 +56,20 @@ sub heading
 	
 	objOTLFile.WriteText vbCrLf
 	objOTLFile.WriteText "<" & owlURI & "> a owl:Ontology ;" & vbCrLf
-	objOTLFile.WriteText "	owl:imports <http://www.w3.org/2004/02/skos/core> ;" & vbCrLf
 	
 	' -------------------------------------------------------------------------
-	'Specific imports - should be configurable
+	'Imports
+	'SKOS
+	objOTLFile.WriteText "	owl:imports <http://www.w3.org/2004/02/skos/core> ;" & vbCrLf
+	'OGC GeoSparql
 	objOTLFile.WriteText "	owl:imports <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ;" & vbCrLf
+	'ISO 19148 from the INTERLINK Ontologies
 	objOTLFile.WriteText "	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;" & vbCrLf
+	'ISO 19115 Metadata
 	objOTLFile.WriteText "	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;" & vbCrLf
 	' --------------------------------------------------------------------
 	
-	'objOTLFile.WriteText "	owl:versionInfo ""2.23"" ;" & vbCrLf
+	'Ontology metadata 
 	objOTLFile.WriteText "	dc:creator ""TN-ITS"" ;" & vbCrLf
 	objOTLFile.WriteText "	dc:date """ & left(Now,10) & """ ;" & vbCrLf
 	objOTLFile.WriteText "	dc:description ""Ontology for the TN-ITS model for exchange of changes in road attributes""@en ;" & vbCrLf
@@ -61,55 +80,76 @@ end sub
 
 sub coreClasses
 	'Create core classes for the ontology
-	objOTLFile.WriteText "### " & owlURI & "#FeatureType" & vbCrLf
-	objOTLFile.WriteText ":" & strPrefix & "FeatureType" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "       rdfs:subClassOf <http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> ," & vbCrLf
-    objOTLFile.WriteText  "                       gsp:Feature ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""Feature type""@en ." & vbCrLf 				
-	objOTLFile.WriteText "### " & owlURI & "#CodeList" & vbCrLf
-	objOTLFile.WriteText ":" & strPrefix & "CodeList" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""Code list""@en ." & vbCrLf 					
-	objOTLFile.WriteText "### " & owlURI & "#Enumeration" & vbCrLf
-	objOTLFile.WriteText ":" & strPrefix & "Enumeration" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""Enumeration""@en ." & vbCrLf 					
-	objOTLFile.WriteText "### " & owlURI & "#DataType" & vbCrLf
-	objOTLFile.WriteText ":" & strPrefix & "DataType" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""Data type""@en ." & vbCrLf 	
+	'---------------------------------------------------------------------------------------------------
+	'Root class
 	objOTLFile.WriteText "### " & owlURI & "#" & coreClass & vbCrLf
 	objOTLFile.WriteText ":" & coreClass &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & """@en ." & vbCrLf 	
+	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Root""@en ." & vbCrLf 	
+	'TN-ITS Feature as subtype of ISO 19109 AnyFeature and GeoSPARQL Feature
+	objOTLFile.WriteText "### " & owlURI & "#Feature" & vbCrLf
+	objOTLFile.WriteText ":" & strPrefix & "Feature" &  " a owl:Class ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:subClassOf <http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> ," & vbCrLf
+    objOTLFile.WriteText  "                          :" & coreclass & " ," & vbCrLf
+    objOTLFile.WriteText  "                       gsp:Feature ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Feature""@en ." & vbCrLf 				
+	'Core class for all code values
+	objOTLFile.WriteText "### " & owlURI & "#CodeList" & vbCrLf
+	objOTLFile.WriteText ":" & strPrefix & "CodeList" &  " a owl:Class ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Code value""@en ." & vbCrLf 					
+	'Core class for all enumerations
+	objOTLFile.WriteText "### " & owlURI & "#Enumeration" & vbCrLf
+	objOTLFile.WriteText ":" & strPrefix & "Enumeration" &  " a owl:Class ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Enumeration value""@en ." & vbCrLf 					
+	'Core class for all datatypes
+	objOTLFile.WriteText "### " & owlURI & "#DataType" & vbCrLf
+	objOTLFile.WriteText ":" & strPrefix & "DataType" &  " a owl:Class ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Data type""@en ." & vbCrLf 	
+	
+	'------------------------------------------------------------------------------------------
+	'Classes for the UML Package structure - remove????
 	objOTLFile.WriteText "### " & owlURI & "#OP" & coreClass & vbCrLf
 	objOTLFile.WriteText ":OP" & coreClass &  " a owl:ObjectProperty ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Object Properties""@en ." & vbCrLf 	
 	objOTLFile.WriteText "### " & owlURI & "#DP" & coreClass & vbCrLf
 	objOTLFile.WriteText ":DP" & coreClass &  " a owl:DatatypeProperty ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Datatype Properties""@en ." & vbCrLf 	
-	
+	'------------------------------------------------------------------------------------------------------
 end sub
 
 sub recPackageTraverse(p,parent)
-'Traverse through package structure
+'----------------------------------------------------------------------------------------------------
+'Recursive traverse through package structure
 	set pck = p
 	Repository.WriteOutput "Script", Now & " Traversing package " & pck.Name, 0 
 	objOTLFile.WriteText vbCrLf
+	'------------------------------------------------------------------------------------------------------
+	'This is for maintaining the UML package structure - Remove ???
 	dim clParent
 	clParent = parent
-
 	if pck.PackageGUID <> thePackage.PackageGUID then
 		clParent = strPrefix & replace(pck.Name," ","")
-		objOTLFile.WriteText ":" & clParent & " a owl:Class ;" & vbCrLf
-		objOTLFile.WriteText "       rdfs:subClassOf :" & parent & " ;" & vbCrLf
-		objOTLFile.WriteText "       rdfs:label """ & pck.Name & """@en ." & vbCrLf
+		'objOTLFile.WriteText ":" & clParent & " a owl:Class ;" & vbCrLf
+		'objOTLFile.WriteText "       rdfs:subClassOf :" & parent & " ;" & vbCrLf
+		'objOTLFile.WriteText "       rdfs:label """ & pck.Name & """@en ." & vbCrLf
 	end if
-
+	'------------------------------------------------------------------------------------------------------
+	
 	for each el in pck.Elements
+		'------------------------------------------------------------------------------------------------------
 		'Classes -- as OWL Classes
 		if el.Type = "Class" or el.Type="Enumeration" then 
 			Repository.WriteOutput "Script", Now & " Element: " & el.Stereotype & " " & el.Name, 0 
 			objOTLFile.WriteText ":" & el.Name & " a owl:Class ;" & vbCrLf
-			objOTLFile.WriteText "       rdfs:subClassOf :" & clParent & " ;" & vbCrLf
+			'------------------------------------------------------------------------------------------------------
+			'This is for maintaining the UML package structure - Remove ???	
+			'objOTLFile.WriteText "       rdfs:subClassOf :" & clParent & " ;" & vbCrLf
+			'------------------------------------------------------------------------------------------------------
+			'Place classes under core classes 
 			if UCase(el.Stereotype) = "FEATURETYPE" then
-				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "FeatureType ;" & vbCrLf	
+				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Feature ;" & vbCrLf	
 			elseif UCase(el.Stereotype) = "CODELIST" then
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "CodeList ;" & vbCrLf	
 			elseif UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then			
@@ -117,12 +157,15 @@ sub recPackageTraverse(p,parent)
 			elseif UCase(el.Stereotype) = "DATATYPE" then
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "DataType ;" & vbCrLf	
 			end if
-
+			'------------------------------------------------------------------------------------------------------
+			'Definition
 			if not el.Notes = "" then 
 				definition = replace(el.Notes, """","\""")
 				definition = replace(definition, vbCrLf," ")	
 				objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
 			end if	
+			'------------------------------------------------------------------------------------------------------
+			'Relations - generalizations and associations
 			For each con in el.Connectors
 				if con.ClientID = el.ElementID then
 					set relEl = Repository.GetElementByID(con.SupplierID)
@@ -131,9 +174,12 @@ sub recPackageTraverse(p,parent)
 					set relEl = Repository.GetElementByID(con.ClientID)
 					set conEnd = con.ClientEnd
 				end if 		
+				'------------------------------------------------------------------------------------------------------
+				'Generalization - subclass axiom
 				if con.Type = "Generalization" and con.ClientID = el.ElementID then
-					'Subclass axiom
 					objOTLFile.WriteText "       rdfs:subClassOf :" & relEl.Name & " ;" & vbCrLf					
+				'------------------------------------------------------------------------------------------------------
+				'Associations - properties
 				elseif (con.type = "Aggregation" or con.Type = "Association") and conEnd.Navigable <> "Non-Navigable" and conEnd.Role <> "" then	
 					'Object property
 					'Add to unique list of ObjectProperties. 
@@ -150,7 +196,8 @@ sub recPackageTraverse(p,parent)
 						if rTag.Tag = "rangeVocabulary" then rangeName = "<" & rTag.Value & "#" & relEl.Name & ">"
 						if rTag.Tag = "rangeClass" then rangeName = "<" & rTag.Value & ">" '& "#" & relEl.Name & ">"
 					next
-										
+					'------------------------------------------------------------------------------------------------------------------
+					'Cardinality - need to add datatype restriction as well					
 					Select case conEnd.Cardinality
 						case "1":
 							objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
@@ -166,9 +213,9 @@ sub recPackageTraverse(p,parent)
 					end select
 				end if
 			next
-			
+			'-----------------------------------------------------------------------------------------------------------
+			'Attributes as properties for feature types and datatypes
 			if UCase(el.Stereotype) = "FEATURETYPE" or UCase(el.Stereotype) = "DATATYPE" then
-			'Properties for feature types and datatypes
 				For each attr in el.Attributes
 					Repository.WriteOutput "Script", Now & " Attribute: " & attr.Name & " , cardinality: " & attr.LowerBound & ".." & attr.UpperBound & " (ClassifierID = " & attr.ClassifierID, 0 
 					Select Case attr.Type
@@ -181,7 +228,8 @@ sub recPackageTraverse(p,parent)
 							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
 							'The property
 							objOTLFile.WriteText "       owl:onProperty :" & attr.Name & " ;" & vbCrLf 
-							'Convert range
+							'------------------------------------------------------------------------------------------------------------------
+							'Mapping to XSD Datatypes
 							dim range
 							Select Case attr.Type
 								Case "CharacterString": 
@@ -197,7 +245,8 @@ sub recPackageTraverse(p,parent)
 								Case "Boolean":
 									range = "xsd:boolean"
 							End Select					
-							'Multiplicity and Range
+							'------------------------------------------------------------------------------------------------------------------
+							'Cardinality - need to add datatype restriction as well					
 							if attr.LowerBound = "1" and attr.UpperBound = "1" then
 								objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
 								objOTLFile.WriteText "       owl:onDataRange " & range & " ] ;" & vbCrLf 
@@ -224,7 +273,8 @@ sub recPackageTraverse(p,parent)
 								if aTag.Name = "rangeVocabulary" then rangeName = "<" & aTag.Value & "#" & relEl.Name & ">"
 								if aTag.Name = "rangeClass" then rangeName = "<" & aTag.Value & ">" '& "#" & relEl.Name & ">"
 							next	
-							'Assign properties with multiplicities and ranges to classes (restrictions)
+							'------------------------------------------------------------------------------------------------------------------
+							'Cardinality - need to add datatype restriction as well					
 							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
 							'The property
 							objOTLFile.WriteText "       owl:onProperty :" & attr.Name & " ;" & vbCrLf 
@@ -250,9 +300,9 @@ sub recPackageTraverse(p,parent)
 			end if 
 			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
 			
-			
-			if 	UCase(el.Stereotype) = "CODELIST" or UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then	
+			'----------------------------------------------------------------------------------------------------------
 			'Codelist or enumeration values - instances of classes
+			if 	UCase(el.Stereotype) = "CODELIST" or UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then	
 				For each attr in el.Attributes
 					objOTLFile.WriteText vbCrLf
 					objOTLFile.WriteText "### " & owlURI & "_" & el.Name & "_" & attr.Name & vbCrLf
@@ -293,6 +343,7 @@ sub main
 	
 	Repository.WriteOutput "Script", Now & " Main package: " & thePackage.Name, 0 
 
+	'---------------------------------------------------------------------
 	'Create text stream
 	Set objFSO=CreateObject("Scripting.FileSystemObject")
 	Set objOTLFile = CreateObject("ADODB.Stream")
@@ -304,17 +355,18 @@ sub main
 	filetime = replace(filetime, ":","")
 	filetime = replace(filetime, " ","_")
 	
+	'---------------------------------------------------------------------
 	'Create lists for Object and Datatype Properties
 	Set lstOP = CreateObject("System.Collections.SortedList")
 	Set lstDP = CreateObject("System.Collections.SortedList")
 	
-	'*********************************
+	'---------------------------------------------------------------------
 	'Create ontology and classes
 	heading
 	coreClasses	
 	recPackageTraverse thePackage,coreClass
 
-	'*********************************
+	'---------------------------------------------------------------------
 	'Create unique properties
 	dim i
 	for i = 0 To lstOP.Count - 1
@@ -322,7 +374,10 @@ sub main
 		objOTLFile.WriteText vbCrLf
 		objOTLFile.WriteText "### " & owlURI & "#" & lstOP.GetKey(i) & vbCrLf
 		objOTLFile.WriteText ":" & lstOP.GetKey(i) & " rdf:type owl:ObjectProperty ;" & vbCrLf
+		'---------------------------------------------------------------------
+		'This is for maintaining the package structure - remove?
 		objOTLFile.WriteText "         rdfs:subPropertyOf :OP" & coreClass & " ;" & vbCrLf
+		'---------------------------------------------------------------------
 		if not lstOP.GetByIndex(i) = "" then 
 			definition = replace(lstOP.GetByIndex(i), """","\""")
 			definition = replace(definition, vbCrLf," ")	
@@ -335,7 +390,10 @@ sub main
 		objOTLFile.WriteText vbCrLf
 		objOTLFile.WriteText "### " & owlURI & "#" & lstDP.GetKey(i) & vbCrLf
 		objOTLFile.WriteText ":" & lstDP.GetKey(i) & " rdf:type owl:DatatypeProperty ;" & vbCrLf
+		'---------------------------------------------------------------------
+		'This is for maintaining the package structure - remove?
 		objOTLFile.WriteText "         rdfs:subPropertyOf :DP" & coreClass & " ;" & vbCrLf
+		'---------------------------------------------------------------------
 		if not lstDP.GetByIndex(i) = "" then 
 			definition = replace(lstDP.GetByIndex(i), """","\""")
 			definition = replace(definition, vbCrLf," ")	
@@ -344,12 +402,13 @@ sub main
 		objOTLFile.WriteText "         rdfs:label """ & lstDP.GetKey(i) & """@en ." & vbCrLf 	
 	next
 	
+	'---------------------------------------------------------------------
+	'Write to file
 	dim fn
 	'filename = owlPath & "\" & filetime & "_" & filename & ".ttl"
 	fn = owlPath & "\" & filename & ".ttl"
 	If objFSO.FileExists(fn) then objFSO.DeleteFile fn, true
 	Repository.WriteOutput "Script", Now & " Writing to file " & fn, 0 
-
 	objOTLFile.SaveToFile fn, 2
 	objOTLFile.Close
 	

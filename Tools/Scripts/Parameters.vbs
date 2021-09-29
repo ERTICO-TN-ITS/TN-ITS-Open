@@ -1,5 +1,0 @@
-const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
-const owlPath = "C:\DATA\GitHub\vegvesen\TN-ITS\OWL"
-const filename = "tnits-owl"
-const coreClass = "tnitsClass"
-const strPrefix = "tnits"
