@@ -2145,6 +2145,7 @@
 
 ###  http://spec.tn-its.eu/owl/tnits-owl#tnits
 :tnits rdf:type owl:Class ;
+	   owl:disjointUnionOf ( :tnitsFeature :tnitsCodeList :tnitsEnumeration :tnitsDataType );
        rdfs:label "TN-ITS Root"@en .
 
 

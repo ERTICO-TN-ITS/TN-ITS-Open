@@ -28,6 +28,8 @@ dim attr as EA.Attribute
 dim aTag as EA.AttributeTag
 dim lstOP, lstDP
 dim definition, rangeName
+dim strDjFeature, strDjCode, strDjEnum, strDjDT
+
 '-----------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -80,12 +82,14 @@ end sub
 sub coreClasses
 	dim coreClass
 	coreClass = strPrefix 
+    'Initiate disjoint union strings 
+
 	'Create core classes for the ontology
 	'---------------------------------------------------------------------------------------------------
 	'Root class
 	objOTLFile.WriteText "### " & owlURI & "#" & coreClass & vbCrLf
 	objOTLFile.WriteText ":" & coreClass &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         owl:disjointUnionOf ( :" & strPrefix & "Feature :" & strPrefix & "CodeList :" & strPrefix & "Enumeration :" & strPrefix & "DataType" & " )" & vbCrLf 		
+	objOTLFile.WriteText "         owl:disjointUnionOf ( :" & strPrefix & "Feature :" & strPrefix & "CodeList :" & strPrefix & "Enumeration :" & strPrefix & "DataType" & " ) ;" & vbCrLf 		
 	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Root""@en ." & vbCrLf 	
 	'TN-ITS Feature as subtype of ISO 19109 AnyFeature and GeoSPARQL Feature
 	objOTLFile.WriteText "### " & owlURI & "#Feature" & vbCrLf
@@ -93,23 +97,26 @@ sub coreClasses
 	objOTLFile.WriteText "         rdfs:subClassOf <http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> ," & vbCrLf
     objOTLFile.WriteText  "                          :" & coreclass & " ," & vbCrLf
     objOTLFile.WriteText  "                       gsp:Feature ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""TN-ITS Feature""@en ." & vbCrLf 				
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Feature""@en ." & vbCrLf 	
+	strDjFeature = ":" & strPrefix & "Feature owl:disjointUnionOf ( "
 	'Core class for all code values
 	objOTLFile.WriteText "### " & owlURI & "#CodeList" & vbCrLf
 	objOTLFile.WriteText ":" & strPrefix & "CodeList" &  " a owl:Class ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label ""TN-ITS Code value""@en ." & vbCrLf 					
+	strDjCode = ":" & strPrefix & "CodeList owl:disjointUnionOf ( "
 	'Core class for all enumerations
 	objOTLFile.WriteText "### " & owlURI & "#Enumeration" & vbCrLf
 	objOTLFile.WriteText ":" & strPrefix & "Enumeration" &  " a owl:Class ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label ""TN-ITS Enumeration value""@en ." & vbCrLf 					
+	strDjEnum = ":" & strPrefix & "Enumeration owl:disjointUnionOf ( "
 	'Core class for all datatypes
 	objOTLFile.WriteText "### " & owlURI & "#DataType" & vbCrLf
 	objOTLFile.WriteText ":" & strPrefix & "DataType" &  " a owl:Class ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label ""TN-ITS Data type""@en ." & vbCrLf 	
-	
+	strDjDT = ":" & strPrefix & "DataType owl:disjointUnionOf ( "
 	'------------------------------------------------------------------------------------------
 	'Classes for the UML Package structure - remove????
 	objOTLFile.WriteText "### " & owlURI & "#OP" & coreClass & vbCrLf
@@ -139,6 +146,7 @@ sub recPackageTraverse(p,parent)
 	end if
 	'------------------------------------------------------------------------------------------------------
 	
+	
 	for each el in pck.Elements
 		'------------------------------------------------------------------------------------------------------
 		'Classes -- as OWL Classes
@@ -152,12 +160,16 @@ sub recPackageTraverse(p,parent)
 			'Place classes under core classes 
 			if UCase(el.Stereotype) = "FEATURETYPE" then
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Feature ;" & vbCrLf	
+				strDjFeature = strDjFeature & "":" & el.Name & " "
 			elseif UCase(el.Stereotype) = "CODELIST" then
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "CodeList ;" & vbCrLf	
+				strDjCode = strDjCode & "":" & el.Name & " "
 			elseif UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then			
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Enumeration ;" & vbCrLf	
+				strDjEnum = strDjEnum & "":" & el.Name & " "
 			elseif UCase(el.Stereotype) = "DATATYPE" then
 				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "DataType ;" & vbCrLf	
+				strDjDT = strDjDT & "":" & el.Name & " "
 			end if
 			'------------------------------------------------------------------------------------------------------
 			'Definition
@@ -319,11 +331,22 @@ sub recPackageTraverse(p,parent)
 			end if
 		end if
 	next
+	
 
 	dim subP as EA.Package
 	for each subP in pck.packages
 	    recPackageTraverse subP,clParent 
 	next
+	
+	'Close and write disjoint union strings 
+	strDjFeature = strDjFeature & "    ) ; ."
+	objOTLFile.WriteText strDjFeature & vbCrLf	
+	strDjCode = strDjCode & "    ) ; ."
+	objOTLFile.WriteText strDjCode & vbCrLf	
+	strDjEnum = strDjEnum & "    ) ; ."
+	objOTLFile.WriteText strDjEnum & vbCrLf	
+	strDjDT = strDjDT & "    ) ; ."
+	objOTLFile.WriteText strDjDT & vbCrLf	
 
 end sub
 
