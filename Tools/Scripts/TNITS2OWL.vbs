@@ -29,6 +29,7 @@ dim aTag as EA.AttributeTag
 dim lstOP, lstDP
 dim definition, rangeName
 dim strDjFeature, strDjCode, strDjEnum, strDjDT
+dim coreClass
 
 '-----------------------------------------------------------------------------------------------------------------------------------
 
@@ -80,9 +81,6 @@ sub heading
 end sub
 
 sub coreClasses
-	dim coreClass
-	coreClass = strPrefix 
-    'Initiate disjoint union strings 
 
 	'Create core classes for the ontology
 	'---------------------------------------------------------------------------------------------------
@@ -148,29 +146,41 @@ sub recPackageTraverse(p,parent)
 	
 	
 	for each el in pck.Elements
+		'Initiate disjointUnionOf string 
+		dim strDjCls
+		strDjCls = 	":" & el.Name & " owl:disjointUnionOf ( "
 		'------------------------------------------------------------------------------------------------------
 		'Classes -- as OWL Classes
-		if el.Type = "Class" or el.Type="Enumeration" then 
+		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
 			Repository.WriteOutput "Script", Now & " Element: " & el.Stereotype & " " & el.Name, 0 
 			objOTLFile.WriteText ":" & el.Name & " a owl:Class ;" & vbCrLf
 			'------------------------------------------------------------------------------------------------------
 			'This is for maintaining the UML package structure - Remove ???	
 			'objOTLFile.WriteText "       rdfs:subClassOf :" & clParent & " ;" & vbCrLf
 			'------------------------------------------------------------------------------------------------------
+			'Check whether the class is a subtype. If so, do not subtype directly under core classes
+			dim subcls
+			subcls = false
+			For each con in el.Connectors
+				if con.Type = "Generalization" and con.ClientID = el.ElementID then	subcls = true
+			next	
+			
 			'Place classes under core classes 
-			if UCase(el.Stereotype) = "FEATURETYPE" then
-				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Feature ;" & vbCrLf	
-				strDjFeature = strDjFeature & "":" & el.Name & " "
-			elseif UCase(el.Stereotype) = "CODELIST" then
-				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "CodeList ;" & vbCrLf	
-				strDjCode = strDjCode & "":" & el.Name & " "
-			elseif UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then			
-				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Enumeration ;" & vbCrLf	
-				strDjEnum = strDjEnum & "":" & el.Name & " "
-			elseif UCase(el.Stereotype) = "DATATYPE" then
-				objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "DataType ;" & vbCrLf	
-				strDjDT = strDjDT & "":" & el.Name & " "
-			end if
+			if not subcls then
+				if UCase(el.Stereotype) = "FEATURETYPE" then
+					objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Feature ;" & vbCrLf	
+					strDjFeature = strDjFeature & ":" & el.Name & " "
+				elseif UCase(el.Stereotype) = "CODELIST" then
+					objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "CodeList ;" & vbCrLf	
+					strDjCode = strDjCode & ":" & el.Name & " "
+				elseif UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then			
+					objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "Enumeration ;" & vbCrLf	
+					strDjEnum = strDjEnum & ":" & el.Name & " "
+				elseif UCase(el.Stereotype) = "DATATYPE" then
+					objOTLFile.WriteText "       rdfs:subClassOf :" & strPrefix & "DataType ;" & vbCrLf	
+					strDjDT = strDjDT & ":" & el.Name & " "
+				end if
+			end if	
 			'------------------------------------------------------------------------------------------------------
 			'Definition
 			if not el.Notes = "" then 
@@ -191,7 +201,12 @@ sub recPackageTraverse(p,parent)
 				'------------------------------------------------------------------------------------------------------
 				'Generalization - subclass axiom
 				if con.Type = "Generalization" and con.ClientID = el.ElementID then
-					objOTLFile.WriteText "       rdfs:subClassOf :" & relEl.Name & " ;" & vbCrLf					
+					Repository.WriteOutput "Script", Now & " Subclass of " & relEl.Name, 0 
+					objOTLFile.WriteText "       rdfs:subClassOf :" & relEl.Name & " ;" & vbCrLf	
+				'Generalization - disjointUnionOf for the superclass
+				elseif con.Type = "Generalization" and con.SupplierID = el.ElementID then
+					Repository.WriteOutput "Script", Now & " Superclass for " & relEl.Name, 0 
+					strDjCls = strDjCls & ":" & relEl.Name & " "
 				'------------------------------------------------------------------------------------------------------
 				'Associations - properties
 				elseif (con.type = "Aggregation" or con.Type = "Association") and conEnd.Navigable <> "Non-Navigable" and conEnd.Role <> "" then	
@@ -330,6 +345,9 @@ sub recPackageTraverse(p,parent)
 				next	
 			end if
 		end if
+		'Close and write disjoint union strings 
+		strDjCls = strDjCls & " ) ; ."
+		if InStr(strDjCls,"owl:disjointUnionOf (  )") = 0 then objOTLFile.WriteText strDjCls & vbCrLf	
 	next
 	
 
@@ -338,16 +356,6 @@ sub recPackageTraverse(p,parent)
 	    recPackageTraverse subP,clParent 
 	next
 	
-	'Close and write disjoint union strings 
-	strDjFeature = strDjFeature & "    ) ; ."
-	objOTLFile.WriteText strDjFeature & vbCrLf	
-	strDjCode = strDjCode & "    ) ; ."
-	objOTLFile.WriteText strDjCode & vbCrLf	
-	strDjEnum = strDjEnum & "    ) ; ."
-	objOTLFile.WriteText strDjEnum & vbCrLf	
-	strDjDT = strDjDT & "    ) ; ."
-	objOTLFile.WriteText strDjDT & vbCrLf	
-
 end sub
 
 sub main
@@ -387,9 +395,21 @@ sub main
 	
 	'---------------------------------------------------------------------
 	'Create ontology and classes
+	coreClass = strPrefix 
 	heading
 	coreClasses	
 	recPackageTraverse thePackage,coreClass
+	
+	'---------------------------------------------------------------------
+	'Close and write disjoint union strings 
+	strDjFeature = strDjFeature & "    ) ; ."
+	objOTLFile.WriteText strDjFeature & vbCrLf	
+	strDjCode = strDjCode & "    ) ; ."
+	objOTLFile.WriteText strDjCode & vbCrLf	
+	strDjEnum = strDjEnum & "    ) ; ."
+	objOTLFile.WriteText strDjEnum & vbCrLf	
+	strDjDT = strDjDT & "    ) ; ."
+	objOTLFile.WriteText strDjDT & vbCrLf	
 
 	'---------------------------------------------------------------------
 	'Create unique properties
