@@ -61,7 +61,7 @@
        rdfs:subClassOf :tnitsFeature ;
          skos:definition "Abstract class that represents any type of dataset that may be exchanged using TN-ITS  "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :metadata ;
+       owl:onProperty :metadataProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :Metadata ] ;
        rdfs:label "Dataset"@en .
@@ -159,11 +159,11 @@
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :RoadFeatureId ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :condition ;
+       owl:onProperty :conditionProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :Condition ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :locationReference ;
+       owl:onProperty :locationReferenceProperty ;
        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :LocationReference ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -183,7 +183,7 @@
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:dateTime ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :updateInfo ;
+       owl:onProperty :updateInfoProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :UpdateInfo ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -203,7 +203,7 @@
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:string ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :id ;
+       owl:onProperty :localId ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:string ] ;
        rdfs:label "RoadFeatureId"@en .
@@ -267,7 +267,7 @@
          skos:definition "Specifies area type condition applicability relating to a road feature  "@en ;
        rdfs:subClassOf :Condition ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :areaType ;
+       owl:onProperty :areaTypeProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :AreaType ] ;
        rdfs:label "AreaCondition"@en .
@@ -316,7 +316,7 @@
          skos:definition "Specifies road category condition applicability relating to a road feature "@en ;
        rdfs:subClassOf :Condition ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :roadCategory ;
+       owl:onProperty :roadCategoryProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :RoadCategory ] ;
        rdfs:label "RoadCategoryCondition"@en .
@@ -332,7 +332,7 @@
          skos:definition "Specifies vehicle type condition applicability relating to a road feature  "@en ;
        rdfs:subClassOf :Condition ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :vehicleCharacteristics ;
+       owl:onProperty :vehicleCharacteristicsProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :VehicleCharacteristics ] ;
        rdfs:label "VehicleCondition"@en .
@@ -340,7 +340,7 @@
          skos:definition "Specifies weather type condition applicability relating to a road feature  "@en ;
        rdfs:subClassOf :Condition ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :weatherType ;
+       owl:onProperty :weatherTypeProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :WeatherType ] ;
        rdfs:label "WeatherCondition"@en .
@@ -426,7 +426,7 @@
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:boolean ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :specialDayType ;
+       owl:onProperty :specialDayTypeProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :SpecialDayType ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -613,7 +613,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Emission characteristics of vehicles. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)]  "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :emissionClassificationEuro ;
+       owl:onProperty :emissionClassificationEuroProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :EmissionClassificationEuro ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -632,7 +632,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Gross weight characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -648,7 +648,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Weight characteristic of the heaviest axle on the vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -660,7 +660,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Height characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -672,7 +672,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Length characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -692,7 +692,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Number of axles characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -704,42 +704,42 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "A collection of parameters which characterise a vehicle. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :heightCharacteristic ;
+       owl:onProperty :heightCharacteristicProperty ;
        owl:allValuesFrom :HeightCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :widthCharacteristic ;
+       owl:onProperty :widthCharacteristicProperty ;
        owl:allValuesFrom :WidthCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :heaviestAxleWeightCharacteristic ;
+       owl:onProperty :heaviestAxleWeightCharacteristicProperty ;
        owl:allValuesFrom :HeaviestAxleWeightCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :grossWeightCharacteristic ;
+       owl:onProperty :grossWeightCharacteristicProperty ;
        owl:allValuesFrom :GrossWeightCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :numberOfAxlesCharacteristic ;
+       owl:onProperty :numberOfAxlesCharacteristicProperty ;
        owl:allValuesFrom :NumberOfAxlesCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :emissions ;
+       owl:onProperty :emissionsProperty ;
        owl:allValuesFrom :Emissions ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :lengthCharacteristic ;
+       owl:onProperty :lengthCharacteristicProperty ;
        owl:allValuesFrom :LengthCharacteristic ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :fuelType ;
+       owl:onProperty :fuelTypeProperty ;
        owl:allValuesFrom :FuelType ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :loadType ;
+       owl:onProperty :loadTypeProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :LoadType ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :vehicleEquipment ;
+       owl:onProperty :vehicleEquipmentProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :VehicleEquipment ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :vehicleType ;
+       owl:onProperty :vehicleTypeProperty ;
        owl:allValuesFrom :VehicleType ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :vehicleUsage ;
+       owl:onProperty :vehicleUsageProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :VehicleUsage ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -767,7 +767,7 @@
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Width characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :comparisonOperator ;
+       owl:onProperty :comparisonOperatorProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :ComparisonOperator ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -817,7 +817,7 @@
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:string ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :openLRBinaryVersion ;
+       owl:onProperty :openLRBinaryVersionProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :OpenLRBinaryVersion ] ;
        rdfs:label "BinaryLocationReference"@en .
@@ -948,7 +948,7 @@
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onDataRange xsd:string ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :agoraBinaryVersion ;
+       owl:onProperty :agoraBinaryVersionProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :AgoraBinaryVersion ] ;
        rdfs:label "AgoraLocationReference"@en .
@@ -956,11 +956,11 @@
          skos:definition "A type of dynamic location reference that uses coordinates and core attribution according to the OpenLR specification (see bibliography)  "@en ;
        rdfs:subClassOf :DynamicLocationReference ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :binaryLocationReference ;
+       owl:onProperty :binaryLocationReferenceProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :BinaryLocationReference ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :xMLLocationReference ;
+       owl:onProperty :xMLLocationReferenceProperty ;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :XMLLocationReference ] ;
        rdfs:label "OpenLRLocationReference"@en .
@@ -968,7 +968,7 @@
          skos:definition "A type of precoded location reference that references a location by use of a specified reference  "@en ;
        rdfs:subClassOf :PreCodedLocationReference ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :networkReference ;
+       owl:onProperty :networkReferenceProperty ;
        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :NetworkReference ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -1070,11 +1070,11 @@
          skos:definition "Represents one event that may occur during download and integration of data that needs to be reported back to the provider  "@en ;
        rdfs:subClassOf :FeedbackLogEvent ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :roadFeatureId ;
+       owl:onProperty :roadFeatureIdProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :RoadFeatureId ] ;
        rdfs:subClassOf [ a owl:Restriction ;
-       owl:onProperty :roadFeaturePropertyType ;
+       owl:onProperty :roadFeaturePropertyTypeProperty ;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
        owl:onClass :RoadFeaturePropertyType ] ;
        rdfs:subClassOf [ a owl:Restriction ;
@@ -1120,11 +1120,11 @@
 :tnitsEnumeration owl:disjointUnionOf ( :DatasetType :ConditionOperator :DayOfWeek :MonthOfYear :WeekOfMonth :ComparisonOperator :UpdateType     ) ; .
 :tnitsDataType owl:disjointUnionOf ( :XMLLocationReference :AbstractRoadFeatureProperty :RoadFeatureId :RoadSignContent :Condition :OverallPeriod :Period :SpecialDay :TimePeriodOfDay :Validity :FuzzyTimePeriod :DayWeekMonth :Emissions :GrossWeightCharacteristic :HeaviestAxleWeightCharacteristic :HeightCharacteristic :LengthCharacteristic :NumberOfAxlesCharacteristic :VehicleCharacteristics :WidthCharacteristic :BinaryLocationReference :Identifier :NetworkReference :LocationReference :UpdateInfo :SummaryInfo :Metadata     ) ; .
 
-### http://spec.tn-its.eu/owl/tnits-owl#agoraBinaryVersion
-:agoraBinaryVersion rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#agoraBinaryVersionProperty
+:agoraBinaryVersionProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Provides reference to the version of the AGORA Binary string encoding used by reference to an item in an external code list (see AgoraBinaryVersion Class)"@en ;
-         rdfs:label "agoraBinaryVersion"@en .
+         rdfs:label "agoraBinaryVersionProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#applicableDay
 :applicableDay rdf:type owl:ObjectProperty ;
@@ -1150,11 +1150,11 @@
          skos:definition "<font color=\"#231f20\">Applicable week of the month (1 to 5). \"All weeks of the month\" is expressed by non-inclusion of this attribute.  [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:label "applicableWeek"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#areaType
-:areaType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#areaTypeProperty
+:areaTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specifies the available list of enumerations for the area type condition for a road feature by reference to an item in an external code list "@en ;
-         rdfs:label "areaType"@en .
+         rdfs:label "areaTypeProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#atPosition
 :atPosition rdf:type owl:ObjectProperty ;
@@ -1168,23 +1168,23 @@
          skos:definition "Time period begins with a fuzzy time or the duration is a fuzzy time "@en ;
          rdfs:label "beginOrDuration"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#binaryLocationReference
-:binaryLocationReference rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#binaryLocationReferenceProperty
+:binaryLocationReferenceProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "OpenLR location reference using binary encoding "@en ;
-         rdfs:label "binaryLocationReference"@en .
+         rdfs:label "binaryLocationReferenceProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#comparisonOperator
-:comparisonOperator rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#comparisonOperatorProperty
+:comparisonOperatorProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "<font color=\"#231f20\">The operator to be used in the vehicle characteristic comparison operation. [SOURCE: CEN/TS16157-3:2011] </font>"@en ;
-         rdfs:label "comparisonOperator"@en .
+         rdfs:label "comparisonOperatorProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#condition
-:condition rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#conditionProperty
+:conditionProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Describes the circumstances when the road feature is applicable.  "@en ;
-         rdfs:label "condition"@en .
+         rdfs:label "conditionProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#conditions
 :conditions rdf:type owl:ObjectProperty ;
@@ -1210,11 +1210,11 @@
          skos:definition "The referenced network element."@en ;
          rdfs:label "element"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#emissionClassificationEuro
-:emissionClassificationEuro rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#emissionClassificationEuroProperty
+:emissionClassificationEuroProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "The minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE: DATEX 3.0 Part 7 (proposed EN 161577:2018)] "@en ;
-         rdfs:label "emissionClassificationEuro"@en .
+         rdfs:label "emissionClassificationEuroProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#emissionLevel
 :emissionLevel rdf:type owl:ObjectProperty ;
@@ -1222,11 +1222,11 @@
          skos:definition "The low emission level of a vehicle. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
          rdfs:label "emissionLevel"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#emissions
-:emissions rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#emissionsProperty
+:emissionsProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Emission characteristics of vehicles. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
-         rdfs:label "emissions"@en .
+         rdfs:label "emissionsProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#encodedGeometry
 :encodedGeometry rdf:type owl:ObjectProperty ;
@@ -1276,11 +1276,11 @@
          skos:definition "The start position of the linear element, expressed as the distance along the linear network element. "@en ;
          rdfs:label "fromPosition"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#fuelType
-:fuelType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#fuelTypeProperty
+:fuelTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "The type of fuel used by the vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "fuelType"@en .
+         rdfs:label "fuelTypeProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#gddCode
 :gddCode rdf:type owl:ObjectProperty ;
@@ -1294,11 +1294,11 @@
          skos:definition "<font color=\"#231f20\">The gross weight of the vehicle and its load, including any trailers. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:label "grossVehicleWeight"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#grossWeightCharacteristic
-:grossWeightCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#grossWeightCharacteristicProperty
+:grossWeightCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Gross weight characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "grossWeightCharacteristic"@en .
+         rdfs:label "grossWeightCharacteristicProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#heaviestAxleWeight
 :heaviestAxleWeight rdf:type owl:ObjectProperty ;
@@ -1306,17 +1306,17 @@
          skos:definition "<font color=\"#231f20\">The weight of the heaviest axle on the vehicle. [SOURCE: CEN/TS161573:2011]</font> "@en ;
          rdfs:label "heaviestAxleWeight"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#heaviestAxleWeightCharacteristic
-:heaviestAxleWeightCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#heaviestAxleWeightCharacteristicProperty
+:heaviestAxleWeightCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Weight characteristic of the heaviest axle on the vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "heaviestAxleWeightCharacteristic"@en .
+         rdfs:label "heaviestAxleWeightCharacteristicProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#heightCharacteristic
-:heightCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#heightCharacteristicProperty
+:heightCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Height characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "heightCharacteristic"@en .
+         rdfs:label "heightCharacteristicProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#id
 :id rdf:type owl:ObjectProperty ;
@@ -1329,23 +1329,23 @@
          rdfs:subPropertyOf :OPtnits ;
          rdfs:label "ISO19115Metadata"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#lengthCharacteristic
-:lengthCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#lengthCharacteristicProperty
+:lengthCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Length characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "lengthCharacteristic"@en .
+         rdfs:label "lengthCharacteristicProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#loadType
-:loadType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#loadTypeProperty
+:loadTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "<font color=\"#231f20\">The type of load carried by the vehicle, especially in respect of hazardous loads. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
-         rdfs:label "loadType"@en .
+         rdfs:label "loadTypeProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#locationReference
-:locationReference rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#locationReferenceProperty
+:locationReferenceProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "A reference to the location of the road feature either described by either a precoded or a dynamic location referencing method  "@en ;
-         rdfs:label "locationReference"@en .
+         rdfs:label "locationReferenceProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#log
 :log rdf:type owl:ObjectProperty ;
@@ -1353,11 +1353,11 @@
          skos:definition "Refers to a log which records all the interesting events during download and integration of road features. "@en ;
          rdfs:label "log"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#metadata
-:metadata rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#metadataProperty
+:metadataProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Metadata for the dataset. "@en ;
-         rdfs:label "metadata"@en .
+         rdfs:label "metadataProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#natureOfDistance
 :natureOfDistance rdf:type owl:ObjectProperty ;
@@ -1365,23 +1365,23 @@
          skos:definition "Defines the semantics of a distance measure provided within the RoadSignContent"@en ;
          rdfs:label "natureOfDistance"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#networkReference
-:networkReference rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#networkReferenceProperty
+:networkReferenceProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "A link to a specific network reference "@en ;
-         rdfs:label "networkReference"@en .
+         rdfs:label "networkReferenceProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#numberOfAxlesCharacteristic
-:numberOfAxlesCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#numberOfAxlesCharacteristicProperty
+:numberOfAxlesCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Number of axles characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "numberOfAxlesCharacteristic"@en .
+         rdfs:label "numberOfAxlesCharacteristicProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#openLRBinaryVersion
-:openLRBinaryVersion rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#openLRBinaryVersionProperty
+:openLRBinaryVersionProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Provides reference to the version of the OpenLR Binary string encoding used by reference to an item in an external code list (see OpenLRBinaryVersion Class)"@en ;
-         rdfs:label "openLRBinaryVersion"@en .
+         rdfs:label "openLRBinaryVersionProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#operator
 :operator rdf:type owl:ObjectProperty ;
@@ -1431,23 +1431,23 @@
          skos:definition "A recurring period of a day. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:label "recurringTimePeriodOfDay"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#roadCategory
-:roadCategory rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#roadCategoryProperty
+:roadCategoryProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specifies the available list of enumerations for the category of road for a road feature by reference to an item in an external code list "@en ;
-         rdfs:label "roadCategory"@en .
+         rdfs:label "roadCategoryProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#roadFeatureId
-:roadFeatureId rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#roadFeatureIdProperty
+:roadFeatureIdProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "The identification of the road feature that is concerned by the event.  "@en ;
-         rdfs:label "roadFeatureId"@en .
+         rdfs:label "roadFeatureIdProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#roadFeaturePropertyType
-:roadFeaturePropertyType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#roadFeaturePropertyTypeProperty
+:roadFeaturePropertyTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "The identification of the road feature property type that is concerned by the event. If unset, this event does not concern any road feature property type in particular. "@en ;
-         rdfs:label "roadFeaturePropertyType"@en .
+         rdfs:label "roadFeaturePropertyTypeProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#roadFeatures
 :roadFeatures rdf:type owl:ObjectProperty ;
@@ -1461,11 +1461,11 @@
          skos:definition "Identifies the evidence base that has been used by the authorised authority supplying the data. "@en ;
          rdfs:label "source"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#specialDayType
-:specialDayType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#specialDayTypeProperty
+:specialDayTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specification of a special day, for example schoolDay, publicHoliday, ... [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
-         rdfs:label "specialDayType"@en .
+         rdfs:label "specialDayTypeProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#startTimeOfPeriod
 :startTimeOfPeriod rdf:type owl:ObjectProperty ;
@@ -1497,11 +1497,11 @@
          skos:definition "The meaning of the weight value<font color=\"#231f20\"> [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:label "typeOfWeight"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#updateInfo
-:updateInfo rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#updateInfoProperty
+:updateInfoProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specifies the necessary update information if this is a representation of an update event. "@en ;
-         rdfs:label "updateInfo"@en .
+         rdfs:label "updateInfoProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#validityPeriod
 :validityPeriod rdf:type owl:ObjectProperty ;
@@ -1533,17 +1533,17 @@
          skos:definition "A reference to an externally defined value"@en ;
          rdfs:label "valueReference"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#vehicleCharacteristics
-:vehicleCharacteristics rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#vehicleCharacteristicsProperty
+:vehicleCharacteristicsProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specifies the vehicle characteristics that are applicable to the vehicle type condition for a road feature "@en ;
-         rdfs:label "vehicleCharacteristics"@en .
+         rdfs:label "vehicleCharacteristicsProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#vehicleEquipment
-:vehicleEquipment rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#vehicleEquipmentProperty
+:vehicleEquipmentProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "<font color=\"#231f20\">The type of equipment in use or on board the vehicle. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
-         rdfs:label "vehicleEquipment"@en .
+         rdfs:label "vehicleEquipmentProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#vehicleHeight
 :vehicleHeight rdf:type owl:ObjectProperty ;
@@ -1557,17 +1557,17 @@
          skos:definition "<font color=\"#231f20\">The overall distance between the front and back of an individual vehicle, including the length of any trailers, couplings, etc. [SOURCE: CEN/TS161573:2011]</font> "@en ;
          rdfs:label "vehicleLength"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#vehicleType
-:vehicleType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#vehicleTypeProperty
+:vehicleTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Vehicle type. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "vehicleType"@en .
+         rdfs:label "vehicleTypeProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#vehicleUsage
-:vehicleUsage rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#vehicleUsageProperty
+:vehicleUsageProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "<font color=\"#231f20\">The type of usage of the vehicle (i.e. for what purpose is the vehicle being used). [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
-         rdfs:label "vehicleUsage"@en .
+         rdfs:label "vehicleUsageProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#vehicleWidth
 :vehicleWidth rdf:type owl:ObjectProperty ;
@@ -1575,23 +1575,23 @@
          skos:definition "<font color=\"#231f20\">The maximum width of an individual vehicle, in metres. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:label "vehicleWidth"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#weatherType
-:weatherType rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#weatherTypeProperty
+:weatherTypeProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Specifies the available list of enumerations for the weather type condition for a road feature by reference to an item in an external code list "@en ;
-         rdfs:label "weatherType"@en .
+         rdfs:label "weatherTypeProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#widthCharacteristic
-:widthCharacteristic rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#widthCharacteristicProperty
+:widthCharacteristicProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "Width characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
-         rdfs:label "widthCharacteristic"@en .
+         rdfs:label "widthCharacteristicProperty"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#xMLLocationReference
-:xMLLocationReference rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#xMLLocationReferenceProperty
+:xMLLocationReferenceProperty rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :OPtnits ;
          skos:definition "OpenLR location reference using XML encoding "@en ;
-         rdfs:label "xMLLocationReference"@en .
+         rdfs:label "xMLLocationReferenceProperty"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#base64String
 :base64String rdf:type owl:DatatypeProperty ;
@@ -1647,12 +1647,6 @@
          skos:definition "End of a period. [SOURCE: CEN/TS16157-3:2011]  Specifies the end date and time of this period. If not present, the end of the period is considered to be continuously on-going to an undefined date in the future."@en ;
          rdfs:label "endOfPeriod"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#id
-:id rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf :DPtnits ;
-         skos:definition "An identifier for the road feature as defined by the provider"@en ;
-         rdfs:label "id"@en .
-
 ### http://spec.tn-its.eu/owl/tnits-owl#intersectWithApplicableDays
 :intersectWithApplicableDays rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :DPtnits ;
@@ -1668,7 +1662,7 @@
 ### http://spec.tn-its.eu/owl/tnits-owl#localId
 :localId rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :DPtnits ;
-         skos:definition "A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier. "@en ;
+         skos:definition "An identifier for the road feature as defined by the provider"@en ;
          rdfs:label "localId"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#name

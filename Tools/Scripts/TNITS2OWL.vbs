@@ -30,6 +30,8 @@ dim lstOP, lstDP
 dim definition, rangeName
 dim strDjFeature, strDjCode, strDjEnum, strDjDT
 dim coreClass
+dim lstClasses, propertyName
+
 
 '-----------------------------------------------------------------------------------------------------------------------------------
 
@@ -126,6 +128,25 @@ sub coreClasses
 	'------------------------------------------------------------------------------------------------------
 end sub
 
+sub recClassList(p)
+'Recusive traverse through package and create list of package names
+	set pck = p
+	Repository.WriteOutput "Script", Now & " Traversing package " & pck.Name, 0 
+	'List of classes, for avoiding duplicate names on classes and properties
+	for each el in pck.Elements
+		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
+			Repository.WriteOutput "Script", Now & " Adding " & el.Name & " to the list of classes", 0 
+			lstClasses.Add UCase(el.name),el.ElementGUID
+		end if	
+	Next
+	
+	dim subP as EA.Package
+	for each subP in pck.packages
+	    recClassList subP 
+	next
+
+end sub 
+
 sub recPackageTraverse(p,parent)
 '----------------------------------------------------------------------------------------------------
 'Recursive traverse through package structure
@@ -143,7 +164,6 @@ sub recPackageTraverse(p,parent)
 		'objOTLFile.WriteText "       rdfs:label """ & pck.Name & """@en ." & vbCrLf
 	end if
 	'------------------------------------------------------------------------------------------------------
-	
 	
 	for each el in pck.Elements
 		'Initiate disjointUnionOf string 
@@ -212,12 +232,17 @@ sub recPackageTraverse(p,parent)
 				elseif (con.type = "Aggregation" or con.Type = "Association") and conEnd.Navigable <> "Non-Navigable" and conEnd.Role <> "" then	
 					'Object property
 					'Add to unique list of ObjectProperties. 
-					if not lstOP.Contains(conEnd.Role) then lstOP.Add conEnd.Role, conEnd.RoleNote
+					if lstClasses.Contains(UCASE(conEnd.Role)) then 
+						propertyName = conEnd.Role & "Property"
+					else
+						propertyName = conEnd.Role
+					end if	
+					if not lstOP.Contains(propertyName) then lstOP.Add propertyName, conEnd.RoleNote
 					Repository.WriteOutput "Script", Now & " Role: " & conEnd.Role & " , cardinality: " & conEnd.Cardinality, 0 
 					'Assign properties with multiplicities and ranges to classes (restrictions)
 					objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
 					'The property
-					objOTLFile.WriteText "       owl:onProperty :" & conEnd.Role & " ;" & vbCrLf 
+					objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
 					'Multiplicity and Range
 					rangeName = ":" & relEl.Name
 					'for external classes: Get URI from role tag
@@ -247,16 +272,22 @@ sub recPackageTraverse(p,parent)
 			if UCase(el.Stereotype) = "FEATURETYPE" or UCase(el.Stereotype) = "DATATYPE" then
 				For each attr in el.Attributes
 					Repository.WriteOutput "Script", Now & " Attribute: " & attr.Name & " , cardinality: " & attr.LowerBound & ".." & attr.UpperBound & " (ClassifierID = " & attr.ClassifierID, 0 
+					if lstClasses.Contains(UCASE(attr.Name)) then 
+						propertyName = attr.Name & "Property"
+					else
+						propertyName = attr.Name
+					end if	
+
 					Select Case attr.Type
 						Case "CharacterString","Integer","Real","Date","DateTime","Boolean":
 							'Datatype Property (name and definition)
 							'Add to unique list of DatatypeProperties. 
-							if not lstDP.Contains(attr.Name) then lstDP.Add attr.Name, attr.Notes
+							if not lstDP.Contains(propertyName) then lstDP.Add propertyName, attr.Notes
 
 							'Assign properties with multiplicities and ranges to classes (restrictions)
 							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
 							'The property
-							objOTLFile.WriteText "       owl:onProperty :" & attr.Name & " ;" & vbCrLf 
+							objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
 							'------------------------------------------------------------------------------------------------------------------
 							'Mapping to XSD Datatypes
 							dim range
@@ -291,7 +322,7 @@ sub recPackageTraverse(p,parent)
 					case else
 						'Object Property (name and definition)
 						'Add to unique list of ObjectProperties. 
-						if not lstOP.Contains(attr.Name) then lstOP.Add attr.Name, attr.Notes
+						if not lstOP.Contains(propertyName) then lstOP.Add propertyName, attr.Notes
 						
 						if not attr.ClassifierID = 0 then 
 							'Find related element
@@ -306,7 +337,7 @@ sub recPackageTraverse(p,parent)
 							'Cardinality - need to add datatype restriction as well					
 							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
 							'The property
-							objOTLFile.WriteText "       owl:onProperty :" & attr.Name & " ;" & vbCrLf 
+							objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
 							'Multiplicity and Range
 							if attr.LowerBound = "1" and attr.UpperBound = "1" then
 								objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
@@ -392,6 +423,8 @@ sub main
 	'Create lists for Object and Datatype Properties
 	Set lstOP = CreateObject("System.Collections.SortedList")
 	Set lstDP = CreateObject("System.Collections.SortedList")
+	Set lstClasses = CreateObject("System.Collections.SortedList")
+	recClassList thePackage
 	
 	'---------------------------------------------------------------------
 	'Create ontology and classes
