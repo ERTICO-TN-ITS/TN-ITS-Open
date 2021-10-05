@@ -10,17 +10,20 @@ option explicit
 
 '-----------------------------------------------------------------------------------------------------------------------------------
 'Constants
-const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
+'const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
 const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\core"
-const filename = "tnits-owl"
-const strPrefix = "tnits"
+'const filename = "tnits-owl"
+'const strPrefix = "tnits"
+
 '-----------------------------------------------------------------------------------------------------------------------------------
 'Global parameters
+dim owlURI, strPrefix, filename
 dim objFSO, objOTLFile
 dim thePackage as EA.Package
 dim pck as EA.Package
 dim el as EA.Element
 dim relEl as EA.Element
+dim eTag as EA.TaggedValue
 dim con as EA.Connector
 dim conEnd as EA.ConnectorEnd
 dim rTag as EA.RoleTag
@@ -30,8 +33,12 @@ dim lstOP, lstDP
 dim definition, rangeName
 dim strDjFeature, strDjCode, strDjEnum, strDjDT
 dim coreClass
-dim lstClasses, propertyName
-
+dim lstClasses, lstUniquePropertyNames, lstDuplicatePropertyNames, lstGlobalPropertyNames, lstCreatedProperties
+dim propertyName, propertyDef
+dim isGlobal, hasGlobalRange
+dim i
+dim dt, range, lower, upper
+dim oneOfEnum
 
 '-----------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,8 +90,7 @@ sub heading
 end sub
 
 sub coreClasses
-
-	'Create core classes for the ontology
+'Create core classes for the ontology
 	'---------------------------------------------------------------------------------------------------
 	'Root class
 	objOTLFile.WriteText "### " & owlURI & "#" & coreClass & vbCrLf
@@ -118,25 +124,66 @@ sub coreClasses
 	objOTLFile.WriteText "         rdfs:label ""TN-ITS Data type""@en ." & vbCrLf 	
 	strDjDT = ":" & strPrefix & "DataType owl:disjointUnionOf ( "
 	'------------------------------------------------------------------------------------------
-	'Classes for the UML Package structure - remove????
-	objOTLFile.WriteText "### " & owlURI & "#OP" & coreClass & vbCrLf
-	objOTLFile.WriteText ":OP" & coreClass &  " a owl:ObjectProperty ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Object Properties""@en ." & vbCrLf 	
-	objOTLFile.WriteText "### " & owlURI & "#DP" & coreClass & vbCrLf
-	objOTLFile.WriteText ":DP" & coreClass &  " a owl:DatatypeProperty ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label """ & thePackage.Name & " Datatype Properties""@en ." & vbCrLf 	
-	'------------------------------------------------------------------------------------------------------
+end sub
+
+sub addPropertyLists
+'Add attributes and associaton ends to internal property lists
+	if isGlobal then
+		'Add attribute to list of global properties, with information concerning global range
+		Repository.WriteOutput "Script", Now & " Global property. Adding <" & propertyName & "> to the list of global property names", 0 
+		if not lstGlobalPropertyNames.Contains(propertyName) then lstGlobalPropertyNames.Add propertyName, hasGlobalRange
+	elseif not lstUniquePropertyNames.Contains(propertyName) then 
+		'Not identified yet - add to list of unique names
+		Repository.WriteOutput "Script", Now & " New property name. Adding <" & propertyName & "> to the list of unique property names", 0 
+		lstUniquePropertyNames.Add propertyName, propertyName
+	else	
+		'Not global, but already identified - add to list of duplicate names
+		Repository.WriteOutput "Script", Now & " Duplicate property name. Adding <" & propertyName & "> to the list of duplicate property names", 0 
+		if not lstDuplicatePropertyNames.Contains(propertyName) then lstDuplicatePropertyNames.Add propertyName, propertyName
+	end if
 end sub
 
 sub recClassList(p)
-'Recusive traverse through package and create list of package names
+'Recusive traverse through package and create list of class and property names
 	set pck = p
 	Repository.WriteOutput "Script", Now & " Traversing package " & pck.Name, 0 
+	'--------------------------------------------------------------------------------------------------
 	'List of classes, for avoiding duplicate names on classes and properties
 	for each el in pck.Elements
 		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
-			Repository.WriteOutput "Script", Now & " Adding " & el.Name & " to the list of classes", 0 
+			Repository.WriteOutput "Script", Now & " Adding <" & el.Name & "> to the list of classes", 0 
 			lstClasses.Add UCase(el.name),el.ElementGUID
+			
+			if UCase(el.Stereotype) = "FEATURETYPE" or UCase(el.Stereotype) = "DATATYPE" then 
+				'Lists of properties, for avoiding duplicate property names
+				
+				for each attr in el.Attributes 
+					'Identify global properties from tagged values
+					isGlobal = false
+					hasGlobalRange = false		
+					for each aTag in attr.TaggedValues
+						if aTag.Name = "isGlobal" and aTag.Value = "true" then isglobal = true
+						if aTag.Name = "hasGlobalRange" and aTag.Value = "true" then hasGlobalRange = true					
+					next
+					
+					propertyName = attr.Name
+					addPropertyLists
+				next
+								
+				for each con in el.Connectors
+					getConEnd
+					if (con.type = "Aggregation" or con.Type = "Association") and conEnd.Navigable <> "Non-Navigable" and conEnd.Role <> "" then	
+						isGlobal = false
+						hasGlobalRange = false		
+						for each rTag in conEnd.TaggedValues
+							if rTag.Tag = "isGlobal" and rTag.Value = "true" then isglobal = true
+							if rTag.Tag = "hasGlobalRange" and rTag.Value = "true" then hasGlobalRange = true					
+						next
+						propertyName = conEnd.Role
+						addPropertyLists
+					end if
+				next
+			end if
 		end if	
 	Next
 	
@@ -144,27 +191,108 @@ sub recClassList(p)
 	for each subP in pck.packages
 	    recClassList subP 
 	next
-
 end sub 
 
-sub recPackageTraverse(p,parent)
+
+sub createProperty
+'--------------------------------------------------------------------------------
+'Create property and set restrictions
+	'Set unique property name and check whether range shall be set 
+	if lstGlobalPropertyNames.Contains(propertyName) then
+		'Check for global range - global properties may have different ranges for different classes
+		i = lstGlobalPropertyNames.IndexofKey(propertyName)
+		hasGlobalRange = lstGlobalPropertyNames.GetByIndex(i)
+	elseif not lstGlobalPropertyNames.Contains(propertyName) then
+		'Make sure the property name is unique
+		if lstClasses.Contains(UCASE(propertyName)) or lstDuplicatePropertyNames.Contains(propertyName) then 
+			'Define unique property name by adding prefix Class name + "." 
+			propertyName = el.Name & "." & propertyName
+		else
+			hasGlobalRange = true 'All UML properties have global range by default
+		end if	
+	end if	
+			
+	'-----------------------------------------------------------------------------------------
+	'Create property if not created
+	if not lstCreatedProperties.Contains(propertyName) then
+		objOTLFile.WriteText vbCrLf
+		objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
+		if dt = "d" then
+			Repository.WriteOutput "Script", Now & " Datatype property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
+			objOTLFile.WriteText vbCrLf
+			objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
+			objOTLFile.WriteText ":" & propertyName & " rdf:type owl:DatatypeProperty ;" & vbCrLf
+		else
+			Repository.WriteOutput "Script", Now & " Object property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
+			objOTLFile.WriteText ":" & propertyName & " rdf:type owl:ObjectProperty ;" & vbCrLf
+		end if
+		'---------------------------
+		'Set defintion if not empty
+		if not propertyDef = "" then 
+			propertyDef = replace(propertyDef, """","\""")
+			propertyDef = replace(propertyDef, vbCrLf," ")	
+			objOTLFile.WriteText "         skos:definition """ & propertyDef & """@en ;" & vbCrLf
+		end if	
+		'---------------------------
+		'Set domain if not global property
+		if not lstGlobalPropertyNames.Contains(propertyName) then
+			objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
+		end if
+		'---------------------------
+		'Set range if hasGlobalRange
+		if hasGlobalRange then
+			objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
+		end if
+		'Close property statement with "."
+		objOTLFile.WriteText "         rdfs:label """ & propertyName & """@en ." & vbCrLf 	
+		'Add to list of created properties (only for global properties?)
+		lstCreatedProperties.Add propertyName, ""
+	end if
+	
+	'--------------------------------------------------------------------------------------------
+	'Set cardinality restrictions for the property on this specific class
+	if not (lower = "0" and upper = "*") then 'No cardinality requirements on 0..*
+		objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
+		objOTLFile.WriteText "         owl:onProperty :" & propertyName & ";" & vbCrLf 	
+		if dt = "d" then
+			objOTLFile.WriteText "         owl:onDataRange " & range & ";" & vbCrLf 		
+		else
+			objOTLFile.WriteText "         owl:onClass " & range & ";" & vbCrLf 		
+		end if
+		if lower = upper then 
+			objOTLFile.WriteText "       owl:qualifiedCardinality """ & lower & """^^xsd:nonNegativeInteger ;" & vbCrLf 'Exact cardinality
+		else
+			if lower <> "0" then objOTLFile.WriteText "       owl:minQualifiedCardinality """ & lower & """^^xsd:nonNegativeInteger ;" & vbCrLf 'Lower <> 0 --> Mandatory, minimum cardinality		
+			if upper <> "*" then objOTLFile.WriteText "       owl:maxQualifiedCardinality """ & upper & """^^xsd:nonNegativeInteger ;" & vbCrLf 'Upper <> * --> Restricted maximum cardinality	
+		end if
+		objOTLFile.WriteText "         ] ." & vbCrLf
+	end if	
+	'All values from
+	objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
+	objOTLFile.WriteText "         owl:onProperty :" & propertyName & ";" & vbCrLf 	
+	objOTLFile.WriteText "         owl:allValuesFrom " & range & ";" & vbCrLf 	
+	objOTLFile.WriteText "         ] ." & vbCrLf
+	objOTLFile.WriteText vbCrLf
+end sub
+
+sub getConEnd
+'Get the correct connector end and associated elements
+	if con.ClientID = el.ElementID then
+		set relEl = Repository.GetElementByID(con.SupplierID)
+		set conEnd = con.SupplierEnd
+	else
+		set relEl = Repository.GetElementByID(con.ClientID)
+		set conEnd = con.ClientEnd
+	end if 		
+end sub
+
+sub recPackageTraverse(p)
 '----------------------------------------------------------------------------------------------------
 'Recursive traverse through package structure
 	set pck = p
 	Repository.WriteOutput "Script", Now & " Traversing package " & pck.Name, 0 
 	objOTLFile.WriteText vbCrLf
 	'------------------------------------------------------------------------------------------------------
-	'This is for maintaining the UML package structure - Remove ???
-	dim clParent
-	clParent = parent
-	if pck.PackageGUID <> thePackage.PackageGUID then
-		clParent = strPrefix & replace(pck.Name," ","")
-		'objOTLFile.WriteText ":" & clParent & " a owl:Class ;" & vbCrLf
-		'objOTLFile.WriteText "       rdfs:subClassOf :" & parent & " ;" & vbCrLf
-		'objOTLFile.WriteText "       rdfs:label """ & pck.Name & """@en ." & vbCrLf
-	end if
-	'------------------------------------------------------------------------------------------------------
-	
 	for each el in pck.Elements
 		'Initiate disjointUnionOf string 
 		dim strDjCls
@@ -172,11 +300,9 @@ sub recPackageTraverse(p,parent)
 		'------------------------------------------------------------------------------------------------------
 		'Classes -- as OWL Classes
 		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
+			'Create class
 			Repository.WriteOutput "Script", Now & " Element: " & el.Stereotype & " " & el.Name, 0 
 			objOTLFile.WriteText ":" & el.Name & " a owl:Class ;" & vbCrLf
-			'------------------------------------------------------------------------------------------------------
-			'This is for maintaining the UML package structure - Remove ???	
-			'objOTLFile.WriteText "       rdfs:subClassOf :" & clParent & " ;" & vbCrLf
 			'------------------------------------------------------------------------------------------------------
 			'Check whether the class is a subtype. If so, do not subtype directly under core classes
 			dim subcls
@@ -208,89 +334,54 @@ sub recPackageTraverse(p,parent)
 				definition = replace(definition, vbCrLf," ")	
 				objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
 			end if	
+			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
+
 			'------------------------------------------------------------------------------------------------------
 			'Relations - generalizations and associations
 			For each con in el.Connectors
-				if con.ClientID = el.ElementID then
-					set relEl = Repository.GetElementByID(con.SupplierID)
-					set conEnd = con.SupplierEnd
-				else
-					set relEl = Repository.GetElementByID(con.ClientID)
-					set conEnd = con.ClientEnd
-				end if 		
+				getConEnd
+				
 				'------------------------------------------------------------------------------------------------------
 				'Generalization - subclass axiom
 				if con.Type = "Generalization" and con.ClientID = el.ElementID then
 					Repository.WriteOutput "Script", Now & " Subclass of " & relEl.Name, 0 
-					objOTLFile.WriteText "       rdfs:subClassOf :" & relEl.Name & " ;" & vbCrLf	
+					objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf :" & relEl.Name & " ." & vbCrLf	
 				'Generalization - disjointUnionOf for the superclass
 				elseif con.Type = "Generalization" and con.SupplierID = el.ElementID then
 					Repository.WriteOutput "Script", Now & " Superclass for " & relEl.Name, 0 
 					strDjCls = strDjCls & ":" & relEl.Name & " "
 				'------------------------------------------------------------------------------------------------------
-				'Associations - properties
+				'Associations - object properties
 				elseif (con.type = "Aggregation" or con.Type = "Association") and conEnd.Navigable <> "Non-Navigable" and conEnd.Role <> "" then	
-					'Object property
-					'Add to unique list of ObjectProperties. 
-					if lstClasses.Contains(UCASE(conEnd.Role)) then 
-						propertyName = conEnd.Role & "Property"
+					dt = "o"
+					propertyName = conEnd.Role
+					propertyDef = conEnd.RoleNote
+					dim crdArr
+					crdArr = split(conEnd.Cardinality,"..")
+					lower = crdArr(0)
+					if Ubound(crdArr) = 0 then upper = lower else upper = crdArr(1)		
+					if not relEl is nothing then 
+						range = ":" & relEl.Name
+						for each rTag in conEnd.TaggedValues
+							if rTag.Tag = "rangeVocabulary" then range = "<" & rTag.Value & "#" & relEl.Name & ">"
+							if rTag.Tag = "rangeClass" then range = "<" & rTag.Value & ">" 
+						next
+						createProperty
 					else
-						propertyName = conEnd.Role
+						Repository.WriteOutput "Error", Now & " Unknown type for property: " & propertyName & " , cardinality: " & lower & ".." & upper, 0 
 					end if	
-					if not lstOP.Contains(propertyName) then lstOP.Add propertyName, conEnd.RoleNote
-					Repository.WriteOutput "Script", Now & " Role: " & conEnd.Role & " , cardinality: " & conEnd.Cardinality, 0 
-					'Assign properties with multiplicities and ranges to classes (restrictions)
-					objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
-					'The property
-					objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
-					'Multiplicity and Range
-					rangeName = ":" & relEl.Name
-					'for external classes: Get URI from role tag
-					for each rTag in conEnd.TaggedValues
-						if rTag.Tag = "rangeVocabulary" then rangeName = "<" & rTag.Value & "#" & relEl.Name & ">"
-						if rTag.Tag = "rangeClass" then rangeName = "<" & rTag.Value & ">" '& "#" & relEl.Name & ">"
-					next
-					'------------------------------------------------------------------------------------------------------------------
-					'Cardinality - need to add datatype restriction as well					
-					Select case conEnd.Cardinality
-						case "1":
-							objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-							objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-						case "0..1":
-							objOTLFile.WriteText "       owl:maxQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-							objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-						case "1..*":
-							objOTLFile.WriteText "       owl:minQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 	
-							objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-						case else
-							objOTLFile.WriteText "       owl:allValuesFrom " & rangeName & " ] ;" & vbCrLf 							
-					end select
 				end if
 			next
 			'-----------------------------------------------------------------------------------------------------------
 			'Attributes as properties for feature types and datatypes
 			if UCase(el.Stereotype) = "FEATURETYPE" or UCase(el.Stereotype) = "DATATYPE" then
 				For each attr in el.Attributes
-					Repository.WriteOutput "Script", Now & " Attribute: " & attr.Name & " , cardinality: " & attr.LowerBound & ".." & attr.UpperBound & " (ClassifierID = " & attr.ClassifierID, 0 
-					if lstClasses.Contains(UCASE(attr.Name)) then 
-						propertyName = attr.Name & "Property"
-					else
-						propertyName = attr.Name
-					end if	
-
+					'------------------------------------------------------------------------------
+					'Find type of property (data or object) and range
 					Select Case attr.Type
 						Case "CharacterString","Integer","Real","Date","DateTime","Boolean":
-							'Datatype Property (name and definition)
-							'Add to unique list of DatatypeProperties. 
-							if not lstDP.Contains(propertyName) then lstDP.Add propertyName, attr.Notes
-
-							'Assign properties with multiplicities and ranges to classes (restrictions)
-							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
-							'The property
-							objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
-							'------------------------------------------------------------------------------------------------------------------
-							'Mapping to XSD Datatypes
-							dim range
+							'Datatype property, mapping to XSD Datatypes
+							dt = "d"
 							Select Case attr.Type
 								Case "CharacterString": 
 									range = "xsd:string"
@@ -305,65 +396,43 @@ sub recPackageTraverse(p,parent)
 								Case "Boolean":
 									range = "xsd:boolean"
 							End Select					
-							'------------------------------------------------------------------------------------------------------------------
-							'Cardinality - need to add datatype restriction as well					
-							if attr.LowerBound = "1" and attr.UpperBound = "1" then
-								objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-								objOTLFile.WriteText "       owl:onDataRange " & range & " ] ;" & vbCrLf 
-							elseif attr.LowerBound = "0" and attr.UpperBound = "1" then		
-								objOTLFile.WriteText "       owl:maxQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-								objOTLFile.WriteText "       owl:onDataRange " & range & " ] ;" & vbCrLf 
-							elseif attr.LowerBound = "1" and attr.UpperBound = "*" then		
-								objOTLFile.WriteText "       owl:minQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 	
-								objOTLFile.WriteText "       owl:onDataRange " & range & " ] ;" & vbCrLf 
-							else
-								objOTLFile.WriteText "       owl:allValuesFrom " & range & " ] ;" & vbCrLf 							
-							end if
 					case else
 						'Object Property (name and definition)
-						'Add to unique list of ObjectProperties. 
-						if not lstOP.Contains(propertyName) then lstOP.Add propertyName, attr.Notes
-						
+						dt = "o"
 						if not attr.ClassifierID = 0 then 
 							'Find related element
 							set relEl = Repository.GetElementByID(attr.ClassifierID)
-							rangeName = ":" & relEl.Name
-							'for external classes: Get URI from attribute tag
+							range = ":" & relEl.Name
+							'For external classes: Get URI from attribute tag rangeVocabulary or rangeClass
 							for each aTag in attr.TaggedValues
-								if aTag.Name = "rangeVocabulary" then rangeName = "<" & aTag.Value & "#" & relEl.Name & ">"
-								if aTag.Name = "rangeClass" then rangeName = "<" & aTag.Value & ">" '& "#" & relEl.Name & ">"
+								if aTag.Name = "rangeVocabulary" then range = "<" & aTag.Value & "#" & relEl.Name & ">"
+								if aTag.Name = "rangeClass" then range = "<" & aTag.Value & ">" '& "#" & relEl.Name & ">"
 							next	
-							'------------------------------------------------------------------------------------------------------------------
-							'Cardinality - need to add datatype restriction as well					
-							objOTLFile.WriteText "       rdfs:subClassOf [ a owl:Restriction ;" & vbCrLf 
-							'The property
-							objOTLFile.WriteText "       owl:onProperty :" & propertyName & " ;" & vbCrLf 
-							'Multiplicity and Range
-							if attr.LowerBound = "1" and attr.UpperBound = "1" then
-								objOTLFile.WriteText "       owl:qualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-								objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-							elseif attr.LowerBound = "0" and attr.UpperBound = "1" then		
-								objOTLFile.WriteText "       owl:maxQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 
-								objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-							elseif attr.LowerBound = "1" and attr.UpperBound = "*" then		
-								objOTLFile.WriteText "       owl:minQualifiedCardinality ""1""^^xsd:nonNegativeInteger ;" & vbCrLf 	
-								objOTLFile.WriteText "       owl:onClass " & rangeName & " ] ;" & vbCrLf 
-							else
-								objOTLFile.WriteText "       owl:allValuesFrom " & rangeName & " ] ;" & vbCrLf 							
-							end if	
 						else
-							Repository.WriteOutput "Error", Now & " Attribute: " & attr.Name & " , cardinality: " & attr.LowerBound & ".." & attr.UpperBound & " (ClassifierID = " & attr.ClassifierID, 0 
+							dt = "-"
 						end if	
-
 					End Select	
+					
+					propertyName = attr.Name
+					propertyDef = attr.Notes
+					lower = attr.LowerBound
+					upper = attr.UpperBound
+					if not dt = "-" then 
+						createProperty
+					else
+						Repository.WriteOutput "Error", Now & " Unknown type for property: " & propertyName & " , cardinality: " & lower & ".." & upper, 0 
+					end if
 				next
 			end if 
-			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
 			
 			'----------------------------------------------------------------------------------------------------------
 			'Codelist or enumeration values - instances of classes
-			if 	UCase(el.Stereotype) = "CODELIST" or UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then	
+			if 	UCase(el.Stereotype) = "CODELIST" or UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then
+				'Initiate oneOf statement
+				oneOfEnum = ":" & el.Name & " owl:oneOf ( " & vbCrLf
 				For each attr in el.Attributes
+					'Include value in oneOf-statement 
+					oneOfEnum = oneOfEnum & "         :" & attr.Name & vbCrLf
 					objOTLFile.WriteText vbCrLf
 					objOTLFile.WriteText "### " & owlURI & "_" & el.Name & "_" & attr.Name & vbCrLf
 					objOTLFile.WriteText ":" & el.Name & "_" & attr.Name & " rdf:type :" & el.Name & " ;" & vbCrLf
@@ -374,17 +443,21 @@ sub recPackageTraverse(p,parent)
 					end if	
 					objOTLFile.WriteText "         rdfs:label """ & attr.Name & """@no ." & vbCrLf					
 				next	
+				'Close and write oneOf statement 
+				oneOfEnum = oneOfEnum & " ) ; ." & vbCrLf
+				objOTLFile.WriteText oneOfEnum & vbCrLf			
+
 			end if
 		end if
-		'Close and write disjoint union strings 
+		'Close and write non-empty disjoint union strings for enumerations
 		strDjCls = strDjCls & " ) ; ."
-		if InStr(strDjCls,"owl:disjointUnionOf (  )") = 0 then objOTLFile.WriteText strDjCls & vbCrLf	
+		if 	(UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration") and InStr(strDjCls,"owl:disjointUnionOf (  )") = 0 then objOTLFile.WriteText strDjCls & vbCrLf	
 	next
 	
 
 	dim subP as EA.Package
 	for each subP in pck.packages
-	    recPackageTraverse subP,clParent 
+	    recPackageTraverse subP
 	next
 	
 end sub
@@ -405,7 +478,18 @@ sub main
 		exit sub
 	end if
 	
+	'Find package tags for URI and namespace abbreviation
+	owlURI = ""
+	strPrefix = ""
 	Repository.WriteOutput "Script", Now & " Main package: " & thePackage.Name, 0 
+	for each eTag in thePackage.Element.TaggedValues
+		if eTag.Name = "owlNamespace" then owlURI = eTag.Value
+		If eTag.Name = "xmlns" then strPrefix = eTag.Value
+	next
+	If owlURI = "" or strPrefix = "" then 
+		Repository.WriteOutput "Error", Now & " Missing namespace or namespace abbreviation", 0 
+		exit sub
+	end if
 
 	'---------------------------------------------------------------------
 	'Create text stream
@@ -414,25 +498,49 @@ sub main
 	objOTLFile.CharSet = "utf-8"
 	objOTLFile.Open
 	
-	dim filetime
-	filetime = replace(Now, ".","")
-	filetime = replace(filetime, ":","")
-	filetime = replace(filetime, " ","_")
+	'dim filetime
+	'filetime = replace(Now, ".","")
+	'filetime = replace(filetime, ":","")
+	'filetime = replace(filetime, " ","_")
 	
 	'---------------------------------------------------------------------
-	'Create lists for Object and Datatype Properties
-	Set lstOP = CreateObject("System.Collections.SortedList")
-	Set lstDP = CreateObject("System.Collections.SortedList")
-	Set lstClasses = CreateObject("System.Collections.SortedList")
-	recClassList thePackage
-	
-	'---------------------------------------------------------------------
-	'Create ontology and classes
+	'Create ontology with prefixes, imports and core classes
+	Repository.WriteOutput "Script", Now & " Creating ontology with prefixes, imports and core classes...", 0 
 	coreClass = strPrefix 
 	heading
 	coreClasses	
-	recPackageTraverse thePackage,coreClass
 	
+	'---------------------------------------------------------------------
+	'Create internal lists of classes and properties
+	Repository.WriteOutput "Script", Now & " ----------------------------------------------",0
+	Repository.WriteOutput "Script", Now & " Creating internal lists of classes and properties...", 0 
+	Set lstOP = CreateObject("System.Collections.SortedList")
+	Set lstDP = CreateObject("System.Collections.SortedList")
+	Set lstClasses = CreateObject("System.Collections.SortedList")
+	Set lstUniquePropertyNames = CreateObject("System.Collections.SortedList")
+	Set lstDuplicatePropertyNames = CreateObject("System.Collections.SortedList")
+	Set lstGlobalPropertyNames = CreateObject("System.Collections.SortedList")
+	Set lstCreatedProperties = CreateObject("System.Collections.SortedList")
+	'Loop through packages, classes and properties
+	recClassList thePackage
+	
+	'Documentation of global and dupliacte properties
+	Repository.WriteOutput "Script", Now & " ----------------------------------------------",0
+	Repository.WriteOutput "Script", Now & " Global properties:",0
+	for i = 0 To lstGlobalPropertyNames.Count - 1
+		Repository.WriteOutput "Script", Now & " " & lstGlobalPropertyNames.GetKey(i) & " (hasGlobalRange = " & lstGlobalPropertyNames.GetByIndex(i) & ")",0
+	next
+	Repository.WriteOutput "Script", Now & " ----------------------------------------------",0
+	Repository.WriteOutput "Script", Now & " Duplicate property names:",0
+	for i = 0 To lstDuplicatePropertyNames.Count - 1
+		Repository.WriteOutput "Script", Now & " " & lstDuplicatePropertyNames.GetKey(i) ,0
+	next
+		
+	'---------------------------------------------------------------------
+	'Loop through packages and create classes and properties
+	Repository.WriteOutput "Script", Now & " ----------------------------------------------",0
+	recPackageTraverse thePackage
+		
 	'---------------------------------------------------------------------
 	'Close and write disjoint union strings 
 	strDjFeature = strDjFeature & "    ) ; ."
@@ -443,48 +551,12 @@ sub main
 	objOTLFile.WriteText strDjEnum & vbCrLf	
 	strDjDT = strDjDT & "    ) ; ."
 	objOTLFile.WriteText strDjDT & vbCrLf	
-
-	'---------------------------------------------------------------------
-	'Create unique properties
-	dim i
-	for i = 0 To lstOP.Count - 1
-		Repository.WriteOutput "Script", Now & " Object property: " & lstOP.GetKey(i) ,0
-		objOTLFile.WriteText vbCrLf
-		objOTLFile.WriteText "### " & owlURI & "#" & lstOP.GetKey(i) & vbCrLf
-		objOTLFile.WriteText ":" & lstOP.GetKey(i) & " rdf:type owl:ObjectProperty ;" & vbCrLf
-		'---------------------------------------------------------------------
-		'This is for maintaining the package structure - remove?
-		objOTLFile.WriteText "         rdfs:subPropertyOf :OP" & coreClass & " ;" & vbCrLf
-		'---------------------------------------------------------------------
-		if not lstOP.GetByIndex(i) = "" then 
-			definition = replace(lstOP.GetByIndex(i), """","\""")
-			definition = replace(definition, vbCrLf," ")	
-			objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
-		end if	
-		objOTLFile.WriteText "         rdfs:label """ & lstOP.GetKey(i) & """@en ." & vbCrLf 	
-	next	
-	for i = 0 To lstDP.Count - 1
-		Repository.WriteOutput "Script", Now & " Datatype property: " & lstDP.GetKey(i) ,0
-		objOTLFile.WriteText vbCrLf
-		objOTLFile.WriteText "### " & owlURI & "#" & lstDP.GetKey(i) & vbCrLf
-		objOTLFile.WriteText ":" & lstDP.GetKey(i) & " rdf:type owl:DatatypeProperty ;" & vbCrLf
-		'---------------------------------------------------------------------
-		'This is for maintaining the package structure - remove?
-		objOTLFile.WriteText "         rdfs:subPropertyOf :DP" & coreClass & " ;" & vbCrLf
-		'---------------------------------------------------------------------
-		if not lstDP.GetByIndex(i) = "" then 
-			definition = replace(lstDP.GetByIndex(i), """","\""")
-			definition = replace(definition, vbCrLf," ")	
-			objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
-		end if	
-		objOTLFile.WriteText "         rdfs:label """ & lstDP.GetKey(i) & """@en ." & vbCrLf 	
-	next
 	
 	'---------------------------------------------------------------------
 	'Write to file
 	dim fn
 	'filename = owlPath & "\" & filetime & "_" & filename & ".ttl"
-	fn = owlPath & "\" & filename & ".ttl"
+	fn = owlPath & "\" & strPrefix & "-owl.ttl"
 	If objFSO.FileExists(fn) then objFSO.DeleteFile fn, true
 	Repository.WriteOutput "Script", Now & " Writing to file " & fn, 0 
 	objOTLFile.SaveToFile fn, 2
