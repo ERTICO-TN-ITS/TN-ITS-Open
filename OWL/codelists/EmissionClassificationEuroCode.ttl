@@ -1,52 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list EmissionClassificationEuroCode"@en ;
-	dcterms:title "TN-ITS EmissionClassificationEuroCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro5> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro5"@en ;
-         skos:definition "Euro 5"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro5a> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro5a"@en ;
-         skos:definition "Euro 5a"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro5b> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro5b"@en ;
-         skos:definition "Euro 5b"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro6> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro6"@en ;
-         skos:definition "Euro 6"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro6a> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro6a"@en ;
-         skos:definition "Euro 6a"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro6b> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro6b"@en ;
-         skos:definition "Euro 6b"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euro6c> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euro6c"@en ;
-         skos:definition "Euro 6c"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euroV> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euroV"@en ;
-         skos:definition "Euro V"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#euroVI> a tnits:EmissionClassificationEuro ;
-         rdfs:label "euroVI"@en ;
-         skos:definition "Euro VI"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/EmissionClassificationEuroCode#other> a tnits:EmissionClassificationEuro ;
-         rdfs:label "other"@en ;
-         skos:definition "Other Euro classifications"@en .
-         
-

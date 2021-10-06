@@ -1,49 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list UomIdentifierCode"@en ;
-	dcterms:title "TN-ITS UomIdentifierCode"@en ;
-	dcterms:abstract "Specifies the available list of preferred enumerations for identifiers for units of measure" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#kph> a tnits:UomIdentifier ;
-         rdfs:label "kph"@en ;
-         skos:definition "Kilometres per hour"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#mph> a tnits:UomIdentifier ;
-         rdfs:label "mph"@en ;
-         skos:definition "Miles per hour"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#m> a tnits:UomIdentifier ;
-         rdfs:label "m"@en ;
-         skos:definition "Metres"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#yd> a tnits:UomIdentifier ;
-         rdfs:label "yd"@en ;
-         skos:definition "Yards"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#mi> a tnits:UomIdentifier ;
-         rdfs:label "mi"@en ;
-         skos:definition "Miles"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#km> a tnits:UomIdentifier ;
-         rdfs:label "km"@en ;
-         skos:definition "Kilometres"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#ftin> a tnits:UomIdentifier ;
-         rdfs:label "ftin"@en ;
-         skos:definition "Feet and inches  Note: To enable this to be coded into a single value the following convention shall be followed.  The feet value is encoded as an integer value and the is suffixed by the inches value which is given as a two digit decimal value, where leading zeros are maintained [e.g. .00, .01, .02, .03, .04, .05, .06, .07, .08, .09, .10, .11, .12].  The value .99 shall indicate the no inches value is provided. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#t> a tnits:UomIdentifier ;
-         rdfs:label "t"@en ;
-         skos:definition "Tonnes"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/UomIdentifierCode#kg> a tnits:UomIdentifier ;
-         rdfs:label "kg"@en ;
-         skos:definition "Kilogrammes"@en .
-         
-

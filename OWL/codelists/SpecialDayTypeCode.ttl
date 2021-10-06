@@ -1,49 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list SpecialDayTypeCode"@en ;
-	dcterms:title "TN-ITS SpecialDayTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the special days" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#dayBeforePublicHoliday> a tnits:SpecialDayType ;
-         rdfs:label "dayBeforePublicHoliday"@en ;
-         skos:definition "The day before a declared Public Holiday"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#publicHoliday> a tnits:SpecialDayType ;
-         rdfs:label "publicHoliday"@en ;
-         skos:definition "The day of a declared Public Holiday, which may be national, or regional."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#dayFollowingPublicHoliday> a tnits:SpecialDayType ;
-         rdfs:label "dayFollowingPublicHoliday"@en ;
-         skos:definition "The day following a declared Public Holiday"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#longWeekendDay> a tnits:SpecialDayType ;
-         rdfs:label "longWeekendDay"@en ;
-         skos:definition "       "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#inLieuOfPublicHoliday> a tnits:SpecialDayType ;
-         rdfs:label "inLieuOfPublicHoliday"@en ;
-         skos:definition "       "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#schoolDay> a tnits:SpecialDayType ;
-         rdfs:label "schoolDay"@en ;
-         skos:definition "In the locale a day when schools are open and operating"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#schoolHolidays> a tnits:SpecialDayType ;
-         rdfs:label "schoolHolidays"@en ;
-         skos:definition "In the locale a day when schools are not open and operating"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#publicEventDay> a tnits:SpecialDayType ;
-         rdfs:label "publicEventDay"@en ;
-         skos:definition "The day of a declared Public Event, which may be national, or regional.  Note: For example, the day of a Royal Wedding."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/SpecialDayTypeCode#other> a tnits:SpecialDayType ;
-         rdfs:label "other"@en ;
-         skos:definition "Other than as defined in this enumeration."@en .
-         
-

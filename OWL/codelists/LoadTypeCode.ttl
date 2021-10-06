@@ -1,118 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list LoadTypeCode"@en ;
-	dcterms:title "TN-ITS LoadTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for types of vehicle loads" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#abnormalLoad> a tnits:LoadType ;
-         rdfs:label "abnormalLoad"@en ;
-         skos:definition "A load that exceeds normal vehicle dimensions in terms of height, length, width, gross vehicle weight or axle weight or any combination of these. Generally termed an \"abnormal load\"."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#ammunition> a tnits:LoadType ;
-         rdfs:label "ammunition"@en ;
-         skos:definition "Ammunition. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#chemicals> a tnits:LoadType ;
-         rdfs:label "chemicals"@en ;
-         skos:definition "Chemicals of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#combustibleMaterials> a tnits:LoadType ;
-         rdfs:label "combustibleMaterials"@en ;
-         skos:definition "Combustible materials of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#corrosiveMaterials> a tnits:LoadType ;
-         rdfs:label "corrosiveMaterials"@en ;
-         skos:definition "Corrosive materials of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#debris> a tnits:LoadType ;
-         rdfs:label "debris"@en ;
-         skos:definition "Debris of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#empty> a tnits:LoadType ;
-         rdfs:label "empty"@en ;
-         skos:definition "No load"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#explosiveMaterials> a tnits:LoadType ;
-         rdfs:label "explosiveMaterials"@en ;
-         skos:definition "Explosive materials of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#extraHighLoad> a tnits:LoadType ;
-         rdfs:label "extraHighLoad"@en ;
-         skos:definition "A load of exceptional height. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#extraLongLoad> a tnits:LoadType ;
-         rdfs:label "extraLongLoad"@en ;
-         skos:definition "A load of exceptional length. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#extraWideLoad> a tnits:LoadType ;
-         rdfs:label "extraWideLoad"@en ;
-         skos:definition "A load of exceptional width. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#fuel> a tnits:LoadType ;
-         rdfs:label "fuel"@en ;
-         skos:definition "Fuel of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#glass> a tnits:LoadType ;
-         rdfs:label "glass"@en ;
-         skos:definition "Glass. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#goods> a tnits:LoadType ;
-         rdfs:label "goods"@en ;
-         skos:definition "Any goods of a commercial nature. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#hazardousMaterials> a tnits:LoadType ;
-         rdfs:label "hazardousMaterials"@en ;
-         skos:definition "Materials classed as being of a hazardous nature. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#liquid> a tnits:LoadType ;
-         rdfs:label "liquid"@en ;
-         skos:definition "Liquid of an unspecified nature. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#livestock> a tnits:LoadType ;
-         rdfs:label "livestock"@en ;
-         skos:definition "Livestock. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#materials> a tnits:LoadType ;
-         rdfs:label "materials"@en ;
-         skos:definition "General materials of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#materialsDangerousForPeople> a tnits:LoadType ;
-         rdfs:label "materialsDangerousForPeople"@en ;
-         skos:definition "Materials classed as being of a danger to people or animals."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#materialsDangerousForTheEnvironment> a tnits:LoadType ;
-         rdfs:label "materialsDangerousForTheEnvironment"@en ;
-         skos:definition "Materials classed as being potentially dangerous to the environment. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#materialsDangerousForWater> a tnits:LoadType ;
-         rdfs:label "materialsDangerousForWater"@en ;
-         skos:definition "Materials classed as being dangerous when exposed to water (e.g. materials which may react exothermically with water). "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#oil> a tnits:LoadType ;
-         rdfs:label "oil"@en ;
-         skos:definition "Oil. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#ordinary> a tnits:LoadType ;
-         rdfs:label "ordinary"@en ;
-         skos:definition "Materials that present limited environmental or health risk. Non-combustible, non-toxic, non-corrosive. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#perishableProducts> a tnits:LoadType ;
-         rdfs:label "perishableProducts"@en ;
-         skos:definition "Products or produce that will significantly degrade in quality or freshness over a short period of time. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#petrol> a tnits:LoadType ;
-         rdfs:label "petrol"@en ;
-         skos:definition "Petrol or petroleum. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#pharmaceuticalMaterials> a tnits:LoadType ;
-         rdfs:label "pharmaceuticalMaterials"@en ;
-         skos:definition "Pharmaceutical materials. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#radioactiveMaterials> a tnits:LoadType ;
-         rdfs:label "radioactiveMaterials"@en ;
-         skos:definition "Materials that emit significant quantities of electromagnetic radiation that may present a risk to people, animals or the environment"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#refrigeratedGoods> a tnits:LoadType ;
-         rdfs:label "refrigeratedGoods"@en ;
-         skos:definition "Refrigerated goods."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#refuse> a tnits:LoadType ;
-         rdfs:label "refuse"@en ;
-         skos:definition "Refuse."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#toxicMaterials> a tnits:LoadType ;
-         rdfs:label "toxicMaterials"@en ;
-         skos:definition "Materials of a toxic nature which may damage the environment or endanger public health."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#vehicles> a tnits:LoadType ;
-         rdfs:label "vehicles"@en ;
-         skos:definition "Vehicles of any type which are being transported."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/LoadTypeCode#other> a tnits:LoadType ;
-         rdfs:label "other"@en ;
-         skos:definition "Other than as defined in this enumeration."@en .
-         
-

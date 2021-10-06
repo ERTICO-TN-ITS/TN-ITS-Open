@@ -1,40 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list RoadCategoryCode"@en ;
-	dcterms:title "TN-ITS RoadCategoryCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the road category types" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#motorway> a tnits:RoadCategory ;
-         rdfs:label "motorway"@en ;
-         skos:definition "Indicating the presence of a motorway. NOTE: the Vienna Convention 1968 indicates a motorway as meet the following: (j) \"Motorway\" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which:  (i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means;   (ii) Does not cross at level with any road, railway or tramway track, or footpath; and   (iii) Is specially signposted as a motorway;"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#roadWithDualCarriageway> a tnits:RoadCategory ;
-         rdfs:label "roadWithDualCarriageway"@en ;
-         skos:definition "Road with more than one divided carriageway"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#roadWithSingleCarriageway> a tnits:RoadCategory ;
-         rdfs:label "roadWithSingleCarriageway"@en ;
-         skos:definition "Road with only one carriageway. NOTE: May be with traffic in one direction or two."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#urbanRoad> a tnits:RoadCategory ;
-         rdfs:label "urbanRoad"@en ;
-         skos:definition "Road in an urban environment"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#residentialAreaRoad> a tnits:RoadCategory ;
-         rdfs:label "residentialAreaRoad"@en ;
-         skos:definition "Road in a residential zone"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadCategoryCode#otherRoad> a tnits:RoadCategory ;
-         rdfs:label "otherRoad"@en ;
-         skos:definition "Road of a category other than the above"@en .
-         
-

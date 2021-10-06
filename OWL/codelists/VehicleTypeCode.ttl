@@ -1,172 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list VehicleTypeCode"@en ;
-	dcterms:title "TN-ITS VehicleTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for types of vehicle." .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#anyVehicle> a tnits:VehicleType ;
-         rdfs:label "anyVehicle"@en ;
-         skos:definition "Vehicle of any type."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#articulatedVehicle> a tnits:VehicleType ;
-         rdfs:label "articulatedVehicle"@en ;
-         skos:definition "Transport vehicle with articulation between component carriage parts of the vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#bicycle> a tnits:VehicleType ;
-         rdfs:label "bicycle"@en ;
-         skos:definition "Pedal-driven two-wheeled vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#moped> a tnits:VehicleType ;
-         rdfs:label "moped"@en ;
-         skos:definition "Moped (a two wheeled motor vehicle characterized by a small engine typically less than 50cc and by normally having pedals). "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#motorcycle> a tnits:VehicleType ;
-         rdfs:label "motorcycle"@en ;
-         skos:definition "Two-wheeled motor vehicle without pedal propulsion"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#motorscooter> a tnits:VehicleType ;
-         rdfs:label "motorscooter"@en ;
-         skos:definition "Motorscooter (a two wheeled motor vehicle characterized by a step-through frame and small diameter wheels). "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#motorcycleWithSideCar> a tnits:VehicleType ;
-         rdfs:label "motorcycleWithSideCar"@en ;
-         skos:definition "Three wheeled vehicle comprising a motorcycle with an attached side car. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#car> a tnits:VehicleType ;
-         rdfs:label "car"@en ;
-         skos:definition "Small, often privately owned, typically four wheel vehicle for transport of persons and limited goods."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#largeCar> a tnits:VehicleType ;
-         rdfs:label "largeCar"@en ;
-         skos:definition "See car, typically greater than 4.5 metres in length"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#passengerCar> a tnits:VehicleType ;
-         rdfs:label "passengerCar"@en ;
-         skos:definition "See car"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#smallCar> a tnits:VehicleType ;
-         rdfs:label "smallCar"@en ;
-         skos:definition "See car, typically greater than 3.75 metres in length"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#caravan> a tnits:VehicleType ;
-         rdfs:label "caravan"@en ;
-         skos:definition "Non-motorised trailer for towing, intended for human occupancy "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#carOrLightVehicle> a tnits:VehicleType ;
-         rdfs:label "carOrLightVehicle"@en ;
-         skos:definition "Car or light vehicle. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#carWithCaravan> a tnits:VehicleType ;
-         rdfs:label "carWithCaravan"@en ;
-         skos:definition "Car towing a caravan. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#carWithTrailer> a tnits:VehicleType ;
-         rdfs:label "carWithTrailer"@en ;
-         skos:definition "Car towing a trailer"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#bus> a tnits:VehicleType ;
-         rdfs:label "bus"@en ;
-         skos:definition "Vehicle for mass road transport"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#articulatedBus> a tnits:VehicleType ;
-         rdfs:label "articulatedBus"@en ;
-         skos:definition "Articulated vehicle. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#fourWheelDrive> a tnits:VehicleType ;
-         rdfs:label "fourWheelDrive"@en ;
-         skos:definition "Four wheel drive vehicle. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#highSidedVehicle> a tnits:VehicleType ;
-         rdfs:label "highSidedVehicle"@en ;
-         skos:definition "High sided vehicle. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#heavyGoodsVehicle> a tnits:VehicleType ;
-         rdfs:label "heavyGoodsVehicle"@en ;
-         skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#heavyGoodsVehicleWithTrailer> a tnits:VehicleType ;
-         rdfs:label "heavyGoodsVehicleWithTrailer"@en ;
-         skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods with attached towed trailer"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#heavyDutyTransporter> a tnits:VehicleType ;
-         rdfs:label "heavyDutyTransporter"@en ;
-         skos:definition "Large road vehicle, primarily intended for the transport of other vehicles"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#heavyVehicle> a tnits:VehicleType ;
-         rdfs:label "heavyVehicle"@en ;
-         skos:definition "See Heavy Goods Vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#lightCommercialVehicle> a tnits:VehicleType ;
-         rdfs:label "lightCommercialVehicle"@en ;
-         skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#largeGoodsVehicle> a tnits:VehicleType ;
-         rdfs:label "largeGoodsVehicle"@en ;
-         skos:definition "See Heavy Goods Vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#lightCommercialVehicleWithTrailer> a tnits:VehicleType ;
-         rdfs:label "lightCommercialVehicleWithTrailer"@en ;
-         skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods, with attached towed trailer"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#longHeavyLorry> a tnits:VehicleType ;
-         rdfs:label "longHeavyLorry"@en ;
-         skos:definition "See Heavy Goods Vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#lorry> a tnits:VehicleType ;
-         rdfs:label "lorry"@en ;
-         skos:definition "Lorry of any type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#van> a tnits:VehicleType ;
-         rdfs:label "van"@en ;
-         skos:definition "See light commercial vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#minibus> a tnits:VehicleType ;
-         rdfs:label "minibus"@en ;
-         skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of peoeple"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#motorhome> a tnits:VehicleType ;
-         rdfs:label "motorhome"@en ;
-         skos:definition "Motorised vehicle, intended for human occupancy "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#agriculturalVehicle> a tnits:VehicleType ;
-         rdfs:label "agriculturalVehicle"@en ;
-         skos:definition "Vehicle normally used for agricultural purposes, e.g. tractor, combined harvester etc. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#constructionOrMaintenanceVehicle> a tnits:VehicleType ;
-         rdfs:label "constructionOrMaintenanceVehicle"@en ;
-         skos:definition "Vehicle normally used for construction or maintenance purposes, e.g. digger, excavator, bulldozer, lorry mounted crane etc."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#tanker> a tnits:VehicleType ;
-         rdfs:label "tanker"@en ;
-         skos:definition "Vehicle with large tank for carrying bulk liquids. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#twoWheeledVehicle> a tnits:VehicleType ;
-         rdfs:label "twoWheeledVehicle"@en ;
-         skos:definition "Two wheeled vehicle of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#threeWheeledVehicle> a tnits:VehicleType ;
-         rdfs:label "threeWheeledVehicle"@en ;
-         skos:definition "Three wheeled vehicle of unspecified type. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#vehicleWithCaravan> a tnits:VehicleType ;
-         rdfs:label "vehicleWithCaravan"@en ;
-         skos:definition "Vehicle (of unspecified type) towing a caravan. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#vehicleWithCatalyticConverter> a tnits:VehicleType ;
-         rdfs:label "vehicleWithCatalyticConverter"@en ;
-         skos:definition "Vehicle with catalytic converter. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#vehicleWithoutCatalyticConverter> a tnits:VehicleType ;
-         rdfs:label "vehicleWithoutCatalyticConverter"@en ;
-         skos:definition "Vehicle without catalytic converter. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#vehicleWithTrailer> a tnits:VehicleType ;
-         rdfs:label "vehicleWithTrailer"@en ;
-         skos:definition "Vehicle (of unspecified type) towing a trailer. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#withEvenNumberedRegistrationPlates> a tnits:VehicleType ;
-         rdfs:label "withEvenNumberedRegistrationPlates"@en ;
-         skos:definition "Vehicle with even numbered registration plate. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#withOddNumberedRegistrationPlates> a tnits:VehicleType ;
-         rdfs:label "withOddNumberedRegistrationPlates"@en ;
-         skos:definition "Vehicle with odd numbered registration plate. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#metro> a tnits:VehicleType ;
-         rdfs:label "metro"@en ;
-         skos:definition "Train-like transport vehicle limited to a rail network within a limited area; at surface, below surface or above surface"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#lightRail> a tnits:VehicleType ;
-         rdfs:label "lightRail"@en ;
-         skos:definition "Train-like transport vehicle limited to a rail network within a limited area; does not include heavy rail lines"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#trailer> a tnits:VehicleType ;
-         rdfs:label "trailer"@en ;
-         skos:definition "Non-motorised vehicle, intended to be towed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#tram> a tnits:VehicleType ;
-         rdfs:label "tram"@en ;
-         skos:definition "Train-like mass transport vehicle, running on rails, typically partially or wholly on the road network"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#trolleyBus> a tnits:VehicleType ;
-         rdfs:label "trolleyBus"@en ;
-         skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#articulatedTrolleyBus> a tnits:VehicleType ;
-         rdfs:label "articulatedTrolleyBus"@en ;
-         skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply, with articulation between component carriage parts of the vehicle"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#unknown> a tnits:VehicleType ;
-         rdfs:label "unknown"@en ;
-         skos:definition "Unknown vehicle type"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/VehicleTypeCode#other> a tnits:VehicleType ;
-         rdfs:label "other"@en ;
-         skos:definition "Other than as defined in this enumeration. "@en .
-         
-

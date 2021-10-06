@@ -1,40 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list AreaTypeCode"@en ;
-	dcterms:title "TN-ITS AreaTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the area type condition for a road feature " .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#inNationalPark> a tnits:AreaType ;
-         rdfs:label "inNationalPark"@en ;
-         skos:definition "Within the boundary of a recognised national park"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#insideCities> a tnits:AreaType ;
-         rdfs:label "insideCities"@en ;
-         skos:definition "Within the notional or actual boundary of a city"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#nearRailroadCrossing> a tnits:AreaType ;
-         rdfs:label "nearRailroadCrossing"@en ;
-         skos:definition "In close proximity to a railway level crossing"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#nearSchool> a tnits:AreaType ;
-         rdfs:label "nearSchool"@en ;
-         skos:definition "In close proximity to a school"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#outsideCities> a tnits:AreaType ;
-         rdfs:label "outsideCities"@en ;
-         skos:definition "Outside the notional or actual boundary of a city"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/AreaTypeCode#trafficCalmingArea> a tnits:AreaType ;
-         rdfs:label "trafficCalmingArea"@en ;
-         skos:definition "In a zone which is subject to traffic calming measures"@en .
-         
-

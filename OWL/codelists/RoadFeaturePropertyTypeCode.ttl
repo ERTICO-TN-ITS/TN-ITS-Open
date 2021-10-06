@@ -1,85 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list RoadFeaturePropertyTypeCode"@en ;
-	dcterms:title "TN-ITS RoadFeaturePropertyTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the various types of road features" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumSpeedLimit> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumSpeedLimit"@en ;
-         skos:definition "Specifies the maximum speed limit, aligned with the concept of maximum speed limit of the Vienna Convention on Road Signs, 1968, where this concept is defined as the maximum speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#compulsoryMinimumSpeed> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "compulsoryMinimumSpeed"@en ;
-         skos:definition "Specifies the compulsory minimum speed, aligned with the concept of compulsort minimum speed of the Vienna Convention on Road Signs, 1968, where this concept is defined as that vehicles using the road at the entrance to which it (the sign) is placed shall travel at not less than the speed specified ... shown on the sign shall express this speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned. "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#advisorySpeed> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "advisorySpeed"@en ;
-         skos:definition " \"ADVISORY SPEED\" shall be used to show the speed at which it is advisable to drive if circumstances permit and if the driver is not required to comply with a lower limit specific to his category of vehicle. [SOURCE: Vienna Convention on Road Signs, 1968]"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumWeightPerSingleAxle> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumWeightPerSingleAxle"@en ;
-         skos:definition "The maximum weight per single axle allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumHeight> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumHeight"@en ;
-         skos:definition "The maximum height allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumWidth> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumWidth"@en ;
-         skos:definition "The maximum width allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumLadenWeight> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumLadenWeight"@en ;
-         skos:definition "The maximum laden weight allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumLength> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumLength"@en ;
-         skos:definition "The maximum length allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#maximumDistanceBetweenVehicles> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "maximumDistanceBetweenVehicles"@en ;
-         skos:definition "The maximum distance between vehicles allowed"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#roadSignType> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "roadSignType"@en ;
-         skos:definition "The type of road sign according to separate codelist (see RoadSignType)"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#controlled> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "controlled"@en ;
-         skos:definition "Property for pedestrian crossing indicating with a boolean value whether the crossing is controlled by traffic signals or not"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#tunnelCategory> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "tunnelCategory"@en ;
-         skos:definition "The used Tunnel Categories are based on the European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR). If tunnel restrictions on the passage of vehicles carrying dangerous goods are in place, the competent authority shall assign the road tunnel to one or more of the tunnel categories A, B, C, D, E and shall indicate the restriction by means of a road sign and signals as follows:  Tunnel Category A: no sign Tunnel Category B: sign and signal with additional panel bearing a letter B Tunnel Category C: sign and signal with additional panel bearing a letter C Tunnel Category D: sign and signal with additional panel bearing a letter D Tunnel Category E: sign and signal with additional panel bearing a letter E  The European Agreement concerning the International Carriage of Dangerous Goods by Road provides more information about the types of dangerous goods that can be transported through different categories of tunnel "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#paymentMethod> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "paymentMethod"@en ;
-         skos:definition "The payment method depends on the toll collection method or system in place. For road users it is of interest what kind of payment method is required or accepted"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#fixedCharge> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "fixedCharge"@en ;
-         skos:definition "A fixed charge or pricing assessed for the toll road"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#parkingSite> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "parkingSite"@en ;
-         skos:definition "A record containing static details of a parking site. Must be specialised as an 'Urban-' or 'InterUrbanParkingSite' or a 'SpecialLocationParkingSite'. UrbanParkingSite = parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide) InterUrbanParking = A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking) SpecialLocationParkingSites = A parking site which is located at a special location, often associated with some building."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#siteAccessability> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "siteAccessability"@en ;
-         skos:definition "Type of accessability to site (e.g. ChargingPoint, RefillPointGas)"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#chargingPointUsageType> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "chargingPointUsageType"@en ;
-         skos:definition "Specifies usage of the charging point"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#gasType> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "gasType"@en ;
-         skos:definition "Type of fuel used by a vehicle; proposed enumerations are taken from the Del. Reg: Compressed natural gas (CNG); liquefied natural gas (LNG); liquefied petroleum gas (LPG)"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#iFOPTobjectKey> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "iFOPTobjectKey"@en ;
-         skos:definition "When referencing public transport stops and stopping points use the European Standard IFOPT (CEN, EN 28701:2012). The syntax of a IFOPT referencing key is: country_code:region:stop_number:stop_area:stop_point (e.g. de:9162:1 for Stop Karlsplatz in Munich)"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#vMSUnitIdentifier> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "vMSUnitIdentifier"@en ;
-         skos:definition "Specifies a data provider unique value for the identifier for a specific variable message sign unit"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeaturePropertyTypeCode#trafficSignalIdentifier> a tnits:RoadFeaturePropertyType ;
-         rdfs:label "trafficSignalIdentifier"@en ;
-         skos:definition "Specifies a data provider unique value for the identifier for a specific traffic signal site"@en .
-         
-

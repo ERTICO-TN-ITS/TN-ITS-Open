@@ -1,133 +1,0 @@
-﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode> .
-
-<http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode> a owl:Ontology ;
-	dc:creator "TN-ITS" ;
-	dc:date "20210622" ;
-	dc:description "Code list values for the TN-ITS code list RoadFeatureTypeCode"@en ;
-	dcterms:title "TN-ITS RoadFeatureTypeCode"@en ;
-	dcterms:abstract "Specifies the available list of enumerations for the various types of road features" .
-    
-    
-<http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#pedestrianCrossing> a tnits:RoadFeatureType ;
-         rdfs:label "pedestrianCrossing"@en ;
-         skos:definition "A specified part of a road where pedestrians have right of way to cross"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#restrictionForVehicles> a tnits:RoadFeatureType ;
-         rdfs:label "restrictionForVehicles"@en ;
-         skos:definition "Restriction for vehicles regarding weight, height or length"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#speedLimit> a tnits:RoadFeatureType ;
-         rdfs:label "speedLimit"@en ;
-         skos:definition "Location of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfSpeedLimit> a tnits:RoadFeatureType ;
-         rdfs:label "startOfSpeedLimit"@en ;
-         skos:definition "Location of the start of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfSpeedLimit> a tnits:RoadFeatureType ;
-         rdfs:label "endOfSpeedLimit"@en ;
-         skos:definition "Location of the end of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#prohibitionOfOvertaking> a tnits:RoadFeatureType ;
-         rdfs:label "prohibitionOfOvertaking"@en ;
-         skos:definition "Indicating a zone where overtaking of other vehicles is prohibited.  NOTE: Overtaking is normally interpreted as crossing the central dividing line of a single carriageway two-way road, to facilitate the overtaking of another slower-moving vehicle, but can also involve other forms of restriction such as lorries being limited to use of specified slower lanes, and not being permitted to move to other lanes."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfProhibitionOfOvertaking> a tnits:RoadFeatureType ;
-         rdfs:label "startOfProhibitionOfOvertaking"@en ;
-         skos:definition "Indicating the start of a zone which is subject to a prohibition of overtaking."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#useOfAudibleWarningDevicesProhibited> a tnits:RoadFeatureType ;
-         rdfs:label "useOfAudibleWarningDevicesProhibited"@en ;
-         skos:definition "Indicating a zone which is subject to a prohibition on the use of audible warning devices.  NOTE: Audible warning devices include vehicle horns."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfUseOfAudibleWarningDevicesProhibited> a tnits:RoadFeatureType ;
-         rdfs:label "startOfUseOfAudibleWarningDevicesProhibited"@en ;
-         skos:definition "The start of a zone which is subject to a prohibition on the use of audible warning devices."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfProhibitionOrRestriction> a tnits:RoadFeatureType ;
-         rdfs:label "endOfProhibitionOrRestriction"@en ;
-         skos:definition "A zone which is the end of prohibition or restriction.  NOTE: This is considered to apply to any single or multiple prohibitions or restrictions. In the case where the end of prohibitions or restrictions coincide, this location reference is used to indicate the end of at least one prohibition or restriction."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#prohibitedTurn> a tnits:RoadFeatureType ;
-         rdfs:label "prohibitedTurn"@en ;
-         skos:definition "Indicating a prohibited turning motion and a junction of roads.  NOTE: Turn restrictions types come in many forms and can be dependent of the type of vehicle; its usage; its load; vehicle occupancy; the capabilities permitted under the licence of the vehicle driver’s driver licence permissions; vehicle physical characteristics; propulsion type; the restrictions may also be time and day dependent, weather dependent, etc."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#passingWithoutStoppingProhibited> a tnits:RoadFeatureType ;
-         rdfs:label "passingWithoutStoppingProhibited"@en ;
-         skos:definition "Indicating a zone which is subject to a prohibition of continuing without coming to a stop.  Note: this may be in common use at toll plazas, police and other checkpoints, custom checkpoints, etc"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#motorway> a tnits:RoadFeatureType ;
-         rdfs:label "motorway"@en ;
-         skos:definition "Indicating the presence of a motorway.  NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:   (j) \"Motorway\" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which:         (i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means;        (ii) Does not cross at level with any road, railway or tramway track, or footpath; and       (iii) Is specially signposted as a motorway;"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfMotorway> a tnits:RoadFeatureType ;
-         rdfs:label "startOfMotorway"@en ;
-         skos:definition "indicating the start of a motorway."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfMotorway> a tnits:RoadFeatureType ;
-         rdfs:label "endOfMotorway"@en ;
-         skos:definition "indicating the end of a motorway"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#noEntry> a tnits:RoadFeatureType ;
-         rdfs:label "noEntry"@en ;
-         skos:definition "indicating no entry to a section of road.  NOTE: No entry restrictions may be qualified by a range of conditions, including but not limited to: time/day/date; vehicle type; vehicle usage, etc"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#closedToAllVehiclesInBothDirections> a tnits:RoadFeatureType ;
-         rdfs:label "closedToAllVehiclesInBothDirections"@en ;
-         skos:definition "indicating a section of road is closed to all vehicles in both directions of travel."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#directionToBeFollowed> a tnits:RoadFeatureType ;
-         rdfs:label "directionToBeFollowed"@en ;
-         skos:definition "indicating a mandatory route or turn to be followed."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#snowChainsCompulsory> a tnits:RoadFeatureType ;
-         rdfs:label "snowChainsCompulsory"@en ;
-         skos:definition "indicating a zone where the use of snow chains or equivalent winter equipment is mandatory."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#compulsoryDirectionForVehicleCarryingDangerousGoods> a tnits:RoadFeatureType ;
-         rdfs:label "compulsoryDirectionForVehicleCarryingDangerousGoods"@en ;
-         skos:definition "indicating a mandatory route or turn to be followed for vehicles carrying Dangerous Goods.  Note: See European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR) in Europe."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#roadForMotorVehicles> a tnits:RoadFeatureType ;
-         rdfs:label "roadForMotorVehicles"@en ;
-         skos:definition "indicating a zone which is a road intended for use by motor vehicles."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfRoadForMotorVehicles> a tnits:RoadFeatureType ;
-         rdfs:label "startOfRoadForMotorVehicles"@en ;
-         skos:definition "indicating the start of a zone which is a road intended for use by motor vehicles"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfRoadForMotorVehicles> a tnits:RoadFeatureType ;
-         rdfs:label "endOfRoadForMotorVehicles"@en ;
-         skos:definition "indicating the end of a zone which is a road intended for use by motor vehicles"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#builtUpArea> a tnits:RoadFeatureType ;
-         rdfs:label "builtUpArea"@en ;
-         skos:definition "indicating a zone which is of an urban developed nature.  NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a built-up area.  NOTE: Taking into account e.g. the UK Highway Code, a built-up area is a settled area in which the speed limit of a road is automatically 30 mph (48 km/h). These roads are known as 'restricted roads' and are identified by the presence of street lights.  That means that there is a traffic regulation existing that assigns automatically a speed limit to a specific road (by law)."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfBuiltUpArea> a tnits:RoadFeatureType ;
-         rdfs:label "startOfBuiltUpArea"@en ;
-         skos:definition "indicating the start of a zone which is of an urban developed nature."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfBuiltUpArea> a tnits:RoadFeatureType ;
-         rdfs:label "endOfBuiltUpArea"@en ;
-         skos:definition "indicating the end of a zone which is of an urban developed nature."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#residentialArea> a tnits:RoadFeatureType ;
-         rdfs:label "residentialArea"@en ;
-         skos:definition "indicating a zone which is of a residential housing nature.  NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a residential area.  A residential area is a road or a zone where most of the buildings are houses and is mostly a traffic-calmed sector, where automatically specific traffic regulations apply, like speed limits."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#startOfResidentialArea> a tnits:RoadFeatureType ;
-         rdfs:label "startOfResidentialArea"@en ;
-         skos:definition "indicating the start of a zone which is of a residential housing nature"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#endOfResidentialArea> a tnits:RoadFeatureType ;
-         rdfs:label "endOfResidentialArea"@en ;
-         skos:definition "indicating the end of a zone which is of a residential housing nature."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#roadSign> a tnits:RoadFeatureType ;
-         rdfs:label "roadSign"@en ;
-         skos:definition "indicating the presence of a road sign "@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#tollStation> a tnits:RoadFeatureType ;
-         rdfs:label "tollStation"@en ;
-         skos:definition "Toll or road usage fee collection point known as toll booths, toll houses, plazas, stations or gates"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#tollRoad> a tnits:RoadFeatureType ;
-         rdfs:label "tollRoad"@en ;
-         skos:definition "Public or private roadway for which a road-usage fee or toll is assessed for passage. There are various fee charging concepts and toll collection methods available"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#parkingSite> a tnits:RoadFeatureType ;
-         rdfs:label "parkingSite"@en ;
-         skos:definition "named according to DATEX II Package ParkingSite"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#chargingPoint> a tnits:RoadFeatureType ;
-         rdfs:label "chargingPoint"@en ;
-         skos:definition "Electric vehicle charging point, also called EV charging station (element in an infrastructure that supplies electric energy for the recharging of electric vehicles)."@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#refillPointGas> a tnits:RoadFeatureType ;
-         rdfs:label "refillPointGas"@en ;
-         skos:definition "Refill point for gas is an element in an infrastructure that supplies different kind of gas fuels for recharging for natural gas vehicles"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#publicTransportStop> a tnits:RoadFeatureType ;
-         rdfs:label "publicTransportStop"@en ;
-         skos:definition "Public transport stop"@en .
-         <http://spec.tn-its.eu/owl/tnits-owl/RoadFeatureTypeCode#transferNodeStopPoint> a tnits:RoadFeatureType ;
-         rdfs:label "transferNodeStopPoint"@en ;
-         skos:definition "Stop point at a transfer node, e.g. Airport, Railway station, where people or goods may change mode of transport (ISO 19147)"@en .
-         
-
