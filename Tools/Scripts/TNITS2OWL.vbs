@@ -235,14 +235,13 @@ sub createProperty
 		end if	
 		'---------------------------
 		'Set domain if not global property
-		if not lstGlobalPropertyNames.Contains(propertyName) then
-			objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
-		end if
+		if not lstGlobalPropertyNames.Contains(propertyName) then objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
 		'---------------------------
 		'Set range if hasGlobalRange
-		if hasGlobalRange then
-			objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
-		end if
+		if hasGlobalRange then objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
+		'Set functional property if cardinality = 1 and not global. 
+		if (not lstGlobalPropertyNames.Contains(propertyName)) and lower = "1" and upper = "1" then objOTLFile.WriteText "         rdf:type owl:FunctionalProperty;" & vbCrLf
+
 		'Close property statement with "."
 		objOTLFile.WriteText "         rdfs:label """ & propertyName & """@en ." & vbCrLf 	
 		'Add to list of created properties (only for global properties?)

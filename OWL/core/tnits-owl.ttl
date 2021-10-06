@@ -17,7 +17,7 @@
 	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;
 	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;
 	dc:creator "TN-ITS" ;
-	dc:date "05.10.2021" ;
+	dc:date "06.10.2021" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
 	dcterms:title "TN-ITS"@en ;
 	dcterms:abstract "Ontology for exchange of changes in road attributes" .
@@ -81,6 +81,7 @@
          skos:definition "The feedback information  "@en ;
          rdfs:domain :FeedbackDataset;
          rdfs:range :FeedbackInformation;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "feedbackInfo"@en .
 :FeedbackDataset rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :feedbackInfo;
@@ -119,6 +120,7 @@
          skos:definition "Specifies the type of dataset "@en ;
          rdfs:domain :RoadFeatureDataset;
          rdfs:range :DatasetType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeatureDataset.type"@en .
 :RoadFeatureDataset rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeatureDataset.type;
@@ -195,6 +197,7 @@
          skos:definition "The type of road feature property by reference to an item in an external code list"@en ;
          rdfs:domain :GenericRoadFeatureProperty;
          rdfs:range :RoadFeaturePropertyType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "GenericRoadFeatureProperty.type"@en .
 :GenericRoadFeatureProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :GenericRoadFeatureProperty.type;
@@ -280,6 +283,7 @@
          skos:definition "The identity for the road feature. Permanent identifier for the road feature in the database of the data provider. "@en ;
          rdfs:domain :RoadFeature;
          rdfs:range :RoadFeatureId;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeature.id"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeature.id;
@@ -333,6 +337,7 @@
          skos:definition "The date from which this road feature is valid and in use "@en ;
          rdfs:domain :RoadFeature;
          rdfs:range xsd:date;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "validFrom"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :validFrom;
@@ -371,6 +376,7 @@
          skos:definition "Date and time at which this version of the spatial object was inserted or changed in the spatial data set. "@en ;
          rdfs:domain :RoadFeature;
          rdfs:range xsd:dateTime;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "beginLifespanVersion"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :beginLifespanVersion;
@@ -424,6 +430,7 @@
          skos:definition "Identifies the evidence base that has been used by the authorised authority supplying the data. "@en ;
          rdfs:domain :RoadFeature;
          rdfs:range :RoadFeatureSource;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "source"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :source;
@@ -441,6 +448,7 @@
          skos:definition "A characterisation identifying the type of the road feature by reference to an item in an external code list "@en ;
          rdfs:domain :RoadFeature;
          rdfs:range :RoadFeatureType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeature.type"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeature.type;
@@ -464,6 +472,7 @@
          skos:definition "A text-based identifier used to indicate the provider’s identity."@en ;
          rdfs:domain :RoadFeatureId;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "providerId"@en .
 :RoadFeatureId rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :providerId;
@@ -581,6 +590,7 @@
          skos:definition "The type of the road sign by reference to an item in the RoadSignType external code list "@en ;
          rdfs:domain :RoadSignProperty;
          rdfs:range :RoadSignType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "gddCode"@en .
 :RoadSignProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :gddCode;
@@ -643,6 +653,7 @@
          skos:definition "Specifies the available list of enumerations for the area type condition for a road feature by reference to an item in an external code list "@en ;
          rdfs:domain :AreaCondition;
          rdfs:range :AreaType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "AreaCondition.areaType"@en .
 :AreaCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :AreaCondition.areaType;
@@ -711,6 +722,7 @@
          skos:definition "Specifies the operator to be applied between the conditions in the set "@en ;
          rdfs:domain :ConditionSet;
          rdfs:range :ConditionOperator;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "operator"@en .
 :ConditionSet rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :operator;
@@ -734,6 +746,7 @@
          skos:definition "Start lane counted from the right side for which the condition applies. NOTE “Right side” is to be interpreted in relation to the direction of the location reference.  Numbering starts from 1.  All lanes should be considered, e.g. including emergency lanes, special purpose lanes, etc. "@en ;
          rdfs:domain :LaneCondition;
          rdfs:range xsd:integer;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "startLane"@en .
 :LaneCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :startLane;
@@ -753,6 +766,7 @@
          skos:definition "Number of lanes including the start lane counted from the right-hand side for which the condition applies. "@en ;
          rdfs:domain :LaneCondition;
          rdfs:range xsd:integer;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "laneExtension"@en .
 :LaneCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :laneExtension;
@@ -781,6 +795,7 @@
          skos:definition "Specifies the available list of enumerations for the category of road for a road feature by reference to an item in an external code list "@en ;
          rdfs:domain :RoadCategoryCondition;
          rdfs:range :RoadCategory;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadCategoryCondition.roadCategory"@en .
 :RoadCategoryCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadCategoryCondition.roadCategory;
@@ -802,6 +817,7 @@
          skos:definition "Specifies the time period for which this time condition applies "@en ;
          rdfs:domain :TimeCondition;
          rdfs:range :Validity;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "validityPeriod"@en .
 :TimeCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :validityPeriod;
@@ -823,6 +839,7 @@
          skos:definition "Specifies the vehicle characteristics that are applicable to the vehicle type condition for a road feature "@en ;
          rdfs:domain :VehicleCondition;
          rdfs:range :VehicleCharacteristics;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "VehicleCondition.vehicleCharacteristics"@en .
 :VehicleCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :VehicleCondition.vehicleCharacteristics;
@@ -844,6 +861,7 @@
          skos:definition "Specifies the available list of enumerations for the weather type condition for a road feature by reference to an item in an external code list "@en ;
          rdfs:domain :WeatherCondition;
          rdfs:range :WeatherType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "WeatherCondition.weatherType"@en .
 :WeatherCondition rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :WeatherCondition.weatherType;
@@ -931,6 +949,7 @@
          skos:definition "<font color=\"#231f20\">Start of bounding period of validity defined by date and time. [SOURCE: CEN/TS16157-3:2011] </font>"@en ;
          rdfs:domain :OverallPeriod;
          rdfs:range xsd:dateTime;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "overallStartTime"@en .
 :OverallPeriod rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :overallStartTime;
@@ -1082,6 +1101,7 @@
          skos:definition "When true, the period is the intersection of applicable days and this special day. When false, the period is the union of applicable days and this special day. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
          rdfs:domain :SpecialDay;
          rdfs:range xsd:boolean;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "intersectWithApplicableDays"@en .
 :SpecialDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :intersectWithApplicableDays;
@@ -1099,6 +1119,7 @@
          skos:definition "Specification of a special day, for example schoolDay, publicHoliday, ... [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
          rdfs:domain :SpecialDay;
          rdfs:range :SpecialDayType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "SpecialDay.specialDayType"@en .
 :SpecialDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :SpecialDay.specialDayType;
@@ -1146,6 +1167,7 @@
          skos:definition "Start of time period. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:domain :TimePeriodOfDay;
          rdfs:range :Time;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "startTimeOfPeriod"@en .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :startTimeOfPeriod;
@@ -1163,6 +1185,7 @@
          skos:definition "End of time period. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:domain :TimePeriodOfDay;
          rdfs:range :Time;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "endTimeOfPeriod"@en .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :endTimeOfPeriod;
@@ -1184,6 +1207,7 @@
          skos:definition "A specification of periods of validity defined by overall bounding start and end times and the possible intersection of valid periods with exception periods (exception periods overriding valid periods). [SOURCE: CEN/TS161573:2011] "@en ;
          rdfs:domain :Validity;
          rdfs:range :OverallPeriod;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "validityTimeSpecification"@en .
 :Validity rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :validityTimeSpecification;
@@ -1205,6 +1229,7 @@
          skos:definition "Time period begins with a fuzzy time or the duration is a fuzzy time "@en ;
          rdfs:domain :FuzzyTimePeriod;
          rdfs:range :FuzzyTimeType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "beginOrDuration"@en .
 :FuzzyTimePeriod rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :beginOrDuration;
@@ -1300,6 +1325,7 @@
          skos:definition "Specification of a specific public holiday by its name. [SOURCE: DATEX 3.0 Part 7 (proposed EN 16157-7:2018)] "@en ;
          rdfs:domain :PublicHoliday;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "publicHolidayName"@en .
 :PublicHoliday rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :publicHolidayName;
@@ -1550,6 +1576,7 @@
          skos:definition "<font color=\"#231f20\">The gross weight of the vehicle and its load, including any trailers. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:domain :GrossWeightCharacteristic;
          rdfs:range :Measure;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "grossVehicleWeight"@en .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :grossVehicleWeight;
@@ -1567,6 +1594,7 @@
          skos:definition "The meaning of the weight value<font color=\"#231f20\"> [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:domain :GrossWeightCharacteristic;
          rdfs:range :WeightType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "typeOfWeight"@en .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :typeOfWeight;
@@ -1598,6 +1626,7 @@
          skos:definition "<font color=\"#231f20\">The weight of the heaviest axle on the vehicle. [SOURCE: CEN/TS161573:2011]</font> "@en ;
          rdfs:domain :HeaviestAxleWeightCharacteristic;
          rdfs:range :Measure;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "heaviestAxleWeight"@en .
 :HeaviestAxleWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :heaviestAxleWeight;
@@ -1629,6 +1658,7 @@
          skos:definition "<font color=\"#231f20\">The height of the highest part, excluding antennae, of an individual vehicle above the road surface, in metres. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:domain :HeightCharacteristic;
          rdfs:range :Measure;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleHeight"@en .
 :HeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleHeight;
@@ -1660,6 +1690,7 @@
          skos:definition "<font color=\"#231f20\">The overall distance between the front and back of an individual vehicle, including the length of any trailers, couplings, etc. [SOURCE: CEN/TS161573:2011]</font> "@en ;
          rdfs:domain :LengthCharacteristic;
          rdfs:range :Measure;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleLength"@en .
 :LengthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleLength;
@@ -1707,6 +1738,7 @@
          skos:definition "<font color=\"#231f20\">The total number of axles of an individual vehicle.  [SOURCE: CEN/TS161573:2011]</font> "@en ;
          rdfs:domain :NumberOfAxlesCharacteristic;
          rdfs:range xsd:integer;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "numberOfAxles"@en .
 :NumberOfAxlesCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :numberOfAxles;
@@ -1948,6 +1980,7 @@
          skos:definition "<font color=\"#231f20\">The maximum width of an individual vehicle, in metres. [SOURCE: CEN/TS16157-3:2011]</font> "@en ;
          rdfs:domain :WidthCharacteristic;
          rdfs:range :Measure;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleWidth"@en .
 :WidthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleWidth;
@@ -2016,6 +2049,7 @@
          skos:definition "The OpenRL binary string encoded using base64"@en ;
          rdfs:domain :BinaryLocationReference;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "BinaryLocationReference.base64String"@en .
 :BinaryLocationReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :BinaryLocationReference.base64String;
@@ -2033,6 +2067,7 @@
          skos:definition "Provides reference to the version of the OpenLR Binary string encoding used by reference to an item in an external code list (see OpenLRBinaryVersion Class)"@en ;
          rdfs:domain :BinaryLocationReference;
          rdfs:range :OpenLRBinaryVersion;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "BinaryLocationReference.openLRBinaryVersion"@en .
 :BinaryLocationReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :BinaryLocationReference.openLRBinaryVersion;
@@ -2054,6 +2089,7 @@
          skos:definition "the geometry in the source road database that was used to encode the location reference of the referenced location "@en ;
          rdfs:domain :GeometryLocationReference;
          rdfs:range <http://www.opengis.net/ont/geosparql#Geometry>;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "encodedGeometry"@en .
 :GeometryLocationReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :encodedGeometry;
@@ -2087,6 +2123,7 @@
          skos:definition "Namespace uniquely identifying the data source of the spatial object."@en ;
          rdfs:domain :Identifier;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "namespace"@en .
 :Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :namespace;
@@ -2152,6 +2189,7 @@
          skos:definition "Indicates the applicable direction "@en ;
          rdfs:domain :LinkReference;
          rdfs:range :LinkDirectionValue;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "applicableDirection"@en .
 :LinkReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :applicableDirection;
@@ -2173,6 +2211,7 @@
          skos:definition "A location reference to an object that has pre-defined and stored for future reference "@en ;
          rdfs:domain :LocationByExternalReference;
          rdfs:range :PredefinedLocation;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "predefinedLocationReference"@en .
 :LocationByExternalReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :predefinedLocationReference;
@@ -2215,6 +2254,7 @@
          skos:definition "The referenced network element."@en ;
          rdfs:domain :NetworkReference;
          rdfs:range :NetworkElement;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "element"@en .
 :NetworkReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :element;
@@ -2267,6 +2307,7 @@
          skos:definition "The start position of the linear element, expressed as the distance along the linear network element. "@en ;
          rdfs:domain :SimpleLinearReference;
          rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "fromPosition"@en .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :fromPosition;
@@ -2284,6 +2325,7 @@
          skos:definition "The end position of the linear element, expressed as the distance along the linear network element. "@en ;
          rdfs:domain :SimpleLinearReference;
          rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "toPosition"@en .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :toPosition;
@@ -2305,6 +2347,7 @@
          skos:definition "Position of the point, expressed as the distance along the linear network element. "@en ;
          rdfs:domain :SimplePointReference;
          rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "atPosition"@en .
 :SimplePointReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :atPosition;
@@ -2336,6 +2379,7 @@
          skos:definition "The AGORA binary string encoded using base64 "@en ;
          rdfs:domain :AgoraLocationReference;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "AgoraLocationReference.base64String"@en .
 :AgoraLocationReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :AgoraLocationReference.base64String;
@@ -2353,6 +2397,7 @@
          skos:definition "Provides reference to the version of the AGORA Binary string encoding used by reference to an item in an external code list (see AgoraBinaryVersion Class)"@en ;
          rdfs:domain :AgoraLocationReference;
          rdfs:range :AgoraBinaryVersion;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "AgoraLocationReference.agoraBinaryVersion"@en .
 :AgoraLocationReference rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :AgoraLocationReference.agoraBinaryVersion;
@@ -2476,6 +2521,7 @@
          skos:definition "The type of update "@en ;
          rdfs:domain :UpdateInfo;
          rdfs:range :UpdateType;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "UpdateInfo.type"@en .
 :UpdateInfo rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :UpdateInfo.type;
@@ -2523,6 +2569,7 @@
          skos:definition "Refers to a log which records all the interesting events during download and integration of road features. "@en ;
          rdfs:domain :FeedbackInformation;
          rdfs:range :FeedbackLog;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "log"@en .
 :FeedbackInformation rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :log;
@@ -2542,6 +2589,7 @@
          skos:definition "The identification of the dataset which is the source of this feedback information. This identifier shall correspond to the metadata element Unique resource identifier in the dataset for which the feedback is created."@en ;
          rdfs:domain :FeedbackInformation;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "datasetIdentifier"@en .
 :FeedbackInformation rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :datasetIdentifier;
@@ -2561,6 +2609,7 @@
          skos:definition "The declared date and time when the dataset was processed "@en ;
          rdfs:domain :FeedbackInformation;
          rdfs:range xsd:dateTime;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "processed"@en .
 :FeedbackInformation rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :processed;
@@ -2582,6 +2631,7 @@
          skos:definition "A result summary "@en ;
          rdfs:domain :FeedbackLog;
          rdfs:range :SummaryInfo;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "summary"@en .
 :FeedbackLog rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :summary;
@@ -2621,6 +2671,7 @@
          skos:definition "The text describing the event "@en ;
          rdfs:domain :FreeTextEvent;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "FreeTextEvent.text"@en .
 :FreeTextEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :FreeTextEvent.text;
@@ -2667,6 +2718,7 @@
 :RoadFeatureEvent.roadFeatureId rdf:type owl:ObjectProperty ;
          skos:definition "The identification of the road feature that is concerned by the event.  "@en ;
          rdfs:domain :RoadFeatureEvent;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeatureEvent.roadFeatureId"@en .
 :RoadFeatureEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeatureEvent.roadFeatureId;
@@ -2683,6 +2735,7 @@
 :RoadFeatureEvent.roadFeaturePropertyType rdf:type owl:ObjectProperty ;
          skos:definition "The identification of the road feature property type that is concerned by the event. If unset, this event does not concern any road feature property type in particular. "@en ;
          rdfs:domain :RoadFeatureEvent;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeatureEvent.roadFeaturePropertyType"@en .
 :RoadFeatureEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeatureEvent.roadFeaturePropertyType;
@@ -2723,6 +2776,7 @@
          skos:definition "Number of successfully decoded and integrated road features. "@en ;
          rdfs:domain :SummaryInfo;
          rdfs:range xsd:integer;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "nrSuccess"@en .
 :SummaryInfo rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :nrSuccess;
@@ -2742,6 +2796,7 @@
          skos:definition "Number of road features for which integration failed. "@en ;
          rdfs:domain :SummaryInfo;
          rdfs:range xsd:integer;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "nrFail"@en .
 :SummaryInfo rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :nrFail;
@@ -2782,6 +2837,7 @@
          skos:definition "Indicates the identifier of the dataset where the metadata refer to "@en ;
          rdfs:domain :Metadata;
          rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "datasetId"@en .
 :Metadata rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :datasetId;
@@ -2801,6 +2857,7 @@
          skos:definition "Indicates when the metadata are created "@en ;
          rdfs:domain :Metadata;
          rdfs:range xsd:dateTime;
+         rdf:type owl:FunctionalProperty;
          rdfs:label "datasetCreationTime"@en .
 :Metadata rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :datasetCreationTime;
