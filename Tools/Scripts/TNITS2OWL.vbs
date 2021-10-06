@@ -108,13 +108,13 @@ sub coreClasses
 	'Core class for all code values
 	objOTLFile.WriteText "### " & owlURI & "#CodeList" & vbCrLf
 	objOTLFile.WriteText ":" & strPrefix & "CodeList" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:label ""TN-ITS Code value""@en ." & vbCrLf 					
+	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & ", skos:Concept ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:label ""TN-ITS Code value""@en ." & vbCrLf 	
 	strDjCode = ":" & strPrefix & "CodeList owl:disjointUnionOf ( "
 	'Core class for all enumerations
 	objOTLFile.WriteText "### " & owlURI & "#Enumeration" & vbCrLf
 	objOTLFile.WriteText ":" & strPrefix & "Enumeration" &  " a owl:Class ;" & vbCrLf
-	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & " ;" & vbCrLf
+	objOTLFile.WriteText "         rdfs:subClassOf :" & coreClass & ", skos:Concept ;" & vbCrLf
 	objOTLFile.WriteText "         rdfs:label ""TN-ITS Enumeration value""@en ." & vbCrLf 					
 	strDjEnum = ":" & strPrefix & "Enumeration owl:disjointUnionOf ( "
 	'Core class for all datatypes
@@ -219,8 +219,6 @@ sub createProperty
 		objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
 		if dt = "d" then
 			Repository.WriteOutput "Script", Now & " Datatype property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
-			objOTLFile.WriteText vbCrLf
-			objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
 			objOTLFile.WriteText ":" & propertyName & " rdf:type owl:DatatypeProperty ;" & vbCrLf
 		else
 			Repository.WriteOutput "Script", Now & " Object property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
@@ -300,7 +298,9 @@ sub recPackageTraverse(p)
 		'Classes -- as OWL Classes
 		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
 			'Create class
+			objOTLFile.WriteText vbCrLf
 			Repository.WriteOutput "Script", Now & " Element: " & el.Stereotype & " " & el.Name, 0 
+			objOTLFile.WriteText "### " & owlURI & ":" & el.Name & vbCrLf
 			objOTLFile.WriteText ":" & el.Name & " a owl:Class ;" & vbCrLf
 			'------------------------------------------------------------------------------------------------------
 			'Check whether the class is a subtype. If so, do not subtype directly under core classes
@@ -335,6 +335,15 @@ sub recPackageTraverse(p)
 			end if	
 			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
 
+			'---------------------------------------------------------------------------------------------------------
+			'Create concept schemes for enumerations and code lists
+			if UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" or UCase(el.Stereotype) = "CODELIST" then		
+				objOTLFile.WriteText vbCrLf
+				objOTLFile.WriteText "### " & owlURI & ":" & el.Name & "Code" & vbCrLf
+				objOTLFile.WriteText ":" & el.Name & "Code a skos:ConceptScheme ;" & vbCrLf		
+				objOTLFile.WriteText "       dc:isFormatOf :" & el.Name & " ." & vbCrLf
+			end if	
+				
 			'------------------------------------------------------------------------------------------------------
 			'Relations - generalizations and associations
 			For each con in el.Connectors
@@ -428,13 +437,15 @@ sub recPackageTraverse(p)
 			'Codelist or enumeration values - instances of classes
 			if 	UCase(el.Stereotype) = "CODELIST" or UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" then
 				'Initiate oneOf statement
-				oneOfEnum = ":" & el.Name & " owl:oneOf ( " & vbCrLf
+				oneOfEnum = ":" & el.Name & " owl:oneOf ( " 
 				For each attr in el.Attributes
 					'Include value in oneOf-statement 
-					oneOfEnum = oneOfEnum & "         :" & attr.Name & vbCrLf
+					oneOfEnum = oneOfEnum & ":" & el.Name & "." & attr.Name & " "
 					objOTLFile.WriteText vbCrLf
-					objOTLFile.WriteText "### " & owlURI & "_" & el.Name & "_" & attr.Name & vbCrLf
-					objOTLFile.WriteText ":" & el.Name & "_" & attr.Name & " rdf:type :" & el.Name & " ;" & vbCrLf
+					objOTLFile.WriteText "### " & owlURI & ":" & el.Name & "." & attr.Name & vbCrLf
+					'objOTLFile.WriteText ":" & el.Name & "." & attr.Name & " a :" & el.Name & " ;" & vbCrLf
+					objOTLFile.WriteText ":" & el.Name & "." & attr.Name & " a :" & el.Name & ",skos:Concept ;" & vbCrLf
+					objOTLFile.WriteText "         skos:inScheme :" &  el.Name & "Code ;" & vbCrLf					
 					if not attr.Notes = "" then 
 						definition = replace(attr.Notes, """","\""")
 						definition = replace(definition, vbCrLf," ")	
@@ -443,14 +454,13 @@ sub recPackageTraverse(p)
 					objOTLFile.WriteText "         rdfs:label """ & attr.Name & """@no ." & vbCrLf					
 				next	
 				'Close and write oneOf statement 
-				oneOfEnum = oneOfEnum & " ) ; ." & vbCrLf
-				objOTLFile.WriteText oneOfEnum & vbCrLf			
-
+				oneOfEnum = oneOfEnum & " ) ; ." 
+				if 	(UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration") and InStr(oneOfEnum,"owl:oneOf (  )") = 0 then objOTLFile.WriteText oneOfEnum & vbCrLf			
 			end if
 		end if
-		'Close and write non-empty disjoint union strings for enumerations
+		'Close and write non-empty disjoint union strings for classes
 		strDjCls = strDjCls & " ) ; ."
-		if 	(UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration") and InStr(strDjCls,"owl:disjointUnionOf (  )") = 0 then objOTLFile.WriteText strDjCls & vbCrLf	
+		if 	InStr(strDjCls,"owl:disjointUnionOf (  )") = 0 then objOTLFile.WriteText strDjCls & vbCrLf	
 	next
 	
 
@@ -544,8 +554,9 @@ sub main
 	'Close and write disjoint union strings 
 	strDjFeature = strDjFeature & "    ) ; ."
 	objOTLFile.WriteText strDjFeature & vbCrLf	
-	strDjCode = strDjCode & "    ) ; ."
-	objOTLFile.WriteText strDjCode & vbCrLf	
+	'No disjoint union for code lists, as a value may be relevant in several code lists
+	'strDjCode = strDjCode & "    ) ; ."
+	'objOTLFile.WriteText strDjCode & vbCrLf	
 	strDjEnum = strDjEnum & "    ) ; ."
 	objOTLFile.WriteText strDjEnum & vbCrLf	
 	strDjDT = strDjDT & "    ) ; ."
