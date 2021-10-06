@@ -1,13 +1,13 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME\fme.exe" C:\DATA\GitHub\vegvesen\TN-ITS-Open\Script\Excel2Codelists.fmw
-#              --SourceDataset_XLSXR "C:\DATA\GitHub\vegvesen\TN-ITS-Open\Script\ElementDefinitions.xlsx"
-#              --SourceDataset_XLSXR_3 "C:\DATA\GitHub\vegvesen\TN-ITS-Open\Script\Codelists-20180130.xlsx"
-#              --DestDataset_TEXTLINE "C:\DATA\GitHub\vegvesen\TN-ITS-Open\Script\CL"
+#        "C:\Program Files\FME\fme.exe" C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\Tools\FME\Excel2Codelists.fmw
+#              --SourceDataset_XLSXR "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\ElementDefinitions.xlsx"
+#              --SourceDataset_XLSXR_3 "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\Codelists-20180130.xlsx"
+#              --DestDataset_TEXTLINE "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\Tools\FME\CL"
 #              --owlURI "http:<solidus><solidus>spec.tn-its.eu<solidus>owl<solidus>tnits-owl"
-#              --DestDataset_TEXTLINE_5 "C:\DATA\GitHub\vegvesen\TN-ITS-Open\OWL"
-#              --DestDataset_TEXTLINE_4 "C:\DATA\GitHub\vegvesen\TN-ITS\OWL\tn-its-codes.ttl"
+#              --DestDataset_TEXTLINE_5 "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists"
+#              --DestDataset_TEXTLINE_4 "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists\tnits-codes.ttl"
 #    
 #!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
@@ -17,14 +17,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="5315.69 3303.24"
+#!   DOC_EXTENTS="5878.72 3303.24"
 #!   DOC_TOP_LEFT="-217.503 -3171.52"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21326"
-#!   FME_DOCUMENT_GUID="e7ab9ad3-c0a4-45e6-833d-a640b3944edf"
-#!   FME_DOCUMENT_PRIORGUID="69ffd6e3-2beb-41f6-a171-0ffd998006b8,e27f77df-3858-4e72-81aa-8011357fdad9,0f7abad1-28ea-42c6-992b-3ec07304af01,bbf7a25b-7c82-4baf-aec4-a201e2f563b9,860da3c9-7614-4105-bf44-cb112cd18107,e63717c1-da34-4804-a004-1d48b0e47b6f,96e9f542-686e-4774-9629-eae57e81f729,5bbc215f-8fba-4e8a-95b8-4490fea08e92,a7c24499-e380-4eb2-b25a-9c8cc853ed20,37872996-3054-4f07-b697-21b2059274ac,9f208bb0-db9d-42ad-ab99-e47a45a66d77,b888e770-ef27-415a-8875-55ed6344fa7e,0e24a7bb-a5fc-40c7-82dc-036aad65d670"
+#!   FME_DOCUMENT_GUID="2600e449-b829-4060-8d7a-996b00bf5b93"
+#!   FME_DOCUMENT_PRIORGUID="69ffd6e3-2beb-41f6-a171-0ffd998006b8,e27f77df-3858-4e72-81aa-8011357fdad9,0f7abad1-28ea-42c6-992b-3ec07304af01,bbf7a25b-7c82-4baf-aec4-a201e2f563b9,860da3c9-7614-4105-bf44-cb112cd18107,e63717c1-da34-4804-a004-1d48b0e47b6f,96e9f542-686e-4774-9629-eae57e81f729,5bbc215f-8fba-4e8a-95b8-4490fea08e92,a7c24499-e380-4eb2-b25a-9c8cc853ed20,37872996-3054-4f07-b697-21b2059274ac,9f208bb0-db9d-42ad-ab99-e47a45a66d77,b888e770-ef27-415a-8875-55ed6344fa7e,0e24a7bb-a5fc-40c7-82dc-036aad65d670,e7ab9ad3-c0a4-45e6-833d-a640b3944edf"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="windows-1252"
@@ -34,7 +34,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.0.3.0 (20210528 - Build 21326 - WIN64)"
-#!   LAST_SAVE_DATE="2021-08-10T11:55:56"
+#!   LAST_SAVE_DATE="2021-10-06T16:15:03"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -53,7 +53,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="351.243 142.047"
+#!   VIEW_POSITION="575.936 330.582"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="121"
@@ -251,7 +251,7 @@
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
 #!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
-#!   ENABLED="true"
+#!   ENABLED="false"
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE"
 #!   FTTR_TYPE=""
@@ -906,7 +906,7 @@
 #!   KEYWORD="XLSXR_2"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
-#!   HIDDEN_USER_ATTRS="C D The&lt;space&gt;type&lt;space&gt;of&lt;space&gt;traffic&lt;space&gt;sign&lt;space&gt;according&lt;space&gt;to&lt;space&gt;separate&lt;space&gt;codelist&lt;space&gt;&lt;openparen&gt;see&lt;space&gt;TrafficSignType&lt;closeparen&gt; E"
+#!   HIDDEN_USER_ATTRS="D E The&lt;space&gt;type&lt;space&gt;of&lt;space&gt;traffic&lt;space&gt;sign&lt;space&gt;according&lt;space&gt;to&lt;space&gt;separate&lt;space&gt;codelist&lt;space&gt;&lt;openparen&gt;see&lt;space&gt;TrafficSignType&lt;closeparen&gt; C"
 #!   READ_SELECT_ATTRS="false"
 #!   MERGE_FILTER="*"
 #!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
@@ -938,7 +938,7 @@
 #!   COLLAPSED="false"
 #!   KEYWORD="TEXTLINE_2"
 #!   PARMS_EDITED="true"
-#!   ENABLED="true"
+#!   ENABLED="false"
 #!   SCHEMA_ATTRIBUTE_SOURCE="1"
 #! >
 #!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
@@ -951,8 +951,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="80"
 #!   FEAT_GEOMTYPE="text_line_none"
-#!   POSITION="3896.5071023024288 -877.23039779984572"
-#!   BOUNDING_RECT="3896.5071023024288 -877.23039779984572 454 71"
+#!   POSITION="4357.7068185557873 -909.04119326317243"
+#!   BOUNDING_RECT="4357.7068185557873 -909.04119326317243 454 71"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
 #!   KEYWORD="TEXTLINE_3"
@@ -985,24 +985,24 @@
 #! <DATASET
 #!   NAME="TEXTLINE_2"
 #!   OVERRIDE="-TEXTLINE_2_DATASET{*}"
-#!   DATASET="TEXTLINE_2/OWL"
+#!   DATASET="TEXTLINE_2/codelists"
 #! />
 #! <DATASET
 #!   NAME="TEXTLINE_3"
 #!   OVERRIDE="-TEXTLINE_3_DATASET"
-#!   DATASET="TEXTLINE_3/tn-its-codes.ttl"
+#!   DATASET="TEXTLINE_3/tnits-codes.ttl"
 #! />
 #! </WRITER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Microsoft Excel File(s):"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)ElementDefinitions.xlsx"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\ElementDefinitions.xlsx"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Microsoft Excel File(s):"
-#!   DEFAULT_VALUE="$(FME_MF_DIR)Codelists-20180130.xlsx"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\Codelists-20180130.xlsx"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
@@ -1017,17 +1017,17 @@
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE_5 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
-#!   DEFAULT_VALUE="C:\DATA\GitHub\vegvesen\TN-ITS-Open\OWL"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE_4 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
-#!   DEFAULT_VALUE="C:\DATA\GitHub\vegvesen\TN-ITS\OWL\tn-its-codes.ttl"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists\tnits-codes.ttl"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpRWxlbWVudERlZmluaXRpb25zLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayAyMDA3IiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayBQcmUgMjAwNyIsImZpbHRlciI6WyIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfWExTWFIiLCJwcm9tcHQiOiJTb3VyY2UgTWljcm9zb2Z0IEV4Y2VsIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpQ29kZWxpc3RzLTIwMTgwMTMwLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayAyMDA3IiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayBQcmUgMjAwNyIsImZpbHRlciI6WyIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfWExTWFJfMyIsInByb21wdCI6IlNvdXJjZSBNaWNyb3NvZnQgRXhjZWwgRmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpQ0wiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfVEVYVExJTkUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBUZXh0IEZpbGUiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiJodHRwOjxzb2xpZHVzPjxzb2xpZHVzPnNwZWMudG4taXRzLmV1PHNvbGlkdXM+b3dsPHNvbGlkdXM+dG5pdHMtb3dsIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Im93bFVSSSIsInByb21wdCI6IlROLUlUUyBPV0wgVVJJIiwicmVxdWlyZWQiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXHZlZ3Zlc2VuXFxUTi1JVFNcXE9XTCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORV81IiwicHJvbXB0IjoiRGVzdGluYXRpb24gVGV4dCBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXHZlZ3Zlc2VuXFxUTi1JVFNcXE9XTFxcdG4taXRzLWNvZGVzLnR0bCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORV80IiwicHJvbXB0IjoiRGVzdGluYXRpb24gVGV4dCBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXEVSVElDTy1UTi1JVFNcXFROLUlUU1xcTW9kZWxcXEVsZW1lbnREZWZpbml0aW9ucy54bHN4IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFeGNlbCBGaWxlcyIsImZpbHRlciI6WyIqLnhsc3giLCIqLnhsc20iLCIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgMjAwNyIsImZpbHRlciI6WyIqLnhsc3giXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIE1hY3JvIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzbSJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgUHJlIDIwMDciLCJmaWx0ZXIiOlsiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1hMU1hSIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJDOlxcREFUQVxcR2l0SHViXFxFUlRJQ08tVE4tSVRTXFxUTi1JVFNcXE1vZGVsXFxDb2RlbGlzdHMtMjAxODAxMzAueGxzeCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiRXhjZWwgRmlsZXMiLCJmaWx0ZXIiOlsiKi54bHN4IiwiKi54bHNtIiwiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIFdvcmtib29rIDIwMDciLCJmaWx0ZXIiOlsiKi54bHN4Il19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBNYWNybyBXb3JrYm9vayIsImZpbHRlciI6WyIqLnhsc20iXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIFdvcmtib29rIFByZSAyMDA3IiwiZmlsdGVyIjpbIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9YTFNYUl8zIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSX1VTRVJUWVBFRClDTCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORSIsInByb21wdCI6IkRlc3RpbmF0aW9uIFRleHQgRmlsZSIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6Imh0dHA6PHNvbGlkdXM+PHNvbGlkdXM+c3BlYy50bi1pdHMuZXU8c29saWR1cz5vd2w8c29saWR1cz50bml0cy1vd2wiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoib3dsVVJJIiwicHJvbXB0IjoiVE4tSVRTIE9XTCBVUkkiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXERBVEFcXEdpdEh1YlxcRVJUSUNPLVROLUlUU1xcVE4tSVRTLU9wZW5cXE9XTFxcY29kZWxpc3RzIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJUZXh0L0NvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCIsIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X1RFWFRMSU5FXzUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBUZXh0IEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXERBVEFcXEdpdEh1YlxcRVJUSUNPLVROLUlUU1xcVE4tSVRTLU9wZW5cXE9XTFxcY29kZWxpc3RzXFx0bml0cy1jb2Rlcy50dGwiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfVEVYVExJTkVfNCIsInByb21wdCI6IkRlc3RpbmF0aW9uIFRleHQgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="DestDataset_TEXTLINE" IS_STAND_ALONE="false" />
@@ -1054,7 +1054,7 @@
 #!   BOUNDING_RECT="2286.724147737345 -1978.3255683796506 2811.4673300452018 1193.1937501193192"
 #!   STICKY="true"
 #!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
-#!   CONTENTS="48 46 60 59 39 27 56 22 23 30 36 32 21 45 25 26 58 28 35 "
+#!   CONTENTS="32 46 28 21 35 58 56 60 39 45 59 22 27 36 23 25 26 30 48 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1064,11 +1064,11 @@
 #!   TOP_LEFT="1704.1857955769633 131.71619319498981"
 #!   ORDER="500000000000035"
 #!   PALETTE_COLOR="Color6"
-#!   BOTTOM_RIGHT="4723.7042618360065 -1074.3909091983483"
-#!   BOUNDING_RECT="1704.1857955769633 131.71619319498981 3019.5184662590432 1206.107102393338"
+#!   BOTTOM_RIGHT="5661.2136369297577 -1136.3750001136375"
+#!   BOUNDING_RECT="1704.1857955769633 131.71619319498981 3957.0278413527944 1268.0911933086272"
 #!   STICKY="true"
 #!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,1"
-#!   CONTENTS="91 80 84 89 79 87 81 68 85 61 64 63 72 65 90 71 78 67 66 82 69 86 70 83 77 "
+#!   CONTENTS="77 76 87 78 80 84 64 71 82 70 72 67 69 89 86 61 66 63 68 90 91 81 65 79 85 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1082,21 +1082,21 @@
 #!   BOUNDING_RECT="2538.765057072058 20.661363638429776 2107.7730111598653 519.11676141554813"
 #!   STICKY="true"
 #!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,1"
-#!   CONTENTS="67 65 66 72 64 68 70 "
+#!   CONTENTS="70 72 66 67 64 65 68 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
 #!   IDENTIFIER="79"
 #!   NAME="One file"
 #!   DESCRIPTION=""
-#!   TOP_LEFT="3205.6465911766541 -691.73039779984583"
+#!   TOP_LEFT="4269.7068185557873 -599.57301143259372"
 #!   ORDER="500000000000036"
 #!   PALETTE_COLOR="Color6"
-#!   BOTTOM_RIGHT="4474.4284091188019 -1004.6588069186477"
-#!   BOUNDING_RECT="3205.6465911766541 -691.73039779984583 1268.7818179421479 312.92840911880182"
+#!   BOTTOM_RIGHT="4989.7193186807899 -1031.3042614723668"
+#!   BOUNDING_RECT="4269.7068185557873 -599.57301143259372 720.01250012500259 431.73125003977316"
 #!   STICKY="true"
 #!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,1"
-#!   CONTENTS="80 86 78 "
+#!   CONTENTS="78 86 80 "
 #! >
 #! </BOOKMARK>
 #! </BOOKMARKS>
@@ -1616,13 +1616,14 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Element" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="cl_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_list{}.identifier" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_list{}.description" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="Element cl_description _timestamp"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="Element cl_description _timestamp fme_feature_type"/>
 #!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="YES"/>
 #!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="description identifier individual"/>
@@ -1653,9 +1654,10 @@
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data &lt;at&gt;prefix&lt;space&gt;:&lt;space&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dc:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;elements&lt;solidus&gt;1.1&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;owl:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2002&lt;solidus&gt;07&lt;solidus&gt;owl#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdf:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;1999&lt;solidus&gt;02&lt;solidus&gt;22-rdf-syntax-ns#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xml:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;XML&lt;solidus&gt;1998&lt;solidus&gt;namespace&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xsd:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2001&lt;solidus&gt;XMLSchema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdfs:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2000&lt;solidus&gt;01&lt;solidus&gt;rdf-schema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;skos:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;tnits:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dcterms:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;terms&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;base&lt;space&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;lf&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;gt&gt;&lt;space&gt;a&lt;space&gt;owl:Ontology&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:creator&lt;space&gt;&lt;quote&gt;TN-ITS&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:date&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_timestamp&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:description&lt;space&gt;&lt;quote&gt;Code&lt;space&gt;list&lt;space&gt;values&lt;space&gt;for&lt;space&gt;the&lt;space&gt;TN-ITS&lt;space&gt;code&lt;space&gt;list&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:title&lt;space&gt;&lt;quote&gt;TN-ITS&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:abstract&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;cl_description&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;at&gt;Value&lt;openparen&gt;_concatenated&lt;closeparen&gt;&lt;lf&gt; SET_TO Element Element  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.description _list&lt;opencurly&gt;&lt;closecurly&gt;.description  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.individual _list&lt;opencurly&gt;&lt;closecurly&gt;.individual  NO_OP _concatenated _concatenated  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data &lt;at&gt;prefix&lt;space&gt;:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dc:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;elements&lt;solidus&gt;1.1&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;owl:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2002&lt;solidus&gt;07&lt;solidus&gt;owl#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdf:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;1999&lt;solidus&gt;02&lt;solidus&gt;22-rdf-syntax-ns#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xml:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;XML&lt;solidus&gt;1998&lt;solidus&gt;namespace&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xsd:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2001&lt;solidus&gt;XMLSchema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdfs:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2000&lt;solidus&gt;01&lt;solidus&gt;rdf-schema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;skos:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;tnits:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dcterms:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;terms&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;base&lt;space&gt;&lt;lt&gt;$(owlURI)&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;lf&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;codes&lt;gt&gt;&lt;space&gt;a&lt;space&gt;owl:Ontology&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;owl:imports&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core&lt;gt&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:creator&lt;space&gt;&lt;quote&gt;TN-ITS&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:date&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_timestamp&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:description&lt;space&gt;&lt;quote&gt;Code&lt;space&gt;list&lt;space&gt;values&lt;space&gt;for&lt;space&gt;TN-ITS&lt;space&gt;code&lt;space&gt;lists&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:title&lt;space&gt;&lt;quote&gt;TN-ITS&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;:&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;skos:ConceptScheme&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;dc:isFormatOf&lt;space&gt;:&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;tab&gt;skos:definition&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;cl_description&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;at&gt;Value&lt;openparen&gt;_concatenated&lt;closeparen&gt;&lt;lf&gt; SET_TO Element Element  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.description _list&lt;opencurly&gt;&lt;closecurly&gt;.description  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.individual _list&lt;opencurly&gt;&lt;closecurly&gt;.individual  NO_OP _concatenated _concatenated  NO_OP fme_feature_type fme_feature_type  NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1714,7 +1716,7 @@
 #!     <XFORM_ATTR ATTR_NAME="individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="identifier identifier  NO_OP description description  NO_OP fme_feature_type fme_feature_type  NO_OP Element Element  NO_OP Attribute Attribute  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP  individual &lt;lt&gt;$(owlURI)&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;#&lt;at&gt;Value&lt;openparen&gt;identifier&lt;closeparen&gt;&lt;gt&gt;&lt;space&gt;a&lt;space&gt;tnits:&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;rdfs:label&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;identifier&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;skos:definition&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;description&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt; SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="identifier identifier  NO_OP description description  NO_OP fme_feature_type fme_feature_type  NO_OP Element Element  NO_OP Attribute Attribute  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP  individual :&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;.&lt;at&gt;Value&lt;openparen&gt;identifier&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;:&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;skos:Concept&lt;space&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;skos:inScheme&lt;space&gt;:&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;Code&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;rdfs:label&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;identifier&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;skos:definition&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;description&lt;closeparen&gt;&lt;quote&gt;&lt;at&gt;en&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt; SET_TO"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1736,6 +1738,7 @@
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="Element" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="cl_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -1786,8 +1789,8 @@
 #!   IDENTIFIER="78"
 #!   TYPE="AttributeManager"
 #!   VERSION="3"
-#!   POSITION="3293.6465911766541 -817.23039779984572"
-#!   BOUNDING_RECT="3293.6465911766541 -817.23039779984572 454 71"
+#!   POSITION="4357.7068185557873 -725.0730114325936"
+#!   BOUNDING_RECT="4357.7068185557873 -725.0730114325936 454 71"
 #!   ORDER="500000000000025"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1803,9 +1806,10 @@
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.cl_ttl" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data &lt;at&gt;prefix&lt;space&gt;:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dc:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;elements&lt;solidus&gt;1.1&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;owl:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2002&lt;solidus&gt;07&lt;solidus&gt;owl#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdf:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;1999&lt;solidus&gt;02&lt;solidus&gt;22-rdf-syntax-ns#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xml:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;XML&lt;solidus&gt;1998&lt;solidus&gt;namespace&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xsd:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2001&lt;solidus&gt;XMLSchema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdfs:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2000&lt;solidus&gt;01&lt;solidus&gt;rdf-schema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;skos:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;tnits:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dcterms:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;terms&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;lf&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;Codevalues&lt;gt&gt;&lt;space&gt;a&lt;space&gt;owl:Ontology&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:creator&lt;space&gt;&lt;quote&gt;TN-ITS&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:date&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_timestamp&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:description&lt;space&gt;&lt;quote&gt;Code&lt;space&gt;list&lt;space&gt;values&lt;space&gt;for&lt;space&gt;the&lt;space&gt;TN-ITS&lt;space&gt;code&lt;space&gt;lists&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:title&lt;space&gt;&lt;quote&gt;TN-ITS&lt;space&gt;Code&lt;space&gt;list&lt;space&gt;values&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:abstract&lt;space&gt;&lt;quote&gt;Instances&lt;space&gt;of&lt;space&gt;TN-ITS&lt;space&gt;code&lt;space&gt;lists.&lt;space&gt;Also&lt;space&gt;available&lt;space&gt;as&lt;space&gt;individual&lt;space&gt;files.&lt;quote&gt;&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;at&gt;Value&lt;openparen&gt;_concatenated&lt;closeparen&gt;&lt;lf&gt; SET_TO Element Element  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.description _list&lt;opencurly&gt;&lt;closecurly&gt;.description  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.individual _list&lt;opencurly&gt;&lt;closecurly&gt;.individual  NO_OP _concatenated _concatenated  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data &lt;at&gt;prefix&lt;space&gt;:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dc:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;elements&lt;solidus&gt;1.1&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;owl:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2002&lt;solidus&gt;07&lt;solidus&gt;owl#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdf:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;1999&lt;solidus&gt;02&lt;solidus&gt;22-rdf-syntax-ns#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xml:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;XML&lt;solidus&gt;1998&lt;solidus&gt;namespace&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;xsd:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2001&lt;solidus&gt;XMLSchema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;rdfs:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2000&lt;solidus&gt;01&lt;solidus&gt;rdf-schema#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;skos:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;tnits:&lt;space&gt;&lt;lt&gt;$(owlURI)#&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;prefix&lt;space&gt;dcterms:&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;purl.org&lt;solidus&gt;dc&lt;solidus&gt;terms&lt;solidus&gt;&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;at&gt;base&lt;space&gt;&lt;lt&gt;$(owlURI)&lt;gt&gt;&lt;space&gt;.&lt;lf&gt;&lt;lf&gt;&lt;lt&gt;$(owlURI)&lt;solidus&gt;codes&lt;gt&gt;&lt;space&gt;a&lt;space&gt;owl:Ontology&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;owl:imports&lt;space&gt;&lt;lt&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core&lt;gt&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:creator&lt;space&gt;&lt;quote&gt;TN-ITS&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:date&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_timestamp&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dc:description&lt;space&gt;&lt;quote&gt;Code&lt;space&gt;list&lt;space&gt;values&lt;space&gt;for&lt;space&gt;TN-ITS&lt;space&gt;code&lt;space&gt;lists&lt;quote&gt;&lt;at&gt;en&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;tab&gt;dcterms:title&lt;space&gt;&lt;quote&gt;TN-ITS&lt;space&gt;Codes&lt;quote&gt;&lt;at&gt;en.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;at&gt;Value&lt;openparen&gt;_concatenated&lt;closeparen&gt;&lt;lf&gt; SET_TO Element Element  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.description _list&lt;opencurly&gt;&lt;closecurly&gt;.description  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.individual _list&lt;opencurly&gt;&lt;closecurly&gt;.individual  NO_OP _concatenated _concatenated  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.cl_ttl _list&lt;opencurly&gt;&lt;closecurly&gt;.cl_ttl  NO_OP"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1818,8 +1822,8 @@
 #!   IDENTIFIER="81"
 #!   TYPE="ListBuilder"
 #!   VERSION="3"
-#!   POSITION="2652.615852308109 -599.57301143259372"
-#!   BOUNDING_RECT="2652.615852308109 -599.57301143259372 454 71"
+#!   POSITION="3517.8104546673553 -599.57301143259372"
+#!   BOUNDING_RECT="3517.8104546673553 -599.57301143259372 454 71"
 #!   ORDER="500000000000028"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -1828,13 +1832,11 @@
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.identifier" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.description" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.cl_ttl" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="_timestamp"/>
 #!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
 #!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="YES"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="description identifier individual"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="cl_ttl"/>
 #!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
 #!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_list"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -1845,22 +1847,20 @@
 #!   IDENTIFIER="82"
 #!   TYPE="ListConcatenator"
 #!   VERSION="3"
-#!   POSITION="2652.615852308109 -781.0730114325936"
-#!   BOUNDING_RECT="2652.615852308109 -781.0730114325936 454 71"
+#!   POSITION="3517.8104546673553 -781.0730114325936"
+#!   BOUNDING_RECT="3517.8104546673553 -781.0730114325936 454 71"
 #!   ORDER="500000000000033"
-#!   PARMS_EDITED="false"
+#!   PARMS_EDITED="true"
 #!   ENABLED="true"
 #!   LAST_PARM_EDIT="21326"
 #! >
 #!     <OUTPUT_FEAT NAME="OUTPUT"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.identifier" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.description" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.cl_ttl" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="_list&lt;opencurly&gt;&lt;closecurly&gt;.individual"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="_list&lt;opencurly&gt;&lt;closecurly&gt;.cl_ttl"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;cr&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
@@ -1928,6 +1928,39 @@
 #!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="description"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="76"
+#!   TYPE="AttributeManager"
+#!   VERSION="3"
+#!   POSITION="2652.615852308109 -688.9156250653416"
+#!   BOUNDING_RECT="2652.615852308109 -688.9156250653416 454 71"
+#!   ORDER="500000000000025"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21326"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="cl_ttl" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Element" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.identifier" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cl_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.individual" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_concatenated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; cl_ttl &lt;lf&gt;:&lt;at&gt;Value&lt;openparen&gt;Element&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;skos:ConceptScheme&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;dc:isFormatOf&lt;space&gt;:&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;&lt;space&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;tab&gt;skos:definition&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;cl_description&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;at&gt;Value&lt;openparen&gt;_concatenated&lt;closeparen&gt;&lt;lf&gt; SET_TO Element Element  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier _list&lt;opencurly&gt;&lt;closecurly&gt;.identifier  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.description _list&lt;opencurly&gt;&lt;closecurly&gt;.description  NO_OP cl_description cl_description  NO_OP _timestamp _timestamp  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.individual _list&lt;opencurly&gt;&lt;closecurly&gt;.individual  NO_OP _concatenated _concatenated  NO_OP fme_feature_type fme_feature_type  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_7"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -2172,13 +2205,13 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="83"
-#!   SOURCE_NODE="61"
-#!   TARGET_NODE="81"
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="64"
+#!   TARGET_NODE="70"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
-#!   EXECUTION_IDX="1"
+#!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   COLOUR="0,0,0,1"
 #!   PEN_WIDTH="4"
@@ -2187,13 +2220,13 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="65"
+#!   IDENTIFIER="92"
 #!   SOURCE_NODE="64"
-#!   TARGET_NODE="70"
+#!   TARGET_NODE="76"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
-#!   EXECUTION_IDX="0"
+#!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
 #!   COLOUR="0,0,0,1"
 #!   PEN_WIDTH="4"
@@ -2237,7 +2270,7 @@
 #!   TARGET_NODE="66"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="-1"
-#!   ENABLED="true"
+#!   ENABLED="false"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   COLOUR="0,0,0,1"
@@ -2267,6 +2300,21 @@
 #!   TARGET_NODE="43"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 1 SUPPLIER"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="93"
+#!   SOURCE_NODE="76"
+#!   TARGET_NODE="81"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -2396,12 +2444,12 @@ FME_PYTHON_VERSION 37
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
 GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,SourceDataset_XLSXR_2,XLSXR_IN_ADVANCED_XLSXR_2,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_2,XLSXR_IN_READ_BLANK_AS_XLSXR_2,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_2,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_2,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_2,DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1,DestDataset_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_2,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_2,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2,TEXTLINE_OUT_ENCODING_TEXTLINE_2,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_2,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2,DestDataset_TEXTLINE_3,TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_3,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_3,TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_3,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_3,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_3,TEXTLINE_OUT_ENCODING_TEXTLINE_3,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_3,TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_3,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_3
 # ============================================================================
-DEFAULT_MACRO SourceDataset_XLSXR $(FME_MF_DIR)ElementDefinitions.xlsx
-DEFAULT_MACRO SourceDataset_XLSXR_3 $(FME_MF_DIR)Codelists-20180130.xlsx
+DEFAULT_MACRO SourceDataset_XLSXR C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\ElementDefinitions.xlsx
+DEFAULT_MACRO SourceDataset_XLSXR_3 C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS\Model\Codelists-20180130.xlsx
 DEFAULT_MACRO DestDataset_TEXTLINE $(FME_MF_DIR)CL
 DEFAULT_MACRO owlURI http:<solidus><solidus>spec.tn-its.eu<solidus>owl<solidus>tnits-owl
-DEFAULT_MACRO DestDataset_TEXTLINE_5 C:\DATA\GitHub\vegvesen\TN-ITS-Open\OWL
-DEFAULT_MACRO DestDataset_TEXTLINE_4 C:\DATA\GitHub\vegvesen\TN-ITS\OWL\tn-its-codes.ttl
+DEFAULT_MACRO DestDataset_TEXTLINE_5 C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists
+DEFAULT_MACRO DestDataset_TEXTLINE_4 C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\codelists\tnits-codes.ttl
 # ============================================================================
 GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Microsoft Excel File(s):
 GUI MULTIFILE SourceDataset_XLSXR_3 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Microsoft Excel File(s):
@@ -2410,12 +2458,11 @@ GUI TEXT_EDIT owlURI FME_SYNTAX%FME TN-ITS OWL URI
 GUI FILENAME DestDataset_TEXTLINE_5 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
 GUI FILENAME DestDataset_TEXTLINE_4 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
 # ============================================================================
-USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpRWxlbWVudERlZmluaXRpb25zLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayAyMDA3IiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayBQcmUgMjAwNyIsImZpbHRlciI6WyIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfWExTWFIiLCJwcm9tcHQiOiJTb3VyY2UgTWljcm9zb2Z0IEV4Y2VsIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpQ29kZWxpc3RzLTIwMTgwMTMwLnhsc3giLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkV4Y2VsIEZpbGVzIiwiZmlsdGVyIjpbIioueGxzeCIsIioueGxzbSIsIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayAyMDA3IiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgTWFjcm8gV29ya2Jvb2siLCJmaWx0ZXIiOlsiKi54bHNtIl19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBXb3JrYm9vayBQcmUgMjAwNyIsImZpbHRlciI6WyIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfWExTWFJfMyIsInByb21wdCI6IlNvdXJjZSBNaWNyb3NvZnQgRXhjZWwgRmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpQ0wiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfVEVYVExJTkUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBUZXh0IEZpbGUiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiJodHRwOjxzb2xpZHVzPjxzb2xpZHVzPnNwZWMudG4taXRzLmV1PHNvbGlkdXM+b3dsPHNvbGlkdXM+dG5pdHMtb3dsIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6Im93bFVSSSIsInByb21wdCI6IlROLUlUUyBPV0wgVVJJIiwicmVxdWlyZWQiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZXhwcmVzc2lvbiIsImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXHZlZ3Zlc2VuXFxUTi1JVFNcXE9XTCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORV81IiwicHJvbXB0IjoiRGVzdGluYXRpb24gVGV4dCBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXHZlZ3Zlc2VuXFxUTi1JVFNcXE9XTFxcdG4taXRzLWNvZGVzLnR0bCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORV80IiwicHJvbXB0IjoiRGVzdGluYXRpb24gVGV4dCBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxEQVRBXFxHaXRIdWJcXEVSVElDTy1UTi1JVFNcXFROLUlUU1xcTW9kZWxcXEVsZW1lbnREZWZpbml0aW9ucy54bHN4IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFeGNlbCBGaWxlcyIsImZpbHRlciI6WyIqLnhsc3giLCIqLnhsc20iLCIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgMjAwNyIsImZpbHRlciI6WyIqLnhsc3giXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIE1hY3JvIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzbSJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgUHJlIDIwMDciLCJmaWx0ZXIiOlsiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1hMU1hSIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJDOlxcREFUQVxcR2l0SHViXFxFUlRJQ08tVE4tSVRTXFxUTi1JVFNcXE1vZGVsXFxDb2RlbGlzdHMtMjAxODAxMzAueGxzeCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiRXhjZWwgRmlsZXMiLCJmaWx0ZXIiOlsiKi54bHN4IiwiKi54bHNtIiwiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIFdvcmtib29rIDIwMDciLCJmaWx0ZXIiOlsiKi54bHN4Il19LHsiZGVzY3JpcHRpb24iOiJFeGNlbCBNYWNybyBXb3JrYm9vayIsImZpbHRlciI6WyIqLnhsc20iXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIFdvcmtib29rIFByZSAyMDA3IiwiZmlsdGVyIjpbIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9YTFNYUl8zIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSX1VTRVJUWVBFRClDTCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiVGV4dC9Db21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiLCIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9URVhUTElORSIsInByb21wdCI6IkRlc3RpbmF0aW9uIFRleHQgRmlsZSIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6Imh0dHA6PHNvbGlkdXM+PHNvbGlkdXM+c3BlYy50bi1pdHMuZXU8c29saWR1cz5vd2w8c29saWR1cz50bml0cy1vd2wiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoib3dsVVJJIiwicHJvbXB0IjoiVE4tSVRTIE9XTCBVUkkiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXERBVEFcXEdpdEh1YlxcRVJUSUNPLVROLUlUU1xcVE4tSVRTLU9wZW5cXE9XTFxcY29kZWxpc3RzIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJUZXh0L0NvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dCIsIioudHh0Lmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X1RFWFRMSU5FXzUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBUZXh0IEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXERBVEFcXEdpdEh1YlxcRVJUSUNPLVROLUlUU1xcVE4tSVRTLU9wZW5cXE9XTFxcY29kZWxpc3RzXFx0bml0cy1jb2Rlcy50dGwiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IlRleHQvQ29tcHJlc3NlZCBUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0IiwiKi50eHQuZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgVGV4dCBGaWxlcyIsImZpbHRlciI6WyIqLnR4dC5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfVEVYVExJTkVfNCIsInByb21wdCI6IkRlc3RpbmF0aW9uIFRleHQgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ==
 # ============================================================================
 INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SourceDataset_XLSXR_3)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR_3' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(owlURI)} == {}} { puts_real {Parameter 'owlURI' must be given a value.}; exit 1; }; ]
-INCLUDE [ if {{$(DestDataset_TEXTLINE_5)} == {}} { puts_real {Parameter 'DestDataset_TEXTLINE_5' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_TEXTLINE_4)} == {}} { puts_real {Parameter 'DestDataset_TEXTLINE_4' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
@@ -2428,7 +2475,7 @@ MULTI_READER_KEYWORD{1} XLSXR_2
 MULTI_READER_GEN_DIRECTIVES{1} EXPAND_MERGED_CELLS,Yes,CONFIGURATION_DATASET,C:<solidus>DATA<solidus>GitHub<solidus>TN-ITS<solidus>xsd<solidus>V2018-01<solidus>codelists<solidus>Codelists-20180122.xlsx,DYNAMIC_WORKFLOW,yes,EXPOSE_ATTRS_GROUP,,FORCE_DATETIME,NO,ADVANCED,,SCAN_SCHEMA_IF_DYNAMIC,No,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_SCHEMA_OTHER_FILES,No,SCHEMA,,READ_BLANK_AS,Missing,TABLELIST,,_MERGE_SCHEMAS,YES,XLSXR_EXPOSE_FORMAT_ATTRS,,CASE_SENSITIVE_FEATURE_TYPES,YES,EXCEL_COL_NAMES,YES,ALLOW_DOLLAR_SIGNS,YES
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
-MULTI_WRITER_FIRST_WRITER_ID 1
+MULTI_WRITER_FIRST_WRITER_ID 2
 MULTI_WRITER_TYPE{0} MULTI_WRITER
 MULTI_WRITER_KEYWORD{0} TEXTLINE_1_FANOUT
 TEXTLINE_1_FANOUT_TYPE{*} NULL
@@ -2436,7 +2483,7 @@ TEXTLINE_1_FANOUT_KEYWORD{*} TEXTLINE_1
 TEXTLINE_1_FANOUT_DATASET_ORDER BY_INPUT
 MULTI_WRITER_TYPE{1} MULTI_WRITER
 MULTI_WRITER_KEYWORD{1} TEXTLINE_2_FANOUT
-TEXTLINE_2_FANOUT_TYPE{*} TEXTLINE
+TEXTLINE_2_FANOUT_TYPE{*} NULL
 TEXTLINE_2_FANOUT_KEYWORD{*} TEXTLINE_2
 TEXTLINE_2_FANOUT_DATASET_ORDER BY_INPUT
 MULTI_WRITER_TYPE{2} TEXTLINE
@@ -2820,10 +2867,10 @@ XLSXR_1_MERGE_DEF XLSXR_1::Codelists EXACT Codelists DEFLINE xlsx_start_row,,xls
 XLSXR_2_MERGE_DEF XLSXR_2::WeightTypeCode GLOB * DEFLINE xlsx_start_row,,xlsx_end_row,,fme_attribute_reading,all,identifier,char<openparen>17<closeparen>,description,char<openparen>57<closeparen>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "WeightTypeCode_XLSXR_2 Splitter"    INPUT FEATURE_TYPE WeightTypeCode    OUTPUT FEATURE_TYPE WeightTypeCode_XLSXR_2
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Codelists_XLSXR_1 Splitter"    INPUT FEATURE_TYPE Codelists    OUTPUT FEATURE_TYPE Codelists_XLSXR_1
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "Codelists_XLSXR_1 Splitter"    INPUT FEATURE_TYPE Codelists    OUTPUT FEATURE_TYPE Codelists_XLSXR_1
+FACTORY_DEF * TeeFactory    FACTORY_NAME "WeightTypeCode_XLSXR_2 Splitter"    INPUT FEATURE_TYPE WeightTypeCode    OUTPUT FEATURE_TYPE WeightTypeCode_XLSXR_2
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE WeightTypeCode_XLSXR_2    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
@@ -2852,13 +2899,13 @@ FACTORY_DEF {*} XMLTemplaterFactory FACTORY_NAME { XMLTemplater } INPUT CONTROL_
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_3_e44b3b3d_e82c_4b48_a2b3_08c0106dc0e30_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_3    INPUT  FEATURE_TYPE XMLTemplater_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_3_OUTPUT         @Tcl2("StringReplacer_3_e44b3b3d_e82c_4b48_a2b3_08c0106dc0e30_replacer {<amp>lt<semicolon>} {<lt>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_3_4717219e_0519_4de1_a693_540631fc655012_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_3    INPUT  FEATURE_TYPE XMLTemplater_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_3_OUTPUT         @Tcl2("StringReplacer_3_4717219e_0519_4de1_a693_540631fc655012_replacer {<amp>lt<semicolon>} {<lt>} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 MACRO casemac
 INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
-Tcl2 proc StringReplacer_4_dd264e70_0cd4_4a40_b1b3_62df3b4f9ab00_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_4    INPUT  FEATURE_TYPE StringReplacer_3_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_4_OUTPUT         @Tcl2("StringReplacer_4_dd264e70_0cd4_4a40_b1b3_62df3b4f9ab00_replacer {<amp>gt<semicolon>} {<gt>} {_FME_NO_OP_}")
+Tcl2 proc StringReplacer_4_32b7e05d_3a12_49e5_99f9_520ca95f4a0412_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_4    INPUT  FEATURE_TYPE StringReplacer_3_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_4_OUTPUT         @Tcl2("StringReplacer_4_32b7e05d_3a12_49e5_99f9_520ca95f4a0412_replacer {<amp>gt<semicolon>} {<gt>} {_FME_NO_OP_}")
 # -------------------------------------------------------------------------
 FACTORY_DEF * XMLFormatterFactory    FACTORY_NAME XMLFormatter    INPUT INPUT FEATURE_TYPE StringReplacer_4_OUTPUT    XML_INPUT_TEXT_ATTR "_result"    XML_OUTPUT_ATTR "_xml_output"    LIST_ATTR "_xml_error"    FORMATTING PRETTY_PRINT    DETECT_IGNORABLE_WHITESPACE No    INDENT_SIZE 1    REPLACE_TABS_WITH_SPACES no    TEXT_INDENT no    REMOVE_ALL_COMMENT No    REMOVE_EMPTY_ELEMENT No    COLLAPSE_EMPTY_ELEMENT No    CLEANUP_NAMESPACE No    CLEANUP_SCHEMALOCATION No    XML_OUTPUT_ENCODING utf-8    OUTPUT PASSED FEATURE_TYPE XMLFormatter_PASSED
 # -------------------------------------------------------------------------
@@ -2873,26 +2920,29 @@ FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer }    INPU
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer_5 }    INPUT  FEATURE_TYPE StringReplacer_OUTPUT    USE_REGEX { NO }    CASE_SENSITIVE { YES }    SOURCE_ATTRIBUTES { description }    FIND_TEXT { "<quote>" }    REPLACE_TEXT { "<backslash><quote>" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_5_OUTPUT          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE StringReplacer_5_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "individual" "<lt>$(owlURI)<solidus><at>Value<openparen>Element<closeparen>#<at>Value<openparen>identifier<closeparen><gt><space>a<space>tnits:<at>Value<openparen>fme_feature_type<closeparen><space><semicolon><lf><space><space><space><space><space><space><space><space><space>rdfs:label<space><quote><at>Value<openparen>identifier<closeparen><quote><at>en<space><semicolon><lf><space><space><space><space><space><space><space><space><space>skos:definition<space><quote><at>Value<openparen>description<closeparen><quote><at>en<space>.<lf><space><space><space><space><space><space><space><space><space>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeManager_OUTPUT   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=   OUTPUT FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE StringReplacer_5_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "individual" ":<at>Value<openparen>fme_feature_type<closeparen>.<at>Value<openparen>identifier<closeparen><space>a<space>:<at>Value<openparen>fme_feature_type<closeparen><comma><space>skos:Concept<space><space><semicolon><lf><space><space><space><space><space><space><space><space><space>skos:inScheme<space>:<at>Value<openparen>fme_feature_type<closeparen>Code<space><semicolon><lf><space><space><space><space><space><space><space><space><space>rdfs:label<space><quote><at>Value<openparen>identifier<closeparen><quote><at>en<space><semicolon><lf><space><space><space><space><space><space><space><space><space>skos:definition<space><quote><at>Value<openparen>description<closeparen><quote><at>en<space>.<lf><space><space><space><space><space><space><space><space><space>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListBuilder_2_fme_type_remover }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_0_qkWxPTSviNs=    OUTPUT { FEATURE_TYPE ListBuilder_2_no_fme_type       @RemoveAttributes(fme_type,fme_geometry) }
-FACTORY_DEF {*} ListFactory    FACTORY_NAME { ListBuilder_2 }    INPUT { FEATURE_TYPE ListBuilder_2_no_fme_type }    LIST_NAME { "_list{}" }    LIST_ATTRS_TO_INCLUDE { description identifier individual }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    GROUP_BY { Element cl_description _timestamp }    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { LIST FEATURE_TYPE ListBuilder_2_OUTPUT          }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListBuilder_2_fme_type_remover }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    OUTPUT { FEATURE_TYPE ListBuilder_2_no_fme_type       @RemoveAttributes(fme_type,fme_geometry) }
+FACTORY_DEF {*} ListFactory    FACTORY_NAME { ListBuilder_2 }    INPUT { FEATURE_TYPE ListBuilder_2_no_fme_type }    LIST_NAME { "_list{}" }    LIST_ATTRS_TO_INCLUDE { description identifier individual }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    GROUP_BY { Element cl_description _timestamp fme_feature_type }    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { LIST FEATURE_TYPE ListBuilder_2_OUTPUT          }
 # -------------------------------------------------------------------------
 Tcl2 set ListConcatenator__separator [FME_DecodeText {<cr>}];      regsub -all \"{}\" [FME_DecodeText {_list<opencurly><closecurly>.individual}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] ListConcatenator__listPattern;      set ListConcatenator__listPattern ^$ListConcatenator__listPattern$;
 Tcl2 proc ListConcatenator__Concatenate {} {   upvar \#0 ListConcatenator__separator separator             ListConcatenator__listPattern listPattern;   set allAttrs [lsort -dictionary [FME_AttributeNames]];   set keepEmptyParts [string equal {No} {No}];   set result {};   foreach attrName $allAttrs {     if {[regexp $listPattern $attrName]} {       set attrValue [FME_GetAttribute $attrName];       if {$keepEmptyParts || $attrValue != {}} {         lappend result $attrValue;       };     };   };   FME_SetAttribute {"_concatenated"} [join $result $separator]; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListConcatenator }    INPUT  FEATURE_TYPE ListBuilder_2_OUTPUT    OUTPUT { FEATURE_TYPE ListConcatenator_OUTPUT         @Tcl2(ListConcatenator__Concatenate)          }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ListConcatenator OUTPUT Splitter"   INPUT FEATURE_TYPE ListConcatenator_OUTPUT   OUTPUT FEATURE_TYPE ListConcatenator_OUTPUT_0_1/ALWYYsCOU=   OUTPUT FEATURE_TYPE ListConcatenator_OUTPUT_1_nQq+1iscMww=
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE ListConcatenator_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "text_line_data" "<at>prefix<space>:<space><lt>$(owlURI)<solidus><at>Value<openparen>Element<closeparen>#<gt><space>.<lf><at>prefix<space>dc:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>elements<solidus>1.1<solidus><gt><space>.<lf><at>prefix<space>owl:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2002<solidus>07<solidus>owl#<gt><space>.<lf><at>prefix<space>rdf:<space><lt>http:<solidus><solidus>www.w3.org<solidus>1999<solidus>02<solidus>22-rdf-syntax-ns#<gt><space>.<lf><at>prefix<space>xml:<space><lt>http:<solidus><solidus>www.w3.org<solidus>XML<solidus>1998<solidus>namespace<gt><space>.<lf><at>prefix<space>xsd:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2001<solidus>XMLSchema#<gt><space>.<lf><at>prefix<space>rdfs:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2000<solidus>01<solidus>rdf-schema#<gt><space>.<lf><at>prefix<space>skos:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core#<gt><space>.<lf><at>prefix<space>tnits:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dcterms:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>terms<solidus><gt><space>.<lf><at>base<space><lt>$(owlURI)<solidus><at>Value<openparen>Element<closeparen><gt><space>.<lf><lf><lt>$(owlURI)<solidus><at>Value<openparen>Element<closeparen><gt><space>a<space>owl:Ontology<space><semicolon><lf><tab>dc:creator<space><quote>TN-ITS<quote><space><semicolon><lf><tab>dc:date<space><quote><at>Value<openparen>_timestamp<closeparen><quote><space><semicolon><lf><tab>dc:description<space><quote>Code<space>list<space>values<space>for<space>the<space>TN-ITS<space>code<space>list<space><at>Value<openparen>Element<closeparen><quote><at>en<space><semicolon><lf><tab>dcterms:title<space><quote>TN-ITS<space><at>Value<openparen>Element<closeparen><quote><at>en<space><semicolon><lf><tab>dcterms:abstract<space><quote><at>Value<openparen>cl_description<closeparen><quote><space>.<lf><space><space><space><space><lf><space><space><space><space><lf><at>Value<openparen>_concatenated<closeparen><lf>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE ListConcatenator_OUTPUT_0_1/ALWYYsCOU=    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "text_line_data" "<at>prefix<space>:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dc:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>elements<solidus>1.1<solidus><gt><space>.<lf><at>prefix<space>owl:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2002<solidus>07<solidus>owl#<gt><space>.<lf><at>prefix<space>rdf:<space><lt>http:<solidus><solidus>www.w3.org<solidus>1999<solidus>02<solidus>22-rdf-syntax-ns#<gt><space>.<lf><at>prefix<space>xml:<space><lt>http:<solidus><solidus>www.w3.org<solidus>XML<solidus>1998<solidus>namespace<gt><space>.<lf><at>prefix<space>xsd:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2001<solidus>XMLSchema#<gt><space>.<lf><at>prefix<space>rdfs:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2000<solidus>01<solidus>rdf-schema#<gt><space>.<lf><at>prefix<space>skos:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core#<gt><space>.<lf><at>prefix<space>tnits:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dcterms:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>terms<solidus><gt><space>.<lf><at>base<space><lt>$(owlURI)<gt><space>.<lf><lf><lt>$(owlURI)<solidus>codes<gt><space>a<space>owl:Ontology<space><semicolon><lf><tab>owl:imports<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core<gt><space><semicolon><lf><tab>dc:creator<space><quote>TN-ITS<quote><space><semicolon><lf><tab>dc:date<space><quote><at>Value<openparen>_timestamp<closeparen><quote><space><semicolon><lf><tab>dc:description<space><quote>Code<space>list<space>values<space>for<space>TN-ITS<space>code<space>lists<quote><at>en<space><semicolon><lf><tab>dcterms:title<space><quote>TN-ITS<space><at>Value<openparen>Element<closeparen><quote><at>en.<lf><space><space><space><space><lf>:<at>Value<openparen>Element<closeparen><space>a<space>skos:ConceptScheme<space><semicolon><lf><space><space><space><space>dc:isFormatOf<space>:<at>Value<openparen>fme_feature_type<closeparen><space><semicolon><lf><space><space><space><space><tab>skos:definition<space><quote><at>Value<openparen>cl_description<closeparen><quote><space>.<lf><space><space><space><space><lf><space><space><space><space><lf><at>Value<openparen>_concatenated<closeparen><lf>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeManager_2_OUTPUT Disabled Nuker -1 72"   INPUT FEATURE_TYPE AttributeManager_2_OUTPUT
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListBuilder_3_fme_type_remover }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT_1_qYvk7jiZJpI=    OUTPUT { FEATURE_TYPE ListBuilder_3_no_fme_type       @RemoveAttributes(fme_type,fme_geometry) }
-FACTORY_DEF {*} ListFactory    FACTORY_NAME { ListBuilder_3 }    INPUT { FEATURE_TYPE ListBuilder_3_no_fme_type }    LIST_NAME { "_list{}" }    LIST_ATTRS_TO_INCLUDE { description identifier individual }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    GROUP_BY { _timestamp }    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { LIST FEATURE_TYPE ListBuilder_3_OUTPUT          }
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_7 }    INPUT  FEATURE_TYPE ListConcatenator_OUTPUT_1_nQq+1iscMww=    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "cl_ttl" "<lf>:<at>Value<openparen>Element<closeparen><space>a<space>skos:ConceptScheme<space><semicolon><lf><space><space><space><space>dc:isFormatOf<space>:<at>Value<openparen>fme_feature_type<closeparen><space><semicolon><lf><space><space><space><space><tab>skos:definition<space><quote><at>Value<openparen>cl_description<closeparen><quote><space>.<lf><space><space><space><space><lf><space><space><space><space><lf><at>Value<openparen>_concatenated<closeparen><lf>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_7_OUTPUT        }
 # -------------------------------------------------------------------------
-Tcl2 set ListConcatenator_2__separator [FME_DecodeText {<cr>}];      regsub -all \"{}\" [FME_DecodeText {_list<opencurly><closecurly>.individual}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] ListConcatenator_2__listPattern;      set ListConcatenator_2__listPattern ^$ListConcatenator_2__listPattern$;
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListBuilder_3_fme_type_remover }    INPUT  FEATURE_TYPE AttributeManager_7_OUTPUT    OUTPUT { FEATURE_TYPE ListBuilder_3_no_fme_type       @RemoveAttributes(fme_type,fme_geometry) }
+FACTORY_DEF {*} ListFactory    FACTORY_NAME { ListBuilder_3 }    INPUT { FEATURE_TYPE ListBuilder_3_no_fme_type }    LIST_NAME { "_list{}" }    LIST_ATTRS_TO_INCLUDE { cl_ttl }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    GROUP_BY { _timestamp }    FLUSH_WHEN_GROUPS_CHANGE { No }    OUTPUT { LIST FEATURE_TYPE ListBuilder_3_OUTPUT          }
+# -------------------------------------------------------------------------
+Tcl2 set ListConcatenator_2__separator [FME_DecodeText {<cr>}];      regsub -all \"{}\" [FME_DecodeText {_list<opencurly><closecurly>.cl_ttl}] [FME_DecodeText {<opencurly><backslash>d+<closecurly>}] ListConcatenator_2__listPattern;      set ListConcatenator_2__listPattern ^$ListConcatenator_2__listPattern$;
 Tcl2 proc ListConcatenator_2__Concatenate {} {   upvar \#0 ListConcatenator_2__separator separator             ListConcatenator_2__listPattern listPattern;   set allAttrs [lsort -dictionary [FME_AttributeNames]];   set keepEmptyParts [string equal {No} {No}];   set result {};   foreach attrName $allAttrs {     if {[regexp $listPattern $attrName]} {       set attrValue [FME_GetAttribute $attrName];       if {$keepEmptyParts || $attrValue != {}} {         lappend result $attrValue;       };     };   };   FME_SetAttribute {"_concatenated"} [join $result $separator]; }
 FACTORY_DEF {*} TeeFactory    FACTORY_NAME { ListConcatenator_2 }    INPUT  FEATURE_TYPE ListBuilder_3_OUTPUT    OUTPUT { FEATURE_TYPE ListConcatenator_2_OUTPUT         @Tcl2(ListConcatenator_2__Concatenate)          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_3 }    INPUT  FEATURE_TYPE ListConcatenator_2_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "text_line_data" "<at>prefix<space>:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dc:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>elements<solidus>1.1<solidus><gt><space>.<lf><at>prefix<space>owl:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2002<solidus>07<solidus>owl#<gt><space>.<lf><at>prefix<space>rdf:<space><lt>http:<solidus><solidus>www.w3.org<solidus>1999<solidus>02<solidus>22-rdf-syntax-ns#<gt><space>.<lf><at>prefix<space>xml:<space><lt>http:<solidus><solidus>www.w3.org<solidus>XML<solidus>1998<solidus>namespace<gt><space>.<lf><at>prefix<space>xsd:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2001<solidus>XMLSchema#<gt><space>.<lf><at>prefix<space>rdfs:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2000<solidus>01<solidus>rdf-schema#<gt><space>.<lf><at>prefix<space>skos:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core#<gt><space>.<lf><at>prefix<space>tnits:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dcterms:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>terms<solidus><gt><space>.<lf><lf><lt>$(owlURI)<solidus>Codevalues<gt><space>a<space>owl:Ontology<space><semicolon><lf><tab>dc:creator<space><quote>TN-ITS<quote><space><semicolon><lf><tab>dc:date<space><quote><at>Value<openparen>_timestamp<closeparen><quote><space><semicolon><lf><tab>dc:description<space><quote>Code<space>list<space>values<space>for<space>the<space>TN-ITS<space>code<space>lists<quote><at>en<space><semicolon><lf><tab>dcterms:title<space><quote>TN-ITS<space>Code<space>list<space>values<quote><at>en<space><semicolon><lf><tab>dcterms:abstract<space><quote>Instances<space>of<space>TN-ITS<space>code<space>lists.<space>Also<space>available<space>as<space>individual<space>files.<quote><space>.<lf><space><space><space><space><lf><space><space><space><space><lf><at>Value<openparen>_concatenated<closeparen><lf>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT        }
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_3 }    INPUT  FEATURE_TYPE ListConcatenator_2_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "" "text_line_data" "<at>prefix<space>:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dc:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>elements<solidus>1.1<solidus><gt><space>.<lf><at>prefix<space>owl:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2002<solidus>07<solidus>owl#<gt><space>.<lf><at>prefix<space>rdf:<space><lt>http:<solidus><solidus>www.w3.org<solidus>1999<solidus>02<solidus>22-rdf-syntax-ns#<gt><space>.<lf><at>prefix<space>xml:<space><lt>http:<solidus><solidus>www.w3.org<solidus>XML<solidus>1998<solidus>namespace<gt><space>.<lf><at>prefix<space>xsd:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2001<solidus>XMLSchema#<gt><space>.<lf><at>prefix<space>rdfs:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2000<solidus>01<solidus>rdf-schema#<gt><space>.<lf><at>prefix<space>skos:<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core#<gt><space>.<lf><at>prefix<space>tnits:<space><lt>$(owlURI)#<gt><space>.<lf><at>prefix<space>dcterms:<space><lt>http:<solidus><solidus>purl.org<solidus>dc<solidus>terms<solidus><gt><space>.<lf><at>base<space><lt>$(owlURI)<gt><space>.<lf><lf><lt>$(owlURI)<solidus>codes<gt><space>a<space>owl:Ontology<space><semicolon><lf><tab>owl:imports<space><lt>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core<gt><space><semicolon><lf><tab>dc:creator<space><quote>TN-ITS<quote><space><semicolon><lf><tab>dc:date<space><quote><at>Value<openparen>_timestamp<closeparen><quote><space><semicolon><lf><tab>dc:description<space><quote>Code<space>list<space>values<space>for<space>TN-ITS<space>code<space>lists<quote><at>en<space><semicolon><lf><tab>dcterms:title<space><quote>TN-ITS<space>Codes<quote><at>en.<lf><space><space><space><space><lf><space><space><space><space><lf><at>Value<openparen>_concatenated<closeparen><lf>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT        }
 # -------------------------------------------------------------------------
 # Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
 DEFAULT_MACRO WORKSPACE_TEMP_DIR
@@ -2934,7 +2984,7 @@ DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
 FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { FeatureMerger__Rejected__Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { identifier,varchar<openparen>17<closeparen>,description,varchar<openparen>57<closeparen>,fme_feature_type,varchar<openparen>50<closeparen>,Element,varchar<openparen>27<closeparen>,Attribute,buffer,cl_description,varchar<openparen>461<closeparen>,_timestamp,buffer,fme_rejection_code,buffer }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_5_OUTPUT_0_vzhqumH0PPo= TO NULL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,__wb_out_feat_type__,__nuke_me__ GEOMETRY    ROUTE FME_GENERIC AttributeManager_3_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeManager_2_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_5_OUTPUT_0_vzhqumH0PPo= TO NULL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,__wb_out_feat_type__,__nuke_me__ GEOMETRY    ROUTE FME_GENERIC AttributeManager_2_OUTPUT TO NULL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,__wb_out_feat_type__,__nuke_me__ GEOMETRY    ROUTE FME_GENERIC AttributeManager_3_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__

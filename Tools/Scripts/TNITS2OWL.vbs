@@ -78,6 +78,10 @@ sub heading
 	objOTLFile.WriteText "	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;" & vbCrLf
 	'ISO 19115 Metadata
 	objOTLFile.WriteText "	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;" & vbCrLf
+	'TN-ITS Codes
+	objOTLFile.WriteText "	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;" & vbCrLf
+	
+	
 	' --------------------------------------------------------------------
 	
 	'Ontology metadata 
@@ -336,11 +340,16 @@ sub recPackageTraverse(p)
 			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
 
 			'---------------------------------------------------------------------------------------------------------
-			'Create concept schemes for enumerations and code lists
-			if UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" or UCase(el.Stereotype) = "CODELIST" then		
+			'Create concept schemes for enumerations (code list schemes are in the codes ontology)
+			if UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration"  then		'or UCase(el.Stereotype) = "CODELIST"
 				objOTLFile.WriteText vbCrLf
 				objOTLFile.WriteText "### " & owlURI & ":" & el.Name & "Code" & vbCrLf
 				objOTLFile.WriteText ":" & el.Name & "Code a skos:ConceptScheme ;" & vbCrLf		
+				if not el.Notes = "" then 
+					definition = replace(el.Notes, """","\""")
+					definition = replace(definition, vbCrLf," ")	
+					objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
+				end if	
 				objOTLFile.WriteText "       dc:isFormatOf :" & el.Name & " ." & vbCrLf
 			end if	
 				

@@ -16,6 +16,7 @@
 	owl:imports <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ;
 	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;
 	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;
+	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;
 	dc:creator "TN-ITS" ;
 	dc:date "06.10.2021" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
@@ -221,6 +222,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:DatasetTypeCode
 :DatasetTypeCode a skos:ConceptScheme ;
+         skos:definition "Specifies the different possible types of datasets for road features  "@en ;
        dc:isFormatOf :DatasetType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:DatasetType.Update
@@ -250,19 +252,11 @@
          skos:definition "Specifies the available list of enumerations for the use of electric charging point "@en ;
        rdfs:label "ChargingPointUsageType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:ChargingPointUsageTypeCode
-:ChargingPointUsageTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :ChargingPointUsageType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:GasType
 :GasType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for types of propellant gas."@en ;
        rdfs:label "GasType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:GasTypeCode
-:GasTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :GasType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:GenericRoadFeatureProperty
 :GenericRoadFeatureProperty a owl:Class ;
@@ -318,19 +312,11 @@
          skos:definition "Specifies the available list of enumerations for contexts of forms of interpreting distance measures"@en ;
        rdfs:label "NatureOfDistanceMeasure"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:NatureOfDistanceMeasureCode
-:NatureOfDistanceMeasureCode a skos:ConceptScheme ;
-       dc:isFormatOf :NatureOfDistanceMeasure .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:ParkingSiteType
 :ParkingSiteType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the types of parking sites"@en ;
        rdfs:label "ParkingSiteType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:ParkingSiteTypeCode
-:ParkingSiteTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :ParkingSiteType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:PaymentMethod
 :PaymentMethod a owl:Class ;
@@ -338,19 +324,11 @@
          skos:definition "Specifies the available list of enumerations for the methods of payment"@en ;
        rdfs:label "PaymentMethod"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:PaymentMethodCode
-:PaymentMethodCode a skos:ConceptScheme ;
-       dc:isFormatOf :PaymentMethod .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:PropertyValueReferenceType
 :PropertyValueReferenceType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "A list of externally defined values "@en ;
        rdfs:label "PropertyValueReferenceType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:PropertyValueReferenceTypeCode
-:PropertyValueReferenceTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :PropertyValueReferenceType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadFeature
 :RoadFeature a owl:Class ;
@@ -549,29 +527,17 @@
          skos:definition "Specifies the available list of enumerations for the various types of road features"@en ;
        rdfs:label "RoadFeaturePropertyType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:RoadFeaturePropertyTypeCode
-:RoadFeaturePropertyTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadFeaturePropertyType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureSource
 :RoadFeatureSource a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the various types source concerning road features"@en ;
        rdfs:label "RoadFeatureSource"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureSourceCode
-:RoadFeatureSourceCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadFeatureSource .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureType
 :RoadFeatureType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the various types of road features"@en ;
        rdfs:label "RoadFeatureType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureTypeCode
-:RoadFeatureTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadFeatureType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadSignContent
 :RoadSignContent a owl:Class ;
@@ -672,19 +638,11 @@
          skos:definition "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"@en ;
        rdfs:label "RoadSignType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:RoadSignTypeCode
-:RoadSignTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadSignType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:SiteAccessibilityType
 :SiteAccessibilityType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for types of site accessibility"@en ;
        rdfs:label "SiteAccessibilityType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:SiteAccessibilityTypeCode
-:SiteAccessibilityTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :SiteAccessibilityType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:TunnelCategory
 :TunnelCategory a owl:Class ;
@@ -692,19 +650,11 @@
          skos:definition "Specifies the available list of enumerations for the categories of tunnel access"@en ;
        rdfs:label "TunnelCategory"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:TunnelCategoryCode
-:TunnelCategoryCode a skos:ConceptScheme ;
-       dc:isFormatOf :TunnelCategory .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:UomIdentifier
 :UomIdentifier a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"@en ;
        rdfs:label "UomIdentifier"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:UomIdentifierCode
-:UomIdentifierCode a skos:ConceptScheme ;
-       dc:isFormatOf :UomIdentifier .
 
 
 ### http://spec.tn-its.eu/owl/tnits-owl:AreaCondition
@@ -736,10 +686,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "@en ;
        rdfs:label "AreaType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:AreaTypeCode
-:AreaTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :AreaType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:Condition
 :Condition a owl:Class ;
@@ -854,10 +800,6 @@
          skos:definition "Specifies the available list of enumerations for the road category types"@en ;
        rdfs:label "RoadCategory"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:RoadCategoryCode
-:RoadCategoryCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadCategory .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadCategoryCondition
 :RoadCategoryCondition a owl:Class ;
          skos:definition "Specifies road category condition applicability relating to a road feature "@en ;
@@ -960,10 +902,6 @@
          skos:definition "Types of weather conditions which affect driving conditions."@en ;
        rdfs:label "WeatherType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:WeatherTypeCode
-:WeatherTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :WeatherType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:ConditionOperator
 :ConditionOperator a owl:Class ;
        rdfs:subClassOf :tnitsEnumeration ;
@@ -972,6 +910,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:ConditionOperatorCode
 :ConditionOperatorCode a skos:ConceptScheme ;
+         skos:definition "The logical operator to be used in a test of conditions "@en ;
        dc:isFormatOf :ConditionOperator .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:ConditionOperator.OR
@@ -999,10 +938,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.  Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.  "@en ;
        rdfs:label "FuzzyTimeType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:FuzzyTimeTypeCode
-:FuzzyTimeTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :FuzzyTimeType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:OverallPeriod
 :OverallPeriod a owl:Class ;
@@ -1240,10 +1175,6 @@
          skos:definition "Specifies the available list of enumerations for the special days"@en ;
        rdfs:label "SpecialDayType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:SpecialDayTypeCode
-:SpecialDayTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :SpecialDayType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:TimePeriodOfDay
 :TimePeriodOfDay a owl:Class ;
        rdfs:subClassOf :tnitsDataType ;
@@ -1440,6 +1371,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:DayOfWeekCode
 :DayOfWeekCode a skos:ConceptScheme ;
+         skos:definition "<font color=\"#231f20\">Applicable day of the week.</font>"@en ;
        dc:isFormatOf :DayOfWeek .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:DayOfWeek.monday
@@ -1486,6 +1418,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:MonthOfYearCode
 :MonthOfYearCode a skos:ConceptScheme ;
+         skos:definition "<font color=\"#231f20\">Applicable month of the year.</font>"@en ;
        dc:isFormatOf :MonthOfYear .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:MonthOfYear.january
@@ -1557,6 +1490,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:WeekOfMonthCode
 :WeekOfMonthCode a skos:ConceptScheme ;
+         skos:definition "<font color=\"#231f20\">Applicable week of the month</font>"@en ;
        dc:isFormatOf :WeekOfMonth .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:WeekOfMonth.firstWeekOfMonth
@@ -1596,10 +1530,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"@en ;
        rdfs:label "EmissionClassificationEuro"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:EmissionClassificationEuroCode
-:EmissionClassificationEuroCode a skos:ConceptScheme ;
-       dc:isFormatOf :EmissionClassificationEuro .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:Emissions
 :Emissions a owl:Class ;
@@ -1658,10 +1588,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."@en ;
        rdfs:label "FuelType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:FuelTypeCode
-:FuelTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :FuelType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:GrossWeightCharacteristic
 :GrossWeightCharacteristic a owl:Class ;
@@ -1829,19 +1755,11 @@
          skos:definition "Specifies the available list of enumerations for types of vehicle loads"@en ;
        rdfs:label "LoadType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:LoadTypeCode
-:LoadTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :LoadType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:LowEmissionLevel
 :LowEmissionLevel a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for vehicle emission levels"@en ;
        rdfs:label "LowEmissionLevel"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:LowEmissionLevelCode
-:LowEmissionLevelCode a skos:ConceptScheme ;
-       dc:isFormatOf :LowEmissionLevel .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:NumberOfAxlesCharacteristic
 :NumberOfAxlesCharacteristic a owl:Class ;
@@ -2065,19 +1983,11 @@
          skos:definition "Specifies the available list of enumerations for the vehicle equipment types"@en ;
        rdfs:label "VehicleEquipment"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:VehicleEquipmentCode
-:VehicleEquipmentCode a skos:ConceptScheme ;
-       dc:isFormatOf :VehicleEquipment .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:VehicleType
 :VehicleType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for types of vehicle."@en ;
        rdfs:label "VehicleType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:VehicleTypeCode
-:VehicleTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :VehicleType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:VehicleUsage
 :VehicleUsage a owl:Class ;
@@ -2085,19 +1995,11 @@
          skos:definition "Specifies the available list of enumerations for types of usage of vehicles."@en ;
        rdfs:label "VehicleUsage"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:VehicleUsageCode
-:VehicleUsageCode a skos:ConceptScheme ;
-       dc:isFormatOf :VehicleUsage .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:WeightType
 :WeightType a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Type of weight - describing the meaning of a vehicle weight value"@en ;
        rdfs:label "WeightType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:WeightTypeCode
-:WeightTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :WeightType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:WidthCharacteristic
 :WidthCharacteristic a owl:Class ;
@@ -2141,6 +2043,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:ComparisonOperatorCode
 :ComparisonOperatorCode a skos:ConceptScheme ;
+         skos:definition "<font color=\"#231f20\">The logical operator to be used in a comparison operation. </font>"@en ;
        dc:isFormatOf :ComparisonOperator .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:ComparisonOperator.equalTo
@@ -2180,10 +2083,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"@en ;
        rdfs:label "AgoraBinaryVersion"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:AgoraBinaryVersionCode
-:AgoraBinaryVersionCode a skos:ConceptScheme ;
-       dc:isFormatOf :AgoraBinaryVersion .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:BinaryLocationReference
 :BinaryLocationReference a owl:Class ;
@@ -2256,10 +2155,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "-- Definition -- List of values for directions relative to a link"@en ;
        rdfs:label "LinkDirectionValue"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:LinkDirectionValueCode
-:LinkDirectionValueCode a skos:ConceptScheme ;
-       dc:isFormatOf :LinkDirectionValue .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:LinkDirectionValue.bothDirections
 :LinkDirectionValue.bothDirections a :LinkDirectionValue,skos:Concept ;
@@ -2399,19 +2294,11 @@
          skos:definition "Specifies the available list of enumerations for the version of the OpenLR binary specification"@en ;
        rdfs:label "OpenLRBinaryVersion"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:OpenLRBinaryVersionCode
-:OpenLRBinaryVersionCode a skos:ConceptScheme ;
-       dc:isFormatOf :OpenLRBinaryVersion .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:PredefinedLocation
 :PredefinedLocation a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for predefined locations "@en ;
        rdfs:label "PredefinedLocation"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:PredefinedLocationCode
-:PredefinedLocationCode a skos:ConceptScheme ;
-       dc:isFormatOf :PredefinedLocation .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:SimpleLinearReference
 :SimpleLinearReference a owl:Class ;
@@ -2672,6 +2559,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:UpdateTypeCode
 :UpdateTypeCode a skos:ConceptScheme ;
+         skos:definition "Defines the different update types "@en ;
        dc:isFormatOf :UpdateType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:UpdateType.Add
@@ -2846,10 +2734,6 @@
          skos:definition "Specifies the available list of enumerations for types of general feedback events."@en ;
        rdfs:label "GeneralFeedbackEventType"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl:GeneralFeedbackEventTypeCode
-:GeneralFeedbackEventTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :GeneralFeedbackEventType .
-
 ### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureEvent
 :RoadFeatureEvent a owl:Class ;
          skos:definition "Represents one event that may occur during download and integration of data that needs to be reported back to the provider  "@en ;
@@ -2899,10 +2783,6 @@
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"@en ;
        rdfs:label "RoadFeatureEventType"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl:RoadFeatureEventTypeCode
-:RoadFeatureEventTypeCode a skos:ConceptScheme ;
-       dc:isFormatOf :RoadFeatureEventType .
 
 ### http://spec.tn-its.eu/owl/tnits-owl:SummaryInfo
 :SummaryInfo a owl:Class ;
