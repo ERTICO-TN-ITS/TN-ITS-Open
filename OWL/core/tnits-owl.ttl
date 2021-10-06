@@ -46,10 +46,69 @@
          rdfs:label "TN-ITS Data type"@en .
 
 
-:XMLLocationReference a owl:Class ;
+:Identifier a owl:Class ;
        rdfs:subClassOf :tnitsDataType ;
-         skos:definition "A OpenLR location reference encoded using XML according to the OpenLR specification (see bibliography)  "@en ;
-       rdfs:label "XMLLocationReference"@en .
+         skos:definition "External unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object."@en ;
+       rdfs:label "Identifier"@en .
+
+### http://spec.tn-its.eu/owl/tnits-owl#localId
+
+### http://spec.tn-its.eu/owl/tnits-owl#localId
+:localId rdf:type owl:DatatypeProperty ;
+         skos:definition "A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier. "@en ;
+         rdfs:domain :Identifier;
+         rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
+         rdfs:label "localId"@en .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :localId;
+         owl:onDataRange xsd:string;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+         ] .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :localId;
+         owl:allValuesFrom xsd:string;
+         ] .
+
+
+### http://spec.tn-its.eu/owl/tnits-owl#namespace
+
+### http://spec.tn-its.eu/owl/tnits-owl#namespace
+:namespace rdf:type owl:DatatypeProperty ;
+         skos:definition "Namespace uniquely identifying the data source of the spatial object."@en ;
+         rdfs:domain :Identifier;
+         rdfs:range xsd:string;
+         rdf:type owl:FunctionalProperty;
+         rdfs:label "namespace"@en .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :namespace;
+         owl:onDataRange xsd:string;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+         ] .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :namespace;
+         owl:allValuesFrom xsd:string;
+         ] .
+
+
+### http://spec.tn-its.eu/owl/tnits-owl#versionId
+
+### http://spec.tn-its.eu/owl/tnits-owl#versionId
+:versionId rdf:type owl:DatatypeProperty ;
+         skos:definition "The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique. "@en ;
+         rdfs:domain :Identifier;
+         rdfs:range xsd:string;
+         rdfs:label "versionId"@en .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :versionId;
+         owl:onDataRange xsd:string;
+       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+         ] .
+:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :versionId;
+         owl:allValuesFrom xsd:string;
+         ] .
+
 
 :Dataset a owl:Class ;
        rdfs:subClassOf :tnitsFeature ;
@@ -60,6 +119,7 @@
 :Dataset.metadata rdf:type owl:ObjectProperty ;
          skos:definition "Metadata for the dataset. "@en ;
          rdfs:domain :Dataset;
+         rdfs:range :Metadata;
          rdfs:label "Dataset.metadata"@en .
 :Dataset rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :Dataset.metadata;
@@ -278,21 +338,19 @@
          ] .
 
 
-### http://spec.tn-its.eu/owl/tnits-owl#RoadFeature.id
-:RoadFeature.id rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#roadFeatureId
+:roadFeatureId rdf:type owl:ObjectProperty ;
          skos:definition "The identity for the road feature. Permanent identifier for the road feature in the database of the data provider. "@en ;
-         rdfs:domain :RoadFeature;
-         rdfs:range :RoadFeatureId;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "RoadFeature.id"@en .
+         rdfs:range :Identifier;
+         rdfs:label "roadFeatureId"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeature.id;
-         owl:onClass :RoadFeatureId;
+         owl:onProperty :roadFeatureId;
+         owl:onClass :Identifier;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeature.id;
-         owl:allValuesFrom :RoadFeatureId;
+         owl:onProperty :roadFeatureId;
+         owl:allValuesFrom :Identifier;
          ] .
 
 
@@ -458,48 +516,6 @@
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadFeature.type;
          owl:allValuesFrom :RoadFeatureType;
-         ] .
-
-:RoadFeatureId a owl:Class ;
-       rdfs:subClassOf :tnitsDataType ;
-         skos:definition "A class supporting a provider defined identifier for a road feature"@en ;
-       rdfs:label "RoadFeatureId"@en .
-
-### http://spec.tn-its.eu/owl/tnits-owl#providerId
-
-### http://spec.tn-its.eu/owl/tnits-owl#providerId
-:providerId rdf:type owl:DatatypeProperty ;
-         skos:definition "A text-based identifier used to indicate the provider’s identity."@en ;
-         rdfs:domain :RoadFeatureId;
-         rdfs:range xsd:string;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "providerId"@en .
-:RoadFeatureId rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :providerId;
-         owl:onDataRange xsd:string;
-       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-         ] .
-:RoadFeatureId rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :providerId;
-         owl:allValuesFrom xsd:string;
-         ] .
-
-
-### http://spec.tn-its.eu/owl/tnits-owl#localId
-
-### http://spec.tn-its.eu/owl/tnits-owl#localId
-:localId rdf:type owl:DatatypeProperty ;
-         skos:definition "A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier."@en ;
-         rdfs:range xsd:string;
-         rdfs:label "localId"@en .
-:RoadFeatureId rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :localId;
-         owl:onDataRange xsd:string;
-       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-         ] .
-:RoadFeatureId rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :localId;
-         owl:allValuesFrom xsd:string;
          ] .
 
 :RoadFeaturePropertyType a owl:Class ;
@@ -2101,59 +2117,6 @@
          owl:allValuesFrom <http://www.opengis.net/ont/geosparql#Geometry>;
          ] .
 
-:Identifier a owl:Class ;
-       rdfs:subClassOf :tnitsDataType ;
-         skos:definition "External unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object."@en ;
-       rdfs:label "Identifier"@en .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :localId;
-         owl:onDataRange xsd:string;
-       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-         ] .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :localId;
-         owl:allValuesFrom xsd:string;
-         ] .
-
-
-### http://spec.tn-its.eu/owl/tnits-owl#namespace
-
-### http://spec.tn-its.eu/owl/tnits-owl#namespace
-:namespace rdf:type owl:DatatypeProperty ;
-         skos:definition "Namespace uniquely identifying the data source of the spatial object."@en ;
-         rdfs:domain :Identifier;
-         rdfs:range xsd:string;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "namespace"@en .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :namespace;
-         owl:onDataRange xsd:string;
-       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-         ] .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :namespace;
-         owl:allValuesFrom xsd:string;
-         ] .
-
-
-### http://spec.tn-its.eu/owl/tnits-owl#versionId
-
-### http://spec.tn-its.eu/owl/tnits-owl#versionId
-:versionId rdf:type owl:DatatypeProperty ;
-         skos:definition "The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique. "@en ;
-         rdfs:domain :Identifier;
-         rdfs:range xsd:string;
-         rdfs:label "versionId"@en .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :versionId;
-         owl:onDataRange xsd:string;
-       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-         ] .
-:Identifier rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :versionId;
-         owl:allValuesFrom xsd:string;
-         ] .
-
 :LinkDirectionValue a owl:Class ;
        rdfs:subClassOf :tnitsCodeList ;
          skos:definition "-- Definition -- List of values for directions relative to a link"@en ;
@@ -2228,19 +2191,19 @@
          skos:definition "Base type representing an element in a network. Every element in a network provides some function that is of interest in the network. "@en ;
        rdfs:label "NetworkElement"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#NetworkElement.id
-:NetworkElement.id rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#id
+:id rdf:type owl:ObjectProperty ;
          skos:definition "External identifier of the network element."@en ;
          rdfs:domain :NetworkElement;
          rdfs:range :Identifier;
-         rdfs:label "NetworkElement.id"@en .
+         rdfs:label "id"@en .
 :NetworkElement rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :NetworkElement.id;
+         owl:onProperty :id;
          owl:onClass :Identifier;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :NetworkElement rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :NetworkElement.id;
+         owl:onProperty :id;
          owl:allValuesFrom :Identifier;
          ] .
 
@@ -2582,23 +2545,19 @@
          ] .
 
 
-### http://spec.tn-its.eu/owl/tnits-owl#datasetIdentifier
-
-### http://spec.tn-its.eu/owl/tnits-owl#datasetIdentifier
-:datasetIdentifier rdf:type owl:DatatypeProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#datasetId
+:datasetId rdf:type owl:ObjectProperty ;
          skos:definition "The identification of the dataset which is the source of this feedback information. This identifier shall correspond to the metadata element Unique resource identifier in the dataset for which the feedback is created."@en ;
-         rdfs:domain :FeedbackInformation;
-         rdfs:range xsd:string;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "datasetIdentifier"@en .
+         rdfs:range :Identifier;
+         rdfs:label "datasetId"@en .
 :FeedbackInformation rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :datasetIdentifier;
-         owl:onDataRange xsd:string;
+         owl:onProperty :datasetId;
+         owl:onClass :Identifier;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :FeedbackInformation rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :datasetIdentifier;
-         owl:allValuesFrom xsd:string;
+         owl:onProperty :datasetId;
+         owl:allValuesFrom :Identifier;
          ] .
 
 
@@ -2713,21 +2672,14 @@
          skos:definition "Represents one event that may occur during download and integration of data that needs to be reported back to the provider  "@en ;
        rdfs:label "RoadFeatureEvent"@en .
 :RoadFeatureEvent rdfs:subClassOf :FeedbackLogEvent .
-
-### http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureEvent.roadFeatureId
-:RoadFeatureEvent.roadFeatureId rdf:type owl:ObjectProperty ;
-         skos:definition "The identification of the road feature that is concerned by the event.  "@en ;
-         rdfs:domain :RoadFeatureEvent;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "RoadFeatureEvent.roadFeatureId"@en .
 :RoadFeatureEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeatureEvent.roadFeatureId;
-         owl:onClass :RoadFeatureId;
+         owl:onProperty :roadFeatureId;
+         owl:onClass :Identifier;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :RoadFeatureEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeatureEvent.roadFeatureId;
-         owl:allValuesFrom :RoadFeatureId;
+         owl:onProperty :roadFeatureId;
+         owl:allValuesFrom :Identifier;
          ] .
 
 
@@ -2735,6 +2687,7 @@
 :RoadFeatureEvent.roadFeaturePropertyType rdf:type owl:ObjectProperty ;
          skos:definition "The identification of the road feature property type that is concerned by the event. If unset, this event does not concern any road feature property type in particular. "@en ;
          rdfs:domain :RoadFeatureEvent;
+         rdfs:range :RoadFeaturePropertyType;
          rdf:type owl:FunctionalProperty;
          rdfs:label "RoadFeatureEvent.roadFeaturePropertyType"@en .
 :RoadFeatureEvent rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -2809,6 +2762,11 @@
          ] .
 
 
+:XMLLocationReference a owl:Class ;
+       rdfs:subClassOf :tnitsDataType ;
+         skos:definition "A OpenLR location reference encoded using XML according to the OpenLR specification (see bibliography)  "@en ;
+       rdfs:label "XMLLocationReference"@en .
+
 :Metadata a owl:Class ;
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "Characterises the type of metadata "@en ;
@@ -2829,24 +2787,14 @@
          owl:allValuesFrom <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation#MD_Metadata>;
          ] .
 
-
-### http://spec.tn-its.eu/owl/tnits-owl#datasetId
-
-### http://spec.tn-its.eu/owl/tnits-owl#datasetId
-:datasetId rdf:type owl:DatatypeProperty ;
-         skos:definition "Indicates the identifier of the dataset where the metadata refer to "@en ;
-         rdfs:domain :Metadata;
-         rdfs:range xsd:string;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "datasetId"@en .
 :Metadata rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :datasetId;
-         owl:onDataRange xsd:string;
+         owl:onClass :Identifier;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :Metadata rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :datasetId;
-         owl:allValuesFrom xsd:string;
+         owl:allValuesFrom :Identifier;
          ] .
 
 
@@ -2872,4 +2820,4 @@
 :tnitsFeature owl:disjointUnionOf ( :Dataset :RoadFeature :NetworkElement :FeedbackInformation :FeedbackLog :FeedbackLogEvent     ) ; .
 :tnitsCodeList owl:disjointUnionOf ( :ChargingPointUsageType :GasType :NatureOfDistanceMeasure :ParkingSiteType :PaymentMethod :PropertyValueReferenceType :RoadFeaturePropertyType :RoadFeatureSource :RoadFeatureType :RoadSignType :SiteAccessibilityType :TunnelCategory :UomIdentifier  :AreaType :RoadCategory :WeatherType :FuzzyTimeType :SpecialDayType :EmissionClassificationEuro :FuelType :LoadType :LowEmissionLevel :VehicleEquipment :VehicleType :VehicleUsage :WeightType :AgoraBinaryVersion :LinkDirectionValue :OpenLRBinaryVersion :PredefinedLocation :GeneralFeedbackEventType :RoadFeatureEventType     ) ; .
 :tnitsEnumeration owl:disjointUnionOf ( :DatasetType :ConditionOperator :DayOfWeek :MonthOfYear :WeekOfMonth :ComparisonOperator :UpdateType     ) ; .
-:tnitsDataType owl:disjointUnionOf ( :XMLLocationReference :AbstractRoadFeatureProperty :RoadFeatureId :RoadSignContent :Condition :OverallPeriod :Period :SpecialDay :TimePeriodOfDay :Validity :FuzzyTimePeriod :DayWeekMonth :Emissions :GrossWeightCharacteristic :HeaviestAxleWeightCharacteristic :HeightCharacteristic :LengthCharacteristic :NumberOfAxlesCharacteristic :VehicleCharacteristics :WidthCharacteristic :BinaryLocationReference :Identifier :NetworkReference :LocationReference :UpdateInfo :SummaryInfo :Metadata     ) ; .
+:tnitsDataType owl:disjointUnionOf ( :Identifier :AbstractRoadFeatureProperty :RoadSignContent :Condition :OverallPeriod :Period :SpecialDay :TimePeriodOfDay :Validity :FuzzyTimePeriod :DayWeekMonth :Emissions :GrossWeightCharacteristic :HeaviestAxleWeightCharacteristic :HeightCharacteristic :LengthCharacteristic :NumberOfAxlesCharacteristic :VehicleCharacteristics :WidthCharacteristic :BinaryLocationReference :NetworkReference :LocationReference :UpdateInfo :SummaryInfo :XMLLocationReference :Metadata     ) ; .
