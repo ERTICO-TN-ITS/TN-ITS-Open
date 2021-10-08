@@ -34,11 +34,12 @@ dim definition, rangeName
 dim strDjFeature, strDjCode, strDjEnum, strDjDT
 dim coreClass
 dim lstClasses, lstUniquePropertyNames, lstDuplicatePropertyNames, lstGlobalPropertyNames, lstCreatedProperties
-dim propertyName, propertyDef
+dim propertyName, propertyDef, className
 dim isGlobal, hasGlobalRange
 dim i
 dim dt, range, lower, upper
 dim oneOfEnum
+dim equivalentTo, subclassOf, hasURI
 
 '-----------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +50,6 @@ sub heading
 	'Namespaces for the ontology
 	'objOTLFile.WriteText "" & vbCrLf
 	objOTLFile.WriteText "@prefix : <" & owlURI & "#> ." & vbCrLf
-	objOTLFile.WriteText "@prefix dc: <http://purl.org/dc/elements/1.1/> ." & vbCrLf
 	'ISO 19148 from the INTERLINK Ontologies
 	objOTLFile.WriteText "@prefix lr: <http://www.roadotl.eu/iso19148/def/> ." & vbCrLf
 	'OGC Simple feature
@@ -63,7 +63,7 @@ sub heading
 	objOTLFile.WriteText "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> ." & vbCrLf
 	objOTLFile.WriteText "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> ." & vbCrLf
 	objOTLFile.WriteText "@prefix skos: <http://www.w3.org/2004/02/skos/core#> ." & vbCrLf
-	objOTLFile.WriteText "@prefix dcterms: <http://purl.org/dc/terms/> ." & vbCrLf
+	objOTLFile.WriteText "@prefix dc: <http://purl.org/dc/terms/> ." & vbCrLf
 	
 	objOTLFile.WriteText vbCrLf
 	objOTLFile.WriteText "<" & owlURI & "> a owl:Ontology ;" & vbCrLf
@@ -88,8 +88,8 @@ sub heading
 	objOTLFile.WriteText "	dc:creator ""TN-ITS"" ;" & vbCrLf
 	objOTLFile.WriteText "	dc:date """ & left(Now,10) & """ ;" & vbCrLf
 	objOTLFile.WriteText "	dc:description ""Ontology for the TN-ITS model for exchange of changes in road attributes""@en ;" & vbCrLf
-	objOTLFile.WriteText "	dcterms:title ""TN-ITS""@en ;" & vbCrLf
-	objOTLFile.WriteText "	dcterms:abstract ""Ontology for exchange of changes in road attributes"" ." & vbCrLf
+	objOTLFile.WriteText "	dc:title ""TN-ITS""@en ;" & vbCrLf
+	objOTLFile.WriteText "	dc:abstract ""Ontology for exchange of changes in road attributes"" ." & vbCrLf
 	objOTLFile.WriteText vbCrLf
 end sub
 
@@ -201,60 +201,72 @@ end sub
 sub createProperty
 '--------------------------------------------------------------------------------
 'Create property and set restrictions
-	'Set unique property name and check whether range shall be set 
-	if lstGlobalPropertyNames.Contains(propertyName) then
-		'Check for global range - global properties may have different ranges for different classes
-		i = lstGlobalPropertyNames.IndexofKey(propertyName)
-		hasGlobalRange = lstGlobalPropertyNames.GetByIndex(i)
-	elseif not lstGlobalPropertyNames.Contains(propertyName) then
-		'Make sure the property name is unique
-		if lstClasses.Contains(UCASE(propertyName)) or lstDuplicatePropertyNames.Contains(propertyName) then 
-			'Define unique property name by adding prefix Class name + "." 
-			propertyName = el.Name & "." & propertyName
-		else
-			hasGlobalRange = true 'All UML properties have global range by default
+	'Only for internal properties, not if hasURI = true (external properties shall not be created)
+	if not hasURI then
+		'Set unique property name and check whether range shall be set 
+		if lstGlobalPropertyNames.Contains(propertyName) then
+			'Check for global range - global properties may have different ranges for different classes
+			i = lstGlobalPropertyNames.IndexofKey(propertyName)
+			hasGlobalRange = lstGlobalPropertyNames.GetByIndex(i)
+		elseif not lstGlobalPropertyNames.Contains(propertyName) then
+			'Make sure the property name is unique
+			if lstClasses.Contains(UCASE(propertyName)) or lstDuplicatePropertyNames.Contains(propertyName) then 
+				'Define unique property name by adding prefix Class name + "." 
+				propertyName = el.Name & "." & propertyName
+			else
+				hasGlobalRange = true 'All UML properties have global range by default
+			end if	
 		end if	
-	end if	
-			
-	'-----------------------------------------------------------------------------------------
-	'Create property if not created
-	if not lstCreatedProperties.Contains(propertyName) then
-		objOTLFile.WriteText vbCrLf
-		objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
-		if dt = "d" then
-			Repository.WriteOutput "Script", Now & " Datatype property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
-			objOTLFile.WriteText ":" & propertyName & " rdf:type owl:DatatypeProperty ;" & vbCrLf
-		else
-			Repository.WriteOutput "Script", Now & " Object property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
-			objOTLFile.WriteText ":" & propertyName & " rdf:type owl:ObjectProperty ;" & vbCrLf
-		end if
-		'---------------------------
-		'Set defintion if not empty
-		if not propertyDef = "" then 
-			propertyDef = replace(propertyDef, """","\""")
-			propertyDef = replace(propertyDef, vbCrLf," ")	
-			objOTLFile.WriteText "         skos:definition """ & propertyDef & """@en ;" & vbCrLf
-		end if	
-		'---------------------------
-		'Set domain if not global property
-		if not lstGlobalPropertyNames.Contains(propertyName) then objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
-		'---------------------------
-		'Set range if hasGlobalRange
-		if hasGlobalRange then objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
-		'Set functional property if cardinality = 1 and not global. 
-		if (not lstGlobalPropertyNames.Contains(propertyName)) and lower = "1" and upper = "1" then objOTLFile.WriteText "         rdf:type owl:FunctionalProperty;" & vbCrLf
+		
+		'-----------------------------------------------------------------------------------------
+		'Create property if not created 
+		if not lstCreatedProperties.Contains(propertyName)  then
+			objOTLFile.WriteText vbCrLf
+			objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
+			if dt = "d" then
+				Repository.WriteOutput "Script", Now & " Datatype property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
+				objOTLFile.WriteText ":" & propertyName & " rdf:type owl:DatatypeProperty ;" & vbCrLf
+			else
+				Repository.WriteOutput "Script", Now & " Object property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
+				objOTLFile.WriteText ":" & propertyName & " rdf:type owl:ObjectProperty ;" & vbCrLf
+			end if
+			'---------------------------
+			'Set defintion if not empty
+			if not propertyDef = "" then 
+				propertyDef = replace(propertyDef, """","\""")
+				propertyDef = replace(propertyDef, vbCrLf," ")	
+				objOTLFile.WriteText "         skos:definition """ & propertyDef & """@en ;" & vbCrLf
+			end if	
+			'---------------------------
+			'Set equivalence if not empty
+			if not equivalentTo = "" then objOTLFile.WriteText "         owl:equivalentProperty " & equivalentTo & " ;" & vbCrLf
+			'---------------------------
+			'Set domain if not global property
+			if not lstGlobalPropertyNames.Contains(propertyName) then objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
+			'---------------------------
+			'Set range if hasGlobalRange
+			if hasGlobalRange then objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
+			'Set functional property if cardinality = 1 and not global. 
+			if (not lstGlobalPropertyNames.Contains(propertyName)) and lower = "1" and upper = "1" then objOTLFile.WriteText "         rdf:type owl:FunctionalProperty;" & vbCrLf
 
-		'Close property statement with "."
-		objOTLFile.WriteText "         rdfs:label """ & propertyName & """@en ." & vbCrLf 	
-		'Add to list of created properties (only for global properties?)
-		lstCreatedProperties.Add propertyName, ""
+			'Close property statement with "."
+			objOTLFile.WriteText "         rdfs:label """ & propertyName & """@en ." & vbCrLf 	
+			'Add to list of created properties (only for global properties?)
+			lstCreatedProperties.Add propertyName, ""
+		end if
+	end if
+	
+	if hasURI then
+		propertyName = "<" & propertyName & ">" 
+	else
+		propertyName = ":" & propertyName
 	end if
 	
 	'--------------------------------------------------------------------------------------------
 	'Set cardinality restrictions for the property on this specific class
 	if not (lower = "0" and upper = "*") then 'No cardinality requirements on 0..*
 		objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
-		objOTLFile.WriteText "         owl:onProperty :" & propertyName & ";" & vbCrLf 	
+		objOTLFile.WriteText "         owl:onProperty " & propertyName & ";" & vbCrLf 	
 		if dt = "d" then
 			objOTLFile.WriteText "         owl:onDataRange " & range & ";" & vbCrLf 		
 		else
@@ -270,10 +282,11 @@ sub createProperty
 	end if	
 	'All values from
 	objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
-	objOTLFile.WriteText "         owl:onProperty :" & propertyName & ";" & vbCrLf 	
+	objOTLFile.WriteText "         owl:onProperty " & propertyName & ";" & vbCrLf 	
 	objOTLFile.WriteText "         owl:allValuesFrom " & range & ";" & vbCrLf 	
 	objOTLFile.WriteText "         ] ." & vbCrLf
 	objOTLFile.WriteText vbCrLf
+		
 end sub
 
 sub getConEnd
@@ -301,6 +314,25 @@ sub recPackageTraverse(p)
 		'------------------------------------------------------------------------------------------------------
 		'Classes -- as OWL Classes
 		if el.Type = "Class" or el.Type="Enumeration" or el.Type = "DataType" then 
+			'Check tagged values
+			equivalentTo = ""
+			subclassOf = ""
+			hasURI=false
+			for each eTag in el.TaggedValues
+				if eTag.Name = "uri" then 
+					className = eTag.Value 'Defined uri for the class in the UML model
+					hasURI = true
+				end if	
+				if eTag.Name = "equivalentTo" then
+					if equivalentTo <> "" then equivalentTo = equivalentTo & ", " 
+					equivalentTo = equivalentTo & "<" & eTag.Value & ">"
+				end if
+				if eTag.Name = "subclassOf" then
+					if subclassOf <> "" then subclassOf = subclassOf & ", " 
+					subclassOf = subclassOf & "<" & eTag.Value & ">"
+				end if
+			next
+		
 			'Create class
 			objOTLFile.WriteText vbCrLf
 			Repository.WriteOutput "Script", Now & " Element: " & el.Stereotype & " " & el.Name, 0 
@@ -314,6 +346,10 @@ sub recPackageTraverse(p)
 				if con.Type = "Generalization" and con.ClientID = el.ElementID then	subcls = true
 			next	
 			
+			'Subclass and equivalence string from tagged value
+			if subclassOf <> "" then objOTLFile.WriteText "       rdfs:subClassOf " & subclassOf & " ;" & vbCrLf	
+			if equivalentTo <> "" then objOTLFile.WriteText "       owl:equivalentClass " & equivalentTo & " ;" & vbCrLf	
+
 			'Place classes under core classes 
 			if not subcls then
 				if UCase(el.Stereotype) = "FEATURETYPE" then
@@ -345,11 +381,7 @@ sub recPackageTraverse(p)
 				objOTLFile.WriteText vbCrLf
 				objOTLFile.WriteText "### " & owlURI & ":" & el.Name & "Code" & vbCrLf
 				objOTLFile.WriteText ":" & el.Name & "Code a skos:ConceptScheme ;" & vbCrLf		
-				if not el.Notes = "" then 
-					definition = replace(el.Notes, """","\""")
-					definition = replace(definition, vbCrLf," ")	
-					objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
-				end if	
+				objOTLFile.WriteText "         skos:definition """ & definition & """@en ;" & vbCrLf
 				objOTLFile.WriteText "       dc:isFormatOf :" & el.Name & " ." & vbCrLf
 			end if	
 				
@@ -379,9 +411,19 @@ sub recPackageTraverse(p)
 					if Ubound(crdArr) = 0 then upper = lower else upper = crdArr(1)		
 					if not relEl is nothing then 
 						range = ":" & relEl.Name
+						equivalentTo = ""
+						hasURI=false
 						for each rTag in conEnd.TaggedValues
 							if rTag.Tag = "rangeVocabulary" then range = "<" & rTag.Value & "#" & relEl.Name & ">"
 							if rTag.Tag = "rangeClass" then range = "<" & rTag.Value & ">" 
+							if rTag.Tag = "uri" then 
+								propertyName = rTag.Value 'Defined uri for the property in the UML model
+								hasURI = true
+							end if	
+							if rTag.Tag = "equivalentTo" then
+								if equivalentTo <> "" then equivalentTo = equivalentTo & ", " 
+								equivalentTo = equivalentTo & "<" & rTag.Value & ">"
+							end if
 						next
 						createProperty
 					else
@@ -421,16 +463,26 @@ sub recPackageTraverse(p)
 							set relEl = Repository.GetElementByID(attr.ClassifierID)
 							range = ":" & relEl.Name
 							'For external classes: Get URI from attribute tag rangeVocabulary or rangeClass
+							equivalentTo = ""
+							hasURI = false
 							for each aTag in attr.TaggedValues
-								if aTag.Name = "rangeVocabulary" then range = "<" & aTag.Value & "#" & relEl.Name & ">"
-								if aTag.Name = "rangeClass" then range = "<" & aTag.Value & ">" '& "#" & relEl.Name & ">"
+								if aTag.Name = "rangeVocabulary" then range = "<" & aTag.Value & "#" & relEl.Name & ">" 'Defined vocalublary for the range class in the UML model
+								if aTag.Name = "rangeClass" then range = "<" & aTag.Value & ">" 'Defined class as range in the UML model
+								if aTag.Name = "uri" then 
+									propertyName = aTag.Value 'Defined uri for the property in the UML model
+									hasURI = true
+								end if	
+								if aTag.Name = "equivalentTo" then
+									if equivalentTo <> "" then equivalentTo = equivalentTo & ", " 
+								equivalentTo = equivalentTo & "<" & aTag.Value & ">"
+								end if
 							next	
 						else
 							dt = "-"
 						end if	
 					End Select	
 					
-					propertyName = attr.Name
+					if not hasURI then propertyName = attr.Name
 					propertyDef = attr.Notes
 					lower = attr.LowerBound
 					upper = attr.UpperBound

@@ -1,5 +1,4 @@
 ﻿@prefix : <http://spec.tn-its.eu/owl/tnits-owl#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix lr: <http://www.roadotl.eu/iso19148/def/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
@@ -9,7 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/terms/> .
 
 <http://spec.tn-its.eu/owl/tnits-owl> a owl:Ontology ;
 	owl:imports <http://www.w3.org/2004/02/skos/core> ;
@@ -18,10 +17,10 @@
 	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;
 	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;
 	dc:creator "TN-ITS" ;
-	dc:date "06.10.2021" ;
+	dc:date "08.10.2021" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
-	dcterms:title "TN-ITS"@en ;
-	dcterms:abstract "Ontology for exchange of changes in road attributes" .
+	dc:title "TN-ITS"@en ;
+	dc:abstract "Ontology for exchange of changes in road attributes" .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#tnits
 :tnits a owl:Class ;
@@ -2225,6 +2224,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:NetworkElement
 :NetworkElement a owl:Class ;
+       rdfs:subClassOf <http://www.roadotl.eu/iso19148/def/LinearElement> ;
        rdfs:subClassOf :tnitsFeature ;
          skos:definition "Base type representing an element in a network. Every element in a network provides some function that is of interest in the network. "@en ;
        rdfs:label "NetworkElement"@en .
@@ -2248,6 +2248,7 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:NetworkReference
 :NetworkReference a owl:Class ;
+       owl:equivalentClass <http://www.roadotl.eu/iso19148/def/LinearEventLocation> ;
        rdfs:subClassOf :tnitsDataType ;
          skos:definition "A general class defining a location reference by reference to a Network Reference "@en ;
        rdfs:label "NetworkReference"@en .
@@ -2255,6 +2256,7 @@
 ### http://spec.tn-its.eu/owl/tnits-owl#element
 :element rdf:type owl:ObjectProperty ;
          skos:definition "The referenced network element."@en ;
+         owl:equivalentProperty <http://www.roadotl.eu/iso19148/def/hasLinearElement> ;
          rdfs:domain :NetworkReference;
          rdfs:range :NetworkElement;
          rdf:type owl:FunctionalProperty;
@@ -2273,6 +2275,7 @@
 ### http://spec.tn-its.eu/owl/tnits-owl#overridingLRM
 :overridingLRM rdf:type owl:ObjectProperty ;
          skos:definition "linear referencing method overriding default method for the data set"@en ;
+         owl:equivalentProperty <http://www.roadotl.eu/iso19148/def/hasOverridingLRM> ;
          rdfs:domain :NetworkReference;
          rdfs:range <http://www.roadotl.eu/iso19148/def/LinearReferencingMethod>;
          rdfs:label "overridingLRM"@en .
@@ -2302,66 +2305,44 @@
 
 ### http://spec.tn-its.eu/owl/tnits-owl:SimpleLinearReference
 :SimpleLinearReference a owl:Class ;
+       owl:equivalentClass <http://www.roadotl.eu/iso19148/def/LinearFromToLocation> ;
          skos:definition "A network reference that is restricted to part of a linear network element. The part is the part of the network element between fromPosition and toPosition. "@en ;
        rdfs:label "SimpleLinearReference"@en .
 :SimpleLinearReference rdfs:subClassOf :LinkReference .
-
-### http://spec.tn-its.eu/owl/tnits-owl#fromPosition
-:fromPosition rdf:type owl:ObjectProperty ;
-         skos:definition "The start position of the linear element, expressed as the distance along the linear network element. "@en ;
-         rdfs:domain :SimpleLinearReference;
-         rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "fromPosition"@en .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :fromPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/fromPosition>;
          owl:onClass <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :fromPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/fromPosition>;
          owl:allValuesFrom <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
          ] .
 
-
-### http://spec.tn-its.eu/owl/tnits-owl#toPosition
-:toPosition rdf:type owl:ObjectProperty ;
-         skos:definition "The end position of the linear element, expressed as the distance along the linear network element. "@en ;
-         rdfs:domain :SimpleLinearReference;
-         rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "toPosition"@en .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :toPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/toPosition>;
          owl:onClass <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :SimpleLinearReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :toPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/toPosition>;
          owl:allValuesFrom <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
          ] .
 
 
 ### http://spec.tn-its.eu/owl/tnits-owl:SimplePointReference
 :SimplePointReference a owl:Class ;
+       owl:equivalentClass <http://www.roadotl.eu/iso19148/def/LinearAtLocation> ;
          skos:definition "A network reference that is restricted to a point on a linear network element. The point is the location on the network element at the position atPosition along the network.  "@en ;
        rdfs:label "SimplePointReference"@en .
 :SimplePointReference rdfs:subClassOf :LinkReference .
-
-### http://spec.tn-its.eu/owl/tnits-owl#atPosition
-:atPosition rdf:type owl:ObjectProperty ;
-         skos:definition "Position of the point, expressed as the distance along the linear network element. "@en ;
-         rdfs:domain :SimplePointReference;
-         rdfs:range <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
-         rdf:type owl:FunctionalProperty;
-         rdfs:label "atPosition"@en .
 :SimplePointReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :atPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/atPosition>;
          owl:onClass <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :SimplePointReference rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :atPosition;
+         owl:onProperty <http://www.roadotl.eu/iso19148/def/atPosition>;
          owl:allValuesFrom <http://www.roadotl.eu/iso19148/def/DistanceExpression>;
          ] .
 
