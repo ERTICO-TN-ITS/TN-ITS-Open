@@ -5,30 +5,24 @@
 	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadFeaturePropertyTypeCode"
 	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
-	<gml:description>Specifies the available list of enumerations for the various types of road features</gml:description>
-	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeaturePropertyTypeCode</gml:identifier>
+	<gml:description>Specifies an extension to the available list of enumerations for the various types of road features</gml:description>
+	<gml:identifier codeSpace="http://your.local.uri">RoadFeaturePropertyTypeCode</gml:identifier>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="laneCountInDirection">
-			<gml:description>Lane count in the geometry direction</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode">laneCountInDirection</gml:identifier>
+		<gml:Definition gml:id="maximumTripleAxleWeight">
+			<gml:description>Write direction</gml:description>
+			<gml:identifier codeSpace="http://your.local.uri">maximumTripleAxleWeight</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="laneCountInOppositeDirection">
-			<gml:description>Lane count opposite to the geometry direction</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode">laneCountInOppositeDirection</gml:identifier>
+		<gml:Definition gml:id="maximumDoubleAxleWeight">
+			<gml:description>Write defintition</gml:description>
+			<gml:identifier codeSpace="http://your.local.uri">maximumDoubleAxleWeight</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="laneCountBothDirections">
-			<gml:description>Lane count in both directions</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode">laneCountBothDirections</gml:identifier>
-		</gml:Definition>
-	</gml:dictionaryEntry>
-	<gml:dictionaryEntry>
-		<gml:Definition gml:id="officialName">
-			<gml:description>Official name</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode">officialName</gml:identifier>
+		<gml:Definition gml:id="roadWith">
+			<gml:description>Write defintion</gml:description>
+			<gml:identifier codeSpace="http://your.local.uri">roadWith</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 </gml:Dictionary>
