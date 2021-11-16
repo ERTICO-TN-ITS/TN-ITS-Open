@@ -8,21 +8,21 @@
 	<gml:description>Specifies an extension to the available list of enumerations for the various types of road features</gml:description>
 	<gml:identifier codeSpace="http://your.local.uri">RoadFeaturePropertyTypeCode</gml:identifier>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="maximumTripleAxleWeight">
+		<gml:Definition gml:id="exampleProperty1">
 			<gml:description>Write direction</gml:description>
-			<gml:identifier codeSpace="http://your.local.uri">maximumTripleAxleWeight</gml:identifier>
+			<gml:identifier codeSpace="http://your.local.uri">exampleProperty1</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="maximumDoubleAxleWeight">
+		<gml:Definition gml:id="exampleProperty2">
 			<gml:description>Write defintition</gml:description>
-			<gml:identifier codeSpace="http://your.local.uri">maximumDoubleAxleWeight</gml:identifier>
+			<gml:identifier codeSpace="http://your.local.uri">exampleProperty2</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="roadWith">
+		<gml:Definition gml:id="exampleProperty3">
 			<gml:description>Write defintion</gml:description>
-			<gml:identifier codeSpace="http://your.local.uri">roadWith</gml:identifier>
+			<gml:identifier codeSpace="http://your.local.uri">exampleProperty3</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 </gml:Dictionary>

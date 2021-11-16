@@ -8,15 +8,15 @@
 	<gml:description>Specifies the available list of enumerations for the various types of road features</gml:description>
 	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeatureTypeCode</gml:identifier>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="numberOfLanes">
-			<gml:description>The total number of lanes</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">numberOfLanes</gml:identifier>
+		<gml:Definition gml:id="exampleFeature1">
+			<gml:description>The definition</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">exampleFeature1</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 	<gml:dictionaryEntry>
-		<gml:Definition gml:id="roadName">
-			<gml:description>The official name of the road</gml:description>
-			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">roadName</gml:identifier>
+		<gml:Definition gml:id="exampleFeature2">
+			<gml:description>The definition</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode">exampleFeature2</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
 </gml:Dictionary>
