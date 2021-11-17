@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:FeatureCollection xmlns="http://spec.tn-its.eu/schemas/"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmllr="http://www.opengis.net/gml/3.3/lr"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xsi:schemaLocation="http://spec.tn-its.eu/schemas/ http://spec.tn-its.eu/schemas/TNITS.xsd">
+    <gml:boundedBy>
+        <gml:Envelope srsName="EPSG:4326" srsDimension="3">
+            <gml:lowerCorner>17.0 59.0 0</gml:lowerCorner>
+            <gml:upperCorner>18.0 60.0</gml:upperCorner>
+        </gml:Envelope>
+    </gml:boundedBy>
+    <gml:featureMember>
+        <RoadFeatureDataset>
+            <metadata>
+                <Metadata>
+                    <datasetId>Example</datasetId>
+                    <datasetCreationTime>2021-06-14T15:57:00</datasetCreationTime>
+                </Metadata>
+            </metadata>
+            <type>Update</type>
+            <roadFeatures>
+                <RoadFeature gml:id="N1">
+                    <validFrom>2021-01-01</validFrom>
+                    <validTo>9999-12-31</validTo>
+                    <beginLifespanVersion>2021-01-01T00:00:00</beginLifespanVersion>
+                    <endLifespanVersion>9999-12-31T00:00:00</endLifespanVersion>
+                    <updateInfo>
+                        <UpdateInfo>
+                            <type>Add</type>
+                        </UpdateInfo>
+                    </updateInfo>
+                    <source
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
+                    <type
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#speedLimit"/>
+                    <properties>
+                        <GenericRoadFeatureProperty>
+                            <type
+                                xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumSpeedLimit"/>
+                            <value>
+                                <gml:measure uom="kph">6</gml:measure>
+                            </value>
+                        </GenericRoadFeatureProperty>
+                    </properties>
+                    <id>
+                        <RoadFeatureId>
+                            <providerId>SE.TrV.NVDB</providerId>
+                            <id>84A4B4B4-4064-4117-AA7C-EF16C6917209</id>
+                        </RoadFeatureId>
+                    </id>
+                    <locationReference>
+                        <OpenLRLocationReference>
+                            <binaryLocationReference>
+                                <BinaryLocationReference>
+                                    <base64String>CwyZ/ipL7CCWAf9p/9IgZhYj</base64String>
+                                    <openLRBinaryVersion
+                                        xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
+                                    />
+                                </BinaryLocationReference>
+                            </binaryLocationReference>
+                        </OpenLRLocationReference>
+                    </locationReference>
+                    <locationReference>
+                        <OpenLRLocationReference>
+                            <binaryLocationReference>
+                                <BinaryLocationReference>
+                                    <base64String>CwyZtypL1iCGAQCXAC4gdiMW</base64String>
+                                    <openLRBinaryVersion
+                                        xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
+                                    />
+                                </BinaryLocationReference>
+                            </binaryLocationReference>
+                        </OpenLRLocationReference>
+                    </locationReference>
+                    <locationReference>
+                        <GeometryLocationReference>
+                            <encodedGeometry>
+                                <gml:LineString srsDimension="2" srsName="EPSG:4326">
+                                    <gml:posList>17.720900930813539 59.479554147254831
+                                        17.720778699629459 59.479503933698652 17.720545499065306
+                                        59.479419219903193 17.720267178408395 59.479320719004512
+                                        17.720060732545896 59.47925592381867 17.7198782781915
+                                        59.479207897767949 17.719612323641929 59.479137934605127
+                                        17.719391655565008 59.479085564051395</gml:posList>
+                                </gml:LineString>
+                            </encodedGeometry>
+                        </GeometryLocationReference>
+                    </locationReference>
+                    
+                </RoadFeature>
+            </roadFeatures>       
+            <roadFeatures>
+                <RoadFeature gml:id="N2">
+                    <validFrom>2019-05-17</validFrom>
+                    <validTo>9999-12-31</validTo>
+                    <beginLifespanVersion>2019-05-17T00:00:00</beginLifespanVersion>
+                    <endLifespanVersion>9999-12-31T00:00:00</endLifespanVersion>
+                    <updateInfo>
+                        <UpdateInfo>
+                            <type>Add</type>
+                        </UpdateInfo>
+                    </updateInfo>
+                    <source
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
+                    <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#noEntry"/>
+                    <id>
+                        <RoadFeatureId>
+                            <providerId>SE.TrV.NVDB</providerId>
+                            <id>2F99B36F-3E4C-4AD8-8772-285C8D1CCD2A</id>
+                        </RoadFeatureId>
+                    </id>
+                    <locationReference>
+                        <OpenLRLocationReference>
+                            <binaryLocationReference>
+                                <BinaryLocationReference>
+                                    <base64String>CwywcCoXhSCGBAFxAFogdsoA</base64String>
+                                    <openLRBinaryVersion
+                                        xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
+                                    />
+                                </BinaryLocationReference>
+                            </binaryLocationReference>
+                        </OpenLRLocationReference>
+                    </locationReference>
+                    <locationReference>
+                        <GeometryLocationReference>
+                            <encodedGeometry>
+                                <gml:LineString srsDimension="2" srsName="EPSG:4326">
+                                    <gml:posList>17.84718120371468 59.192336169987364
+                                        17.847437720165789 59.192429577651282 17.847844573739426
+                                        59.192573739267907 17.84788287311877
+                                        59.192589891577306</gml:posList>
+                                </gml:LineString>
+                            </encodedGeometry>
+                        </GeometryLocationReference>
+                    </locationReference>
+                </RoadFeature>
+            </roadFeatures>          
+            <roadFeatures>
+                <RoadFeature gml:id="N3">
+                    <validFrom>2021-05-29</validFrom>
+                    <beginLifespanVersion>2021-05-29T00:00:00</beginLifespanVersion>
+                    <updateInfo>
+                        <UpdateInfo>
+                            <type>Remove</type>
+                        </UpdateInfo>
+                    </updateInfo>
+                    <source
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
+                    <type
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#restrictionForVehicles"/>
+                    <properties>
+                        <GenericRoadFeatureProperty>
+                            <type
+                                xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight"/>
+                            <value>3.4</value>
+                        </GenericRoadFeatureProperty>
+                    </properties>
+                    <id>
+                        <RoadFeatureId>
+                            <providerId>SE.TrV.NVDB</providerId>
+                            <id>63CA5D0E-7CF9-48A4-9932-ECED3FDCED7A</id>
+                        </RoadFeatureId>
+                    </id>
+                    <locationReference>
+                        <GeometryLocationReference>
+                            <encodedGeometry>
+                                <gml:Point srsDimension="2" srsName="EPSG:4326">
+                                    <gml:pos>17.903837486333085 59.394876883920254</gml:pos>
+                                </gml:Point>
+                            </encodedGeometry>
+                        </GeometryLocationReference>
+                    </locationReference>
+                </RoadFeature>
+            </roadFeatures>
+        </RoadFeatureDataset>
+    </gml:featureMember>
+
+</gml:FeatureCollection>
