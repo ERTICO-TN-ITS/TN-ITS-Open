@@ -21,7 +21,6 @@
             <type>Update</type>
             <roadFeatures xlink:href="#N1"/>
             <roadFeatures xlink:href="#N2"/>
-            <roadFeatures xlink:href="#N3"/>
         </RoadFeatureDataset>
     </gml:featureMember>
     <gml:featureMember>
@@ -36,14 +35,11 @@
                 </UpdateInfo>
             </updateInfo>
             <source xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
-            <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#speedLimit"/>
+            <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions#ccamLevel"/>
             <properties>
                 <GenericRoadFeatureProperty>
-                    <type
-                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumSpeedLimit"/>
-                    <value>
-                        <gml:measure uom="kph">6</gml:measure>
-                    </value>
+                    <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions#isadLevel"/>
+                    <valueReference xlink:href="http://spec.tn-its.eu/codelists/ISADLevelCode#C"/>
                 </GenericRoadFeatureProperty>
             </properties>
             <id>
@@ -57,9 +53,7 @@
                     <binaryLocationReference>
                         <BinaryLocationReference>
                             <base64String>CwyZ/ipL7CCWAf9p/9IgZhYj</base64String>
-                            <openLRBinaryVersion
-                                xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
-                            />
+                            <openLRBinaryVersion xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4" />
                         </BinaryLocationReference>
                     </binaryLocationReference>
                 </OpenLRLocationReference>
@@ -69,9 +63,7 @@
                     <binaryLocationReference>
                         <BinaryLocationReference>
                             <base64String>CwyZtypL1iCGAQCXAC4gdiMW</base64String>
-                            <openLRBinaryVersion
-                                xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
-                            />
+                            <openLRBinaryVersion xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"/>
                         </BinaryLocationReference>
                     </binaryLocationReference>
                 </OpenLRLocationReference>
@@ -104,7 +96,13 @@
                 </UpdateInfo>
             </updateInfo>
             <source xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
-            <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#noEntry"/>
+            <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions#ccamLevel"/>
+            <properties>
+                <GenericRoadFeatureProperty>
+                    <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions#isadLevel"/>
+                    <valueReference xlink:href="http://spec.tn-its.eu/codelists/ISADLevelCode#E"/>
+                </GenericRoadFeatureProperty>
+            </properties>
             <id>
                 <RoadFeatureId>
                     <providerId>SE.TrV.NVDB</providerId>
@@ -116,9 +114,7 @@
                     <binaryLocationReference>
                         <BinaryLocationReference>
                             <base64String>CwywcCoXhSCGBAFxAFogdsoA</base64String>
-                            <openLRBinaryVersion
-                                xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
-                            />
+                            <openLRBinaryVersion xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"/>
                         </BinaryLocationReference>
                     </binaryLocationReference>
                 </OpenLRLocationReference>
@@ -135,42 +131,5 @@
                 </GeometryLocationReference>
             </locationReference>
         </RoadFeature>
-    </gml:featureMember>
-    <gml:featureMember>
-        <RoadFeature gml:id="N3">
-            <validFrom>2021-05-29</validFrom>
-            <beginLifespanVersion>2021-05-29T00:00:00</beginLifespanVersion>
-            <updateInfo>
-                <UpdateInfo>
-                    <type>Remove</type>
-                </UpdateInfo>
-            </updateInfo>
-            <source xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
-            <type
-                xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#restrictionForVehicles"/>
-            <properties>
-                <GenericRoadFeatureProperty>
-                    <type
-                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight"/>
-                    <value>3.4</value>
-                </GenericRoadFeatureProperty>
-            </properties>
-            <id>
-                <RoadFeatureId>
-                    <providerId>SE.TrV.NVDB</providerId>
-                    <id>63CA5D0E-7CF9-48A4-9932-ECED3FDCED7A</id>
-                </RoadFeatureId>
-            </id>
-            <locationReference>
-                <GeometryLocationReference>
-                    <encodedGeometry>
-                        <gml:Point srsDimension="2" srsName="EPSG:4326">
-                            <gml:pos>17.903837486333085 59.394876883920254</gml:pos>
-                        </gml:Point>
-                    </encodedGeometry>
-                </GeometryLocationReference>
-            </locationReference>
-        </RoadFeature>
-
     </gml:featureMember>
 </gml:FeatureCollection>
