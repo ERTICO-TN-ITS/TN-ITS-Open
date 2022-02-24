@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadFeaturePropertyTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the various types of road features</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeaturePropertyTypeCodeExtensions</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="laneCountInDirection">
+			<gml:description>Lane count in the geometry direction</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">laneCountInDirection</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="laneCountInOppositeDirection">
+			<gml:description>Lane count opposite to the geometry direction</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">laneCountInOppositeDirection</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="laneCountBothDirections">
+			<gml:description>Lane count in both directions</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">laneCountBothDirections</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="officialName">
+			<gml:description>Official name</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">officialName</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadLength">
+			<gml:description>Road length</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">roadLength</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="isadLevel">
+			<gml:description>Road level of Infrastructure Support for Automated Driving : ISAD E - to - ISAD A</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">isadLevel</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

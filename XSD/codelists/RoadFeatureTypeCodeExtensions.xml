@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoadFeatureTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for the various types of road features</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">RoadFeatureTypeCodeExtensions</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="numberOfLanes">
+			<gml:description>The total number of lanes</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">numberOfLanes</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadName">
+			<gml:description>The official name of the road</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">roadName</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="bicyclePath">
+			<gml:description>The road is/has a bicycle path</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">bicyclePath</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="ccamLevel">
+			<gml:description>Road classification for supporting  cooperative connected and automated mobility</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">ccamLevel</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LowEmissionLevelCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations ISAD levels</gml:description>
+	<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/">ISADLevelCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="A">
+			<gml:description>ISAD A – Cooperative manoeuvres: Same as B, plus the infrastructure is capable of perceiving vehicle trajectories and guide AVs in order to optimize the traffic flow similar to C-ITS Day 2+ services.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ISADLevelCode">A</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="B">
+			<gml:description>ISAD B – Cooperative perception: Same as C, plus the infrastructure is capable of perceiving small traffic situations like C-ITS Day 1 services and relay the information to the AVs.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ISADLevelCode">B</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="C">
+			<gml:description>ISAD C – Dynamic digital Information: Same as D plus dynamic information like traffic light status, variable speed limits, lane directions, road closures, short-term road works.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ISADLevelCode">C</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="D">
+			<gml:description>ISAD D – Static digital information: Digital maps including static road signs are provided to the AVs..</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ISADLevelCode">D</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="E">
+			<gml:description>ISAD E – Conventional road infrastructure: No AV support.</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/ISADLevelCode">E</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry></gml:Dictionary>
+
+
+
