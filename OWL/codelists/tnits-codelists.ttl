@@ -1,0 +1,4457 @@
+@prefix codes: <http://spec.tn-its.eu/owl/tnits-owl/codelists#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+codes:AgoraBinaryVersion.v1_0 a codes:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v1_0"^^xsd:string ;
+    skos:definition "Version 1.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode .
+
+codes:AgoraBinaryVersion.v1_3 a codes:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v1_3"^^xsd:string ;
+    skos:definition "Version 1.3"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode .
+
+codes:AgoraBinaryVersion.v2_4 a codes:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v2_4"^^xsd:string ;
+    skos:definition "Version 1.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode .
+
+codes:AgoraBinaryVersion.v2_5 a codes:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v2_5"^^xsd:string ;
+    skos:definition "Version 2.5"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode .
+
+codes:AgoraBinaryVersion.v3_0 a codes:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v3_0"^^xsd:string ;
+    skos:definition "Version 3.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode .
+
+codes:AreaType.inNationalPark a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "inNationalPark"^^xsd:string ;
+    skos:definition "Within the boundary of a recognised national park"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:AreaType.insideCities a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "insideCities"^^xsd:string ;
+    skos:definition "Within the notional or actual boundary of a city"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:AreaType.nearRailroadCrossing a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "nearRailroadCrossing"^^xsd:string ;
+    skos:definition "In close proximity to a railway level crossing"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:AreaType.nearSchool a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "nearSchool"^^xsd:string ;
+    skos:definition "In close proximity to a school"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:AreaType.outsideCities a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "outsideCities"^^xsd:string ;
+    skos:definition "Outside the notional or actual boundary of a city"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:AreaType.trafficCalmingArea a codes:AreaType,
+        skos:Concept ;
+    rdfs:label "trafficCalmingArea"^^xsd:string ;
+    skos:definition "In a zone which is subject to traffic calming measures"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode .
+
+codes:ChargingPointUsageType.electricBikeOrMotorcycle a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricBikeOrMotorcycle"^^xsd:string ;
+    skos:definition "Supplies for charging electric bikes or motorcycles"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageType.electricVehicle a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricVehicle"^^xsd:string ;
+    skos:definition "Electric vehicle"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageType.electricalDevices a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricalDevices"^^xsd:string ;
+    skos:definition "Supplies for charging electrical devices"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageType.lorryPowerConsumption a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "lorryPowerConsumption"^^xsd:string ;
+    skos:definition "Lorry power consumption"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageType.motorhomeOrCaravanSupply a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "motorhomeOrCaravanSupply"^^xsd:string ;
+    skos:definition "Supplies for charging motorhomes or caravans"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageType.other a codes:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode .
+
+codes:EmissionClassificationEuro.euro5 a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5"^^xsd:string ;
+    skos:definition "Euro 5"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro5a a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5a"^^xsd:string ;
+    skos:definition "Euro 5a"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro5b a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5b"^^xsd:string ;
+    skos:definition "Euro 5b"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro6 a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6"^^xsd:string ;
+    skos:definition "Euro 6"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro6a a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6a"^^xsd:string ;
+    skos:definition "Euro 6a"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro6b a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6b"^^xsd:string ;
+    skos:definition "Euro 6b"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euro6c a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6c"^^xsd:string ;
+    skos:definition "Euro 6c"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euroV a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euroV"^^xsd:string ;
+    skos:definition "Euro V"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.euroVI a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euroVI"^^xsd:string ;
+    skos:definition "Euro VI"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuro.other a codes:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other Euro classifications"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode .
+
+codes:FuelType.all a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "all"^^xsd:string ;
+    skos:definition "All fuel types"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.battery a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "battery"^^xsd:string ;
+    skos:definition "Battery"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.biodiesel a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "biodiesel"^^xsd:string ;
+    skos:definition "Biodiesel"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.diesel a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "diesel"^^xsd:string ;
+    skos:definition "Diesel"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.dieselBatteryHybrid a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "dieselBatteryHybrid"^^xsd:string ;
+    skos:definition "Diesel and battery hybrid"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.ethanol a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "ethanol"^^xsd:string ;
+    skos:definition "Ethanol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.hydrogen a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "hydrogen"^^xsd:string ;
+    skos:definition "Hydrogen"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.liquidGas a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "liquidGas"^^xsd:string ;
+    skos:definition "Liquid gas of any type including LPG. "^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.lpg a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "lpg"^^xsd:string ;
+    skos:definition "Liquid petroleum gas"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.methane a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "methane"^^xsd:string ;
+    skos:definition "Methane gas"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.other a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other forms of fuel, not otherwise listed"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrol a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol"^^xsd:string ;
+    skos:definition "Petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrol95Octane a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol95Octane"^^xsd:string ;
+    skos:definition "Petrol (95 Octane)"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrol98Octane a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol98Octane"^^xsd:string ;
+    skos:definition "Petrol (98 Octane)"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrolBatteryHybrid a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolBatteryHybrid"^^xsd:string ;
+    skos:definition "Petrol and battery hybrid"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrolLeaded a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolLeaded"^^xsd:string ;
+    skos:definition "Leaded petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.petrolUnleaded a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolUnleaded"^^xsd:string ;
+    skos:definition "Unleaded petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuelType.unknown a codes:FuelType,
+        skos:Concept ;
+    rdfs:label "unknown"^^xsd:string ;
+    skos:definition "Unknown"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode .
+
+codes:FuzzyTimeType.autumn a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "autumn"^^xsd:string ;
+    skos:definition "Beginning of autumn"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.dawn a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "dawn"^^xsd:string ;
+    skos:definition "Starts at dawn"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.day a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "day"^^xsd:string ;
+    skos:definition "Start of day"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.drySeason a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "drySeason"^^xsd:string ;
+    skos:definition "Beginning of dry season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.dusk a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "dusk"^^xsd:string ;
+    skos:definition "Starts at dusk"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.external a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "external"^^xsd:string ;
+    skos:definition "Starting period controlled by external device "^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.highTide a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "highTide"^^xsd:string ;
+    skos:definition "Beginning of high tide"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.highWater a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "highWater"^^xsd:string ;
+    skos:definition "Beginning of high water"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.holiday a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "holiday"^^xsd:string ;
+    skos:definition "Starts at any holiday"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.lowTide a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "lowTide"^^xsd:string ;
+    skos:definition "Beginning of low tide"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.lowWater a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "lowWater"^^xsd:string ;
+    skos:definition "Beginning of low water"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.night a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "night"^^xsd:string ;
+    skos:definition "Start of night"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.offPeakHours a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "offPeakHours"^^xsd:string ;
+    skos:definition "start of off-peak hours"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.peakHours a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "peakHours"^^xsd:string ;
+    skos:definition "Start of peak hours, peak hours include rush hour and activity/ scheduled event based times. These would vary by location and by season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.school a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "school"^^xsd:string ;
+    skos:definition "Starts at any school period (date and hour)"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.spring a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "spring"^^xsd:string ;
+    skos:definition "Beginning of spring"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.summer a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "summer"^^xsd:string ;
+    skos:definition "Beginning of summer"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.wetSeason a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "wetSeason"^^xsd:string ;
+    skos:definition "Beginning of wet season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeType.winter a codes:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "winter"^^xsd:string ;
+    skos:definition "Beginning of winter"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode .
+
+codes:GasType.all a codes:GasType,
+        skos:Concept ;
+    rdfs:label "all"^^xsd:string ;
+    skos:definition "All"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GasType.cNG a codes:GasType,
+        skos:Concept ;
+    rdfs:label "cNG"^^xsd:string ;
+    skos:definition "Compressed natural gas"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GasType.lNG a codes:GasType,
+        skos:Concept ;
+    rdfs:label "lNG"^^xsd:string ;
+    skos:definition "Liquified natural gas"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GasType.lPG a codes:GasType,
+        skos:Concept ;
+    rdfs:label "lPG"^^xsd:string ;
+    skos:definition "Liquified petroleum gas"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GasType.other a codes:GasType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GasType.unknown a codes:GasType,
+        skos:Concept ;
+    rdfs:label "unknown"^^xsd:string ;
+    skos:definition "Unknown"^^xsd:string ;
+    skos:inScheme codes:GasTypeCode .
+
+codes:GeneralFeedbackEventType.schemaVersionMismatch a codes:GeneralFeedbackEventType,
+        skos:Concept ;
+    rdfs:label "schemaVersionMismatch"^^xsd:string ;
+    skos:definition "There is a mismatch in schema version between the exchanged dataset and what is supported by the receiver"^^xsd:string ;
+    skos:inScheme codes:GeneralFeedbackEventTypeCode .
+
+codes:ISADLevel.A a codes:ISADLevel,
+        skos:Concept ;
+    rdfs:label "A"^^xsd:string ;
+    skos:definition "ISAD A – Cooperative manoeuvres: Same as B, plus the infrastructure is capable of perceiving vehicle trajectories and guide AVs in order to optimize the traffic flow similar to C-ITS Day 2+ services."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode .
+
+codes:ISADLevel.B a codes:ISADLevel,
+        skos:Concept ;
+    rdfs:label "B"^^xsd:string ;
+    skos:definition "ISAD B – Cooperative perception: Same as C, plus the infrastructure is capable of perceiving small traffic situations like C-ITS Day 1 services and relay the information to the AVs."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode .
+
+codes:ISADLevel.C a codes:ISADLevel,
+        skos:Concept ;
+    rdfs:label "C"^^xsd:string ;
+    skos:definition "ISAD C – Dynamic digital Information: Same as D plus dynamic information like traffic light status, variable speed limits, lane directions, road closures, short-term road works."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode .
+
+codes:ISADLevel.D a codes:ISADLevel,
+        skos:Concept ;
+    rdfs:label "D"^^xsd:string ;
+    skos:definition "ISAD D – Static digital information: Digital maps including static road signs are provided to the AVs.."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode .
+
+codes:ISADLevel.E a codes:ISADLevel,
+        skos:Concept ;
+    rdfs:label "E"^^xsd:string ;
+    skos:definition "ISAD E – Conventional road infrastructure: No AV support."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode .
+
+codes:LinkDirectionValue.all a codes:LinkDirectionValue,
+        skos:Concept ;
+    rdfs:label "all"^^xsd:string ;
+    skos:definition "Both directions"^^xsd:string ;
+    skos:inScheme codes:LinkDirectionValueCode .
+
+codes:LinkDirectionValue.cNG a codes:LinkDirectionValue,
+        skos:Concept ;
+    rdfs:label "cNG"^^xsd:string ;
+    skos:definition "In direction"^^xsd:string ;
+    skos:inScheme codes:LinkDirectionValueCode .
+
+codes:LinkDirectionValue.lPG a codes:LinkDirectionValue,
+        skos:Concept ;
+    rdfs:label "lPG"^^xsd:string ;
+    skos:definition "In opposite direction"^^xsd:string ;
+    skos:inScheme codes:LinkDirectionValueCode .
+
+codes:LoadType.abnormalLoad a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "abnormalLoad"^^xsd:string ;
+    skos:definition """A load that exceeds normal vehicle dimensions in terms of height, length, width, gross vehicle weight or axle weight or any combination of these.
+Generally termed an "abnormal load"."""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.ammunition a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "ammunition"^^xsd:string ;
+    skos:definition "Ammunition. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.chemicals a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "chemicals"^^xsd:string ;
+    skos:definition "Chemicals of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.combustibleMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "combustibleMaterials"^^xsd:string ;
+    skos:definition "Combustible materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.corrosiveMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "corrosiveMaterials"^^xsd:string ;
+    skos:definition "Corrosive materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.debris a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "debris"^^xsd:string ;
+    skos:definition "Debris of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.empty a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "empty"^^xsd:string ;
+    skos:definition "No load"^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.explosiveMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "explosiveMaterials"^^xsd:string ;
+    skos:definition "Explosive materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.extraHighLoad a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "extraHighLoad"^^xsd:string ;
+    skos:definition "A load of exceptional height. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.extraLongLoad a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "extraLongLoad"^^xsd:string ;
+    skos:definition "A load of exceptional length. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.extraWideLoad a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "extraWideLoad"^^xsd:string ;
+    skos:definition "A load of exceptional width. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.fuel a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "fuel"^^xsd:string ;
+    skos:definition "Fuel of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.glass a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "glass"^^xsd:string ;
+    skos:definition "Glass. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.goods a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "goods"^^xsd:string ;
+    skos:definition "Any goods of a commercial nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.hazardousMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "hazardousMaterials"^^xsd:string ;
+    skos:definition "Materials classed as being of a hazardous nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.liquid a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "liquid"^^xsd:string ;
+    skos:definition "Liquid of an unspecified nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.livestock a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "livestock"^^xsd:string ;
+    skos:definition "Livestock. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.materials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "materials"^^xsd:string ;
+    skos:definition "General materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.materialsDangerousForPeople a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForPeople"^^xsd:string ;
+    skos:definition "Materials classed as being of a danger to people or animals."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.materialsDangerousForTheEnvironment a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForTheEnvironment"^^xsd:string ;
+    skos:definition "Materials classed as being potentially dangerous to the environment. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.materialsDangerousForWater a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForWater"^^xsd:string ;
+    skos:definition "Materials classed as being dangerous when exposed to water (e.g. materials which may react exothermically with water). "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.oil a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "oil"^^xsd:string ;
+    skos:definition "Oil. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.ordinary a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "ordinary"^^xsd:string ;
+    skos:definition "Materials that present limited environmental or health risk. Non-combustible, non-toxic, non-corrosive. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.other a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other than as defined in this enumeration."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.perishableProducts a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "perishableProducts"^^xsd:string ;
+    skos:definition "Products or produce that will significantly degrade in quality or freshness over a short period of time. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.petrol a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "petrol"^^xsd:string ;
+    skos:definition "Petrol or petroleum. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.pharmaceuticalMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "pharmaceuticalMaterials"^^xsd:string ;
+    skos:definition "Pharmaceutical materials. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.radioactiveMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "radioactiveMaterials"^^xsd:string ;
+    skos:definition """Materials that emit significant quantities of electromagnetic radiation that may present a risk
+to people, animals or the environment"""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.refrigeratedGoods a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "refrigeratedGoods"^^xsd:string ;
+    skos:definition "Refrigerated goods."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.refuse a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "refuse"^^xsd:string ;
+    skos:definition "Refuse."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.toxicMaterials a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "toxicMaterials"^^xsd:string ;
+    skos:definition """Materials of a toxic nature which may damage the
+environment or endanger public health."""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LoadType.vehicles a codes:LoadType,
+        skos:Concept ;
+    rdfs:label "vehicles"^^xsd:string ;
+    skos:definition "Vehicles of any type which are being transported."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode .
+
+codes:LowEmissionLevel.freeOfEmission a codes:LowEmissionLevel,
+        skos:Concept ;
+    rdfs:label "freeOfEmission"^^xsd:string ;
+    skos:definition "Only vehicles that do not produce emissions (e.g. electric driven). Hybrid driven cars are allowed, when they switch to emission free mode within the considered situation."^^xsd:string ;
+    skos:inScheme codes:LowEmissionLevelCode .
+
+codes:LowEmissionLevel.lowLevelEmission a codes:LowEmissionLevel,
+        skos:Concept ;
+    rdfs:label "lowLevelEmission"^^xsd:string ;
+    skos:definition "Vehicles with low emission levels."^^xsd:string ;
+    skos:inScheme codes:LowEmissionLevelCode .
+
+codes:NatureOfDistanceMeasure.advanceWarning a codes:NatureOfDistanceMeasure,
+        skos:Concept ;
+    rdfs:label "advanceWarning"^^xsd:string ;
+    skos:definition "Advance warning notification of a feature with a specified distance to the feature (e.g. Railway crossing in 200 metres) "^^xsd:string ;
+    skos:inScheme codes:NatureOfDistanceMeasureCode .
+
+codes:NatureOfDistanceMeasure.featureContinuity a codes:NatureOfDistanceMeasure,
+        skos:Concept ;
+    rdfs:label "featureContinuity"^^xsd:string ;
+    skos:definition "Notification that the effect of the Feature continues for the specified distance (e.g. for the next X km)."^^xsd:string ;
+    skos:inScheme codes:NatureOfDistanceMeasureCode .
+
+codes:OpenLRBinaryVersion.v2_4 a codes:OpenLRBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v2_4"^^xsd:string ;
+    skos:definition "Version 2.4"^^xsd:string ;
+    skos:inScheme codes:OpenLRBinaryVersionCode .
+
+codes:ParkingSiteType.interUrbanParkingSite a codes:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "interUrbanParkingSite"^^xsd:string ;
+    skos:definition "A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode .
+
+codes:ParkingSiteType.specialLocationParkingSite a codes:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "specialLocationParkingSite"^^xsd:string ;
+    skos:definition "A parking site which is located at a special location, often associated with some building"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode .
+
+codes:ParkingSiteType.urbanParkingSite a codes:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "urbanParkingSite"^^xsd:string ;
+    skos:definition "parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode .
+
+codes:PaymentMethod.cash a codes:PaymentMethod,
+        skos:Concept ;
+    rdfs:label "cash"^^xsd:string ;
+    skos:definition "Payment using cash"^^xsd:string ;
+    skos:inScheme codes:PaymentMethodCode .
+
+codes:PaymentMethod.creditCard a codes:PaymentMethod,
+        skos:Concept ;
+    rdfs:label "creditCard"^^xsd:string ;
+    skos:definition "Payment using credit card"^^xsd:string ;
+    skos:inScheme codes:PaymentMethodCode .
+
+codes:PaymentMethod.electronicTollPayment a codes:PaymentMethod,
+        skos:Concept ;
+    rdfs:label "electronicTollPayment"^^xsd:string ;
+    skos:definition "Payment using some electronic form"^^xsd:string ;
+    skos:inScheme codes:PaymentMethodCode .
+
+codes:PaymentMethod.tollStickers a codes:PaymentMethod,
+        skos:Concept ;
+    rdfs:label "tollStickers"^^xsd:string ;
+    skos:definition "Payment using (pre-paid) toll stickers"^^xsd:string ;
+    skos:inScheme codes:PaymentMethodCode .
+
+codes:RoadCategory.motorway a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "motorway"^^xsd:string ;
+    skos:definition """Indicating the presence of a motorway.
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+(i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means;  
+(ii) Does not cross at level with any road, railway or tramway track, or footpath; and  
+(iii) Is specially signposted as a motorway;"""^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadCategory.otherRoad a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "otherRoad"^^xsd:string ;
+    skos:definition "Road of a category other than the above"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadCategory.residentialAreaRoad a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "residentialAreaRoad"^^xsd:string ;
+    skos:definition "Road in a residential zone"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadCategory.roadWithDualCarriageway a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "roadWithDualCarriageway"^^xsd:string ;
+    skos:definition "Road with more than one divided carriageway"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadCategory.roadWithSingleCarriageway a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "roadWithSingleCarriageway"^^xsd:string ;
+    skos:definition "Road with only one carriageway. NOTE: May be with traffic in one direction or two."^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadCategory.urbanRoad a codes:RoadCategory,
+        skos:Concept ;
+    rdfs:label "urbanRoad"^^xsd:string ;
+    skos:definition "Road in an urban environment"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode .
+
+codes:RoadFeatureEventType.decodeLocationError a codes:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationError"^^xsd:string ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeatureEventType.decodeLocationErrorGeometryMismatch a codes:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationErrorGeometryMismatch"^^xsd:string ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature due to geometry mismatch"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeatureEventType.decodeLocationRoadDescriptorMismatch a codes:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationRoadDescriptorMismatch"^^xsd:string ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature due to road descriptor mismatch"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeatureEventType.illegalPropertyValue a codes:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "illegalPropertyValue"^^xsd:string ;
+    skos:definition "An error occured due to an illegal properfty value for the given safety feature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeatureEventType.success a codes:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "success"^^xsd:string ;
+    skos:definition "The safty feature was successfully integrated on the receiver side"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeaturePropertyType.advisorySpeed a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "advisorySpeed"^^xsd:string ;
+    skos:definition " \"ADVISORY SPEED\" shall be used to show the speed at which it is advisable to drive if circumstances permit and if the driver is not required to comply with a lower limit specific to his category of vehicle. [SOURCE: Vienna Convention on Road Signs, 1968]"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.chargingPointUsageType a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "chargingPointUsageType"^^xsd:string ;
+    skos:definition "Specifies usage of the charging point"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.compulsoryMinimumSpeed a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "compulsoryMinimumSpeed"^^xsd:string ;
+    skos:definition "Specifies the compulsory minimum speed, aligned with the concept of compulsort minimum speed of the Vienna Convention on Road Signs, 1968, where this concept is defined as that vehicles using the road at the entrance to which it (the sign) is placed shall travel at not less than the speed specified ... shown on the sign shall express this speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned. "^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.controlled a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "controlled"^^xsd:string ;
+    skos:definition "Property for pedestrian crossing indicating with a boolean value whether the crossing is controlled by traffic signals or not"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.fixedCharge a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "fixedCharge"^^xsd:string ;
+    skos:definition "A fixed charge or pricing assessed for the toll road"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.gasType a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "gasType"^^xsd:string ;
+    skos:definition "Type of fuel used by a vehicle; proposed enumerations are taken from the Del. Reg: Compressed natural gas (CNG); liquefied natural gas (LNG); liquefied petroleum gas (LPG)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.iFOPTobjectKey a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "iFOPTobjectKey"^^xsd:string ;
+    skos:definition """When referencing public transport stops and stopping points use the European Standard IFOPT (CEN, EN 28701:2012). The syntax of a IFOPT referencing key is:
+country_code:region:stop_number:stop_area:stop_point (e.g. de:9162:1 for Stop Karlsplatz in Munich)"""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.laneCountBothDirections a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountBothDirections"^^xsd:string ;
+    skos:definition "Lane count in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.laneCountInDirection a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountInDirection"^^xsd:string ;
+    skos:definition "Lane count in the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.laneCountInOppositeDirection a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
+    skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumDistanceBetweenVehicles a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumDistanceBetweenVehicles"^^xsd:string ;
+    skos:definition "The maximum distance between vehicles allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumHeight a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumHeight"^^xsd:string ;
+    skos:definition "The maximum height allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumLadenWeight a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumLadenWeight"^^xsd:string ;
+    skos:definition "The maximum laden weight allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumLength a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumLength"^^xsd:string ;
+    skos:definition "The maximum length allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumSpeedLimit a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumSpeedLimit"^^xsd:string ;
+    skos:definition "Specifies the maximum speed limit, aligned with the concept of maximum speed limit of the Vienna Convention on Road Signs, 1968, where this concept is defined as the maximum speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumWeightPerSingleAxle a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumWeightPerSingleAxle"^^xsd:string ;
+    skos:definition "The maximum weight per single axle allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.maximumWidth a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumWidth"^^xsd:string ;
+    skos:definition "The maximum width allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.officialName a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "officialName"^^xsd:string ;
+    skos:definition "Official name"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.parkingSite a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "parkingSite"^^xsd:string ;
+    skos:definition """A record containing static details of a parking site. Must be specialised as an 'Urban-' or 'InterUrbanParkingSite' or a 'SpecialLocationParkingSite'.
+UrbanParkingSite = parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)
+InterUrbanParking = A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)
+SpecialLocationParkingSites = A parking site which is located at a special location, often associated with some building."""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.paymentMethod a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "paymentMethod"^^xsd:string ;
+    skos:definition "The payment method depends on the toll collection method or system in place. For road users it is of interest what kind of payment method is required or accepted"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.roadSignType a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "roadSignType"^^xsd:string ;
+    skos:definition "The type of road sign according to separate codelist (see RoadSignType)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.siteAccessability a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "siteAccessability"^^xsd:string ;
+    skos:definition "Type of accessability to site (e.g. ChargingPoint, RefillPointGas)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.trafficSignalIdentifier a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "trafficSignalIdentifier"^^xsd:string ;
+    skos:definition "Specifies a data provider unique value for the identifier for a specific traffic signal site"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.tunnelCategory a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "tunnelCategory"^^xsd:string ;
+    skos:definition """The used Tunnel Categories are based on the European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR). If tunnel restrictions on the passage of vehicles carrying dangerous goods are in place, the competent authority shall assign the road tunnel to one or more of the tunnel categories A, B, C, D, E and shall indicate the restriction by means of a road sign and signals as follows:
+
+Tunnel Category A: no sign
+Tunnel Category B: sign and signal with additional panel bearing a letter B
+Tunnel Category C: sign and signal with additional panel bearing a letter C
+Tunnel Category D: sign and signal with additional panel bearing a letter D
+Tunnel Category E: sign and signal with additional panel bearing a letter E
+
+The European Agreement concerning the International Carriage of Dangerous Goods by Road provides more information about the types of dangerous goods that can be transported through different categories of tunnel
+"""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.vMSUnitIdentifier a codes:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "vMSUnitIdentifier"^^xsd:string ;
+    skos:definition "Specifies a data provider unique value for the identifier for a specific variable message sign unit"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyTypeExtensions.isadLevel a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "isadLevel"^^xsd:string ;
+    skos:definition "Road level of Infrastructure Support for Automated Driving : ISAD E - to - ISAD A"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeExtensions.laneCountBothDirections a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountBothDirections"^^xsd:string ;
+    skos:definition "Lane count in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeExtensions.laneCountInDirection a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountInDirection"^^xsd:string ;
+    skos:definition "Lane count in the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeExtensions.laneCountInOppositeDirection a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
+    skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeExtensions.officialName a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "officialName"^^xsd:string ;
+    skos:definition "Official name"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeExtensions.roadLength a codes:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "roadLength"^^xsd:string ;
+    skos:definition "Road length"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeatureSource.fixedPlateRoadSign a codes:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "fixedPlateRoadSign"^^xsd:string ;
+    skos:definition "Fixed (permanent, often metal) road sign, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureSource.otherRoadFeature a codes:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "otherRoadFeature"^^xsd:string ;
+    skos:definition "Other road feature, not covered by the other enumerations"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureSource.regulation a codes:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "regulation"^^xsd:string ;
+    skos:definition "Road traffic regulation"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureSource.temporaryRoadSign a codes:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "temporaryRoadSign"^^xsd:string ;
+    skos:definition "Temporary (non-permanent) road sign, as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureSource.variableMessageSign a codes:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "variableMessageSign"^^xsd:string ;
+    skos:definition "Road sign displayed on a variable message sign or other dynamic display equipment, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureType.builtUpArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "builtUpArea"^^xsd:string ;
+    skos:definition """indicating a zone which is of an urban developed nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a built-up area.
+
+NOTE: Taking into account e.g. the UK Highway Code, a built-up area is a settled area in which the speed limit of a road is automatically 30 mph (48 km/h). These roads are known as 'restricted roads' and are identified by the presence of street lights.
+
+That means that there is a traffic regulation existing that assigns automatically a speed limit to a specific road (by law)."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.chargingPoint a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "chargingPoint"^^xsd:string ;
+    skos:definition "Electric vehicle charging point, also called EV charging station (element in an infrastructure that supplies electric energy for the recharging of electric vehicles)."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.closedToAllVehiclesInBothDirections a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "closedToAllVehiclesInBothDirections"^^xsd:string ;
+    skos:definition "indicating a section of road is closed to all vehicles in both directions of travel."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.compulsoryDirectionForVehicleCarryingDangerousGoods a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "compulsoryDirectionForVehicleCarryingDangerousGoods"^^xsd:string ;
+    skos:definition """indicating a mandatory route or turn to be followed for vehicles carrying Dangerous Goods.
+
+Note: See European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR) in Europe."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.directionToBeFollowed a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "directionToBeFollowed"^^xsd:string ;
+    skos:definition "indicating a mandatory route or turn to be followed."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfBuiltUpArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfBuiltUpArea"^^xsd:string ;
+    skos:definition "indicating the end of a zone which is of an urban developed nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfMotorway a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfMotorway"^^xsd:string ;
+    skos:definition "indicating the end of a motorway"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfProhibitionOrRestriction a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfProhibitionOrRestriction"^^xsd:string ;
+    skos:definition """A zone which is the end of prohibition or restriction.
+
+NOTE: This is considered to apply to any single or multiple prohibitions or restrictions. In the case where the end of prohibitions or restrictions coincide, this location reference is used to indicate the end of at least one prohibition or restriction."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfResidentialArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfResidentialArea"^^xsd:string ;
+    skos:definition "indicating the end of a zone which is of a residential housing nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfRoadForMotorVehicles a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfRoadForMotorVehicles"^^xsd:string ;
+    skos:definition "indicating the end of a zone which is a road intended for use by motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.endOfSpeedLimit a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfSpeedLimit"^^xsd:string ;
+    skos:definition "Location of the end of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.motorway a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "motorway"^^xsd:string ;
+    skos:definition """Indicating the presence of a motorway.
+
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+ 
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+ 
+     (i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means; 
+ 
+    (ii) Does not cross at level with any road, railway or tramway track, or footpath; and 
+ 
+   (iii) Is specially signposted as a motorway;"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.noEntry a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "noEntry"^^xsd:string ;
+    skos:definition """indicating no entry to a section of road.
+
+NOTE: No entry restrictions may be qualified by a range of conditions, including but not limited to: time/day/date; vehicle type; vehicle usage, etc"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.numberOfLanes a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "numberOfLanes"^^xsd:string ;
+    skos:definition "The total number of lanes"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.parkingSite a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "parkingSite"^^xsd:string ;
+    skos:definition "named according to DATEX II Package ParkingSite"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.passingWithoutStoppingProhibited a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "passingWithoutStoppingProhibited"^^xsd:string ;
+    skos:definition """Indicating a zone which is subject to a prohibition of continuing without coming to a stop.
+
+Note: this may be in common use at toll plazas, police and other checkpoints, custom checkpoints, etc"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.pedestrianCrossing a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "pedestrianCrossing"^^xsd:string ;
+    skos:definition "A specified part of a road where pedestrians have right of way to cross"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.prohibitedTurn a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "prohibitedTurn"^^xsd:string ;
+    skos:definition """Indicating a prohibited turning motion and a junction of roads.
+
+NOTE: Turn restrictions types come in many forms and can be dependent of the type of vehicle; its usage; its load; vehicle occupancy; the capabilities permitted under the licence of the vehicle driver’s driver licence permissions; vehicle physical characteristics; propulsion type; the restrictions may also be time and day dependent, weather dependent, etc."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.prohibitionOfOvertaking a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "prohibitionOfOvertaking"^^xsd:string ;
+    skos:definition """Indicating a zone where overtaking of other vehicles is prohibited.
+
+NOTE: Overtaking is normally interpreted as crossing the central dividing line of a single carriageway two-way road, to facilitate the overtaking of another slower-moving vehicle, but can also involve other forms of restriction such as lorries being limited to use of specified slower lanes, and not being permitted to move to other lanes."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.publicTransportStop a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "publicTransportStop"^^xsd:string ;
+    skos:definition "Public transport stop"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.refillPointGas a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "refillPointGas"^^xsd:string ;
+    skos:definition "Refill point for gas is an element in an infrastructure that supplies different kind of gas fuels for recharging for natural gas vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.residentialArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "residentialArea"^^xsd:string ;
+    skos:definition """indicating a zone which is of a residential housing nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a residential area.
+
+A residential area is a road or a zone where most of the buildings are houses and is mostly a traffic-calmed sector, where automatically specific traffic regulations apply, like speed limits."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.restrictionForVehicles a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "restrictionForVehicles"^^xsd:string ;
+    skos:definition "Restriction for vehicles regarding weight, height or length"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.roadForMotorVehicles a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadForMotorVehicles"^^xsd:string ;
+    skos:definition "indicating a zone which is a road intended for use by motor vehicles."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.roadName a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadName"^^xsd:string ;
+    skos:definition "The official name of the road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.roadSign a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadSign"^^xsd:string ;
+    skos:definition "indicating the presence of a road sign "^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.snowChainsCompulsory a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "snowChainsCompulsory"^^xsd:string ;
+    skos:definition "indicating a zone where the use of snow chains or equivalent winter equipment is mandatory."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.speedLimit a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "speedLimit"^^xsd:string ;
+    skos:definition "Location of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road "^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfBuiltUpArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfBuiltUpArea"^^xsd:string ;
+    skos:definition "indicating the start of a zone which is of an urban developed nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfMotorway a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfMotorway"^^xsd:string ;
+    skos:definition "indicating the start of a motorway."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfProhibitionOfOvertaking a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfProhibitionOfOvertaking"^^xsd:string ;
+    skos:definition "Indicating the start of a zone which is subject to a prohibition of overtaking."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfResidentialArea a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfResidentialArea"^^xsd:string ;
+    skos:definition "indicating the start of a zone which is of a residential housing nature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfRoadForMotorVehicles a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfRoadForMotorVehicles"^^xsd:string ;
+    skos:definition "indicating the start of a zone which is a road intended for use by motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfSpeedLimit a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfSpeedLimit"^^xsd:string ;
+    skos:definition "Location of the start of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.startOfUseOfAudibleWarningDevicesProhibited a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfUseOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    skos:definition "The start of a zone which is subject to a prohibition on the use of audible warning devices."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.tollRoad a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "tollRoad"^^xsd:string ;
+    skos:definition "Public or private roadway for which a road-usage fee or toll is assessed for passage. There are various fee charging concepts and toll collection methods available"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.tollStation a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "tollStation"^^xsd:string ;
+    skos:definition "Toll or road usage fee collection point known as toll booths, toll houses, plazas, stations or gates"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.transferNodeStopPoint a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "transferNodeStopPoint"^^xsd:string ;
+    skos:definition "Stop point at a transfer node, e.g. Airport, Railway station, where people or goods may change mode of transport (ISO 19147)"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.useOfAudibleWarningDevicesProhibited a codes:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "useOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    skos:definition """Indicating a zone which is subject to a prohibition on the use of audible warning devices.
+
+NOTE: Audible warning devices include vehicle horns."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureTypeExtensions.bicyclePath a codes:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "bicyclePath"^^xsd:string ;
+    skos:definition "The road is/has a bicycle path"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
+
+codes:RoadFeatureTypeExtensions.ccamLevel a codes:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "ccamLevel"^^xsd:string ;
+    skos:definition "Road classification for supporting  cooperative connected and automated mobility"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
+
+codes:RoadFeatureTypeExtensions.numberOfLanes a codes:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "numberOfLanes"^^xsd:string ;
+    skos:definition "The total number of lanes"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
+
+codes:RoadFeatureTypeExtensions.roadName a codes:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "roadName"^^xsd:string ;
+    skos:definition "The official name of the road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
+
+codes:RoadSignType.11_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_111"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Crossroads)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_112"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Side road right)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_113 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_113"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Side road left)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_115 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_115"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Forked Intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_116 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_116"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(T junction)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_117 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_117"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Y intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_118 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_118"^^xsd:string ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Staggered intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_132 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_132"^^xsd:string ;
+    skos:definition "Intersection with a road the users of which must give way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_133 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_133"^^xsd:string ;
+    skos:definition """Intersection with a road the users of which must give way
+ T-shaped crossing left """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_134 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_134"^^xsd:string ;
+    skos:definition """Intersection with a road the users of which must give way
+ T-shaped crossing righ """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_135 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_135"^^xsd:string ;
+    skos:definition """Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower left"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_136 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_136"^^xsd:string ;
+    skos:definition """Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower right"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_148 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_148"^^xsd:string ;
+    skos:definition """Warning of roundabout
+(Clockwise)   """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_149 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_149"^^xsd:string ;
+    skos:definition """Warning of roundabout
+(Anti-clockwise)   """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_161 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_161"^^xsd:string ;
+    skos:definition "Right bend"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_162 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_162"^^xsd:string ;
+    skos:definition "Left Bend"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_174 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_174"^^xsd:string ;
+    skos:definition "Right turn"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_175 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_175"^^xsd:string ;
+    skos:definition "Left turn "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_187 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_187"^^xsd:string ;
+    skos:definition "Reverse curve (Right and left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_188 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_188"^^xsd:string ;
+    skos:definition "Reverse curve (Left and right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_211 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_211"^^xsd:string ;
+    skos:definition "Double bend, right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_212 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_212"^^xsd:string ;
+    skos:definition "Double bend, left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_224 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_224"^^xsd:string ;
+    skos:definition "Winding road (First to the right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_225 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_225"^^xsd:string ;
+    skos:definition "Winding road (First to the left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_236 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_236"^^xsd:string ;
+    skos:definition "Level crossing with gate"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_237 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_237"^^xsd:string ;
+    skos:definition "Other level-crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_238 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_238"^^xsd:string ;
+    skos:definition "Intersection with a tramway line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_239 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_239"^^xsd:string ;
+    skos:definition "Children"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_241 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_241"^^xsd:string ;
+    skos:definition "Pedestrian crossing(right) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_242 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_242"^^xsd:string ;
+    skos:definition "Elderly or disabled pedestrians likely to cross ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_244 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_244"^^xsd:string ;
+    skos:definition "Children(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_245 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_245"^^xsd:string ;
+    skos:definition "Pedestrians (left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_246 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_246"^^xsd:string ;
+    skos:definition "Pedestrian crossing (left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_247 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_247"^^xsd:string ;
+    skos:definition "Pedestrian crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_253 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_253"^^xsd:string ;
+    skos:definition "Light signals"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_254 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_254"^^xsd:string ;
+    skos:definition "Slippery Road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_255 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_255"^^xsd:string ;
+    skos:definition "Falling rocks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_256 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_256"^^xsd:string ;
+    skos:definition "Loose gravel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_257 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_257"^^xsd:string ;
+    skos:definition "Dangerous shoulder"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_258 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_258"^^xsd:string ;
+    skos:definition "Falling rocks(right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_268 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_268"^^xsd:string ;
+    skos:definition "Uneven road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_269 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_269"^^xsd:string ;
+    skos:definition "Uneven road(hump)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_271 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_271"^^xsd:string ;
+    skos:definition "Uneven road(dip)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_283 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_283"^^xsd:string ;
+    skos:definition "Traffic merging from the right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_285 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_285"^^xsd:string ;
+    skos:definition "Traffic merging from left ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_296 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_296"^^xsd:string ;
+    skos:definition "Carriageway narrows from the right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_297 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_297"^^xsd:string ;
+    skos:definition "Carriageway narrows from the left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_319 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_319"^^xsd:string ;
+    skos:definition "Carriageway narrows"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_332 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_332"^^xsd:string ;
+    skos:definition "Two-way traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_346 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_346"^^xsd:string ;
+    skos:definition "Steep ascent"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_347 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_347"^^xsd:string ;
+    skos:definition "Dangerous descent"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_348 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_348"^^xsd:string ;
+    skos:definition "Road works"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_361 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_361"^^xsd:string ;
+    skos:definition "Cross-wind"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_362 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_362"^^xsd:string ;
+    skos:definition "Airfiled"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_363 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_363"^^xsd:string ;
+    skos:definition "Cattle or other animals crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_364 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_364"^^xsd:string ;
+    skos:definition "Cattle or other animals crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_365 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_365"^^xsd:string ;
+    skos:definition "Cross-wind(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_366 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_366"^^xsd:string ;
+    skos:definition "Airfiled(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_367 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_367"^^xsd:string ;
+    skos:definition "Cattle or other animals crossing(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_368 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_368"^^xsd:string ;
+    skos:definition "Cattle or other animals crossing(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_378 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_378"^^xsd:string ;
+    skos:definition "Swing bridge"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_379 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_379"^^xsd:string ;
+    skos:definition "Road leads on to quar or river"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_381 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_381"^^xsd:string ;
+    skos:definition "Cyclist entering or crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_382 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_382"^^xsd:string ;
+    skos:definition "Cyclist entering or crossing, left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_395 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_395"^^xsd:string ;
+    skos:definition "Give way "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_396 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_396"^^xsd:string ;
+    skos:definition "Distance to 'Give Way' line ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_398 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_398"^^xsd:string ;
+    skos:definition "Attention wrong way driver"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_411 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_411"^^xsd:string ;
+    skos:definition "Signs to be placed in the immediate vicinity of level-crossings(vertical)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_412 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_412"^^xsd:string ;
+    skos:definition "Signs to be placed in the immediate vicinity of level-crossings (horizontal)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_413 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_413"^^xsd:string ;
+    skos:definition """Signs to be placed in the immediate vicinity of level-crossings
+Two or more tracks (vertical)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_414 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_414"^^xsd:string ;
+    skos:definition """Signs to be placed in the immediate vicinity of level-crossings 
+Two or more Tracks (horizontal)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_998 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_998"^^xsd:string ;
+    skos:definition "Caution"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.11_999 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_999"^^xsd:string ;
+    skos:definition "Other danger"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_111"^^xsd:string ;
+    skos:definition "Priority for oncoming traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_112"^^xsd:string ;
+    skos:definition "STOP"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_113 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_113"^^xsd:string ;
+    skos:definition "Compulsory stopping XXm ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_114 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_114"^^xsd:string ;
+    skos:definition "Assigned lane for light vehicles or motor cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_115 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_115"^^xsd:string ;
+    skos:definition "Assigned lane for trucks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_116 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_116"^^xsd:string ;
+    skos:definition "Assigned lane on motorway for trailers"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_117 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_117"^^xsd:string ;
+    skos:definition "Give way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_127 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_127"^^xsd:string ;
+    skos:definition "Assigned lane for trailers"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_128 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_128"^^xsd:string ;
+    skos:definition "With-flow bus lane which pedal cycles may also use"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_129 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_129"^^xsd:string ;
+    skos:definition "Exclusive lane for route bus"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_131 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_131"^^xsd:string ;
+    skos:definition "Buses and pedal cycles only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_132 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_132"^^xsd:string ;
+    skos:definition "Priority lane for route bus"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_133 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_133"^^xsd:string ;
+    skos:definition "Vehicles under XXt are permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_134 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_134"^^xsd:string ;
+    skos:definition "High occupancy vehicle lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_154 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_154"^^xsd:string ;
+    skos:definition "Centre line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_155 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_155"^^xsd:string ;
+    skos:definition "Turning restriction on a multi-lane approach to an intersection"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_156 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_156"^^xsd:string ;
+    skos:definition "Stop line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_157 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_157"^^xsd:string ;
+    skos:definition "Two-step right turn for mopeds"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_158 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_158"^^xsd:string ;
+    skos:definition "Do not make two-step right turn "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_176 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_176"^^xsd:string ;
+    skos:definition "Slow down"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_177 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_177"^^xsd:string ;
+    skos:definition "Yield right of way "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_178 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_178"^^xsd:string ;
+    skos:definition "Priority road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_411 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_411"^^xsd:string ;
+    skos:definition "No entry for all vehicles, mopeds, cycles, pedestrians"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_412 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_412"^^xsd:string ;
+    skos:definition "No entry"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_413 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_413"^^xsd:string ;
+    skos:definition "No entry into the designated direction"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_414 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_414"^^xsd:string ;
+    skos:definition "No vehicles crossing (except for vehicles turning left to enter or exit a facility off the road) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_415 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_415"^^xsd:string ;
+    skos:definition "Closed to all vehicles in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_416 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_416"^^xsd:string ;
+    skos:definition "No entry for for any power driven vehicle except two wheeled motor cycles without a side-car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_417 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_417"^^xsd:string ;
+    skos:definition "No entry for motor cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_418 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_418"^^xsd:string ;
+    skos:definition "No entry for cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_419 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_419"^^xsd:string ;
+    skos:definition "No entry for mopeds"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_421 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_421"^^xsd:string ;
+    skos:definition "No entry for goods vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_422 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_422"^^xsd:string ;
+    skos:definition "No entry for any power driven vehicle drawing a trailer include a semi-trailer or a single axle trailer "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_423 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_423"^^xsd:string ;
+    skos:definition "No entry for pedestrians"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_424 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_424"^^xsd:string ;
+    skos:definition "No entry for animal-drawn vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_425 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_425"^^xsd:string ;
+    skos:definition "No entry for handcarts."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_426 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_426"^^xsd:string ;
+    skos:definition "No entry for power driven agricultural vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_427 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_427"^^xsd:string ;
+    skos:definition "No buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_429 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_429"^^xsd:string ;
+    skos:definition "No entry for any power driven vehicle drawing a trailer other than a semi-trailer or a single axle trailer"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_431 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_431"^^xsd:string ;
+    skos:definition """No ridden or
+accompanied
+horses"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_433 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_433"^^xsd:string ;
+    skos:definition "No vehicles that cannot exceed 25 km/h"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_434 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_434"^^xsd:string ;
+    skos:definition "No entry for any power-driven vehicle drawing a trailer"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_451 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_451"^^xsd:string ;
+    skos:definition "No entry for power driven vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_452 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_452"^^xsd:string ;
+    skos:definition "No entry for power driven vehicles or animal-drawn vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_453 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_453"^^xsd:string ;
+    skos:definition "No entry for goods vehicles and buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_454 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_454"^^xsd:string ;
+    skos:definition "No entry for bicycles, mopeds and disabled drivers vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_455 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_455"^^xsd:string ;
+    skos:definition "No entry for vehicles that are not able or aloud to go faster than 25 km/h, no microcars, bikes, mopeds and disabled drivers vehicles."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_475 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_475"^^xsd:string ;
+    skos:definition """No entry for vehicles carrying more than a certain
+quantity of explosives or readily inflammable substances"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_476 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_476"^^xsd:string ;
+    skos:definition "No entry for  vehicles carrying dangerous goods for which special sign plating is required"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_477 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_477"^^xsd:string ;
+    skos:definition """No entry for vehicles carrying more than a certain
+quantity of substances liable to cause water pollution"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_499 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_499"^^xsd:string ;
+    skos:definition """No entry for vehicles having an overall width exceeding X
+metres"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_511 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_511"^^xsd:string ;
+    skos:definition """No entry for vehicles having an overall height exceeding X
+metres"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_512 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_512"^^xsd:string ;
+    skos:definition "No entry for vehicles exceeding XX t laden mass"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_513 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_513"^^xsd:string ;
+    skos:definition "No entry for vehicles having a mass exceeding XX t on one axle "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_514 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_514"^^xsd:string ;
+    skos:definition "No entry for vehicles or combinations of vehicles exceeding XXm in length"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_515 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_515"^^xsd:string ;
+    skos:definition "Driving of vehicles less than XX m apart prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_527 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_527"^^xsd:string ;
+    skos:definition "No left turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_528 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_528"^^xsd:string ;
+    skos:definition "No right turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_529 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_529"^^xsd:string ;
+    skos:definition "No U-turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_542 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_542"^^xsd:string ;
+    skos:definition "Overtaking prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_543 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_543"^^xsd:string ;
+    skos:definition "End of overtaking prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_544 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_544"^^xsd:string ;
+    skos:definition "Overtaking by goods vehicles prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_545 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_545"^^xsd:string ;
+    skos:definition "End of overtaking by goods vehicles prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_557 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_557"^^xsd:string ;
+    skos:definition """Maximum speed
+limited to the figure indicated"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_558 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_558"^^xsd:string ;
+    skos:definition "Use of audible warning devices prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_561 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_561"^^xsd:string ;
+    skos:definition "Passing without stopping prohibited (Customs) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_562 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_562"^^xsd:string ;
+    skos:definition "Stop for (Military police check)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_563 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_563"^^xsd:string ;
+    skos:definition "Stop for (Police check) ) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_564 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_564"^^xsd:string ;
+    skos:definition "Stop for (Toll gate)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_565 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_565"^^xsd:string ;
+    skos:definition "Pedestrians crossover prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_577 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_577"^^xsd:string ;
+    skos:definition "Parking prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_578 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_578"^^xsd:string ;
+    skos:definition "Standing and parking prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_579 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_579"^^xsd:string ;
+    skos:definition "Alternate parking(1st to 15th days) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_581 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_581"^^xsd:string ;
+    skos:definition "Alternate parking (16th to 31st days)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_592 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_592"^^xsd:string ;
+    skos:definition "Emergency parking only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_593 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_593"^^xsd:string ;
+    skos:definition """Entrance to a
+controlled
+parking zone"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_594 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_594"^^xsd:string ;
+    skos:definition "Limited duration no parking zone "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_645 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_645"^^xsd:string ;
+    skos:definition "Rush hour lane open 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_646 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_646"^^xsd:string ;
+    skos:definition "End of rush hour lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_647 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_647"^^xsd:string ;
+    skos:definition "End of rush hour lane 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_648 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_648"^^xsd:string ;
+    skos:definition "Clear rush hour lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_649 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_649"^^xsd:string ;
+    skos:definition "Clear rush hour lane 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_711 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_711"^^xsd:string ;
+    skos:definition "Direction to be followed (Left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_712 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_712"^^xsd:string ;
+    skos:definition "Direction to be followed (Right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_713 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_713"^^xsd:string ;
+    skos:definition "Direction to be followed  (straight ahead)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_714 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_714"^^xsd:string ;
+    skos:definition "Direction to be followed (Right turn)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_715 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_715"^^xsd:string ;
+    skos:definition "Direction to be followed (Left turn) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_716 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_716"^^xsd:string ;
+    skos:definition "Direction to be followed (Right, straight)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_717 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_717"^^xsd:string ;
+    skos:definition "Direction to be followed (Left, straight) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_718 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_718"^^xsd:string ;
+    skos:definition """Pass this side 
+(right side)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_719 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_719"^^xsd:string ;
+    skos:definition """Pass this side
+ left side"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_721 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_721"^^xsd:string ;
+    skos:definition "Pass this side (Right turn, left turn) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_723 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_723"^^xsd:string ;
+    skos:definition """Pass this side
+ (both sides)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_724 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_724"^^xsd:string ;
+    skos:definition "Compulsory direction for vehicles carrying dangerous goods"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_743 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_743"^^xsd:string ;
+    skos:definition """Direction to be followed
+(Two-way traffic) """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_744 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_744"^^xsd:string ;
+    skos:definition """Direction to be followed
+(One-way street)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_745 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_745"^^xsd:string ;
+    skos:definition "Direction to be followed (Left) (One-way road) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_746 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_746"^^xsd:string ;
+    skos:definition "Compulsory roundabout (Clockwise)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_747 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_747"^^xsd:string ;
+    skos:definition "Compulsory roundabout "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_748 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_748"^^xsd:string ;
+    skos:definition "Road for motor vehicles only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_749 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_749"^^xsd:string ;
+    skos:definition "Compulsary cycle track"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_751 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_751"^^xsd:string ;
+    skos:definition "Abreast riding permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_752 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_752"^^xsd:string ;
+    skos:definition "Bicycle crossing zone "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_753 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_753"^^xsd:string ;
+    skos:definition "Compulsary footpath"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_754 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_754"^^xsd:string ;
+    skos:definition "Compulsay track for riders on horseback"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_772 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_772"^^xsd:string ;
+    skos:definition "Pedestrian and bicycle crossing zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_773 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_773"^^xsd:string ;
+    skos:definition "Compulsary cycle track and Compulsary footpath"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_795 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_795"^^xsd:string ;
+    skos:definition "Compulsory minimum speed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_796 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_796"^^xsd:string ;
+    skos:definition "Snow chains compulsory"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_851 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_851"^^xsd:string ;
+    skos:definition "End of priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_852 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_852"^^xsd:string ;
+    skos:definition "Distance plate indicating end of priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_853 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_853"^^xsd:string ;
+    skos:definition "Priority for oncoming trafic"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_861 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_861"^^xsd:string ;
+    skos:definition "End of all local prohibition imposed on moving vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_862 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_862"^^xsd:string ;
+    skos:definition "End of prohibition of overtaking"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_863 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_863"^^xsd:string ;
+    skos:definition "End of prohibition of overtaking for goods vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_864 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_864"^^xsd:string ;
+    skos:definition "End of speed limit"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_865 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_865"^^xsd:string ;
+    skos:definition "End of compulsory minimum speed "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_871 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_871"^^xsd:string ;
+    skos:definition "Driving on tram track permitted"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.12_872 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_872"^^xsd:string ;
+    skos:definition "Stopping permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_111"^^xsd:string ;
+    skos:definition "Advance direction signs "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_112"^^xsd:string ;
+    skos:definition "Advance sign showing the direction of places "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_121 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_121"^^xsd:string ;
+    skos:definition "Advance direction signs(root to be followe) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_133 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_133"^^xsd:string ;
+    skos:definition "Advance direction signs showing the common road name "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_168 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_168"^^xsd:string ;
+    skos:definition "Motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_169 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_169"^^xsd:string ;
+    skos:definition "Advance signs showing the morotway with place name"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_171 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_171"^^xsd:string ;
+    skos:definition "Advance direction signs showing the exit of motorway with road number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_172 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_172"^^xsd:string ;
+    skos:definition "Advance direction signs showing the exit of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_173 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_173"^^xsd:string ;
+    skos:definition "Advance signs showing the service area on motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_174 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_174"^^xsd:string ;
+    skos:definition "End of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_184 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_184"^^xsd:string ;
+    skos:definition "Multiple destinations and distances"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_185 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_185"^^xsd:string ;
+    skos:definition "Sign showing the direction of places"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_186 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_186"^^xsd:string ;
+    skos:definition "Sign showing the direction of places with road number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_187 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_187"^^xsd:string ;
+    skos:definition "Sign showing the direction of places on the following road "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_188 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_188"^^xsd:string ;
+    skos:definition "Sign showing the direction of places with junction layout"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_189 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_189"^^xsd:string ;
+    skos:definition "Sign showing the direction of places with common road names"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_222 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_222"^^xsd:string ;
+    skos:definition "Direction signs showing the entrance of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_223 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_223"^^xsd:string ;
+    skos:definition "Direction signs showing the exit of motorway with the place name"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_224 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_224"^^xsd:string ;
+    skos:definition " Direction signs showing the exit of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_225 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_225"^^xsd:string ;
+    skos:definition " Lane for the place on the motorway "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_226 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_226"^^xsd:string ;
+    skos:definition " Service area on motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_326 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_326"^^xsd:string ;
+    skos:definition "National/State motorway number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_327 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_327"^^xsd:string ;
+    skos:definition "Local motorway number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_525 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_525"^^xsd:string ;
+    skos:definition "No through road(front)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_526 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_526"^^xsd:string ;
+    skos:definition "No through road(right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_538 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_538"^^xsd:string ;
+    skos:definition "Vehicles from opposite direction must give priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_539 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_539"^^xsd:string ;
+    skos:definition "Access permitted"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_611 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_611"^^xsd:string ;
+    skos:definition " Number and direction of traffic lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_612 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_612"^^xsd:string ;
+    skos:definition "Lane ends "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_613 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_613"^^xsd:string ;
+    skos:definition "Lane divergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_614 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_614"^^xsd:string ;
+    skos:definition "Trucks prohibited from this lane "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_615 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_615"^^xsd:string ;
+    skos:definition "Trucks prohibited from main lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_616 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_616"^^xsd:string ;
+    skos:definition "Trucks prohibited from diverging lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_617 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_617"^^xsd:string ;
+    skos:definition "Advance direction sign for route to be followed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_618 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_618"^^xsd:string ;
+    skos:definition "Detour"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_619 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_619"^^xsd:string ;
+    skos:definition "Crawler lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_621 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_621"^^xsd:string ;
+    skos:definition "Escape lane (Right type 1) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_622 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_622"^^xsd:string ;
+    skos:definition "Escape lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_623 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_623"^^xsd:string ;
+    skos:definition "One-way street"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_624 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_624"^^xsd:string ;
+    skos:definition "Lane convergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_643 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_643"^^xsd:string ;
+    skos:definition "Directional flows"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_644 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_644"^^xsd:string ;
+    skos:definition "Directional flows and lane convergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_651 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_651"^^xsd:string ;
+    skos:definition " Closure of a traffic lane, two lanes to one (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_652 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_652"^^xsd:string ;
+    skos:definition "Closure of a traffic lane, three lanes to two (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_653 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_653"^^xsd:string ;
+    skos:definition "Lane convergence, four lanes to three (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_654 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_654"^^xsd:string ;
+    skos:definition "Closure of a traffic lane, two lanes to one (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_655 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_655"^^xsd:string ;
+    skos:definition "Closure of a traffic lane, three lanes to two (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_656 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_656"^^xsd:string ;
+    skos:definition "Closure of a traffic lane, four lanes to three  (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_657 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_657"^^xsd:string ;
+    skos:definition "Left lane shift onto oncoming lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_658 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_658"^^xsd:string ;
+    skos:definition "Two lane right shift onto hard shoulder"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_768 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_768"^^xsd:string ;
+    skos:definition "Lane closed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_769 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_769"^^xsd:string ;
+    skos:definition "Lane free"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_771 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_771"^^xsd:string ;
+    skos:definition "Clear lane to left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_772 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_772"^^xsd:string ;
+    skos:definition "Clear lane to right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_773 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_773"^^xsd:string ;
+    skos:definition "End of all restrictions by electronic signs"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_781 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_781"^^xsd:string ;
+    skos:definition """compulsory minimum speed applying to
+different lanes"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_782 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_782"^^xsd:string ;
+    skos:definition """compulsory minimum speed applying to one
+lane"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_783 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_783"^^xsd:string ;
+    skos:definition "speed limits applying to different lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_784 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_784"^^xsd:string ;
+    skos:definition "lanes reserved for buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_785 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_785"^^xsd:string ;
+    skos:definition "One-way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_786 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_786"^^xsd:string ;
+    skos:definition "Preselection sign"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_811 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_811"^^xsd:string ;
+    skos:definition "Road for motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_812 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_812"^^xsd:string ;
+    skos:definition "End of road for motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_813 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_813"^^xsd:string ;
+    skos:definition "Tunnel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_814 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_814"^^xsd:string ;
+    skos:definition "End of tunnel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_815 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_815"^^xsd:string ;
+    skos:definition "Pedestrian crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_821 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_821"^^xsd:string ;
+    skos:definition "Safety evacuation area "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_822 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_822"^^xsd:string ;
+    skos:definition "Emergency exit "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_823 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_823"^^xsd:string ;
+    skos:definition "Fire extinguisher "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_824 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_824"^^xsd:string ;
+    skos:definition "Emergency roadside telephone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_825 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_825"^^xsd:string ;
+    skos:definition "Emergency call button"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_826 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_826"^^xsd:string ;
+    skos:definition "Emergency stopping place"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_827 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_827"^^xsd:string ;
+    skos:definition "Waiting area for slower traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_828 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_828"^^xsd:string ;
+    skos:definition "Safety zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_829 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_829"^^xsd:string ;
+    skos:definition "Hospital"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_831 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_831"^^xsd:string ;
+    skos:definition "Toll gate"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_832 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_832"^^xsd:string ;
+    skos:definition "Toll zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_833 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_833"^^xsd:string ;
+    skos:definition "Automatic toll gate "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_834 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_834"^^xsd:string ;
+    skos:definition "Manual toll gate "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_835 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_835"^^xsd:string ;
+    skos:definition "Bicycle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_836 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_836"^^xsd:string ;
+    skos:definition "Aircraft/ Airport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_837 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_837"^^xsd:string ;
+    skos:definition "Departures "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_838 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_838"^^xsd:string ;
+    skos:definition "Arrivals"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_839 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_839"^^xsd:string ;
+    skos:definition "Helicopter/ Heliport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_841 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_841"^^xsd:string ;
+    skos:definition "Railway/ Railway station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_842 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_842"^^xsd:string ;
+    skos:definition "Rent a car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_843 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_843"^^xsd:string ;
+    skos:definition "Taxi stop"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_844 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_844"^^xsd:string ;
+    skos:definition "Bus stop "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_845 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_845"^^xsd:string ;
+    skos:definition "Tramway stop "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_846 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_846"^^xsd:string ;
+    skos:definition "Road open or closed "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_847 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_847"^^xsd:string ;
+    skos:definition "Parking space for vehicles with permission "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_851 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_851"^^xsd:string ;
+    skos:definition "Parking"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_852 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_852"^^xsd:string ;
+    skos:definition "Parking (Machine-charged) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_853 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_853"^^xsd:string ;
+    skos:definition "Park-and-ride point"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_854 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_854"^^xsd:string ;
+    skos:definition "Car ferry"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_855 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_855"^^xsd:string ;
+    skos:definition "Car train "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_861 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_861"^^xsd:string ;
+    skos:definition "Beginning of a built-up area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_862 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_862"^^xsd:string ;
+    skos:definition "End of a built-up area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_863 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_863"^^xsd:string ;
+    skos:definition "Zone in which parking is prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_864 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_864"^^xsd:string ;
+    skos:definition "Zone in which parking is prohibited at certain times"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_865 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_865"^^xsd:string ;
+    skos:definition "Parking zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_866 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_866"^^xsd:string ;
+    skos:definition "Maximum speed zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_867 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_867"^^xsd:string ;
+    skos:definition "End of zone in which parking is prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_868 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_868"^^xsd:string ;
+    skos:definition "End of zone in which parking is prohibited at certain times"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_869 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_869"^^xsd:string ;
+    skos:definition "End of parking zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_871 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_871"^^xsd:string ;
+    skos:definition "End of maximum speed zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_872 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_872"^^xsd:string ;
+    skos:definition "Residential area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_873 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_873"^^xsd:string ;
+    skos:definition """End of residential
+area"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_881 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_881"^^xsd:string ;
+    skos:definition " Direction of an airfield"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_882 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_882"^^xsd:string ;
+    skos:definition "Direction of a camping site."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_883 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_883"^^xsd:string ;
+    skos:definition " Direction of a youth hostel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_884 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_884"^^xsd:string ;
+    skos:definition "Direction of public transport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_885 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_885"^^xsd:string ;
+    skos:definition "Confirmatory signs"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_886 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_886"^^xsd:string ;
+    skos:definition "Chains or snow tyres recommended"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_887 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_887"^^xsd:string ;
+    skos:definition "Advisory speed\""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_889 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_889"^^xsd:string ;
+    skos:definition "Advised itinerary for heavy vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_891 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_891"^^xsd:string ;
+    skos:definition " Pedestrian  underpass."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_892 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_892"^^xsd:string ;
+    skos:definition "Pedestrian overpass"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_893 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_893"^^xsd:string ;
+    skos:definition " Exit from a motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.13_894 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_894"^^xsd:string ;
+    skos:definition """Direction
+and distance of the nearest emergency exits"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_111"^^xsd:string ;
+    skos:definition "Tourist information"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_112"^^xsd:string ;
+    skos:definition "Police"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_113 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_113"^^xsd:string ;
+    skos:definition "Facilities for wheelchair user"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_114 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_114"^^xsd:string ;
+    skos:definition "Telephone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_115 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_115"^^xsd:string ;
+    skos:definition "First-aid station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_125 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_125"^^xsd:string ;
+    skos:definition "Maintenance service"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_126 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_126"^^xsd:string ;
+    skos:definition "Breakdown service"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_128 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_128"^^xsd:string ;
+    skos:definition "Filling station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_129 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_129"^^xsd:string ;
+    skos:definition "Filling station (+GPL)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_145 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_145"^^xsd:string ;
+    skos:definition "Washroom/Restroom"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_146 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_146"^^xsd:string ;
+    skos:definition "Restroom for wheelchair user"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_161 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_161"^^xsd:string ;
+    skos:definition "Restaurant"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_162 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_162"^^xsd:string ;
+    skos:definition "Refreshment stand/ Caféteria"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_163 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_163"^^xsd:string ;
+    skos:definition "Service area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_164 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_164"^^xsd:string ;
+    skos:definition "Postal office"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_181 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_181"^^xsd:string ;
+    skos:definition "Hotel or Motel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_183 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_183"^^xsd:string ;
+    skos:definition "Youth hostel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_185 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_185"^^xsd:string ;
+    skos:definition "Camping site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_186 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_186"^^xsd:string ;
+    skos:definition "Caravan site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_187 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_187"^^xsd:string ;
+    skos:definition "Camping and caravan site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_188 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_188"^^xsd:string ;
+    skos:definition "Recreational vehicle sanitary station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_189 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_189"^^xsd:string ;
+    skos:definition "Picnic site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_191 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_191"^^xsd:string ;
+    skos:definition "Amusement park"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_192 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_192"^^xsd:string ;
+    skos:definition "Starting-point for walks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_193 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_193"^^xsd:string ;
+    skos:definition "Jogging course"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_194 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_194"^^xsd:string ;
+    skos:definition "Skiing site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_195 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_195"^^xsd:string ;
+    skos:definition "Ski lift"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_196 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_196"^^xsd:string ;
+    skos:definition "Cable car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_198 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_198"^^xsd:string ;
+    skos:definition "Canoeing site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_199 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_199"^^xsd:string ;
+    skos:definition "Cultural assets"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_211 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_211"^^xsd:string ;
+    skos:definition "Natural assets"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_212 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_212"^^xsd:string ;
+    skos:definition "Museum"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_213 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_213"^^xsd:string ;
+    skos:definition "View point"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.21_214 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_214"^^xsd:string ;
+    skos:definition "Park"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_111"^^xsd:string ;
+    skos:definition "Rainfall"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_112"^^xsd:string ;
+    skos:definition "Slippery due to snow / ice"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_113 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_113"^^xsd:string ;
+    skos:definition "Fog"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_114 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_114"^^xsd:string ;
+    skos:definition "Poor visibility through snow, rain or fog"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_359 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_359"^^xsd:string ;
+    skos:definition "Strong side-wind"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.31_361 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_361"^^xsd:string ;
+    skos:definition "Flood"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_111 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_111"^^xsd:string ;
+    skos:definition "Traffic congestion"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_112 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_112"^^xsd:string ;
+    skos:definition "Accident"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_113 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_113"^^xsd:string ;
+    skos:definition "Vehicle on fire"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_114 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_114"^^xsd:string ;
+    skos:definition "Shed loads"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_115 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_115"^^xsd:string ;
+    skos:definition "Slow moving maintenance vehicle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:RoadSignType.32_116 a codes:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_116"^^xsd:string ;
+    skos:definition "Breakdown vehicle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode .
+
+codes:SiteAccessibility.publicAccessible a codes:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "publicAccessible"^^xsd:string ;
+    skos:definition "Public accessible"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode .
+
+codes:SiteAccessibility.restrictedAccess a codes:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "restrictedAccess"^^xsd:string ;
+    skos:definition "RestrictedAccess"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode .
+
+codes:SiteAccessibility.unspecified a codes:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "unspecified"^^xsd:string ;
+    skos:definition "Unspecified"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode .
+
+codes:SpecialDayType.dayBeforePublicHoliday a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "dayBeforePublicHoliday"^^xsd:string ;
+    skos:definition "The day before a declared Public Holiday"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.dayFollowingPublicHoliday a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "dayFollowingPublicHoliday"^^xsd:string ;
+    skos:definition "The day following a declared Public Holiday"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.inLieuOfPublicHoliday a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "inLieuOfPublicHoliday"^^xsd:string ;
+    skos:definition """
+      """^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.longWeekendDay a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "longWeekendDay"^^xsd:string ;
+    skos:definition """
+      """^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.other a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other than as defined in this enumeration."^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.publicEventDay a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "publicEventDay"^^xsd:string ;
+    skos:definition """The day of a declared Public Event, which may be national, or regional.
+
+Note: For example, the day of a Royal Wedding."""^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.publicHoliday a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "publicHoliday"^^xsd:string ;
+    skos:definition "The day of a declared Public Holiday, which may be national, or regional."^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.schoolDay a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "schoolDay"^^xsd:string ;
+    skos:definition "In the locale a day when schools are open and operating"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:SpecialDayType.schoolHolidays a codes:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "schoolHolidays"^^xsd:string ;
+    skos:definition "In the locale a day when schools are not open and operating"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode .
+
+codes:TunnelCategory.a a codes:TunnelCategory,
+        skos:Concept ;
+    rdfs:label "a"^^xsd:string ;
+    skos:definition "No sign"^^xsd:string ;
+    skos:inScheme codes:TunnelCategoryCode .
+
+codes:TunnelCategory.b a codes:TunnelCategory,
+        skos:Concept ;
+    rdfs:label "b"^^xsd:string ;
+    skos:definition "Sign with an additional panel bearing a letter B"^^xsd:string ;
+    skos:inScheme codes:TunnelCategoryCode .
+
+codes:TunnelCategory.c a codes:TunnelCategory,
+        skos:Concept ;
+    rdfs:label "c"^^xsd:string ;
+    skos:definition "Sign with an additional panel bearing a letter C"^^xsd:string ;
+    skos:inScheme codes:TunnelCategoryCode .
+
+codes:TunnelCategory.d a codes:TunnelCategory,
+        skos:Concept ;
+    rdfs:label "d"^^xsd:string ;
+    skos:definition "Sign with an additional panel bearing a letter D"^^xsd:string ;
+    skos:inScheme codes:TunnelCategoryCode .
+
+codes:TunnelCategory.e a codes:TunnelCategory,
+        skos:Concept ;
+    rdfs:label "e"^^xsd:string ;
+    skos:definition "Sign with an additional panel bearing a letter E"^^xsd:string ;
+    skos:inScheme codes:TunnelCategoryCode .
+
+codes:UOMIdentifier.ftin a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "ftin"^^xsd:string ;
+    skos:definition """Feet and inches
+
+Note: To enable this to be coded into a single value the following convention shall be followed.  The feet value is encoded as an integer value and the is suffixed by the inches value which is given as a two digit decimal value, where leading zeros are maintained [e.g. .00, .01, .02, .03, .04, .05, .06, .07, .08, .09, .10, .11, .12].  The value .99 shall indicate the no inches value is provided. """^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.kg a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "kg"^^xsd:string ;
+    skos:definition "Kilogrammes"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.km a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "km"^^xsd:string ;
+    skos:definition "Kilometres"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.kph a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "kph"^^xsd:string ;
+    skos:definition "Kilometres per hour"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.m a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "m"^^xsd:string ;
+    skos:definition "Metres"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.mi a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "mi"^^xsd:string ;
+    skos:definition "Miles"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.mph a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "mph"^^xsd:string ;
+    skos:definition "Miles per hour"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.t a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "t"^^xsd:string ;
+    skos:definition "Tonnes"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:UOMIdentifier.yd a codes:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "yd"^^xsd:string ;
+    skos:definition "Yards"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode .
+
+codes:VehicleEquipment.notUsingSnowChains a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "notUsingSnowChains"^^xsd:string ;
+    skos:definition "Vehicle not using snow chains."^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleEquipment.notUsingSnowChainsOrTyres a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "notUsingSnowChainsOrTyres"^^xsd:string ;
+    skos:definition "Vehicle not using either snow tyres or snow chains"^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleEquipment.snowChainsInUse a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "snowChainsInUse"^^xsd:string ;
+    skos:definition "Vehicle using snow chains. "^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleEquipment.snowChainsOrTyresInUse a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "snowChainsOrTyresInUse"^^xsd:string ;
+    skos:definition "Vehicle using snow tyres. "^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleEquipment.snowTyresInUse a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "snowTyresInUse"^^xsd:string ;
+    skos:definition "Vehicle using snow tyres or snow chains. "^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleEquipment.withoutSnowTyresOrChainsOnBoard a codes:VehicleEquipment,
+        skos:Concept ;
+    rdfs:label "withoutSnowTyresOrChainsOnBoard"^^xsd:string ;
+    skos:definition "Vehicle which is not carrying on board snow tyres orchains"^^xsd:string ;
+    skos:inScheme codes:VehicleEquipmentCode .
+
+codes:VehicleType.agriculturalVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "agriculturalVehicle"^^xsd:string ;
+    skos:definition "Vehicle normally used for agricultural purposes, e.g. tractor, combined harvester etc. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.anyVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "anyVehicle"^^xsd:string ;
+    skos:definition "Vehicle of any type."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.articulatedBus a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedBus"^^xsd:string ;
+    skos:definition "Articulated vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.articulatedTrolleyBus a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedTrolleyBus"^^xsd:string ;
+    skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply, with articulation between component carriage parts of the vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.articulatedVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedVehicle"^^xsd:string ;
+    skos:definition "Transport vehicle with articulation between component carriage parts of the vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.bicycle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "bicycle"^^xsd:string ;
+    skos:definition "Pedal-driven two-wheeled vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.bus a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "bus"^^xsd:string ;
+    skos:definition "Vehicle for mass road transport"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.car a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "car"^^xsd:string ;
+    skos:definition "Small, often privately owned, typically four wheel vehicle for transport of persons and limited goods."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.carOrLightVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "carOrLightVehicle"^^xsd:string ;
+    skos:definition "Car or light vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.carWithCaravan a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "carWithCaravan"^^xsd:string ;
+    skos:definition "Car towing a caravan. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.carWithTrailer a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "carWithTrailer"^^xsd:string ;
+    skos:definition "Car towing a trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.caravan a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "caravan"^^xsd:string ;
+    skos:definition "Non-motorised trailer for towing, intended for human occupancy "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.constructionOrMaintenanceVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "constructionOrMaintenanceVehicle"^^xsd:string ;
+    skos:definition "Vehicle normally used for construction or maintenance purposes, e.g. digger, excavator, bulldozer, lorry mounted crane etc."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.fourWheelDrive a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "fourWheelDrive"^^xsd:string ;
+    skos:definition "Four wheel drive vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.heavyDutyTransporter a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyDutyTransporter"^^xsd:string ;
+    skos:definition "Large road vehicle, primarily intended for the transport of other vehicles"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.heavyGoodsVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyGoodsVehicle"^^xsd:string ;
+    skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.heavyGoodsVehicleWithTrailer a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyGoodsVehicleWithTrailer"^^xsd:string ;
+    skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods with attached towed trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.heavyVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyVehicle"^^xsd:string ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.highSidedVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "highSidedVehicle"^^xsd:string ;
+    skos:definition "High sided vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.largeCar a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "largeCar"^^xsd:string ;
+    skos:definition "See car, typically greater than 4.5 metres in length"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.largeGoodsVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "largeGoodsVehicle"^^xsd:string ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.lightCommercialVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightCommercialVehicle"^^xsd:string ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.lightCommercialVehicleWithTrailer a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightCommercialVehicleWithTrailer"^^xsd:string ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods, with attached towed trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.lightRail a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightRail"^^xsd:string ;
+    skos:definition "Train-like transport vehicle limited to a rail network within a limited area; does not include heavy rail lines"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.longHeavyLorry a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "longHeavyLorry"^^xsd:string ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.lorry a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "lorry"^^xsd:string ;
+    skos:definition "Lorry of any type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.metro a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "metro"^^xsd:string ;
+    skos:definition "Train-like transport vehicle limited to a rail network within a limited area; at surface, below surface or above surface"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.minibus a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "minibus"^^xsd:string ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of peoeple"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.moped a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "moped"^^xsd:string ;
+    skos:definition "Moped (a two wheeled motor vehicle characterized by a small engine typically less than 50cc and by normally having pedals). "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.motorcycle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorcycle"^^xsd:string ;
+    skos:definition "Two-wheeled motor vehicle without pedal propulsion"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.motorcycleWithSideCar a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorcycleWithSideCar"^^xsd:string ;
+    skos:definition "Three wheeled vehicle comprising a motorcycle with an attached side car. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.motorhome a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorhome"^^xsd:string ;
+    skos:definition "Motorised vehicle, intended for human occupancy "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.motorscooter a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorscooter"^^xsd:string ;
+    skos:definition "Motorscooter (a two wheeled motor vehicle characterized by a step-through frame and small diameter wheels). "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.other a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    skos:definition "Other than as defined in this enumeration. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.passengerCar a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "passengerCar"^^xsd:string ;
+    skos:definition "See car"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.smallCar a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "smallCar"^^xsd:string ;
+    skos:definition "See car, typically greater than 3.75 metres in length"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.tanker a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "tanker"^^xsd:string ;
+    skos:definition "Vehicle with large tank for carrying bulk liquids. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.threeWheeledVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "threeWheeledVehicle"^^xsd:string ;
+    skos:definition "Three wheeled vehicle of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.trailer a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "trailer"^^xsd:string ;
+    skos:definition "Non-motorised vehicle, intended to be towed"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.tram a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "tram"^^xsd:string ;
+    skos:definition "Train-like mass transport vehicle, running on rails, typically partially or wholly on the road network"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.trolleyBus a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "trolleyBus"^^xsd:string ;
+    skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.twoWheeledVehicle a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "twoWheeledVehicle"^^xsd:string ;
+    skos:definition "Two wheeled vehicle of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.unknown a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "unknown"^^xsd:string ;
+    skos:definition "Unknown vehicle type"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.van a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "van"^^xsd:string ;
+    skos:definition "See light commercial vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.vehicleWithCaravan a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithCaravan"^^xsd:string ;
+    skos:definition "Vehicle (of unspecified type) towing a caravan. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.vehicleWithCatalyticConverter a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithCatalyticConverter"^^xsd:string ;
+    skos:definition "Vehicle with catalytic converter. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.vehicleWithTrailer a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithTrailer"^^xsd:string ;
+    skos:definition "Vehicle (of unspecified type) towing a trailer. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.vehicleWithoutCatalyticConverter a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithoutCatalyticConverter"^^xsd:string ;
+    skos:definition "Vehicle without catalytic converter. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.withEvenNumberedRegistrationPlates a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "withEvenNumberedRegistrationPlates"^^xsd:string ;
+    skos:definition "Vehicle with even numbered registration plate. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleType.withOddNumberedRegistrationPlates a codes:VehicleType,
+        skos:Concept ;
+    rdfs:label "withOddNumberedRegistrationPlates"^^xsd:string ;
+    skos:definition "Vehicle with odd numbered registration plate. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode .
+
+codes:VehicleUsage.agricultural a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "agricultural"^^xsd:string ;
+    skos:definition "Vehicle used for agricultural purposes. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.carSharing a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "carSharing"^^xsd:string ;
+    skos:definition "Vehicles operated by a car-sharing company."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.cityLogistics a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "cityLogistics"^^xsd:string ;
+    skos:definition "Vehicles that are used to deliver goods in a city area."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.commercial a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "commercial"^^xsd:string ;
+    skos:definition "Vehicle which is limited to non-private usage or public transport usage.   "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.emergencyServices a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "emergencyServices"^^xsd:string ;
+    skos:definition "Vehicle used by the emergency services. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.military a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "military"^^xsd:string ;
+    skos:definition "Vehicle used by the military. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.nonCommercial a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "nonCommercial"^^xsd:string ;
+    skos:definition "Vehicle used for non-commercial or private purposes.    "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.patrol a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "patrol"^^xsd:string ;
+    skos:definition "Vehicle used as part of a patrol service, e.g. road operator or automobile association patrol vehicle.   "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.recoveryServices a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "recoveryServices"^^xsd:string ;
+    skos:definition "Vehicle used to provide a recovery service. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.roadMaintenanceOrConstruction a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "roadMaintenanceOrConstruction"^^xsd:string ;
+    skos:definition "Vehicle used for road maintenance or construction work purposes. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.roadOperator a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "roadOperator"^^xsd:string ;
+    skos:definition "Vehicle used by the road operator. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:VehicleUsage.taxi a codes:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "taxi"^^xsd:string ;
+    skos:definition "Vehicle used to provide an authorised taxi service."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode .
+
+codes:WeatherType.airPollution a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "airPollution"^^xsd:string ;
+    skos:definition "Air pollution"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.fog a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "fog"^^xsd:string ;
+    skos:definition "Fog, with reduced visibility"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.ice a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "ice"^^xsd:string ;
+    skos:definition "Increased skid risk due to ice (of any kind)"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.rain a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "rain"^^xsd:string ;
+    skos:definition "Rain, with reduced visibility, and increased skid risk"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.snow a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "snow"^^xsd:string ;
+    skos:definition "Snow, with reduced visibility, and increased skid risk"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.wet a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "wet"^^xsd:string ;
+    skos:definition "Road surface is wet"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeatherType.wind a codes:WeatherType,
+        skos:Concept ;
+    rdfs:label "wind"^^xsd:string ;
+    skos:definition "Wind conditions on the road"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode .
+
+codes:WeightType.actual a codes:WeightType,
+        skos:Concept ;
+    rdfs:label "actual"^^xsd:string ;
+    skos:definition "The weight is the actual weight of a specific vehicle"^^xsd:string ;
+    skos:inScheme codes:WeightTypeCode .
+
+codes:WeightType.maximumPermitted a codes:WeightType,
+        skos:Concept ;
+    rdfs:label "maximumPermitted"^^xsd:string ;
+    skos:definition "The weight is the maximum permitted weight for a vehicle"^^xsd:string ;
+    skos:inScheme codes:WeightTypeCode .
+
+codes:codevalues a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Code list values for TN-ITS code lists"^^xsd:string ;
+    dc:title "TN-ITS Codes"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:GeneralFeedbackEventTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:GeneralFeedbackEventType ;
+    skos:definition "Specifies the available list of enumerations for types of general feedback events."^^xsd:string .
+
+codes:OpenLRBinaryVersionCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:OpenLRBinaryVersion ;
+    skos:definition "Specifies the available list of enumerations for the version of the OpenLR binary specification"^^xsd:string .
+
+codes:GeneralFeedbackEventType a owl:Class ;
+    rdfs:label "GeneralFeedbackEventType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of general feedback events."^^xsd:string .
+
+codes:LowEmissionLevelCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:LowEmissionLevel ;
+    skos:definition "Specifies the available list of enumerations for vehicle emission levels"^^xsd:string .
+
+codes:NatureOfDistanceMeasureCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:NatureOfDistanceMeasure ;
+    skos:definition "Specifies the available list of enumerations for contexts of forms of interpreting distance measures"^^xsd:string .
+
+codes:OpenLRBinaryVersion a owl:Class ;
+    rdfs:label "OpenLRBinaryVersion"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the version of the OpenLR binary specification"^^xsd:string .
+
+codes:WeightTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:WeightType ;
+    skos:definition "Type of weight - describing the meaning of a vehicle weight value"^^xsd:string .
+
+codes:LinkDirectionValueCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:LinkDirectionValue ;
+    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string .
+
+codes:LowEmissionLevel a owl:Class ;
+    rdfs:label "LowEmissionLevel"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for vehicle emission levels"^^xsd:string .
+
+codes:NatureOfDistanceMeasure a owl:Class ;
+    rdfs:label "NatureOfDistanceMeasure"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for contexts of forms of interpreting distance measures"^^xsd:string .
+
+codes:ParkingSiteTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:ParkingSiteType ;
+    skos:definition "Specifies the available list of enumerations for the types of parking sites"^^xsd:string .
+
+codes:SiteAccessibilityCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:SiteAccessibility ;
+    skos:definition "Specifies the available list of enumerations for types of site accessibility"^^xsd:string .
+
+codes:WeightType a owl:Class ;
+    rdfs:label "WeightType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Type of weight - describing the meaning of a vehicle weight value"^^xsd:string .
+
+codes:LinkDirectionValue a owl:Class ;
+    rdfs:label "LinkDirectionValue"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string .
+
+codes:ParkingSiteType a owl:Class ;
+    rdfs:label "ParkingSiteType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the types of parking sites"^^xsd:string .
+
+codes:PaymentMethodCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:PaymentMethod ;
+    skos:definition "Specifies the available list of enumerations for the methods of payment"^^xsd:string .
+
+codes:RoadFeatureTypeCodeExtensions a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeatureTypeExtensions ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:SiteAccessibility a owl:Class ;
+    rdfs:label "SiteAccessibility"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of site accessibility"^^xsd:string .
+
+codes:AgoraBinaryVersionCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:AgoraBinaryVersion ;
+    skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string .
+
+codes:ISADLevelCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:ISADLevel ;
+    skos:definition "Specifies the available list of enumerations ISAD levels"^^xsd:string .
+
+codes:PaymentMethod a owl:Class ;
+    rdfs:label "PaymentMethod"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the methods of payment"^^xsd:string .
+
+codes:RoadFeatureEventTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeatureEventType ;
+    skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string .
+
+codes:RoadFeatureSourceCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeatureSource ;
+    skos:definition "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string .
+
+codes:RoadFeatureTypeExtensions a owl:Class ;
+    rdfs:label "RoadFeatureTypeExtensions"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:TunnelCategoryCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:TunnelCategory ;
+    skos:definition "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string .
+
+codes:AgoraBinaryVersion a owl:Class ;
+    rdfs:label "AgoraBinaryVersion"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string .
+
+codes:AreaTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:AreaType ;
+    skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string .
+
+codes:ChargingPointUsageTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:ChargingPointUsageType ;
+    skos:definition "Specifies the available list of enumerations for the use of electric charging point "^^xsd:string .
+
+codes:GasTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:GasType ;
+    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string .
+
+codes:ISADLevel a owl:Class ;
+    rdfs:label "ISADLevel"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations ISAD levels"^^xsd:string .
+
+codes:RoadCategoryCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadCategory ;
+    skos:definition "Specifies the available list of enumerations for the road category types"^^xsd:string .
+
+codes:RoadFeatureEventType a owl:Class ;
+    rdfs:label "RoadFeatureEventType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string .
+
+codes:RoadFeaturePropertyTypeCodeExtensions a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeaturePropertyTypeExtensions ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:RoadFeatureSource a owl:Class ;
+    rdfs:label "RoadFeatureSource"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string .
+
+codes:TunnelCategory a owl:Class ;
+    rdfs:label "TunnelCategory"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string .
+
+codes:VehicleEquipmentCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:VehicleEquipment ;
+    skos:definition "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string .
+
+codes:AreaType a owl:Class ;
+    rdfs:label "AreaType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string .
+
+codes:ChargingPointUsageType a owl:Class ;
+    rdfs:label "ChargingPointUsageType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the use of electric charging point "^^xsd:string .
+
+codes:GasType a owl:Class ;
+    rdfs:label "GasType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string .
+
+codes:RoadCategory a owl:Class ;
+    rdfs:label "RoadCategory"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the road category types"^^xsd:string .
+
+codes:RoadFeaturePropertyTypeExtensions a owl:Class ;
+    rdfs:label "RoadFeaturePropertyTypeExtensions"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:VehicleEquipment a owl:Class ;
+    rdfs:label "VehicleEquipment"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string .
+
+codes:WeatherTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:WeatherType ;
+    skos:definition "Types of weather conditions which affect driving conditions."^^xsd:string .
+
+codes:WeatherType a owl:Class ;
+    rdfs:label "WeatherType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Types of weather conditions which affect driving conditions."^^xsd:string .
+
+codes:SpecialDayTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:SpecialDayType ;
+    skos:definition "Specifies the available list of enumerations for the special days"^^xsd:string .
+
+codes:UOMIdentifierCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:UOMIdentifier ;
+    skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string .
+
+codes:EmissionClassificationEuroCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:EmissionClassificationEuro ;
+    skos:definition "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"^^xsd:string .
+
+codes:SpecialDayType a owl:Class ;
+    rdfs:label "SpecialDayType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the special days"^^xsd:string .
+
+codes:UOMIdentifier a owl:Class ;
+    rdfs:label "UOMIdentifier"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string .
+
+codes:EmissionClassificationEuro a owl:Class ;
+    rdfs:label "EmissionClassificationEuro"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"^^xsd:string .
+
+codes:VehicleUsageCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:VehicleUsage ;
+    skos:definition "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string .
+
+codes:VehicleUsage a owl:Class ;
+    rdfs:label "VehicleUsage"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string .
+
+codes:FuelTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:FuelType ;
+    skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string .
+
+codes:FuelType a owl:Class ;
+    rdfs:label "FuelType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string .
+
+codes:FuzzyTimeTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:FuzzyTimeType ;
+    skos:definition """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+"""^^xsd:string .
+
+codes:FuzzyTimeType a owl:Class ;
+    rdfs:label "FuzzyTimeType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+"""^^xsd:string .
+
+codes:RoadFeaturePropertyTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeaturePropertyType ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:RoadFeaturePropertyType a owl:Class ;
+    rdfs:label "RoadFeaturePropertyType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:LoadTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:LoadType ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string .
+
+codes:LoadType a owl:Class ;
+    rdfs:label "LoadType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string .
+
+codes:RoadFeatureTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadFeatureType ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:RoadFeatureType a owl:Class ;
+    rdfs:label "RoadFeatureType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:VehicleTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:VehicleType ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle."^^xsd:string .
+
+codes:VehicleType a owl:Class ;
+    rdfs:label "VehicleType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle."^^xsd:string .
+
+codes:RoadSignTypeCode a skos:ConceptScheme ;
+    dc:isFormatOf codes:RoadSignType ;
+    skos:definition "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"^^xsd:string .
+
+codes:RoadSignType a owl:Class ;
+    rdfs:label "RoadSignType"^^xsd:string ;
+    rdfs:subClassOf tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"^^xsd:string .
+

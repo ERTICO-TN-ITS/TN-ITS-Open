@@ -13,9 +13,9 @@
 <http://spec.tn-its.eu/owl/tnits-owl> a owl:Ontology ;
 	owl:imports <http://www.w3.org/2004/02/skos/core> ;
 	owl:imports <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ;
-	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;
+	owl:imports <https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl> ;
 	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;
-	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;
+	##owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;
 	dc:creator "TN-ITS" ;
 	dc:date "08.10.2021" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
