@@ -2,11 +2,11 @@
 
 import xml.etree.ElementTree as ET
 from rdflib import Graph, Namespace, URIRef,  Literal
-from rdflib.namespace import RDF, RDFS, XSD, SKOS, OWL, DC
+from rdflib.namespace import RDF, RDFS, XSD, SKOS, OWL, DC,DCTERMS
 import glob
 
 dictFolder = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\XSD\\codelists\\'
-ttlFile = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\OWL\\codelists\\tnits-codelists.ttl'
+ttlFile = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\OWL\\codelists\\tnits-codes.ttl'
 
 nsGML = '{http://www.opengis.net/gml/3.2}'
 strCoreNs = 'tnits'
@@ -48,14 +48,21 @@ for f in glob.glob(dictFolder + '*.xml'):
     print('Dictionary identifier: ' + di)
 
     # -------------------- Code list class and concept scheme
-    cl = URIRef(strCodeURI + '#' + di.replace('Code',''))
-    g.add((cl,RDF.type,OWL.Class))
-    g.add((cl,RDFS.subClassOf,URIRef(strCoreURI + '#tnitsCodeList')))
-    g.add((cl,SKOS.definition,Literal(d,datatype=XSD.string)))
-    g.add((cl,RDFS.label,Literal(di.replace('Code',''), datatype=XSD.string)))
+
+    cl = URIRef(strCoreURI + '#' + di.replace('Code',''))
+    # Add class and subclass statement if the name ends with "Extension"
+    # If [*]Extensions --> also subclass of main codelist
+    if di.endswith('Extensions'):
+        di_m = di.replace('Extensions','')
+        clm = URIRef(strCoreURI + '#' + di_m.replace('Code',''))
+        g.add((cl, RDF.type, OWL.Class))
+        g.add((cl, RDFS.subClassOf, URIRef(strCoreURI + '#tnitsCodeList')))
+        g.add((cl,RDFS.subClassOf,clm))
+        g.add((cl,SKOS.definition,Literal(d,datatype=XSD.string)))
+        g.add((cl,RDFS.label,Literal(di.replace('Code',''), datatype=XSD.string)))
     cs = URIRef(strCodeURI + '#' + di)
     g.add((cs,RDF.type,SKOS.ConceptScheme))
-    g.add((cs,DC.isFormatOf,cl))
+    g.add((cs,DCTERMS.isFormatOf,cl))
     g.add((cs,SKOS.definition,Literal(d,datatype=XSD.string)))
 
     #Set filename
