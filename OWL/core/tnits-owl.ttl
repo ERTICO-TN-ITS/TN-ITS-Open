@@ -14,7 +14,7 @@
 <http://spec.tn-its.eu/owl/tnits-owl> rdf:type owl:Ontology ;
                                        owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ,
                                                    <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ,
-                                                   <http://spec.tn-its.eu/owl/tnits-owl/codelists#codevalues> ,
+                                                   <http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes> ,
                                                    <http://www.w3.org/2004/02/skos/core> ,
                                                    <https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl> ;
                                        dc:abstract "Ontology for exchange of changes in road attributes" ;
