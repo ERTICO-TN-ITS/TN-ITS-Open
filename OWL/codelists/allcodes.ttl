@@ -862,23 +862,35 @@ codes:RoadFeaturePropertyType.iFOPTobjectKey a tnits:RoadFeaturePropertyType,
 country_code:region:stop_number:stop_area:stop_point (e.g. de:9162:1 for Stop Karlsplatz in Munich)"""^^xsd:string ;
     skos:inScheme codes:RoadFeaturePropertyTypeCode .
 
+codes:RoadFeaturePropertyType.isadLevel a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "isadLevel"^^xsd:string ;
+    skos:definition "Road level of Infrastructure Support for Automated Driving : ISAD E - to - ISAD A"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
+
 codes:RoadFeaturePropertyType.laneCountBothDirections a tnits:RoadFeaturePropertyType,
+        tnits:RoadFeaturePropertyTypeExtensions,
         skos:Concept ;
     rdfs:label "laneCountBothDirections"^^xsd:string ;
     skos:definition "Lane count in both directions"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+    skos:inScheme codes:RoadFeaturePropertyTypeCode,
+        codes:RoadFeaturePropertyTypeCodeExtensions .
 
 codes:RoadFeaturePropertyType.laneCountInDirection a tnits:RoadFeaturePropertyType,
+        tnits:RoadFeaturePropertyTypeExtensions,
         skos:Concept ;
     rdfs:label "laneCountInDirection"^^xsd:string ;
     skos:definition "Lane count in the geometry direction"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+    skos:inScheme codes:RoadFeaturePropertyTypeCode,
+        codes:RoadFeaturePropertyTypeCodeExtensions .
 
 codes:RoadFeaturePropertyType.laneCountInOppositeDirection a tnits:RoadFeaturePropertyType,
+        tnits:RoadFeaturePropertyTypeExtensions,
         skos:Concept ;
     rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
     skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+    skos:inScheme codes:RoadFeaturePropertyTypeCode,
+        codes:RoadFeaturePropertyTypeCodeExtensions .
 
 codes:RoadFeaturePropertyType.maximumDistanceBetweenVehicles a tnits:RoadFeaturePropertyType,
         skos:Concept ;
@@ -923,10 +935,12 @@ codes:RoadFeaturePropertyType.maximumWidth a tnits:RoadFeaturePropertyType,
     skos:inScheme codes:RoadFeaturePropertyTypeCode .
 
 codes:RoadFeaturePropertyType.officialName a tnits:RoadFeaturePropertyType,
+        tnits:RoadFeaturePropertyTypeExtensions,
         skos:Concept ;
     rdfs:label "officialName"^^xsd:string ;
     skos:definition "Official name"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCode .
+    skos:inScheme codes:RoadFeaturePropertyTypeCode,
+        codes:RoadFeaturePropertyTypeCodeExtensions .
 
 codes:RoadFeaturePropertyType.parkingSite a tnits:RoadFeaturePropertyType,
         skos:Concept ;
@@ -942,6 +956,12 @@ codes:RoadFeaturePropertyType.paymentMethod a tnits:RoadFeaturePropertyType,
     rdfs:label "paymentMethod"^^xsd:string ;
     skos:definition "The payment method depends on the toll collection method or system in place. For road users it is of interest what kind of payment method is required or accepted"^^xsd:string ;
     skos:inScheme codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyType.roadLength a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "roadLength"^^xsd:string ;
+    skos:definition "Road length"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
 
 codes:RoadFeaturePropertyType.roadSignType a tnits:RoadFeaturePropertyType,
         skos:Concept ;
@@ -982,42 +1002,6 @@ codes:RoadFeaturePropertyType.vMSUnitIdentifier a tnits:RoadFeaturePropertyType,
     skos:definition "Specifies a data provider unique value for the identifier for a specific variable message sign unit"^^xsd:string ;
     skos:inScheme codes:RoadFeaturePropertyTypeCode .
 
-codes:RoadFeaturePropertyTypeExtensions.isadLevel a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "isadLevel"^^xsd:string ;
-    skos:definition "Road level of Infrastructure Support for Automated Driving : ISAD E - to - ISAD A"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
-codes:RoadFeaturePropertyTypeExtensions.laneCountBothDirections a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "laneCountBothDirections"^^xsd:string ;
-    skos:definition "Lane count in both directions"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
-codes:RoadFeaturePropertyTypeExtensions.laneCountInDirection a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "laneCountInDirection"^^xsd:string ;
-    skos:definition "Lane count in the geometry direction"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
-codes:RoadFeaturePropertyTypeExtensions.laneCountInOppositeDirection a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
-    skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
-codes:RoadFeaturePropertyTypeExtensions.officialName a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "officialName"^^xsd:string ;
-    skos:definition "Official name"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
-codes:RoadFeaturePropertyTypeExtensions.roadLength a tnits:RoadFeaturePropertyTypeExtensions,
-        skos:Concept ;
-    rdfs:label "roadLength"^^xsd:string ;
-    skos:definition "Road length"^^xsd:string ;
-    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions .
-
 codes:RoadFeatureSource.fixedPlateRoadSign a tnits:RoadFeatureSource,
         skos:Concept ;
     rdfs:label "fixedPlateRoadSign"^^xsd:string ;
@@ -1048,6 +1032,12 @@ codes:RoadFeatureSource.variableMessageSign a tnits:RoadFeatureSource,
     skos:definition "Road sign displayed on a variable message sign or other dynamic display equipment, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
     skos:inScheme codes:RoadFeatureSourceCode .
 
+codes:RoadFeatureType.bicyclePath a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "bicyclePath"^^xsd:string ;
+    skos:definition "The road is/has a bicycle path"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
+
 codes:RoadFeatureType.builtUpArea a tnits:RoadFeatureType,
         skos:Concept ;
     rdfs:label "builtUpArea"^^xsd:string ;
@@ -1059,6 +1049,12 @@ NOTE: Taking into account e.g. the UK Highway Code, a built-up area is a settled
 
 That means that there is a traffic regulation existing that assigns automatically a speed limit to a specific road (by law)."""^^xsd:string ;
     skos:inScheme codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureType.ccamLevel a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "ccamLevel"^^xsd:string ;
+    skos:definition "Road classification for supporting  cooperative connected and automated mobility"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
 
 codes:RoadFeatureType.chargingPoint a tnits:RoadFeatureType,
         skos:Concept ;
@@ -1149,10 +1145,12 @@ NOTE: No entry restrictions may be qualified by a range of conditions, including
     skos:inScheme codes:RoadFeatureTypeCode .
 
 codes:RoadFeatureType.numberOfLanes a tnits:RoadFeatureType,
+        tnits:RoadFeatureTypeExtensions,
         skos:Concept ;
     rdfs:label "numberOfLanes"^^xsd:string ;
     skos:definition "The total number of lanes"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCode .
+    skos:inScheme codes:RoadFeatureTypeCode,
+        codes:RoadFeatureTypeCodeExtensions .
 
 codes:RoadFeatureType.parkingSite a tnits:RoadFeatureType,
         skos:Concept ;
@@ -1225,10 +1223,12 @@ codes:RoadFeatureType.roadForMotorVehicles a tnits:RoadFeatureType,
     skos:inScheme codes:RoadFeatureTypeCode .
 
 codes:RoadFeatureType.roadName a tnits:RoadFeatureType,
+        tnits:RoadFeatureTypeExtensions,
         skos:Concept ;
     rdfs:label "roadName"^^xsd:string ;
     skos:definition "The official name of the road"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCode .
+    skos:inScheme codes:RoadFeatureTypeCode,
+        codes:RoadFeatureTypeCodeExtensions .
 
 codes:RoadFeatureType.roadSign a tnits:RoadFeatureType,
         skos:Concept ;
@@ -1315,30 +1315,6 @@ codes:RoadFeatureType.useOfAudibleWarningDevicesProhibited a tnits:RoadFeatureTy
 
 NOTE: Audible warning devices include vehicle horns."""^^xsd:string ;
     skos:inScheme codes:RoadFeatureTypeCode .
-
-codes:RoadFeatureTypeExtensions.bicyclePath a tnits:RoadFeatureTypeExtensions,
-        skos:Concept ;
-    rdfs:label "bicyclePath"^^xsd:string ;
-    skos:definition "The road is/has a bicycle path"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
-
-codes:RoadFeatureTypeExtensions.ccamLevel a tnits:RoadFeatureTypeExtensions,
-        skos:Concept ;
-    rdfs:label "ccamLevel"^^xsd:string ;
-    skos:definition "Road classification for supporting  cooperative connected and automated mobility"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
-
-codes:RoadFeatureTypeExtensions.numberOfLanes a tnits:RoadFeatureTypeExtensions,
-        skos:Concept ;
-    rdfs:label "numberOfLanes"^^xsd:string ;
-    skos:definition "The total number of lanes"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
-
-codes:RoadFeatureTypeExtensions.roadName a tnits:RoadFeatureTypeExtensions,
-        skos:Concept ;
-    rdfs:label "roadName"^^xsd:string ;
-    skos:definition "The official name of the road"^^xsd:string ;
-    skos:inScheme codes:RoadFeatureTypeCodeExtensions .
 
 codes:RoadSignType.11_111 a tnits:RoadSignType,
         skos:Concept ;
@@ -4145,7 +4121,7 @@ codes:WeightType.maximumPermitted a tnits:WeightType,
     skos:definition "The weight is the maximum permitted weight for a vehicle"^^xsd:string ;
     skos:inScheme codes:WeightTypeCode .
 
-codes:codevalues a owl:Ontology ;
+codes:allcodes a owl:Ontology ;
     dc:creator "TN-ITS"^^xsd:string ;
     dc:description "Code list values for TN-ITS code lists"^^xsd:string ;
     dc:title "TN-ITS Codes"^^xsd:string ;
