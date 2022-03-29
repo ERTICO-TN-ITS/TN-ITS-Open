@@ -376,8 +376,8 @@ sub recPackageTraverse(p)
 			objOTLFile.WriteText "       rdfs:label """ & el.Name & """@en ." & vbCrLf 
 
 			'---------------------------------------------------------------------------------------------------------
-			'Create concept schemes for enumerations (code list schemes are in the codes ontology)
-			if UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration"  then		'or UCase(el.Stereotype) = "CODELIST"
+			'Create concept schemes for enumerations and code lists
+			if UCase(el.Stereotype) = "ENUMERATION" or el.Type = "Enumeration" or UCase(el.Stereotype) = "CODELIST" then
 				objOTLFile.WriteText vbCrLf
 				objOTLFile.WriteText "### " & owlURI & ":" & el.Name & "Code" & vbCrLf
 				objOTLFile.WriteText ":" & el.Name & "Code a skos:ConceptScheme ;" & vbCrLf		

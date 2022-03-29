@@ -6,7 +6,8 @@ from rdflib.namespace import RDF, RDFS, XSD, SKOS, OWL, DC,DCTERMS
 import glob
 
 dictFolder = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\XSD\\codelists\\'
-ttlFile = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\OWL\\codelists\\tnits-codes.ttl'
+ttlPath = 'C:\\DATA\\GitHub\\ERTICO-TN-ITS\\TN-ITS-Open\\OWL\\codelists\\'
+ttlFile = ttlPath + 'allcodes.ttl'
 
 nsGML = '{http://www.opengis.net/gml/3.2}'
 strCoreNs = 'tnits'
@@ -30,50 +31,47 @@ g.bind('dcterms', Namespace('http://purl.org/dc/terms/'))
 g.bind(strCoreNs, Namespace(strCoreURI + '#'))
 g.bind(strCodeNs, Namespace(strCodeURI + '#'))
 
-ont = URIRef(strCodeURI + '#codevalues')
+ont = URIRef(strCodeURI + '#allcodes')
 g.add((ont, RDF.type, OWL.Ontology))
 g.add((ont, OWL.imports, URIRef(strSKOS)))
 g.add((ont, DC.creator, Literal('TN-ITS', datatype=XSD.string)))
 g.add((ont, DC.description, Literal('Code list values for TN-ITS code lists', datatype=XSD.string)))
 g.add((ont, DC.title, Literal('TN-ITS Codes', datatype=XSD.string)))
 
-#------------------------------ Parse XML Files ---------------------------------------
+#------------------------------ Parse XML Files (GML Dictionaries) ---------------------------------------
 for f in glob.glob(dictFolder + '*.xml'):
+    print('')
+    print('-------- Start reading GML Dictionary: ' + f + ' ---------------')
     tree = ET.parse(f)
     root = tree.getroot()
-
     d = root.find(nsGML + 'description').text
-    print('description: ' + d)
+    print('Dictionary description: ' + d)
     di = root.find(nsGML + 'identifier').text
     print('Dictionary identifier: ' + di)
 
     # -------------------- Code list class and concept scheme
-
-    cl = URIRef(strCoreURI + '#' + di.replace('Code',''))
-    # Add class and subclass statement if the name ends with "Extension"
-    # If [*]Extensions --> also subclass of main codelist
+    print('Dictionary URI: ' + strCoreURI + '#' + di.replace('Code',''))
+    cl = URIRef(strCoreURI + '#' + di.replace('Code',''))                           #Remove 'Code' from the code list class' URI
+    di_m = di.replace('Extensions', '')                                             #Find main code list name for extensions
+    clm = URIRef(strCoreURI + '#' + di_m.replace('Code', ''))                       #Remove 'Code' from the main code list class' URI
     if di.endswith('Extensions'):
-        di_m = di.replace('Extensions','')
-        clm = URIRef(strCoreURI + '#' + di_m.replace('Code',''))
-        g.add((cl, RDF.type, OWL.Class))
-        g.add((cl, RDFS.subClassOf, URIRef(strCoreURI + '#tnitsCodeList')))
-        g.add((cl,RDFS.subClassOf,clm))
-        g.add((cl,SKOS.definition,Literal(d,datatype=XSD.string)))
-        g.add((cl,RDFS.label,Literal(di.replace('Code',''), datatype=XSD.string)))
+        # Add class and subclass statement if the name ends with "Extension". Other (but empty) code lists are defined in the main tn-its.owl
+        g.add((cl, RDF.type, OWL.Class))                                            #The code list as a class
+        g.add((cl, RDFS.subClassOf, URIRef(strCoreURI + '#tnitsCodeList')))         #Subclass of the core TN-ITS Code list
+        g.add((cl,RDFS.subClassOf,clm))                                             #Extension lis as subclass of the main codelist (di_m)
+        g.add((cl,SKOS.definition,Literal(d,datatype=XSD.string)))                  #Code list definition
+        g.add((cl,RDFS.label,Literal(di.replace('Code',''), datatype=XSD.string)))  #Code list label (name without 'Code')
     cs = URIRef(strCodeURI + '#' + di)
-    g.add((cs,RDF.type,SKOS.ConceptScheme))
-    g.add((cs,DCTERMS.isFormatOf,cl))
-    g.add((cs,SKOS.definition,Literal(d,datatype=XSD.string)))
-
-    #Set filename
-    #ttlFile = ttlFile + di + '.ttl'
-
+    g.add((cs,RDF.type,SKOS.ConceptScheme))                                         #The code list as a ConceptSchem (name with 'Code')
+    g.add((cs,DCTERMS.isFormatOf,cl))                                               #Reference from the ConceptScheme to the class
+    g.add((cs,SKOS.definition,Literal(d,datatype=XSD.string)))                      #Definition of the ConceptScheme, same as for the class
     i = root.find(nsGML + 'identifier')
-    dcs = i.get('codeSpace')
-    print('codesPace: ' + dcs)
-    print('-----------------------')
+    #dcs = i.get('codeSpace')
+    #print('Dictionary codespace: ' + dcs + di)
 
+    # -------------------- Code values
     for de in root.findall(nsGML + 'dictionaryEntry'):
+        print('--------- Dictionary entry --------------')
         dfn = de.find(nsGML + 'Definition')
         id = dfn.get(nsGML + 'id')
         print('id: ' + str(id))
@@ -82,15 +80,18 @@ for f in glob.glob(dictFolder + '*.xml'):
         ei = dfn.find(nsGML + 'identifier').text
         print('identifier: ' + ei)
         i = dfn.find(nsGML + 'identifier')
-        ecs = i.get('codeSpace')
-        print('codesPace: ' + ecs)
+        #ecs = i.get('codeSpace')
+        #print('codespace: ' + ecs)
+        #URI for the code list value: Without "Extension"
+        #to make identifiers persisent if the value is later accepted for inclusion in the main list
+        print('URI: ' + strCodeURI + '#' + di_m.replace('Code','') + '.' + ei)
+        clv = URIRef(strCodeURI + '#' + di_m.replace('Code','') + '.' + ei)         #Remove 'Code' from the code value URI
+        g.add((clv,RDF.type,cl))                                                    #Add the code value as an individual of the code list class
+        g.add((clv,RDF.type,SKOS.Concept))                                          #Add the code value as a concept
+        g.add((clv,SKOS.inScheme,cs))                                               #Add reference to the ConceptScheme
+        g.add((clv,SKOS.definition,Literal(d,datatype=XSD.string)))                 #Code value defintion
+        g.add((clv,RDFS.label,Literal(ei, datatype=XSD.string)))                    #Code value label
 
-        clv = URIRef(strCodeURI + '#' + di.replace('Code','') + '.' + ei)
-        g.add((clv,RDF.type,cl))
-        g.add((clv,RDF.type,SKOS.Concept))
-        g.add((clv,SKOS.inScheme,cs))
-        g.add((clv,SKOS.definition,Literal(d,datatype=XSD.string)))
-        g.add((clv,RDFS.label,Literal(ei, datatype=XSD.string)))
-
+#Print combined file
 #print(g.serialize(format='turtle'))
 print(g.serialize(destination=ttlFile, format='turtle'))
