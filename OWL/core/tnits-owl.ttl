@@ -14,12 +14,12 @@
 <http://spec.tn-its.eu/owl/tnits-owl> rdf:type owl:Ontology ;
                                        owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ,
                                                    <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ,
-                                                   <http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes> ,
+                                                   <https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/allcodes.ttl> ,
                                                    <http://www.w3.org/2004/02/skos/core> ,
                                                    <https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl> ;
                                        dc:abstract "Ontology for exchange of changes in road attributes" ;
                                        dc:creator "TN-ITS" ;
-                                       dc:date "08.10.2021" ;
+                                       dc:date "29.03.2022" ;
                                        dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
                                        dc:title "TN-ITS"@en .
 
@@ -29,10 +29,6 @@
 
 ###  http://purl.org/dc/terms/date
 dc:date rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/isFormatOf
-dc:isFormatOf rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -2871,6 +2867,27 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
+###  http://spec.tn-its.eu/owl/tnits-owl#AgoraBinaryVersionCode
+:AgoraBinaryVersionCode rdf:type owl:NamedIndividual ,
+                                 skos:ConceptScheme ;
+                        dc:isFormatOf :AgoraBinaryVersion ;
+                        skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#AreaTypeCode
+:AreaTypeCode rdf:type owl:NamedIndividual ,
+                       skos:ConceptScheme ;
+              dc:isFormatOf :AreaType ;
+              skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#ChargingPointUsageTypeCode
+:ChargingPointUsageTypeCode rdf:type owl:NamedIndividual ,
+                                     skos:ConceptScheme ;
+                            dc:isFormatOf :ChargingPointUsageType ;
+                            skos:definition "Specifies the available list of enumerations for the use of electric charging point "@en .
+
+
 ###  http://spec.tn-its.eu/owl/tnits-owl#ComparisonOperator.equalTo
 :ComparisonOperator.equalTo rdf:type owl:NamedIndividual ,
                                      :ComparisonOperator ,
@@ -3045,6 +3062,41 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
                skos:definition "<font color=\"#231f20\">Applicable day of the week.</font>"@en .
 
 
+###  http://spec.tn-its.eu/owl/tnits-owl#EmissionClassificationEuroCode
+:EmissionClassificationEuroCode rdf:type owl:NamedIndividual ,
+                                         skos:ConceptScheme ;
+                                dc:isFormatOf :EmissionClassificationEuro ;
+                                skos:definition "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#FuelTypeCode
+:FuelTypeCode rdf:type owl:NamedIndividual ,
+                       skos:ConceptScheme ;
+              dc:isFormatOf :FuelType ;
+              skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#FuzzyTimeTypeCode
+:FuzzyTimeTypeCode rdf:type owl:NamedIndividual ,
+                            skos:ConceptScheme ;
+                   dc:isFormatOf :FuzzyTimeType ;
+                   skos:definition "Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.  Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.  "@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#GasTypeCode
+:GasTypeCode rdf:type owl:NamedIndividual ,
+                      skos:ConceptScheme ;
+             dc:isFormatOf :GasType ;
+             skos:definition "Specifies the available list of enumerations for types of propellant gas."@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#GeneralFeedbackEventTypeCode
+:GeneralFeedbackEventTypeCode rdf:type owl:NamedIndividual ,
+                                       skos:ConceptScheme ;
+                              dc:isFormatOf :GeneralFeedbackEventType ;
+                              skos:definition "Specifies the available list of enumerations for types of general feedback events."@en .
+
+
 ###  http://spec.tn-its.eu/owl/tnits-owl#LinkDirectionValue.bothDirections
 :LinkDirectionValue.bothDirections rdf:type owl:NamedIndividual ,
                                             :LinkDirectionValue ,
@@ -3073,7 +3125,24 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
 
 
 ###  http://spec.tn-its.eu/owl/tnits-owl#LinkDirectionValueCode
-:LinkDirectionValueCode rdf:type owl:NamedIndividual .
+:LinkDirectionValueCode rdf:type owl:NamedIndividual ,
+                                 skos:ConceptScheme ;
+                        dc:isFormatOf :LinkDirectionValue ;
+                        skos:definition "-- Definition -- List of values for directions relative to a link"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#LoadTypeCode
+:LoadTypeCode rdf:type owl:NamedIndividual ,
+                       skos:ConceptScheme ;
+              dc:isFormatOf :LoadType ;
+              skos:definition "Specifies the available list of enumerations for types of vehicle loads"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#LowEmissionLevelCode
+:LowEmissionLevelCode rdf:type owl:NamedIndividual ,
+                               skos:ConceptScheme ;
+                      dc:isFormatOf :LowEmissionLevel ;
+                      skos:definition "Specifies the available list of enumerations for vehicle emission levels"@en .
 
 
 ###  http://spec.tn-its.eu/owl/tnits-owl#MonthOfYear.april
@@ -3179,6 +3248,118 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
                  skos:definition "<font color=\"#231f20\">Applicable month of the year.</font>"@en .
 
 
+###  http://spec.tn-its.eu/owl/tnits-owl#NatureOfDistanceMeasureCode
+:NatureOfDistanceMeasureCode rdf:type owl:NamedIndividual ,
+                                      skos:ConceptScheme ;
+                             dc:isFormatOf :NatureOfDistanceMeasure ;
+                             skos:definition "Specifies the available list of enumerations for contexts of forms of interpreting distance measures"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#OpenLRBinaryVersionCode
+:OpenLRBinaryVersionCode rdf:type owl:NamedIndividual ,
+                                  skos:ConceptScheme ;
+                         dc:isFormatOf :OpenLRBinaryVersion ;
+                         skos:definition "Specifies the available list of enumerations for the version of the OpenLR binary specification"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#ParkingSiteTypeCode
+:ParkingSiteTypeCode rdf:type owl:NamedIndividual ,
+                              skos:ConceptScheme ;
+                     dc:isFormatOf :ParkingSiteType ;
+                     skos:definition "Specifies the available list of enumerations for the types of parking sites"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#PaymentMethodCode
+:PaymentMethodCode rdf:type owl:NamedIndividual ,
+                            skos:ConceptScheme ;
+                   dc:isFormatOf :PaymentMethod ;
+                   skos:definition "Specifies the available list of enumerations for the methods of payment"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#PredefinedLocationCode
+:PredefinedLocationCode rdf:type owl:NamedIndividual ,
+                                 skos:ConceptScheme ;
+                        dc:isFormatOf :PredefinedLocation ;
+                        skos:definition "Specifies the available list of enumerations for predefined locations "@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#PropertyValueReferenceTypeCode
+:PropertyValueReferenceTypeCode rdf:type owl:NamedIndividual ,
+                                         skos:ConceptScheme ;
+                                dc:isFormatOf :PropertyValueReferenceType ;
+                                skos:definition "A list of externally defined values "@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadCategoryCode
+:RoadCategoryCode rdf:type owl:NamedIndividual ,
+                           skos:ConceptScheme ;
+                  dc:isFormatOf :RoadCategory ;
+                  skos:definition "Specifies the available list of enumerations for the road category types"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureEventTypeCode
+:RoadFeatureEventTypeCode rdf:type owl:NamedIndividual ,
+                                   skos:ConceptScheme ;
+                          dc:isFormatOf :RoadFeatureEventType ;
+                          skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeCode
+:RoadFeaturePropertyTypeCode rdf:type owl:NamedIndividual ,
+                                      skos:ConceptScheme ;
+                             dc:isFormatOf :RoadFeaturePropertyType ;
+                             skos:definition "Specifies the available list of enumerations for the various types of road features"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureSourceCode
+:RoadFeatureSourceCode rdf:type owl:NamedIndividual ,
+                                skos:ConceptScheme ;
+                       dc:isFormatOf :RoadFeatureSource ;
+                       skos:definition "Specifies the available list of enumerations for the various types source concerning road features"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeCode
+:RoadFeatureTypeCode rdf:type owl:NamedIndividual ,
+                              skos:ConceptScheme ;
+                     dc:isFormatOf :RoadFeatureType ;
+                     skos:definition "Specifies the available list of enumerations for the various types of road features"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#RoadSignTypeCode
+:RoadSignTypeCode rdf:type owl:NamedIndividual ,
+                           skos:ConceptScheme ;
+                  dc:isFormatOf :RoadSignType ;
+                  skos:definition "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#SiteAccessibilityTypeCode
+:SiteAccessibilityTypeCode rdf:type owl:NamedIndividual ,
+                                    skos:ConceptScheme ;
+                           dc:isFormatOf :SiteAccessibilityType ;
+                           skos:definition "Specifies the available list of enumerations for types of site accessibility"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#SpecialDayTypeCode
+:SpecialDayTypeCode rdf:type owl:NamedIndividual ,
+                             skos:ConceptScheme ;
+                    dc:isFormatOf :SpecialDayType ;
+                    skos:definition "Specifies the available list of enumerations for the special days"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#TunnelCategoryCode
+:TunnelCategoryCode rdf:type owl:NamedIndividual ,
+                             skos:ConceptScheme ;
+                    dc:isFormatOf :TunnelCategory ;
+                    skos:definition "Specifies the available list of enumerations for the categories of tunnel access"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#UomIdentifierCode
+:UomIdentifierCode rdf:type owl:NamedIndividual ,
+                            skos:ConceptScheme ;
+                   dc:isFormatOf :UomIdentifier ;
+                   skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"@en .
+
+
 ###  http://spec.tn-its.eu/owl/tnits-owl#UpdateType.Add
 :UpdateType.Add rdf:type owl:NamedIndividual ,
                          :UpdateType ,
@@ -3211,6 +3392,34 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
                          skos:ConceptScheme ;
                 dc:isFormatOf :UpdateType ;
                 skos:definition "Defines the different update types "@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#VehicleEquipmentCode
+:VehicleEquipmentCode rdf:type owl:NamedIndividual ,
+                               skos:ConceptScheme ;
+                      dc:isFormatOf :VehicleEquipment ;
+                      skos:definition "Specifies the available list of enumerations for the vehicle equipment types"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#VehicleTypeCode
+:VehicleTypeCode rdf:type owl:NamedIndividual ,
+                          skos:ConceptScheme ;
+                 dc:isFormatOf :VehicleType ;
+                 skos:definition "Specifies the available list of enumerations for types of vehicle."@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#VehicleUsageCode
+:VehicleUsageCode rdf:type owl:NamedIndividual ,
+                           skos:ConceptScheme ;
+                  dc:isFormatOf :VehicleUsage ;
+                  skos:definition "Specifies the available list of enumerations for types of usage of vehicles."@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#WeatherTypeCode
+:WeatherTypeCode rdf:type owl:NamedIndividual ,
+                          skos:ConceptScheme ;
+                 dc:isFormatOf :WeatherType ;
+                 skos:definition "Types of weather conditions which affect driving conditions."@en .
 
 
 ###  http://spec.tn-its.eu/owl/tnits-owl#WeekOfMonth.fifthWeekOfMonth
@@ -3266,6 +3475,13 @@ dc:isFormatOf rdf:type owl:AnnotationProperty .
                           skos:ConceptScheme ;
                  dc:isFormatOf :WeekOfMonth ;
                  skos:definition "<font color=\"#231f20\">Applicable week of the month</font>"@en .
+
+
+###  http://spec.tn-its.eu/owl/tnits-owl#WeightTypeCode
+:WeightTypeCode rdf:type owl:NamedIndividual ,
+                         skos:ConceptScheme ;
+                dc:isFormatOf :WeightType ;
+                skos:definition "Type of weight - describing the meaning of a vehicle weight value"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
