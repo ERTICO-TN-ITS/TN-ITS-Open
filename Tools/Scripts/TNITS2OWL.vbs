@@ -75,11 +75,11 @@ sub heading
 	'OGC GeoSparql
 	objOTLFile.WriteText "	owl:imports <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ;" & vbCrLf
 	'ISO 19148 from the INTERLINK Ontologies
-	objOTLFile.WriteText "	owl:imports <https://www.roadotl.eu/static/eurotl-ontologies/iso19148_doc/ontology.ttl> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports <https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl> ;" & vbCrLf
 	'ISO 19115 Metadata
 	objOTLFile.WriteText "	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;" & vbCrLf
 	'TN-ITS Codes
-	objOTLFile.WriteText "	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codes> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes> ;" & vbCrLf
 	
 	
 	' --------------------------------------------------------------------
