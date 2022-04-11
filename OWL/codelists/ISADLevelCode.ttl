@@ -1,0 +1,85 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/ISADLevelCode#A> a tnits:ISADLevel,
+        skos:Concept ;
+    rdfs:label "A"^^xsd:string ;
+    dcterms:identifier "A"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ISADLevelCode ;
+    skos:definition "ISAD A – Cooperative manoeuvres: Same as B, plus the infrastructure is capable of perceiving vehicle trajectories and guide AVs in order to optimize the traffic flow similar to C-ITS Day 2+ services."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode ;
+    skos:prefLabel "A"^^xsd:string ;
+    skos:topConceptOf codes:ISADLevelCode .
+
+<http://spec.tn-its.eu/codelists/ISADLevelCode#B> a tnits:ISADLevel,
+        skos:Concept ;
+    rdfs:label "B"^^xsd:string ;
+    dcterms:identifier "B"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ISADLevelCode ;
+    skos:definition "ISAD B – Cooperative perception: Same as C, plus the infrastructure is capable of perceiving small traffic situations like C-ITS Day 1 services and relay the information to the AVs."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode ;
+    skos:prefLabel "B"^^xsd:string ;
+    skos:topConceptOf codes:ISADLevelCode .
+
+<http://spec.tn-its.eu/codelists/ISADLevelCode#C> a tnits:ISADLevel,
+        skos:Concept ;
+    rdfs:label "C"^^xsd:string ;
+    dcterms:identifier "C"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ISADLevelCode ;
+    skos:definition "ISAD C – Dynamic digital Information: Same as D plus dynamic information like traffic light status, variable speed limits, lane directions, road closures, short-term road works."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode ;
+    skos:prefLabel "C"^^xsd:string ;
+    skos:topConceptOf codes:ISADLevelCode .
+
+<http://spec.tn-its.eu/codelists/ISADLevelCode#D> a tnits:ISADLevel,
+        skos:Concept ;
+    rdfs:label "D"^^xsd:string ;
+    dcterms:identifier "D"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ISADLevelCode ;
+    skos:definition "ISAD D – Static digital information: Digital maps including static road signs are provided to the AVs.."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode ;
+    skos:prefLabel "D"^^xsd:string ;
+    skos:topConceptOf codes:ISADLevelCode .
+
+<http://spec.tn-its.eu/codelists/ISADLevelCode#E> a tnits:ISADLevel,
+        skos:Concept ;
+    rdfs:label "E"^^xsd:string ;
+    dcterms:identifier "E"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ISADLevelCode ;
+    skos:definition "ISAD E – Conventional road infrastructure: No AV support."^^xsd:string ;
+    skos:inScheme codes:ISADLevelCode ;
+    skos:prefLabel "E"^^xsd:string ;
+    skos:topConceptOf codes:ISADLevelCode .
+
+codes:ISADLevelCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations ISAD levels"^^xsd:string ;
+    dc:title "TN-ITS Codes for ISADLevelCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:ISADLevelCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "ISADLevelCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:ISADLevel ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/ISADLevelCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations ISAD levels"^^xsd:string .
+

@@ -1,0 +1,625 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#agriculturalVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "agriculturalVehicle"^^xsd:string ;
+    dcterms:identifier "agriculturalVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle normally used for agricultural purposes, e.g. tractor, combined harvester etc. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "agriculturalVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#anyVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "anyVehicle"^^xsd:string ;
+    dcterms:identifier "anyVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle of any type."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "anyVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedBus> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedBus"^^xsd:string ;
+    dcterms:identifier "articulatedBus"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Articulated vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "articulatedBus"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedTrolleyBus> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedTrolleyBus"^^xsd:string ;
+    dcterms:identifier "articulatedTrolleyBus"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply, with articulation between component carriage parts of the vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "articulatedTrolleyBus"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "articulatedVehicle"^^xsd:string ;
+    dcterms:identifier "articulatedVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Transport vehicle with articulation between component carriage parts of the vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "articulatedVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#bicycle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "bicycle"^^xsd:string ;
+    dcterms:identifier "bicycle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Pedal-driven two-wheeled vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "bicycle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#bus> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "bus"^^xsd:string ;
+    dcterms:identifier "bus"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle for mass road transport"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "bus"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#car> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "car"^^xsd:string ;
+    dcterms:identifier "car"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Small, often privately owned, typically four wheel vehicle for transport of persons and limited goods."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "car"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#carOrLightVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "carOrLightVehicle"^^xsd:string ;
+    dcterms:identifier "carOrLightVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Car or light vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "carOrLightVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#carWithCaravan> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "carWithCaravan"^^xsd:string ;
+    dcterms:identifier "carWithCaravan"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Car towing a caravan. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "carWithCaravan"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#carWithTrailer> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "carWithTrailer"^^xsd:string ;
+    dcterms:identifier "carWithTrailer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Car towing a trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "carWithTrailer"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#caravan> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "caravan"^^xsd:string ;
+    dcterms:identifier "caravan"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Non-motorised trailer for towing, intended for human occupancy "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "caravan"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#constructionOrMaintenanceVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "constructionOrMaintenanceVehicle"^^xsd:string ;
+    dcterms:identifier "constructionOrMaintenanceVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle normally used for construction or maintenance purposes, e.g. digger, excavator, bulldozer, lorry mounted crane etc."^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "constructionOrMaintenanceVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#fourWheelDrive> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "fourWheelDrive"^^xsd:string ;
+    dcterms:identifier "fourWheelDrive"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Four wheel drive vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "fourWheelDrive"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyDutyTransporter> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyDutyTransporter"^^xsd:string ;
+    dcterms:identifier "heavyDutyTransporter"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Large road vehicle, primarily intended for the transport of other vehicles"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "heavyDutyTransporter"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyGoodsVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyGoodsVehicle"^^xsd:string ;
+    dcterms:identifier "heavyGoodsVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "heavyGoodsVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyGoodsVehicleWithTrailer> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyGoodsVehicleWithTrailer"^^xsd:string ;
+    dcterms:identifier "heavyGoodsVehicleWithTrailer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Large road vehicle, typically over 2 tonnes gross weight, primarily intended for the transport of goods with attached towed trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "heavyGoodsVehicleWithTrailer"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "heavyVehicle"^^xsd:string ;
+    dcterms:identifier "heavyVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "heavyVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#highSidedVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "highSidedVehicle"^^xsd:string ;
+    dcterms:identifier "highSidedVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "High sided vehicle. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "highSidedVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#largeCar> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "largeCar"^^xsd:string ;
+    dcterms:identifier "largeCar"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See car, typically greater than 4.5 metres in length"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "largeCar"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#largeGoodsVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "largeGoodsVehicle"^^xsd:string ;
+    dcterms:identifier "largeGoodsVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "largeGoodsVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#lightCommercialVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightCommercialVehicle"^^xsd:string ;
+    dcterms:identifier "lightCommercialVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "lightCommercialVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#lightCommercialVehicleWithTrailer> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightCommercialVehicleWithTrailer"^^xsd:string ;
+    dcterms:identifier "lightCommercialVehicleWithTrailer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of goods, with attached towed trailer"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "lightCommercialVehicleWithTrailer"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#lightRail> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "lightRail"^^xsd:string ;
+    dcterms:identifier "lightRail"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Train-like transport vehicle limited to a rail network within a limited area; does not include heavy rail lines"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "lightRail"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#longHeavyLorry> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "longHeavyLorry"^^xsd:string ;
+    dcterms:identifier "longHeavyLorry"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See Heavy Goods Vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "longHeavyLorry"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#lorry> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "lorry"^^xsd:string ;
+    dcterms:identifier "lorry"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Lorry of any type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "lorry"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#metro> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "metro"^^xsd:string ;
+    dcterms:identifier "metro"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Train-like transport vehicle limited to a rail network within a limited area; at surface, below surface or above surface"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "metro"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#minibus> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "minibus"^^xsd:string ;
+    dcterms:identifier "minibus"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Road vehicle, typically under 2 tonnes gross weight, primarily intended for the transport of peoeple"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "minibus"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#moped> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "moped"^^xsd:string ;
+    dcterms:identifier "moped"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Moped (a two wheeled motor vehicle characterized by a small engine typically less than 50cc and by normally having pedals). "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "moped"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#motorcycle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorcycle"^^xsd:string ;
+    dcterms:identifier "motorcycle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Two-wheeled motor vehicle without pedal propulsion"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "motorcycle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#motorcycleWithSideCar> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorcycleWithSideCar"^^xsd:string ;
+    dcterms:identifier "motorcycleWithSideCar"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Three wheeled vehicle comprising a motorcycle with an attached side car. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "motorcycleWithSideCar"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#motorhome> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorhome"^^xsd:string ;
+    dcterms:identifier "motorhome"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Motorised vehicle, intended for human occupancy "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "motorhome"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#motorscooter> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "motorscooter"^^xsd:string ;
+    dcterms:identifier "motorscooter"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Motorscooter (a two wheeled motor vehicle characterized by a step-through frame and small diameter wheels). "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "motorscooter"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#other> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Other than as defined in this enumeration. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#passengerCar> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "passengerCar"^^xsd:string ;
+    dcterms:identifier "passengerCar"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See car"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "passengerCar"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#smallCar> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "smallCar"^^xsd:string ;
+    dcterms:identifier "smallCar"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See car, typically greater than 3.75 metres in length"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "smallCar"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#tanker> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "tanker"^^xsd:string ;
+    dcterms:identifier "tanker"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle with large tank for carrying bulk liquids. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "tanker"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#threeWheeledVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "threeWheeledVehicle"^^xsd:string ;
+    dcterms:identifier "threeWheeledVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Three wheeled vehicle of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "threeWheeledVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#trailer> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "trailer"^^xsd:string ;
+    dcterms:identifier "trailer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Non-motorised vehicle, intended to be towed"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "trailer"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#tram> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "tram"^^xsd:string ;
+    dcterms:identifier "tram"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Train-like mass transport vehicle, running on rails, typically partially or wholly on the road network"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "tram"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#trolleyBus> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "trolleyBus"^^xsd:string ;
+    dcterms:identifier "trolleyBus"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Bus-like mass transport vehicle hocked up to an electrical network for power supply"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "trolleyBus"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#twoWheeledVehicle> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "twoWheeledVehicle"^^xsd:string ;
+    dcterms:identifier "twoWheeledVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Two wheeled vehicle of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "twoWheeledVehicle"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#unknown> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "unknown"^^xsd:string ;
+    dcterms:identifier "unknown"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Unknown vehicle type"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "unknown"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#van> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "van"^^xsd:string ;
+    dcterms:identifier "van"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "See light commercial vehicle"^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "van"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithCaravan> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithCaravan"^^xsd:string ;
+    dcterms:identifier "vehicleWithCaravan"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle (of unspecified type) towing a caravan. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "vehicleWithCaravan"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithCatalyticConverter> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithCatalyticConverter"^^xsd:string ;
+    dcterms:identifier "vehicleWithCatalyticConverter"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle with catalytic converter. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "vehicleWithCatalyticConverter"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithTrailer> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithTrailer"^^xsd:string ;
+    dcterms:identifier "vehicleWithTrailer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle (of unspecified type) towing a trailer. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "vehicleWithTrailer"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithoutCatalyticConverter> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "vehicleWithoutCatalyticConverter"^^xsd:string ;
+    dcterms:identifier "vehicleWithoutCatalyticConverter"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle without catalytic converter. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "vehicleWithoutCatalyticConverter"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#withEvenNumberedRegistrationPlates> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "withEvenNumberedRegistrationPlates"^^xsd:string ;
+    dcterms:identifier "withEvenNumberedRegistrationPlates"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle with even numbered registration plate. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "withEvenNumberedRegistrationPlates"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+<http://spec.tn-its.eu/codelists/VehicleTypeCode#withOddNumberedRegistrationPlates> a tnits:VehicleType,
+        skos:Concept ;
+    rdfs:label "withOddNumberedRegistrationPlates"^^xsd:string ;
+    dcterms:identifier "withOddNumberedRegistrationPlates"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleTypeCode ;
+    skos:definition "Vehicle with odd numbered registration plate. "^^xsd:string ;
+    skos:inScheme codes:VehicleTypeCode ;
+    skos:prefLabel "withOddNumberedRegistrationPlates"^^xsd:string ;
+    skos:topConceptOf codes:VehicleTypeCode .
+
+codes:VehicleTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of vehicle."^^xsd:string ;
+    dc:title "TN-ITS Codes for VehicleTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:VehicleTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "VehicleTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:VehicleType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/VehicleTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle."^^xsd:string .
+

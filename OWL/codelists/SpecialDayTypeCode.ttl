@@ -1,0 +1,137 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#dayBeforePublicHoliday> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "dayBeforePublicHoliday"^^xsd:string ;
+    dcterms:identifier "dayBeforePublicHoliday"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "The day before a declared Public Holiday"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "dayBeforePublicHoliday"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#dayFollowingPublicHoliday> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "dayFollowingPublicHoliday"^^xsd:string ;
+    dcterms:identifier "dayFollowingPublicHoliday"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "The day following a declared Public Holiday"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "dayFollowingPublicHoliday"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#inLieuOfPublicHoliday> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "inLieuOfPublicHoliday"^^xsd:string ;
+    dcterms:identifier "inLieuOfPublicHoliday"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition """
+      """^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "inLieuOfPublicHoliday"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#longWeekendDay> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "longWeekendDay"^^xsd:string ;
+    dcterms:identifier "longWeekendDay"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition """
+      """^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "longWeekendDay"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#other> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "Other than as defined in this enumeration."^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#publicEventDay> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "publicEventDay"^^xsd:string ;
+    dcterms:identifier "publicEventDay"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition """The day of a declared Public Event, which may be national, or regional.
+
+Note: For example, the day of a Royal Wedding."""^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "publicEventDay"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#publicHoliday> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "publicHoliday"^^xsd:string ;
+    dcterms:identifier "publicHoliday"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "The day of a declared Public Holiday, which may be national, or regional."^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "publicHoliday"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#schoolDay> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "schoolDay"^^xsd:string ;
+    dcterms:identifier "schoolDay"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "In the locale a day when schools are open and operating"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "schoolDay"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+<http://spec.tn-its.eu/codelists/SpecialDayTypeCode#schoolHolidays> a tnits:SpecialDayType,
+        skos:Concept ;
+    rdfs:label "schoolHolidays"^^xsd:string ;
+    dcterms:identifier "schoolHolidays"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SpecialDayTypeCode ;
+    skos:definition "In the locale a day when schools are not open and operating"^^xsd:string ;
+    skos:inScheme codes:SpecialDayTypeCode ;
+    skos:prefLabel "schoolHolidays"^^xsd:string ;
+    skos:topConceptOf codes:SpecialDayTypeCode .
+
+codes:SpecialDayTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the special days"^^xsd:string ;
+    dc:title "TN-ITS Codes for SpecialDayTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:SpecialDayTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "SpecialDayTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:SpecialDayType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/SpecialDayTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the special days"^^xsd:string .
+

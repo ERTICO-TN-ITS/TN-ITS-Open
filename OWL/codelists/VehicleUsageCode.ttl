@@ -1,0 +1,169 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#agricultural> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "agricultural"^^xsd:string ;
+    dcterms:identifier "agricultural"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used for agricultural purposes. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "agricultural"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#carSharing> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "carSharing"^^xsd:string ;
+    dcterms:identifier "carSharing"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicles operated by a car-sharing company."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "carSharing"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#cityLogistics> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "cityLogistics"^^xsd:string ;
+    dcterms:identifier "cityLogistics"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicles that are used to deliver goods in a city area."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "cityLogistics"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#commercial> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "commercial"^^xsd:string ;
+    dcterms:identifier "commercial"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle which is limited to non-private usage or public transport usage.   "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "commercial"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#emergencyServices> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "emergencyServices"^^xsd:string ;
+    dcterms:identifier "emergencyServices"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used by the emergency services. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "emergencyServices"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#military> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "military"^^xsd:string ;
+    dcterms:identifier "military"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used by the military. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "military"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#nonCommercial> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "nonCommercial"^^xsd:string ;
+    dcterms:identifier "nonCommercial"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used for non-commercial or private purposes.    "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "nonCommercial"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#patrol> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "patrol"^^xsd:string ;
+    dcterms:identifier "patrol"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used as part of a patrol service, e.g. road operator or automobile association patrol vehicle.   "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "patrol"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#recoveryServices> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "recoveryServices"^^xsd:string ;
+    dcterms:identifier "recoveryServices"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used to provide a recovery service. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "recoveryServices"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#roadMaintenanceOrConstruction> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "roadMaintenanceOrConstruction"^^xsd:string ;
+    dcterms:identifier "roadMaintenanceOrConstruction"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used for road maintenance or construction work purposes. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "roadMaintenanceOrConstruction"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#roadOperator> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "roadOperator"^^xsd:string ;
+    dcterms:identifier "roadOperator"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used by the road operator. "^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "roadOperator"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+<http://spec.tn-its.eu/codelists/VehicleUsageCode#taxi> a tnits:VehicleUsage,
+        skos:Concept ;
+    rdfs:label "taxi"^^xsd:string ;
+    dcterms:identifier "taxi"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:VehicleUsageCode ;
+    skos:definition "Vehicle used to provide an authorised taxi service."^^xsd:string ;
+    skos:inScheme codes:VehicleUsageCode ;
+    skos:prefLabel "taxi"^^xsd:string ;
+    skos:topConceptOf codes:VehicleUsageCode .
+
+codes:VehicleUsageCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string ;
+    dc:title "TN-ITS Codes for VehicleUsageCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:VehicleUsageCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "VehicleUsageCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:VehicleUsage ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/VehicleUsageCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string .
+

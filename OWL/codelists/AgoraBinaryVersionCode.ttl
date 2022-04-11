@@ -1,0 +1,85 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v1_0> a tnits:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v1_0"^^xsd:string ;
+    dcterms:identifier "v1_0"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AgoraBinaryVersionCode ;
+    skos:definition "Version 1.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode ;
+    skos:prefLabel "v1_0"^^xsd:string ;
+    skos:topConceptOf codes:AgoraBinaryVersionCode .
+
+<http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v1_3> a tnits:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v1_3"^^xsd:string ;
+    dcterms:identifier "v1_3"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AgoraBinaryVersionCode ;
+    skos:definition "Version 1.3"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode ;
+    skos:prefLabel "v1_3"^^xsd:string ;
+    skos:topConceptOf codes:AgoraBinaryVersionCode .
+
+<http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v2_4> a tnits:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v2_4"^^xsd:string ;
+    dcterms:identifier "v2_4"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AgoraBinaryVersionCode ;
+    skos:definition "Version 1.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode ;
+    skos:prefLabel "v2_4"^^xsd:string ;
+    skos:topConceptOf codes:AgoraBinaryVersionCode .
+
+<http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v2_5> a tnits:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v2_5"^^xsd:string ;
+    dcterms:identifier "v2_5"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AgoraBinaryVersionCode ;
+    skos:definition "Version 2.5"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode ;
+    skos:prefLabel "v2_5"^^xsd:string ;
+    skos:topConceptOf codes:AgoraBinaryVersionCode .
+
+<http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v3_0> a tnits:AgoraBinaryVersion,
+        skos:Concept ;
+    rdfs:label "v3_0"^^xsd:string ;
+    dcterms:identifier "v3_0"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AgoraBinaryVersionCode ;
+    skos:definition "Version 3.0"^^xsd:string ;
+    skos:inScheme codes:AgoraBinaryVersionCode ;
+    skos:prefLabel "v3_0"^^xsd:string ;
+    skos:topConceptOf codes:AgoraBinaryVersionCode .
+
+codes:AgoraBinaryVersionCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string ;
+    dc:title "TN-ITS Codes for AgoraBinaryVersionCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:AgoraBinaryVersionCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "AgoraBinaryVersionCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:AgoraBinaryVersion ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string .
+

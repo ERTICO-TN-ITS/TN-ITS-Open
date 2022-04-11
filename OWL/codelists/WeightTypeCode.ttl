@@ -1,0 +1,49 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/WeightTypeCode#actual> a tnits:WeightType,
+        skos:Concept ;
+    rdfs:label "actual"^^xsd:string ;
+    dcterms:identifier "actual"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeightTypeCode ;
+    skos:definition "The weight is the actual weight of a specific vehicle"^^xsd:string ;
+    skos:inScheme codes:WeightTypeCode ;
+    skos:prefLabel "actual"^^xsd:string ;
+    skos:topConceptOf codes:WeightTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeightTypeCode#maximumPermitted> a tnits:WeightType,
+        skos:Concept ;
+    rdfs:label "maximumPermitted"^^xsd:string ;
+    dcterms:identifier "maximumPermitted"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeightTypeCode ;
+    skos:definition "The weight is the maximum permitted weight for a vehicle"^^xsd:string ;
+    skos:inScheme codes:WeightTypeCode ;
+    skos:prefLabel "maximumPermitted"^^xsd:string ;
+    skos:topConceptOf codes:WeightTypeCode .
+
+codes:WeightTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Type of weight - describing the meaning of a vehicle weight value"^^xsd:string ;
+    dc:title "TN-ITS Codes for WeightTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:WeightTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "WeightTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:WeightType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/WeightTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Type of weight - describing the meaning of a vehicle weight value"^^xsd:string .
+

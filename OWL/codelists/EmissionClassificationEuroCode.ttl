@@ -1,0 +1,145 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro5> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5"^^xsd:string ;
+    dcterms:identifier "euro5"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 5"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro5"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro5a> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5a"^^xsd:string ;
+    dcterms:identifier "euro5a"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 5a"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro5a"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro5b> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro5b"^^xsd:string ;
+    dcterms:identifier "euro5b"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 5b"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro5b"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro6> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6"^^xsd:string ;
+    dcterms:identifier "euro6"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 6"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro6"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro6a> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6a"^^xsd:string ;
+    dcterms:identifier "euro6a"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 6a"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro6a"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro6b> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6b"^^xsd:string ;
+    dcterms:identifier "euro6b"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 6b"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro6b"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euro6c> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euro6c"^^xsd:string ;
+    dcterms:identifier "euro6c"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro 6c"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euro6c"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euroV> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euroV"^^xsd:string ;
+    dcterms:identifier "euroV"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro V"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euroV"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#euroVI> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "euroVI"^^xsd:string ;
+    dcterms:identifier "euroVI"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Euro VI"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "euroVI"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+<http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode#other> a tnits:EmissionClassificationEuro,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:EmissionClassificationEuroCode ;
+    skos:definition "Other Euro classifications"^^xsd:string ;
+    skos:inScheme codes:EmissionClassificationEuroCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:EmissionClassificationEuroCode .
+
+codes:EmissionClassificationEuroCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"^^xsd:string ;
+    dc:title "TN-ITS Codes for EmissionClassificationEuroCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:EmissionClassificationEuroCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "EmissionClassificationEuroCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:EmissionClassificationEuro ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/EmissionClassificationEuroCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the minimum Euro emission classification the vehicle(s) have to comply with according to the 1970 Directive 70/220/EEC and its several amendments. Note that vehicleType and fuelType need to be provided in order to make this classification explicit. [SOURCE - DATEX 3.0 Part 7 (proposed EN/16157-7:2018)]"^^xsd:string .
+

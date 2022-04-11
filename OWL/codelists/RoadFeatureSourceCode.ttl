@@ -1,0 +1,85 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#fixedPlateRoadSign> a tnits:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "fixedPlateRoadSign"^^xsd:string ;
+    dcterms:identifier "fixedPlateRoadSign"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureSourceCode ;
+    skos:definition "Fixed (permanent, often metal) road sign, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode ;
+    skos:prefLabel "fixedPlateRoadSign"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureSourceCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#otherRoadFeature> a tnits:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "otherRoadFeature"^^xsd:string ;
+    dcterms:identifier "otherRoadFeature"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureSourceCode ;
+    skos:definition "Other road feature, not covered by the other enumerations"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode ;
+    skos:prefLabel "otherRoadFeature"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureSourceCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation> a tnits:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "regulation"^^xsd:string ;
+    dcterms:identifier "regulation"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureSourceCode ;
+    skos:definition "Road traffic regulation"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode ;
+    skos:prefLabel "regulation"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureSourceCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#temporaryRoadSign> a tnits:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "temporaryRoadSign"^^xsd:string ;
+    dcterms:identifier "temporaryRoadSign"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureSourceCode ;
+    skos:definition "Temporary (non-permanent) road sign, as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode ;
+    skos:prefLabel "temporaryRoadSign"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureSourceCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#variableMessageSign> a tnits:RoadFeatureSource,
+        skos:Concept ;
+    rdfs:label "variableMessageSign"^^xsd:string ;
+    dcterms:identifier "variableMessageSign"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureSourceCode ;
+    skos:definition "Road sign displayed on a variable message sign or other dynamic display equipment, with road signs as recognised under the Vienna Convention on Road Signs and Signals, 1968"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureSourceCode ;
+    skos:prefLabel "variableMessageSign"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureSourceCode .
+
+codes:RoadFeatureSourceCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureSourceCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadFeatureSourceCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeatureSourceCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeatureSource ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureSourceCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string .
+

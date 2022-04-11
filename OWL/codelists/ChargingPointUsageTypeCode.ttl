@@ -1,0 +1,97 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#electricBikeOrMotorcycle> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricBikeOrMotorcycle"^^xsd:string ;
+    dcterms:identifier "electricBikeOrMotorcycle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Supplies for charging electric bikes or motorcycles"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "electricBikeOrMotorcycle"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#electricVehicle> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricVehicle"^^xsd:string ;
+    dcterms:identifier "electricVehicle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Electric vehicle"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "electricVehicle"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#electricalDevices> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "electricalDevices"^^xsd:string ;
+    dcterms:identifier "electricalDevices"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Supplies for charging electrical devices"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "electricalDevices"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#lorryPowerConsumption> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "lorryPowerConsumption"^^xsd:string ;
+    dcterms:identifier "lorryPowerConsumption"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Lorry power consumption"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "lorryPowerConsumption"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#motorhomeOrCaravanSupply> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "motorhomeOrCaravanSupply"^^xsd:string ;
+    dcterms:identifier "motorhomeOrCaravanSupply"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Supplies for charging motorhomes or caravans"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "motorhomeOrCaravanSupply"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+<http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode#other> a tnits:ChargingPointUsageType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ChargingPointUsageTypeCode ;
+    skos:definition "Other"^^xsd:string ;
+    skos:inScheme codes:ChargingPointUsageTypeCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:ChargingPointUsageTypeCode .
+
+codes:ChargingPointUsageTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the use of electric charging point "^^xsd:string ;
+    dc:title "TN-ITS Codes for ChargingPointUsageTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:ChargingPointUsageTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "ChargingPointUsageTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:ChargingPointUsageType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/ChargingPointUsageTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the use of electric charging point "^^xsd:string .
+

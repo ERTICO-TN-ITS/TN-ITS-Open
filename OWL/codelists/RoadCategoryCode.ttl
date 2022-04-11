@@ -1,0 +1,102 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#motorway> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "motorway"^^xsd:string ;
+    dcterms:identifier "motorway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition """Indicating the presence of a motorway.
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+(i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means;  
+(ii) Does not cross at level with any road, railway or tramway track, or footpath; and  
+(iii) Is specially signposted as a motorway;"""^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "motorway"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#otherRoad> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "otherRoad"^^xsd:string ;
+    dcterms:identifier "otherRoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition "Road of a category other than the above"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "otherRoad"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#residentialAreaRoad> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "residentialAreaRoad"^^xsd:string ;
+    dcterms:identifier "residentialAreaRoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition "Road in a residential zone"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "residentialAreaRoad"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#roadWithDualCarriageway> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "roadWithDualCarriageway"^^xsd:string ;
+    dcterms:identifier "roadWithDualCarriageway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition "Road with more than one divided carriageway"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "roadWithDualCarriageway"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#roadWithSingleCarriageway> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "roadWithSingleCarriageway"^^xsd:string ;
+    dcterms:identifier "roadWithSingleCarriageway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition "Road with only one carriageway. NOTE: May be with traffic in one direction or two."^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "roadWithSingleCarriageway"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+<http://spec.tn-its.eu/codelists/RoadCategoryCode#urbanRoad> a tnits:RoadCategory,
+        skos:Concept ;
+    rdfs:label "urbanRoad"^^xsd:string ;
+    dcterms:identifier "urbanRoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadCategoryCode ;
+    skos:definition "Road in an urban environment"^^xsd:string ;
+    skos:inScheme codes:RoadCategoryCode ;
+    skos:prefLabel "urbanRoad"^^xsd:string ;
+    skos:topConceptOf codes:RoadCategoryCode .
+
+codes:RoadCategoryCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the road category types"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadCategoryCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadCategoryCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadCategoryCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadCategory ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadCategoryCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the road category types"^^xsd:string .
+

@@ -1,0 +1,79 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#bicyclePath> a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "bicyclePath"^^xsd:string ;
+    dcterms:identifier "bicyclePath"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCodeExtensions ;
+    skos:definition "The road is/has a bicycle path"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions ;
+    skos:prefLabel "bicyclePath"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#ccamLevel> a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "ccamLevel"^^xsd:string ;
+    dcterms:identifier "ccamLevel"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCodeExtensions ;
+    skos:definition "Road classification for supporting  cooperative connected and automated mobility"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions ;
+    skos:prefLabel "ccamLevel"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#numberOfLanes> a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "numberOfLanes"^^xsd:string ;
+    dcterms:identifier "numberOfLanes"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCodeExtensions ;
+    skos:definition "The total number of lanes"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions ;
+    skos:prefLabel "numberOfLanes"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadName> a tnits:RoadFeatureTypeExtensions,
+        skos:Concept ;
+    rdfs:label "roadName"^^xsd:string ;
+    dcterms:identifier "roadName"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCodeExtensions ;
+    skos:definition "The official name of the road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCodeExtensions ;
+    skos:prefLabel "roadName"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCodeExtensions .
+
+codes:RoadFeatureTypeCodeExtensionsVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureTypeCodeExtensions"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+tnits:RoadFeatureTypeExtensions a owl:Class ;
+    rdfs:label "RoadFeatureTypeExtensions"^^xsd:string ;
+    rdfs:subClassOf tnits:RoadFeatureType,
+        tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:RoadFeatureTypeCodeExtensions a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeatureTypeCodeExtensions"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeatureTypeExtensions ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+

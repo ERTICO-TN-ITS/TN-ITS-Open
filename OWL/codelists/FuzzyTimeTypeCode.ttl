@@ -1,0 +1,261 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#autumn> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "autumn"^^xsd:string ;
+    dcterms:identifier "autumn"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of autumn"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "autumn"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#dawn> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "dawn"^^xsd:string ;
+    dcterms:identifier "dawn"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Starts at dawn"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "dawn"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#day> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "day"^^xsd:string ;
+    dcterms:identifier "day"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Start of day"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "day"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#drySeason> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "drySeason"^^xsd:string ;
+    dcterms:identifier "drySeason"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of dry season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "drySeason"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#dusk> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "dusk"^^xsd:string ;
+    dcterms:identifier "dusk"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Starts at dusk"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "dusk"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#external> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "external"^^xsd:string ;
+    dcterms:identifier "external"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Starting period controlled by external device "^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "external"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#highTide> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "highTide"^^xsd:string ;
+    dcterms:identifier "highTide"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of high tide"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "highTide"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#highWater> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "highWater"^^xsd:string ;
+    dcterms:identifier "highWater"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of high water"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "highWater"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#holiday> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "holiday"^^xsd:string ;
+    dcterms:identifier "holiday"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Starts at any holiday"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "holiday"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#lowTide> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "lowTide"^^xsd:string ;
+    dcterms:identifier "lowTide"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of low tide"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "lowTide"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#lowWater> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "lowWater"^^xsd:string ;
+    dcterms:identifier "lowWater"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of low water"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "lowWater"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#night> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "night"^^xsd:string ;
+    dcterms:identifier "night"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Start of night"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "night"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#offPeakHours> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "offPeakHours"^^xsd:string ;
+    dcterms:identifier "offPeakHours"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "start of off-peak hours"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "offPeakHours"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#peakHours> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "peakHours"^^xsd:string ;
+    dcterms:identifier "peakHours"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Start of peak hours, peak hours include rush hour and activity/ scheduled event based times. These would vary by location and by season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "peakHours"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#school> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "school"^^xsd:string ;
+    dcterms:identifier "school"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Starts at any school period (date and hour)"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "school"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#spring> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "spring"^^xsd:string ;
+    dcterms:identifier "spring"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of spring"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "spring"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#summer> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "summer"^^xsd:string ;
+    dcterms:identifier "summer"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of summer"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "summer"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#wetSeason> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "wetSeason"^^xsd:string ;
+    dcterms:identifier "wetSeason"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of wet season"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "wetSeason"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#winter> a tnits:FuzzyTimeType,
+        skos:Concept ;
+    rdfs:label "winter"^^xsd:string ;
+    dcterms:identifier "winter"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuzzyTimeTypeCode ;
+    skos:definition "Beginning of winter"^^xsd:string ;
+    skos:inScheme codes:FuzzyTimeTypeCode ;
+    skos:prefLabel "winter"^^xsd:string ;
+    skos:topConceptOf codes:FuzzyTimeTypeCode .
+
+codes:FuzzyTimeTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+"""^^xsd:string ;
+    dc:title "TN-ITS Codes for FuzzyTimeTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:FuzzyTimeTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "FuzzyTimeTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:FuzzyTimeType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+"""^^xsd:string .
+

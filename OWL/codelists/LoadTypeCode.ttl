@@ -1,0 +1,412 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#abnormalLoad> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "abnormalLoad"^^xsd:string ;
+    dcterms:identifier "abnormalLoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition """A load that exceeds normal vehicle dimensions in terms of height, length, width, gross vehicle weight or axle weight or any combination of these.
+Generally termed an "abnormal load"."""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "abnormalLoad"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#ammunition> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "ammunition"^^xsd:string ;
+    dcterms:identifier "ammunition"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Ammunition. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "ammunition"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#chemicals> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "chemicals"^^xsd:string ;
+    dcterms:identifier "chemicals"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Chemicals of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "chemicals"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#combustibleMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "combustibleMaterials"^^xsd:string ;
+    dcterms:identifier "combustibleMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Combustible materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "combustibleMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#corrosiveMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "corrosiveMaterials"^^xsd:string ;
+    dcterms:identifier "corrosiveMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Corrosive materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "corrosiveMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#debris> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "debris"^^xsd:string ;
+    dcterms:identifier "debris"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Debris of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "debris"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#empty> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "empty"^^xsd:string ;
+    dcterms:identifier "empty"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "No load"^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "empty"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#explosiveMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "explosiveMaterials"^^xsd:string ;
+    dcterms:identifier "explosiveMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Explosive materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "explosiveMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#extraHighLoad> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "extraHighLoad"^^xsd:string ;
+    dcterms:identifier "extraHighLoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "A load of exceptional height. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "extraHighLoad"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#extraLongLoad> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "extraLongLoad"^^xsd:string ;
+    dcterms:identifier "extraLongLoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "A load of exceptional length. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "extraLongLoad"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#extraWideLoad> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "extraWideLoad"^^xsd:string ;
+    dcterms:identifier "extraWideLoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "A load of exceptional width. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "extraWideLoad"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#fuel> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "fuel"^^xsd:string ;
+    dcterms:identifier "fuel"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Fuel of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "fuel"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#glass> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "glass"^^xsd:string ;
+    dcterms:identifier "glass"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Glass. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "glass"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#goods> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "goods"^^xsd:string ;
+    dcterms:identifier "goods"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Any goods of a commercial nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "goods"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#hazardousMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "hazardousMaterials"^^xsd:string ;
+    dcterms:identifier "hazardousMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Materials classed as being of a hazardous nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "hazardousMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#liquid> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "liquid"^^xsd:string ;
+    dcterms:identifier "liquid"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Liquid of an unspecified nature. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "liquid"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#livestock> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "livestock"^^xsd:string ;
+    dcterms:identifier "livestock"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Livestock. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "livestock"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#materials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "materials"^^xsd:string ;
+    dcterms:identifier "materials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "General materials of unspecified type. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "materials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForPeople> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForPeople"^^xsd:string ;
+    dcterms:identifier "materialsDangerousForPeople"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Materials classed as being of a danger to people or animals."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "materialsDangerousForPeople"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForTheEnvironment> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForTheEnvironment"^^xsd:string ;
+    dcterms:identifier "materialsDangerousForTheEnvironment"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Materials classed as being potentially dangerous to the environment. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "materialsDangerousForTheEnvironment"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForWater> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "materialsDangerousForWater"^^xsd:string ;
+    dcterms:identifier "materialsDangerousForWater"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Materials classed as being dangerous when exposed to water (e.g. materials which may react exothermically with water). "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "materialsDangerousForWater"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#oil> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "oil"^^xsd:string ;
+    dcterms:identifier "oil"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Oil. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "oil"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#ordinary> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "ordinary"^^xsd:string ;
+    dcterms:identifier "ordinary"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Materials that present limited environmental or health risk. Non-combustible, non-toxic, non-corrosive. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "ordinary"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#other> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Other than as defined in this enumeration."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#perishableProducts> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "perishableProducts"^^xsd:string ;
+    dcterms:identifier "perishableProducts"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Products or produce that will significantly degrade in quality or freshness over a short period of time. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "perishableProducts"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#petrol> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "petrol"^^xsd:string ;
+    dcterms:identifier "petrol"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Petrol or petroleum. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "petrol"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#pharmaceuticalMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "pharmaceuticalMaterials"^^xsd:string ;
+    dcterms:identifier "pharmaceuticalMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Pharmaceutical materials. "^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "pharmaceuticalMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#radioactiveMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "radioactiveMaterials"^^xsd:string ;
+    dcterms:identifier "radioactiveMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition """Materials that emit significant quantities of electromagnetic radiation that may present a risk
+to people, animals or the environment"""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "radioactiveMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#refrigeratedGoods> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "refrigeratedGoods"^^xsd:string ;
+    dcterms:identifier "refrigeratedGoods"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Refrigerated goods."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "refrigeratedGoods"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#refuse> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "refuse"^^xsd:string ;
+    dcterms:identifier "refuse"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Refuse."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "refuse"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#toxicMaterials> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "toxicMaterials"^^xsd:string ;
+    dcterms:identifier "toxicMaterials"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition """Materials of a toxic nature which may damage the
+environment or endanger public health."""^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "toxicMaterials"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+<http://spec.tn-its.eu/codelists/LoadTypeCode#vehicles> a tnits:LoadType,
+        skos:Concept ;
+    rdfs:label "vehicles"^^xsd:string ;
+    dcterms:identifier "vehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:LoadTypeCode ;
+    skos:definition "Vehicles of any type which are being transported."^^xsd:string ;
+    skos:inScheme codes:LoadTypeCode ;
+    skos:prefLabel "vehicles"^^xsd:string ;
+    skos:topConceptOf codes:LoadTypeCode .
+
+codes:LoadTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string ;
+    dc:title "TN-ITS Codes for LoadTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:LoadTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "LoadTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:LoadType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/LoadTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string .
+

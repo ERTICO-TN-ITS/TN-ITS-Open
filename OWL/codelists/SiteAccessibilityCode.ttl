@@ -1,0 +1,61 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/SiteAccessibilityCode#publicAccessible> a tnits:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "publicAccessible"^^xsd:string ;
+    dcterms:identifier "publicAccessible"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SiteAccessibilityCode ;
+    skos:definition "Public accessible"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode ;
+    skos:prefLabel "publicAccessible"^^xsd:string ;
+    skos:topConceptOf codes:SiteAccessibilityCode .
+
+<http://spec.tn-its.eu/codelists/SiteAccessibilityCode#restrictedAccess> a tnits:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "restrictedAccess"^^xsd:string ;
+    dcterms:identifier "restrictedAccess"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SiteAccessibilityCode ;
+    skos:definition "RestrictedAccess"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode ;
+    skos:prefLabel "restrictedAccess"^^xsd:string ;
+    skos:topConceptOf codes:SiteAccessibilityCode .
+
+<http://spec.tn-its.eu/codelists/SiteAccessibilityCode#unspecified> a tnits:SiteAccessibility,
+        skos:Concept ;
+    rdfs:label "unspecified"^^xsd:string ;
+    dcterms:identifier "unspecified"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:SiteAccessibilityCode ;
+    skos:definition "Unspecified"^^xsd:string ;
+    skos:inScheme codes:SiteAccessibilityCode ;
+    skos:prefLabel "unspecified"^^xsd:string ;
+    skos:topConceptOf codes:SiteAccessibilityCode .
+
+codes:SiteAccessibilityCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of site accessibility"^^xsd:string ;
+    dc:title "TN-ITS Codes for SiteAccessibilityCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:SiteAccessibilityCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "SiteAccessibilityCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:SiteAccessibility ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/SiteAccessibilityCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for types of site accessibility"^^xsd:string .
+

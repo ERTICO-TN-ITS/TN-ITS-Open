@@ -1,0 +1,103 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#isadLevel> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "isadLevel"^^xsd:string ;
+    dcterms:identifier "isadLevel"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Road level of Infrastructure Support for Automated Driving : ISAD E - to - ISAD A"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "isadLevel"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountBothDirections> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountBothDirections"^^xsd:string ;
+    dcterms:identifier "laneCountBothDirections"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Lane count in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "laneCountBothDirections"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInDirection> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountInDirection"^^xsd:string ;
+    dcterms:identifier "laneCountInDirection"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Lane count in the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "laneCountInDirection"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInOppositeDirection> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
+    dcterms:identifier "laneCountInOppositeDirection"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "laneCountInOppositeDirection"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#officialName> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "officialName"^^xsd:string ;
+    dcterms:identifier "officialName"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Official name"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "officialName"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#roadLength> a tnits:RoadFeaturePropertyTypeExtensions,
+        skos:Concept ;
+    rdfs:label "roadLength"^^xsd:string ;
+    dcterms:identifier "roadLength"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusSubmitted ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:definition "Road length"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCodeExtensions ;
+    skos:prefLabel "roadLength"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCodeExtensions .
+
+codes:RoadFeaturePropertyTypeCodeExtensionsVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeaturePropertyTypeCodeExtensions"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+tnits:RoadFeaturePropertyTypeExtensions a owl:Class ;
+    rdfs:label "RoadFeaturePropertyTypeExtensions"^^xsd:string ;
+    rdfs:subClassOf tnits:RoadFeaturePropertyType,
+        tnits:tnitsCodeList ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
+codes:RoadFeaturePropertyTypeCodeExtensions a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeaturePropertyTypeCodeExtensions"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeaturePropertyTypeExtensions ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+

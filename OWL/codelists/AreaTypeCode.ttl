@@ -1,0 +1,97 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#inNationalPark> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "inNationalPark"^^xsd:string ;
+    dcterms:identifier "inNationalPark"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "Within the boundary of a recognised national park"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "inNationalPark"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#insideCities> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "insideCities"^^xsd:string ;
+    dcterms:identifier "insideCities"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "Within the notional or actual boundary of a city"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "insideCities"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#nearRailroadCrossing> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "nearRailroadCrossing"^^xsd:string ;
+    dcterms:identifier "nearRailroadCrossing"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "In close proximity to a railway level crossing"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "nearRailroadCrossing"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#nearSchool> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "nearSchool"^^xsd:string ;
+    dcterms:identifier "nearSchool"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "In close proximity to a school"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "nearSchool"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#outsideCities> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "outsideCities"^^xsd:string ;
+    dcterms:identifier "outsideCities"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "Outside the notional or actual boundary of a city"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "outsideCities"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+<http://spec.tn-its.eu/codelists/AreaTypeCode#trafficCalmingArea> a tnits:AreaType,
+        skos:Concept ;
+    rdfs:label "trafficCalmingArea"^^xsd:string ;
+    dcterms:identifier "trafficCalmingArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:AreaTypeCode ;
+    skos:definition "In a zone which is subject to traffic calming measures"^^xsd:string ;
+    skos:inScheme codes:AreaTypeCode ;
+    skos:prefLabel "trafficCalmingArea"^^xsd:string ;
+    skos:topConceptOf codes:AreaTypeCode .
+
+codes:AreaTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string ;
+    dc:title "TN-ITS Codes for AreaTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:AreaTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "AreaTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:AreaType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/AreaTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string .
+

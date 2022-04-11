@@ -1,0 +1,241 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#all> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "all"^^xsd:string ;
+    dcterms:identifier "all"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "All fuel types"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "all"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#battery> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "battery"^^xsd:string ;
+    dcterms:identifier "battery"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Battery"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "battery"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#biodiesel> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "biodiesel"^^xsd:string ;
+    dcterms:identifier "biodiesel"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Biodiesel"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "biodiesel"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#diesel> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "diesel"^^xsd:string ;
+    dcterms:identifier "diesel"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Diesel"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "diesel"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#dieselBatteryHybrid> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "dieselBatteryHybrid"^^xsd:string ;
+    dcterms:identifier "dieselBatteryHybrid"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Diesel and battery hybrid"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "dieselBatteryHybrid"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#ethanol> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "ethanol"^^xsd:string ;
+    dcterms:identifier "ethanol"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Ethanol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "ethanol"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#hydrogen> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "hydrogen"^^xsd:string ;
+    dcterms:identifier "hydrogen"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Hydrogen"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "hydrogen"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#liquidGas> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "liquidGas"^^xsd:string ;
+    dcterms:identifier "liquidGas"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Liquid gas of any type including LPG. "^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "liquidGas"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#lpg> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "lpg"^^xsd:string ;
+    dcterms:identifier "lpg"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Liquid petroleum gas"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "lpg"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#methane> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "methane"^^xsd:string ;
+    dcterms:identifier "methane"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Methane gas"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "methane"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#other> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "other"^^xsd:string ;
+    dcterms:identifier "other"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Other forms of fuel, not otherwise listed"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "other"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrol> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol"^^xsd:string ;
+    dcterms:identifier "petrol"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrol"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrol95Octane> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol95Octane"^^xsd:string ;
+    dcterms:identifier "petrol95Octane"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Petrol (95 Octane)"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrol95Octane"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrol98Octane> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrol98Octane"^^xsd:string ;
+    dcterms:identifier "petrol98Octane"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Petrol (98 Octane)"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrol98Octane"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrolBatteryHybrid> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolBatteryHybrid"^^xsd:string ;
+    dcterms:identifier "petrolBatteryHybrid"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Petrol and battery hybrid"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrolBatteryHybrid"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrolLeaded> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolLeaded"^^xsd:string ;
+    dcterms:identifier "petrolLeaded"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Leaded petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrolLeaded"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#petrolUnleaded> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "petrolUnleaded"^^xsd:string ;
+    dcterms:identifier "petrolUnleaded"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Unleaded petrol"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "petrolUnleaded"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+<http://spec.tn-its.eu/codelists/FuelTypeCode#unknown> a tnits:FuelType,
+        skos:Concept ;
+    rdfs:label "unknown"^^xsd:string ;
+    dcterms:identifier "unknown"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:FuelTypeCode ;
+    skos:definition "Unknown"^^xsd:string ;
+    skos:inScheme codes:FuelTypeCode ;
+    skos:prefLabel "unknown"^^xsd:string ;
+    skos:topConceptOf codes:FuelTypeCode .
+
+codes:FuelTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string ;
+    dc:title "TN-ITS Codes for FuelTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:FuelTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "FuelTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:FuelType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/FuelTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string .
+

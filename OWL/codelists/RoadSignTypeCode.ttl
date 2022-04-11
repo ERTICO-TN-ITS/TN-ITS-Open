@@ -1,0 +1,4354 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_111"^^xsd:string ;
+    dcterms:identifier "11_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Crossroads)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_112"^^xsd:string ;
+    dcterms:identifier "11_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Side road right)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_113> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_113"^^xsd:string ;
+    dcterms:identifier "11_113"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Side road left)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_113"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_115> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_115"^^xsd:string ;
+    dcterms:identifier "11_115"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Forked Intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_115"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_116> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_116"^^xsd:string ;
+    dcterms:identifier "11_116"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(T junction)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_116"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_117> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_117"^^xsd:string ;
+    dcterms:identifier "11_117"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Y intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_117"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_118> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_118"^^xsd:string ;
+    dcterms:identifier "11_118"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection where the priority is prescribed by the general priority rule
+(Staggered intersection)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_118"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_132> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_132"^^xsd:string ;
+    dcterms:identifier "11_132"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Intersection with a road the users of which must give way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_132"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_133> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_133"^^xsd:string ;
+    dcterms:identifier "11_133"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection with a road the users of which must give way
+ T-shaped crossing left """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_133"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_134> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_134"^^xsd:string ;
+    dcterms:identifier "11_134"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection with a road the users of which must give way
+ T-shaped crossing righ """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_134"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_135> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_135"^^xsd:string ;
+    dcterms:identifier "11_135"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower left"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_135"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_136> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_136"^^xsd:string ;
+    dcterms:identifier "11_136"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Intersection with a road the users of which must give way
+T-shaped crossing of folk type Lower right"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_136"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_148> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_148"^^xsd:string ;
+    dcterms:identifier "11_148"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Warning of roundabout
+(Clockwise)   """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_148"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_149> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_149"^^xsd:string ;
+    dcterms:identifier "11_149"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Warning of roundabout
+(Anti-clockwise)   """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_149"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_161> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_161"^^xsd:string ;
+    dcterms:identifier "11_161"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Right bend"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_161"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_162> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_162"^^xsd:string ;
+    dcterms:identifier "11_162"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Left Bend"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_162"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_174> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_174"^^xsd:string ;
+    dcterms:identifier "11_174"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Right turn"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_174"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_175> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_175"^^xsd:string ;
+    dcterms:identifier "11_175"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Left turn "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_175"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_187> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_187"^^xsd:string ;
+    dcterms:identifier "11_187"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Reverse curve (Right and left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_187"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_188> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_188"^^xsd:string ;
+    dcterms:identifier "11_188"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Reverse curve (Left and right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_188"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_211> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_211"^^xsd:string ;
+    dcterms:identifier "11_211"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Double bend, right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_211"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_212> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_212"^^xsd:string ;
+    dcterms:identifier "11_212"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Double bend, left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_212"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_224> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_224"^^xsd:string ;
+    dcterms:identifier "11_224"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Winding road (First to the right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_224"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_225> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_225"^^xsd:string ;
+    dcterms:identifier "11_225"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Winding road (First to the left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_225"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_236> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_236"^^xsd:string ;
+    dcterms:identifier "11_236"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Level crossing with gate"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_236"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_237> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_237"^^xsd:string ;
+    dcterms:identifier "11_237"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Other level-crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_237"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_238> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_238"^^xsd:string ;
+    dcterms:identifier "11_238"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Intersection with a tramway line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_238"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_239> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_239"^^xsd:string ;
+    dcterms:identifier "11_239"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Children"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_239"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_241> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_241"^^xsd:string ;
+    dcterms:identifier "11_241"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian crossing(right) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_241"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_242> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_242"^^xsd:string ;
+    dcterms:identifier "11_242"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Elderly or disabled pedestrians likely to cross ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_242"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_244> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_244"^^xsd:string ;
+    dcterms:identifier "11_244"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Children(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_244"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_245> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_245"^^xsd:string ;
+    dcterms:identifier "11_245"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrians (left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_245"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_246> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_246"^^xsd:string ;
+    dcterms:identifier "11_246"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian crossing (left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_246"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_247> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_247"^^xsd:string ;
+    dcterms:identifier "11_247"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_247"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_253> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_253"^^xsd:string ;
+    dcterms:identifier "11_253"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Light signals"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_253"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_254> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_254"^^xsd:string ;
+    dcterms:identifier "11_254"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Slippery Road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_254"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_255> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_255"^^xsd:string ;
+    dcterms:identifier "11_255"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Falling rocks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_255"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_256> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_256"^^xsd:string ;
+    dcterms:identifier "11_256"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Loose gravel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_256"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_257> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_257"^^xsd:string ;
+    dcterms:identifier "11_257"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Dangerous shoulder"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_257"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_258> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_258"^^xsd:string ;
+    dcterms:identifier "11_258"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Falling rocks(right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_258"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_268> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_268"^^xsd:string ;
+    dcterms:identifier "11_268"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Uneven road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_268"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_269> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_269"^^xsd:string ;
+    dcterms:identifier "11_269"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Uneven road(hump)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_269"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_271> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_271"^^xsd:string ;
+    dcterms:identifier "11_271"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Uneven road(dip)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_271"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_283> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_283"^^xsd:string ;
+    dcterms:identifier "11_283"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Traffic merging from the right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_283"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_285> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_285"^^xsd:string ;
+    dcterms:identifier "11_285"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Traffic merging from left ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_285"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_296> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_296"^^xsd:string ;
+    dcterms:identifier "11_296"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Carriageway narrows from the right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_296"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_297> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_297"^^xsd:string ;
+    dcterms:identifier "11_297"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Carriageway narrows from the left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_297"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_319> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_319"^^xsd:string ;
+    dcterms:identifier "11_319"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Carriageway narrows"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_319"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_332> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_332"^^xsd:string ;
+    dcterms:identifier "11_332"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Two-way traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_332"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_346> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_346"^^xsd:string ;
+    dcterms:identifier "11_346"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Steep ascent"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_346"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_347> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_347"^^xsd:string ;
+    dcterms:identifier "11_347"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Dangerous descent"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_347"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_348> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_348"^^xsd:string ;
+    dcterms:identifier "11_348"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Road works"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_348"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_361> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_361"^^xsd:string ;
+    dcterms:identifier "11_361"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cross-wind"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_361"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_362> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_362"^^xsd:string ;
+    dcterms:identifier "11_362"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Airfiled"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_362"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_363> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_363"^^xsd:string ;
+    dcterms:identifier "11_363"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cattle or other animals crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_363"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_364> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_364"^^xsd:string ;
+    dcterms:identifier "11_364"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cattle or other animals crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_364"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_365> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_365"^^xsd:string ;
+    dcterms:identifier "11_365"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cross-wind(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_365"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_366> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_366"^^xsd:string ;
+    dcterms:identifier "11_366"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Airfiled(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_366"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_367> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_367"^^xsd:string ;
+    dcterms:identifier "11_367"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cattle or other animals crossing(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_367"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_368> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_368"^^xsd:string ;
+    dcterms:identifier "11_368"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cattle or other animals crossing(left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_368"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_378> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_378"^^xsd:string ;
+    dcterms:identifier "11_378"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Swing bridge"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_378"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_379> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_379"^^xsd:string ;
+    dcterms:identifier "11_379"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Road leads on to quar or river"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_379"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_381> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_381"^^xsd:string ;
+    dcterms:identifier "11_381"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cyclist entering or crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_381"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_382> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_382"^^xsd:string ;
+    dcterms:identifier "11_382"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cyclist entering or crossing, left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_382"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_395> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_395"^^xsd:string ;
+    dcterms:identifier "11_395"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Give way "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_395"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_396> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_396"^^xsd:string ;
+    dcterms:identifier "11_396"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Distance to 'Give Way' line ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_396"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_398> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_398"^^xsd:string ;
+    dcterms:identifier "11_398"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Attention wrong way driver"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_398"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_411> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_411"^^xsd:string ;
+    dcterms:identifier "11_411"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Signs to be placed in the immediate vicinity of level-crossings(vertical)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_411"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_412> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_412"^^xsd:string ;
+    dcterms:identifier "11_412"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Signs to be placed in the immediate vicinity of level-crossings (horizontal)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_412"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_413> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_413"^^xsd:string ;
+    dcterms:identifier "11_413"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Signs to be placed in the immediate vicinity of level-crossings
+Two or more tracks (vertical)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_413"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_414> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_414"^^xsd:string ;
+    dcterms:identifier "11_414"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Signs to be placed in the immediate vicinity of level-crossings 
+Two or more Tracks (horizontal)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_414"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_998> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_998"^^xsd:string ;
+    dcterms:identifier "11_998"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Caution"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_998"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#11_999> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "11_999"^^xsd:string ;
+    dcterms:identifier "11_999"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Other danger"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "11_999"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_111"^^xsd:string ;
+    dcterms:identifier "12_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Priority for oncoming traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_112"^^xsd:string ;
+    dcterms:identifier "12_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "STOP"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_113> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_113"^^xsd:string ;
+    dcterms:identifier "12_113"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsory stopping XXm ahead"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_113"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_114> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_114"^^xsd:string ;
+    dcterms:identifier "12_114"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Assigned lane for light vehicles or motor cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_114"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_115> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_115"^^xsd:string ;
+    dcterms:identifier "12_115"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Assigned lane for trucks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_115"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_116> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_116"^^xsd:string ;
+    dcterms:identifier "12_116"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Assigned lane on motorway for trailers"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_116"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_117> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_117"^^xsd:string ;
+    dcterms:identifier "12_117"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Give way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_117"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_127> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_127"^^xsd:string ;
+    dcterms:identifier "12_127"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Assigned lane for trailers"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_127"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_128> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_128"^^xsd:string ;
+    dcterms:identifier "12_128"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "With-flow bus lane which pedal cycles may also use"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_128"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_129> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_129"^^xsd:string ;
+    dcterms:identifier "12_129"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Exclusive lane for route bus"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_129"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_131> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_131"^^xsd:string ;
+    dcterms:identifier "12_131"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Buses and pedal cycles only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_131"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_132> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_132"^^xsd:string ;
+    dcterms:identifier "12_132"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Priority lane for route bus"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_132"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_133> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_133"^^xsd:string ;
+    dcterms:identifier "12_133"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Vehicles under XXt are permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_133"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_134> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_134"^^xsd:string ;
+    dcterms:identifier "12_134"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "High occupancy vehicle lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_134"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_154> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_154"^^xsd:string ;
+    dcterms:identifier "12_154"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Centre line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_154"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_155> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_155"^^xsd:string ;
+    dcterms:identifier "12_155"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Turning restriction on a multi-lane approach to an intersection"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_155"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_156> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_156"^^xsd:string ;
+    dcterms:identifier "12_156"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Stop line"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_156"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_157> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_157"^^xsd:string ;
+    dcterms:identifier "12_157"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Two-step right turn for mopeds"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_157"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_158> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_158"^^xsd:string ;
+    dcterms:identifier "12_158"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Do not make two-step right turn "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_158"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_176> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_176"^^xsd:string ;
+    dcterms:identifier "12_176"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Slow down"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_176"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_177> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_177"^^xsd:string ;
+    dcterms:identifier "12_177"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Yield right of way "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_177"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_178> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_178"^^xsd:string ;
+    dcterms:identifier "12_178"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Priority road"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_178"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_411> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_411"^^xsd:string ;
+    dcterms:identifier "12_411"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for all vehicles, mopeds, cycles, pedestrians"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_411"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_412> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_412"^^xsd:string ;
+    dcterms:identifier "12_412"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_412"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_413> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_413"^^xsd:string ;
+    dcterms:identifier "12_413"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry into the designated direction"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_413"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_414> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_414"^^xsd:string ;
+    dcterms:identifier "12_414"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No vehicles crossing (except for vehicles turning left to enter or exit a facility off the road) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_414"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_415> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_415"^^xsd:string ;
+    dcterms:identifier "12_415"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Closed to all vehicles in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_415"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_416> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_416"^^xsd:string ;
+    dcterms:identifier "12_416"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for for any power driven vehicle except two wheeled motor cycles without a side-car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_416"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_417> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_417"^^xsd:string ;
+    dcterms:identifier "12_417"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for motor cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_417"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_418> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_418"^^xsd:string ;
+    dcterms:identifier "12_418"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for cycles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_418"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_419> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_419"^^xsd:string ;
+    dcterms:identifier "12_419"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for mopeds"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_419"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_421> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_421"^^xsd:string ;
+    dcterms:identifier "12_421"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for goods vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_421"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_422> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_422"^^xsd:string ;
+    dcterms:identifier "12_422"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for any power driven vehicle drawing a trailer include a semi-trailer or a single axle trailer "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_422"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_423> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_423"^^xsd:string ;
+    dcterms:identifier "12_423"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for pedestrians"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_423"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_424> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_424"^^xsd:string ;
+    dcterms:identifier "12_424"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for animal-drawn vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_424"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_425> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_425"^^xsd:string ;
+    dcterms:identifier "12_425"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for handcarts."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_425"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_426> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_426"^^xsd:string ;
+    dcterms:identifier "12_426"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for power driven agricultural vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_426"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_427> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_427"^^xsd:string ;
+    dcterms:identifier "12_427"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_427"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_429> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_429"^^xsd:string ;
+    dcterms:identifier "12_429"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for any power driven vehicle drawing a trailer other than a semi-trailer or a single axle trailer"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_429"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_431> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_431"^^xsd:string ;
+    dcterms:identifier "12_431"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """No ridden or
+accompanied
+horses"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_431"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_433> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_433"^^xsd:string ;
+    dcterms:identifier "12_433"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No vehicles that cannot exceed 25 km/h"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_433"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_434> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_434"^^xsd:string ;
+    dcterms:identifier "12_434"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for any power-driven vehicle drawing a trailer"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_434"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_451> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_451"^^xsd:string ;
+    dcterms:identifier "12_451"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for power driven vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_451"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_452> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_452"^^xsd:string ;
+    dcterms:identifier "12_452"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for power driven vehicles or animal-drawn vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_452"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_453> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_453"^^xsd:string ;
+    dcterms:identifier "12_453"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for goods vehicles and buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_453"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_454> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_454"^^xsd:string ;
+    dcterms:identifier "12_454"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for bicycles, mopeds and disabled drivers vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_454"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_455> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_455"^^xsd:string ;
+    dcterms:identifier "12_455"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for vehicles that are not able or aloud to go faster than 25 km/h, no microcars, bikes, mopeds and disabled drivers vehicles."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_455"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_475> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_475"^^xsd:string ;
+    dcterms:identifier "12_475"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """No entry for vehicles carrying more than a certain
+quantity of explosives or readily inflammable substances"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_475"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_476> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_476"^^xsd:string ;
+    dcterms:identifier "12_476"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for  vehicles carrying dangerous goods for which special sign plating is required"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_476"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_477> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_477"^^xsd:string ;
+    dcterms:identifier "12_477"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """No entry for vehicles carrying more than a certain
+quantity of substances liable to cause water pollution"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_477"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_499> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_499"^^xsd:string ;
+    dcterms:identifier "12_499"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """No entry for vehicles having an overall width exceeding X
+metres"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_499"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_511> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_511"^^xsd:string ;
+    dcterms:identifier "12_511"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """No entry for vehicles having an overall height exceeding X
+metres"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_511"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_512> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_512"^^xsd:string ;
+    dcterms:identifier "12_512"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for vehicles exceeding XX t laden mass"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_512"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_513> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_513"^^xsd:string ;
+    dcterms:identifier "12_513"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for vehicles having a mass exceeding XX t on one axle "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_513"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_514> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_514"^^xsd:string ;
+    dcterms:identifier "12_514"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No entry for vehicles or combinations of vehicles exceeding XXm in length"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_514"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_515> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_515"^^xsd:string ;
+    dcterms:identifier "12_515"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Driving of vehicles less than XX m apart prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_515"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_527> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_527"^^xsd:string ;
+    dcterms:identifier "12_527"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No left turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_527"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_528> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_528"^^xsd:string ;
+    dcterms:identifier "12_528"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No right turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_528"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_529> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_529"^^xsd:string ;
+    dcterms:identifier "12_529"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No U-turns"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_529"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_542> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_542"^^xsd:string ;
+    dcterms:identifier "12_542"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Overtaking prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_542"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_543> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_543"^^xsd:string ;
+    dcterms:identifier "12_543"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of overtaking prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_543"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_544> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_544"^^xsd:string ;
+    dcterms:identifier "12_544"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Overtaking by goods vehicles prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_544"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_545> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_545"^^xsd:string ;
+    dcterms:identifier "12_545"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of overtaking by goods vehicles prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_545"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_557> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_557"^^xsd:string ;
+    dcterms:identifier "12_557"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Maximum speed
+limited to the figure indicated"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_557"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_558> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_558"^^xsd:string ;
+    dcterms:identifier "12_558"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Use of audible warning devices prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_558"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_561> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_561"^^xsd:string ;
+    dcterms:identifier "12_561"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Passing without stopping prohibited (Customs) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_561"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_562> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_562"^^xsd:string ;
+    dcterms:identifier "12_562"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Stop for (Military police check)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_562"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_563> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_563"^^xsd:string ;
+    dcterms:identifier "12_563"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Stop for (Police check) ) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_563"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_564> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_564"^^xsd:string ;
+    dcterms:identifier "12_564"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Stop for (Toll gate)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_564"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_565> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_565"^^xsd:string ;
+    dcterms:identifier "12_565"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrians crossover prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_565"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_577> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_577"^^xsd:string ;
+    dcterms:identifier "12_577"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Parking prohibited "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_577"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_578> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_578"^^xsd:string ;
+    dcterms:identifier "12_578"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Standing and parking prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_578"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_579> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_579"^^xsd:string ;
+    dcterms:identifier "12_579"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Alternate parking(1st to 15th days) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_579"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_581> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_581"^^xsd:string ;
+    dcterms:identifier "12_581"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Alternate parking (16th to 31st days)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_581"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_592> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_592"^^xsd:string ;
+    dcterms:identifier "12_592"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Emergency parking only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_592"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_593> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_593"^^xsd:string ;
+    dcterms:identifier "12_593"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Entrance to a
+controlled
+parking zone"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_593"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_594> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_594"^^xsd:string ;
+    dcterms:identifier "12_594"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Limited duration no parking zone "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_594"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_645> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_645"^^xsd:string ;
+    dcterms:identifier "12_645"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Rush hour lane open 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_645"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_646> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_646"^^xsd:string ;
+    dcterms:identifier "12_646"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of rush hour lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_646"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_647> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_647"^^xsd:string ;
+    dcterms:identifier "12_647"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of rush hour lane 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_647"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_648> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_648"^^xsd:string ;
+    dcterms:identifier "12_648"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Clear rush hour lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_648"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_649> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_649"^^xsd:string ;
+    dcterms:identifier "12_649"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Clear rush hour lane 3/1"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_649"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_711> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_711"^^xsd:string ;
+    dcterms:identifier "12_711"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Left)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_711"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_712> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_712"^^xsd:string ;
+    dcterms:identifier "12_712"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_712"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_713> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_713"^^xsd:string ;
+    dcterms:identifier "12_713"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed  (straight ahead)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_713"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_714> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_714"^^xsd:string ;
+    dcterms:identifier "12_714"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Right turn)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_714"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_715> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_715"^^xsd:string ;
+    dcterms:identifier "12_715"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Left turn) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_715"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_716> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_716"^^xsd:string ;
+    dcterms:identifier "12_716"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Right, straight)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_716"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_717> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_717"^^xsd:string ;
+    dcterms:identifier "12_717"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Left, straight) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_717"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_718> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_718"^^xsd:string ;
+    dcterms:identifier "12_718"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Pass this side 
+(right side)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_718"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_719> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_719"^^xsd:string ;
+    dcterms:identifier "12_719"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Pass this side
+ left side"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_719"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_721> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_721"^^xsd:string ;
+    dcterms:identifier "12_721"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pass this side (Right turn, left turn) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_721"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_723> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_723"^^xsd:string ;
+    dcterms:identifier "12_723"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Pass this side
+ (both sides)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_723"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_724> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_724"^^xsd:string ;
+    dcterms:identifier "12_724"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsory direction for vehicles carrying dangerous goods"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_724"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_743> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_743"^^xsd:string ;
+    dcterms:identifier "12_743"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Direction to be followed
+(Two-way traffic) """^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_743"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_744> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_744"^^xsd:string ;
+    dcterms:identifier "12_744"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Direction to be followed
+(One-way street)"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_744"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_745> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_745"^^xsd:string ;
+    dcterms:identifier "12_745"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction to be followed (Left) (One-way road) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_745"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_746> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_746"^^xsd:string ;
+    dcterms:identifier "12_746"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsory roundabout (Clockwise)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_746"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_747> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_747"^^xsd:string ;
+    dcterms:identifier "12_747"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsory roundabout "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_747"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_748> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_748"^^xsd:string ;
+    dcterms:identifier "12_748"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Road for motor vehicles only"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_748"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_749> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_749"^^xsd:string ;
+    dcterms:identifier "12_749"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsary cycle track"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_749"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_751> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_751"^^xsd:string ;
+    dcterms:identifier "12_751"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Abreast riding permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_751"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_752> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_752"^^xsd:string ;
+    dcterms:identifier "12_752"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Bicycle crossing zone "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_752"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_753> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_753"^^xsd:string ;
+    dcterms:identifier "12_753"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsary footpath"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_753"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_754> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_754"^^xsd:string ;
+    dcterms:identifier "12_754"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsay track for riders on horseback"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_754"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_772> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_772"^^xsd:string ;
+    dcterms:identifier "12_772"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian and bicycle crossing zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_772"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_773> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_773"^^xsd:string ;
+    dcterms:identifier "12_773"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsary cycle track and Compulsary footpath"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_773"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_795> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_795"^^xsd:string ;
+    dcterms:identifier "12_795"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Compulsory minimum speed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_795"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_796> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_796"^^xsd:string ;
+    dcterms:identifier "12_796"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Snow chains compulsory"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_796"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_851> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_851"^^xsd:string ;
+    dcterms:identifier "12_851"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_851"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_852> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_852"^^xsd:string ;
+    dcterms:identifier "12_852"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Distance plate indicating end of priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_852"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_853> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_853"^^xsd:string ;
+    dcterms:identifier "12_853"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Priority for oncoming trafic"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_853"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_861> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_861"^^xsd:string ;
+    dcterms:identifier "12_861"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of all local prohibition imposed on moving vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_861"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_862> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_862"^^xsd:string ;
+    dcterms:identifier "12_862"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of prohibition of overtaking"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_862"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_863> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_863"^^xsd:string ;
+    dcterms:identifier "12_863"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of prohibition of overtaking for goods vehicles "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_863"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_864> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_864"^^xsd:string ;
+    dcterms:identifier "12_864"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of speed limit"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_864"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_865> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_865"^^xsd:string ;
+    dcterms:identifier "12_865"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of compulsory minimum speed "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_865"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_871> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_871"^^xsd:string ;
+    dcterms:identifier "12_871"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Driving on tram track permitted"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_871"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#12_872> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "12_872"^^xsd:string ;
+    dcterms:identifier "12_872"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Stopping permitted "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "12_872"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_111"^^xsd:string ;
+    dcterms:identifier "13_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction signs "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_112"^^xsd:string ;
+    dcterms:identifier "13_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance sign showing the direction of places "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_121> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_121"^^xsd:string ;
+    dcterms:identifier "13_121"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction signs(root to be followe) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_121"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_133> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_133"^^xsd:string ;
+    dcterms:identifier "13_133"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction signs showing the common road name "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_133"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_168> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_168"^^xsd:string ;
+    dcterms:identifier "13_168"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_168"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_169> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_169"^^xsd:string ;
+    dcterms:identifier "13_169"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance signs showing the morotway with place name"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_169"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_171> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_171"^^xsd:string ;
+    dcterms:identifier "13_171"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction signs showing the exit of motorway with road number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_171"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_172> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_172"^^xsd:string ;
+    dcterms:identifier "13_172"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction signs showing the exit of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_172"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_173> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_173"^^xsd:string ;
+    dcterms:identifier "13_173"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance signs showing the service area on motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_173"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_174> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_174"^^xsd:string ;
+    dcterms:identifier "13_174"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_174"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_184> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_184"^^xsd:string ;
+    dcterms:identifier "13_184"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Multiple destinations and distances"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_184"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_185> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_185"^^xsd:string ;
+    dcterms:identifier "13_185"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Sign showing the direction of places"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_185"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_186> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_186"^^xsd:string ;
+    dcterms:identifier "13_186"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Sign showing the direction of places with road number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_186"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_187> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_187"^^xsd:string ;
+    dcterms:identifier "13_187"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Sign showing the direction of places on the following road "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_187"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_188> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_188"^^xsd:string ;
+    dcterms:identifier "13_188"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Sign showing the direction of places with junction layout"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_188"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_189> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_189"^^xsd:string ;
+    dcterms:identifier "13_189"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Sign showing the direction of places with common road names"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_189"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_222> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_222"^^xsd:string ;
+    dcterms:identifier "13_222"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction signs showing the entrance of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_222"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_223> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_223"^^xsd:string ;
+    dcterms:identifier "13_223"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction signs showing the exit of motorway with the place name"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_223"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_224> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_224"^^xsd:string ;
+    dcterms:identifier "13_224"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Direction signs showing the exit of motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_224"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_225> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_225"^^xsd:string ;
+    dcterms:identifier "13_225"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Lane for the place on the motorway "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_225"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_226> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_226"^^xsd:string ;
+    dcterms:identifier "13_226"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Service area on motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_226"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_326> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_326"^^xsd:string ;
+    dcterms:identifier "13_326"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "National/State motorway number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_326"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_327> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_327"^^xsd:string ;
+    dcterms:identifier "13_327"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Local motorway number"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_327"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_525> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_525"^^xsd:string ;
+    dcterms:identifier "13_525"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No through road(front)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_525"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_526> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_526"^^xsd:string ;
+    dcterms:identifier "13_526"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "No through road(right)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_526"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_538> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_538"^^xsd:string ;
+    dcterms:identifier "13_538"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Vehicles from opposite direction must give priority"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_538"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_539> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_539"^^xsd:string ;
+    dcterms:identifier "13_539"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Access permitted"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_539"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_611> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_611"^^xsd:string ;
+    dcterms:identifier "13_611"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Number and direction of traffic lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_611"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_612> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_612"^^xsd:string ;
+    dcterms:identifier "13_612"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane ends "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_612"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_613> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_613"^^xsd:string ;
+    dcterms:identifier "13_613"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane divergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_613"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_614> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_614"^^xsd:string ;
+    dcterms:identifier "13_614"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Trucks prohibited from this lane "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_614"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_615> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_615"^^xsd:string ;
+    dcterms:identifier "13_615"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Trucks prohibited from main lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_615"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_616> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_616"^^xsd:string ;
+    dcterms:identifier "13_616"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Trucks prohibited from diverging lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_616"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_617> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_617"^^xsd:string ;
+    dcterms:identifier "13_617"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advance direction sign for route to be followed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_617"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_618> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_618"^^xsd:string ;
+    dcterms:identifier "13_618"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Detour"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_618"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_619> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_619"^^xsd:string ;
+    dcterms:identifier "13_619"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Crawler lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_619"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_621> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_621"^^xsd:string ;
+    dcterms:identifier "13_621"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Escape lane (Right type 1) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_621"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_622> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_622"^^xsd:string ;
+    dcterms:identifier "13_622"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Escape lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_622"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_623> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_623"^^xsd:string ;
+    dcterms:identifier "13_623"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "One-way street"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_623"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_624> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_624"^^xsd:string ;
+    dcterms:identifier "13_624"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane convergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_624"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_643> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_643"^^xsd:string ;
+    dcterms:identifier "13_643"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Directional flows"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_643"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_644> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_644"^^xsd:string ;
+    dcterms:identifier "13_644"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Directional flows and lane convergence"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_644"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_651> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_651"^^xsd:string ;
+    dcterms:identifier "13_651"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Closure of a traffic lane, two lanes to one (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_651"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_652> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_652"^^xsd:string ;
+    dcterms:identifier "13_652"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Closure of a traffic lane, three lanes to two (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_652"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_653> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_653"^^xsd:string ;
+    dcterms:identifier "13_653"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane convergence, four lanes to three (right lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_653"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_654> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_654"^^xsd:string ;
+    dcterms:identifier "13_654"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Closure of a traffic lane, two lanes to one (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_654"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_655> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_655"^^xsd:string ;
+    dcterms:identifier "13_655"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Closure of a traffic lane, three lanes to two (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_655"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_656> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_656"^^xsd:string ;
+    dcterms:identifier "13_656"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Closure of a traffic lane, four lanes to three  (left lane ends)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_656"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_657> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_657"^^xsd:string ;
+    dcterms:identifier "13_657"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Left lane shift onto oncoming lane"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_657"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_658> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_658"^^xsd:string ;
+    dcterms:identifier "13_658"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Two lane right shift onto hard shoulder"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_658"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_768> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_768"^^xsd:string ;
+    dcterms:identifier "13_768"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane closed"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_768"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_769> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_769"^^xsd:string ;
+    dcterms:identifier "13_769"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Lane free"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_769"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_771> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_771"^^xsd:string ;
+    dcterms:identifier "13_771"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Clear lane to left"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_771"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_772> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_772"^^xsd:string ;
+    dcterms:identifier "13_772"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Clear lane to right"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_772"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_773> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_773"^^xsd:string ;
+    dcterms:identifier "13_773"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of all restrictions by electronic signs"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_773"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_781> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_781"^^xsd:string ;
+    dcterms:identifier "13_781"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """compulsory minimum speed applying to
+different lanes"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_781"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_782> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_782"^^xsd:string ;
+    dcterms:identifier "13_782"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """compulsory minimum speed applying to one
+lane"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_782"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_783> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_783"^^xsd:string ;
+    dcterms:identifier "13_783"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "speed limits applying to different lanes"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_783"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_784> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_784"^^xsd:string ;
+    dcterms:identifier "13_784"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "lanes reserved for buses"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_784"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_785> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_785"^^xsd:string ;
+    dcterms:identifier "13_785"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "One-way"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_785"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_786> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_786"^^xsd:string ;
+    dcterms:identifier "13_786"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Preselection sign"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_786"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_811> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_811"^^xsd:string ;
+    dcterms:identifier "13_811"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Road for motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_811"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_812> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_812"^^xsd:string ;
+    dcterms:identifier "13_812"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of road for motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_812"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_813> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_813"^^xsd:string ;
+    dcterms:identifier "13_813"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Tunnel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_813"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_814> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_814"^^xsd:string ;
+    dcterms:identifier "13_814"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of tunnel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_814"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_815> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_815"^^xsd:string ;
+    dcterms:identifier "13_815"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian crossing"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_815"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_821> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_821"^^xsd:string ;
+    dcterms:identifier "13_821"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Safety evacuation area "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_821"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_822> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_822"^^xsd:string ;
+    dcterms:identifier "13_822"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Emergency exit "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_822"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_823> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_823"^^xsd:string ;
+    dcterms:identifier "13_823"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Fire extinguisher "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_823"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_824> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_824"^^xsd:string ;
+    dcterms:identifier "13_824"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Emergency roadside telephone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_824"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_825> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_825"^^xsd:string ;
+    dcterms:identifier "13_825"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Emergency call button"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_825"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_826> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_826"^^xsd:string ;
+    dcterms:identifier "13_826"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Emergency stopping place"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_826"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_827> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_827"^^xsd:string ;
+    dcterms:identifier "13_827"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Waiting area for slower traffic "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_827"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_828> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_828"^^xsd:string ;
+    dcterms:identifier "13_828"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Safety zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_828"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_829> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_829"^^xsd:string ;
+    dcterms:identifier "13_829"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Hospital"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_829"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_831> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_831"^^xsd:string ;
+    dcterms:identifier "13_831"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Toll gate"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_831"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_832> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_832"^^xsd:string ;
+    dcterms:identifier "13_832"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Toll zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_832"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_833> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_833"^^xsd:string ;
+    dcterms:identifier "13_833"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Automatic toll gate "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_833"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_834> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_834"^^xsd:string ;
+    dcterms:identifier "13_834"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Manual toll gate "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_834"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_835> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_835"^^xsd:string ;
+    dcterms:identifier "13_835"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Bicycle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_835"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_836> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_836"^^xsd:string ;
+    dcterms:identifier "13_836"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Aircraft/ Airport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_836"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_837> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_837"^^xsd:string ;
+    dcterms:identifier "13_837"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Departures "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_837"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_838> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_838"^^xsd:string ;
+    dcterms:identifier "13_838"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Arrivals"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_838"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_839> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_839"^^xsd:string ;
+    dcterms:identifier "13_839"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Helicopter/ Heliport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_839"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_841> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_841"^^xsd:string ;
+    dcterms:identifier "13_841"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Railway/ Railway station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_841"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_842> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_842"^^xsd:string ;
+    dcterms:identifier "13_842"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Rent a car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_842"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_843> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_843"^^xsd:string ;
+    dcterms:identifier "13_843"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Taxi stop"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_843"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_844> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_844"^^xsd:string ;
+    dcterms:identifier "13_844"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Bus stop "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_844"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_845> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_845"^^xsd:string ;
+    dcterms:identifier "13_845"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Tramway stop "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_845"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_846> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_846"^^xsd:string ;
+    dcterms:identifier "13_846"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Road open or closed "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_846"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_847> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_847"^^xsd:string ;
+    dcterms:identifier "13_847"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Parking space for vehicles with permission "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_847"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_851> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_851"^^xsd:string ;
+    dcterms:identifier "13_851"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Parking"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_851"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_852> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_852"^^xsd:string ;
+    dcterms:identifier "13_852"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Parking (Machine-charged) "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_852"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_853> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_853"^^xsd:string ;
+    dcterms:identifier "13_853"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Park-and-ride point"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_853"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_854> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_854"^^xsd:string ;
+    dcterms:identifier "13_854"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Car ferry"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_854"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_855> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_855"^^xsd:string ;
+    dcterms:identifier "13_855"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Car train "^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_855"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_861> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_861"^^xsd:string ;
+    dcterms:identifier "13_861"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Beginning of a built-up area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_861"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_862> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_862"^^xsd:string ;
+    dcterms:identifier "13_862"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of a built-up area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_862"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_863> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_863"^^xsd:string ;
+    dcterms:identifier "13_863"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Zone in which parking is prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_863"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_864> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_864"^^xsd:string ;
+    dcterms:identifier "13_864"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Zone in which parking is prohibited at certain times"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_864"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_865> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_865"^^xsd:string ;
+    dcterms:identifier "13_865"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Parking zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_865"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_866> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_866"^^xsd:string ;
+    dcterms:identifier "13_866"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Maximum speed zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_866"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_867> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_867"^^xsd:string ;
+    dcterms:identifier "13_867"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of zone in which parking is prohibited"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_867"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_868> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_868"^^xsd:string ;
+    dcterms:identifier "13_868"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of zone in which parking is prohibited at certain times"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_868"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_869> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_869"^^xsd:string ;
+    dcterms:identifier "13_869"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of parking zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_869"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_871> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_871"^^xsd:string ;
+    dcterms:identifier "13_871"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "End of maximum speed zone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_871"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_872> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_872"^^xsd:string ;
+    dcterms:identifier "13_872"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Residential area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_872"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_873> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_873"^^xsd:string ;
+    dcterms:identifier "13_873"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """End of residential
+area"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_873"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_881> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_881"^^xsd:string ;
+    dcterms:identifier "13_881"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Direction of an airfield"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_881"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_882> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_882"^^xsd:string ;
+    dcterms:identifier "13_882"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction of a camping site."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_882"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_883> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_883"^^xsd:string ;
+    dcterms:identifier "13_883"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Direction of a youth hostel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_883"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_884> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_884"^^xsd:string ;
+    dcterms:identifier "13_884"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Direction of public transport"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_884"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_885> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_885"^^xsd:string ;
+    dcterms:identifier "13_885"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Confirmatory signs"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_885"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_886> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_886"^^xsd:string ;
+    dcterms:identifier "13_886"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Chains or snow tyres recommended"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_886"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_887> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_887"^^xsd:string ;
+    dcterms:identifier "13_887"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advisory speed\""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_887"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_889> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_889"^^xsd:string ;
+    dcterms:identifier "13_889"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Advised itinerary for heavy vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_889"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_891> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_891"^^xsd:string ;
+    dcterms:identifier "13_891"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Pedestrian  underpass."^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_891"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_892> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_892"^^xsd:string ;
+    dcterms:identifier "13_892"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Pedestrian overpass"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_892"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_893> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_893"^^xsd:string ;
+    dcterms:identifier "13_893"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition " Exit from a motorway"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_893"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#13_894> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "13_894"^^xsd:string ;
+    dcterms:identifier "13_894"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition """Direction
+and distance of the nearest emergency exits"""^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "13_894"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_111"^^xsd:string ;
+    dcterms:identifier "21_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Tourist information"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_112"^^xsd:string ;
+    dcterms:identifier "21_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Police"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_113> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_113"^^xsd:string ;
+    dcterms:identifier "21_113"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Facilities for wheelchair user"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_113"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_114> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_114"^^xsd:string ;
+    dcterms:identifier "21_114"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Telephone"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_114"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_115> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_115"^^xsd:string ;
+    dcterms:identifier "21_115"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "First-aid station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_115"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_125> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_125"^^xsd:string ;
+    dcterms:identifier "21_125"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Maintenance service"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_125"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_126> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_126"^^xsd:string ;
+    dcterms:identifier "21_126"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Breakdown service"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_126"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_128> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_128"^^xsd:string ;
+    dcterms:identifier "21_128"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Filling station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_128"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_129> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_129"^^xsd:string ;
+    dcterms:identifier "21_129"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Filling station (+GPL)"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_129"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_145> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_145"^^xsd:string ;
+    dcterms:identifier "21_145"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Washroom/Restroom"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_145"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_146> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_146"^^xsd:string ;
+    dcterms:identifier "21_146"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Restroom for wheelchair user"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_146"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_161> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_161"^^xsd:string ;
+    dcterms:identifier "21_161"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Restaurant"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_161"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_162> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_162"^^xsd:string ;
+    dcterms:identifier "21_162"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Refreshment stand/ Caféteria"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_162"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_163> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_163"^^xsd:string ;
+    dcterms:identifier "21_163"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Service area"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_163"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_164> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_164"^^xsd:string ;
+    dcterms:identifier "21_164"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Postal office"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_164"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_181> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_181"^^xsd:string ;
+    dcterms:identifier "21_181"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Hotel or Motel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_181"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_183> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_183"^^xsd:string ;
+    dcterms:identifier "21_183"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Youth hostel"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_183"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_185> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_185"^^xsd:string ;
+    dcterms:identifier "21_185"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Camping site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_185"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_186> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_186"^^xsd:string ;
+    dcterms:identifier "21_186"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Caravan site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_186"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_187> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_187"^^xsd:string ;
+    dcterms:identifier "21_187"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Camping and caravan site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_187"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_188> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_188"^^xsd:string ;
+    dcterms:identifier "21_188"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Recreational vehicle sanitary station"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_188"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_189> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_189"^^xsd:string ;
+    dcterms:identifier "21_189"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Picnic site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_189"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_191> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_191"^^xsd:string ;
+    dcterms:identifier "21_191"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Amusement park"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_191"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_192> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_192"^^xsd:string ;
+    dcterms:identifier "21_192"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Starting-point for walks"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_192"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_193> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_193"^^xsd:string ;
+    dcterms:identifier "21_193"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Jogging course"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_193"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_194> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_194"^^xsd:string ;
+    dcterms:identifier "21_194"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Skiing site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_194"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_195> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_195"^^xsd:string ;
+    dcterms:identifier "21_195"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Ski lift"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_195"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_196> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_196"^^xsd:string ;
+    dcterms:identifier "21_196"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cable car"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_196"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_198> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_198"^^xsd:string ;
+    dcterms:identifier "21_198"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Canoeing site"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_198"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_199> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_199"^^xsd:string ;
+    dcterms:identifier "21_199"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Cultural assets"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_199"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_211> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_211"^^xsd:string ;
+    dcterms:identifier "21_211"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Natural assets"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_211"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_212> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_212"^^xsd:string ;
+    dcterms:identifier "21_212"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Museum"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_212"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_213> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_213"^^xsd:string ;
+    dcterms:identifier "21_213"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "View point"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_213"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#21_214> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "21_214"^^xsd:string ;
+    dcterms:identifier "21_214"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Park"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "21_214"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_111"^^xsd:string ;
+    dcterms:identifier "31_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Rainfall"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_112"^^xsd:string ;
+    dcterms:identifier "31_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Slippery due to snow / ice"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_113> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_113"^^xsd:string ;
+    dcterms:identifier "31_113"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Fog"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_113"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_114> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_114"^^xsd:string ;
+    dcterms:identifier "31_114"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Poor visibility through snow, rain or fog"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_114"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_359> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_359"^^xsd:string ;
+    dcterms:identifier "31_359"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Strong side-wind"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_359"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#31_361> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "31_361"^^xsd:string ;
+    dcterms:identifier "31_361"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Flood"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "31_361"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_111> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_111"^^xsd:string ;
+    dcterms:identifier "32_111"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Traffic congestion"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_111"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_112> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_112"^^xsd:string ;
+    dcterms:identifier "32_112"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Accident"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_112"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_113> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_113"^^xsd:string ;
+    dcterms:identifier "32_113"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Vehicle on fire"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_113"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_114> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_114"^^xsd:string ;
+    dcterms:identifier "32_114"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Shed loads"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_114"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_115> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_115"^^xsd:string ;
+    dcterms:identifier "32_115"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Slow moving maintenance vehicle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_115"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadSignTypeCode#32_116> a tnits:RoadSignType,
+        skos:Concept ;
+    rdfs:label "32_116"^^xsd:string ;
+    dcterms:identifier "32_116"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadSignTypeCode ;
+    skos:definition "Breakdown vehicle"^^xsd:string ;
+    skos:inScheme codes:RoadSignTypeCode ;
+    skos:prefLabel "32_116"^^xsd:string ;
+    skos:topConceptOf codes:RoadSignTypeCode .
+
+codes:RoadSignTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadSignTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadSignTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadSignTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadSignType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadSignTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the road sign types, defined in accordance with ISO 14823"^^xsd:string .
+

@@ -1,0 +1,109 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#airPollution> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "airPollution"^^xsd:string ;
+    dcterms:identifier "airPollution"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Air pollution"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "airPollution"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#fog> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "fog"^^xsd:string ;
+    dcterms:identifier "fog"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Fog, with reduced visibility"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "fog"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#ice> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "ice"^^xsd:string ;
+    dcterms:identifier "ice"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Increased skid risk due to ice (of any kind)"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "ice"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#rain> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "rain"^^xsd:string ;
+    dcterms:identifier "rain"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Rain, with reduced visibility, and increased skid risk"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "rain"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#snow> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "snow"^^xsd:string ;
+    dcterms:identifier "snow"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Snow, with reduced visibility, and increased skid risk"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "snow"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#wet> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "wet"^^xsd:string ;
+    dcterms:identifier "wet"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Road surface is wet"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "wet"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+<http://spec.tn-its.eu/codelists/WeatherTypeCode#wind> a tnits:WeatherType,
+        skos:Concept ;
+    rdfs:label "wind"^^xsd:string ;
+    dcterms:identifier "wind"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:WeatherTypeCode ;
+    skos:definition "Wind conditions on the road"^^xsd:string ;
+    skos:inScheme codes:WeatherTypeCode ;
+    skos:prefLabel "wind"^^xsd:string ;
+    skos:topConceptOf codes:WeatherTypeCode .
+
+codes:WeatherTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Types of weather conditions which affect driving conditions."^^xsd:string ;
+    dc:title "TN-ITS Codes for WeatherTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:WeatherTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "WeatherTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:WeatherType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/WeatherTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Types of weather conditions which affect driving conditions."^^xsd:string .
+

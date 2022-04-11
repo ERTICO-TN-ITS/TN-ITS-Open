@@ -1,0 +1,85 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationError> a tnits:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationError"^^xsd:string ;
+    dcterms:identifier "decodeLocationError"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureEventTypeCode ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode ;
+    skos:prefLabel "decodeLocationError"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureEventTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationErrorGeometryMismatch> a tnits:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationErrorGeometryMismatch"^^xsd:string ;
+    dcterms:identifier "decodeLocationErrorGeometryMismatch"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureEventTypeCode ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature due to geometry mismatch"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode ;
+    skos:prefLabel "decodeLocationErrorGeometryMismatch"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureEventTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationRoadDescriptorMismatch> a tnits:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "decodeLocationRoadDescriptorMismatch"^^xsd:string ;
+    dcterms:identifier "decodeLocationRoadDescriptorMismatch"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureEventTypeCode ;
+    skos:definition "An error occured when trying to decode the location for the given safety feature due to road descriptor mismatch"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode ;
+    skos:prefLabel "decodeLocationRoadDescriptorMismatch"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureEventTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#illegalPropertyValue> a tnits:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "illegalPropertyValue"^^xsd:string ;
+    dcterms:identifier "illegalPropertyValue"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureEventTypeCode ;
+    skos:definition "An error occured due to an illegal properfty value for the given safety feature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode ;
+    skos:prefLabel "illegalPropertyValue"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureEventTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#success> a tnits:RoadFeatureEventType,
+        skos:Concept ;
+    rdfs:label "success"^^xsd:string ;
+    dcterms:identifier "success"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureEventTypeCode ;
+    skos:definition "The safty feature was successfully integrated on the receiver side"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureEventTypeCode ;
+    skos:prefLabel "success"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureEventTypeCode .
+
+codes:RoadFeatureEventTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureEventTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadFeatureEventTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeatureEventTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeatureEventType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string .
+

@@ -1,0 +1,61 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/ParkingSiteTypeCode#interUrbanParkingSite> a tnits:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "interUrbanParkingSite"^^xsd:string ;
+    dcterms:identifier "interUrbanParkingSite"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ParkingSiteTypeCode ;
+    skos:definition "A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode ;
+    skos:prefLabel "interUrbanParkingSite"^^xsd:string ;
+    skos:topConceptOf codes:ParkingSiteTypeCode .
+
+<http://spec.tn-its.eu/codelists/ParkingSiteTypeCode#specialLocationParkingSite> a tnits:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "specialLocationParkingSite"^^xsd:string ;
+    dcterms:identifier "specialLocationParkingSite"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ParkingSiteTypeCode ;
+    skos:definition "A parking site which is located at a special location, often associated with some building"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode ;
+    skos:prefLabel "specialLocationParkingSite"^^xsd:string ;
+    skos:topConceptOf codes:ParkingSiteTypeCode .
+
+<http://spec.tn-its.eu/codelists/ParkingSiteTypeCode#urbanParkingSite> a tnits:ParkingSiteType,
+        skos:Concept ;
+    rdfs:label "urbanParkingSite"^^xsd:string ;
+    dcterms:identifier "urbanParkingSite"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:ParkingSiteTypeCode ;
+    skos:definition "parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)"^^xsd:string ;
+    skos:inScheme codes:ParkingSiteTypeCode ;
+    skos:prefLabel "urbanParkingSite"^^xsd:string ;
+    skos:topConceptOf codes:ParkingSiteTypeCode .
+
+codes:ParkingSiteTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the types of parking sites"^^xsd:string ;
+    dc:title "TN-ITS Codes for ParkingSiteTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:ParkingSiteTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "ParkingSiteTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:ParkingSiteType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/ParkingSiteTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the types of parking sites"^^xsd:string .
+

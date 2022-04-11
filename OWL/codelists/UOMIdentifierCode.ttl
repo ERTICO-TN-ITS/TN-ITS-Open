@@ -1,0 +1,135 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#ftin> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "ftin"^^xsd:string ;
+    dcterms:identifier "ftin"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition """Feet and inches
+
+Note: To enable this to be coded into a single value the following convention shall be followed.  The feet value is encoded as an integer value and the is suffixed by the inches value which is given as a two digit decimal value, where leading zeros are maintained [e.g. .00, .01, .02, .03, .04, .05, .06, .07, .08, .09, .10, .11, .12].  The value .99 shall indicate the no inches value is provided. """^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "ftin"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#kg> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "kg"^^xsd:string ;
+    dcterms:identifier "kg"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Kilogrammes"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "kg"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#km> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "km"^^xsd:string ;
+    dcterms:identifier "km"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Kilometres"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "km"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#kph> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "kph"^^xsd:string ;
+    dcterms:identifier "kph"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Kilometres per hour"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "kph"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#m> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "m"^^xsd:string ;
+    dcterms:identifier "m"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Metres"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "m"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#mi> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "mi"^^xsd:string ;
+    dcterms:identifier "mi"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Miles"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "mi"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#mph> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "mph"^^xsd:string ;
+    dcterms:identifier "mph"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Miles per hour"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "mph"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#t> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "t"^^xsd:string ;
+    dcterms:identifier "t"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Tonnes"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "t"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+<http://spec.tn-its.eu/codelists/UOMIdentifierCode#yd> a tnits:UOMIdentifier,
+        skos:Concept ;
+    rdfs:label "yd"^^xsd:string ;
+    dcterms:identifier "yd"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:UOMIdentifierCode ;
+    skos:definition "Yards"^^xsd:string ;
+    skos:inScheme codes:UOMIdentifierCode ;
+    skos:prefLabel "yd"^^xsd:string ;
+    skos:topConceptOf codes:UOMIdentifierCode .
+
+codes:UOMIdentifierCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string ;
+    dc:title "TN-ITS Codes for UOMIdentifierCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:UOMIdentifierCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "UOMIdentifierCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:UOMIdentifier ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/UOMIdentifierCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string .
+

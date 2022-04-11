@@ -1,0 +1,527 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#builtUpArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "builtUpArea"^^xsd:string ;
+    dcterms:identifier "builtUpArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """indicating a zone which is of an urban developed nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a built-up area.
+
+NOTE: Taking into account e.g. the UK Highway Code, a built-up area is a settled area in which the speed limit of a road is automatically 30 mph (48 km/h). These roads are known as 'restricted roads' and are identified by the presence of street lights.
+
+That means that there is a traffic regulation existing that assigns automatically a speed limit to a specific road (by law)."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "builtUpArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#chargingPoint> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "chargingPoint"^^xsd:string ;
+    dcterms:identifier "chargingPoint"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Electric vehicle charging point, also called EV charging station (element in an infrastructure that supplies electric energy for the recharging of electric vehicles)."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "chargingPoint"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#closedToAllVehiclesInBothDirections> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "closedToAllVehiclesInBothDirections"^^xsd:string ;
+    dcterms:identifier "closedToAllVehiclesInBothDirections"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating a section of road is closed to all vehicles in both directions of travel."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "closedToAllVehiclesInBothDirections"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#compulsoryDirectionForVehicleCarryingDangerousGoods> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "compulsoryDirectionForVehicleCarryingDangerousGoods"^^xsd:string ;
+    dcterms:identifier "compulsoryDirectionForVehicleCarryingDangerousGoods"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """indicating a mandatory route or turn to be followed for vehicles carrying Dangerous Goods.
+
+Note: See European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR) in Europe."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "compulsoryDirectionForVehicleCarryingDangerousGoods"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#directionToBeFollowed> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "directionToBeFollowed"^^xsd:string ;
+    dcterms:identifier "directionToBeFollowed"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating a mandatory route or turn to be followed."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "directionToBeFollowed"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfBuiltUpArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfBuiltUpArea"^^xsd:string ;
+    dcterms:identifier "endOfBuiltUpArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the end of a zone which is of an urban developed nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfBuiltUpArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfMotorway> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfMotorway"^^xsd:string ;
+    dcterms:identifier "endOfMotorway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the end of a motorway"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfMotorway"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfProhibitionOrRestriction> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfProhibitionOrRestriction"^^xsd:string ;
+    dcterms:identifier "endOfProhibitionOrRestriction"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """A zone which is the end of prohibition or restriction.
+
+NOTE: This is considered to apply to any single or multiple prohibitions or restrictions. In the case where the end of prohibitions or restrictions coincide, this location reference is used to indicate the end of at least one prohibition or restriction."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfProhibitionOrRestriction"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfResidentialArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfResidentialArea"^^xsd:string ;
+    dcterms:identifier "endOfResidentialArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the end of a zone which is of a residential housing nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfResidentialArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfRoadForMotorVehicles> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfRoadForMotorVehicles"^^xsd:string ;
+    dcterms:identifier "endOfRoadForMotorVehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the end of a zone which is a road intended for use by motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfRoadForMotorVehicles"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfSpeedLimit> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "endOfSpeedLimit"^^xsd:string ;
+    dcterms:identifier "endOfSpeedLimit"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Location of the end of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "endOfSpeedLimit"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#motorway> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "motorway"^^xsd:string ;
+    dcterms:identifier "motorway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """Indicating the presence of a motorway.
+
+NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
+ 
+(j) "Motorway" means a road specially designed and built for motor traffic, which does not serve properties bordering on it, and which: 
+ 
+     (i) Is provided, except at special points or temporarily, with separate carriageways for the two directions of traffic, separated from each other either by a dividing strip not intended for traffic or, exceptionally, by other means; 
+ 
+    (ii) Does not cross at level with any road, railway or tramway track, or footpath; and 
+ 
+   (iii) Is specially signposted as a motorway;"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "motorway"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#noEntry> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "noEntry"^^xsd:string ;
+    dcterms:identifier "noEntry"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """indicating no entry to a section of road.
+
+NOTE: No entry restrictions may be qualified by a range of conditions, including but not limited to: time/day/date; vehicle type; vehicle usage, etc"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "noEntry"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#numberOfLanes> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "numberOfLanes"^^xsd:string ;
+    dcterms:identifier "numberOfLanes"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "The total number of lanes"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "numberOfLanes"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#parkingSite> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "parkingSite"^^xsd:string ;
+    dcterms:identifier "parkingSite"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "named according to DATEX II Package ParkingSite"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "parkingSite"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#passingWithoutStoppingProhibited> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "passingWithoutStoppingProhibited"^^xsd:string ;
+    dcterms:identifier "passingWithoutStoppingProhibited"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """Indicating a zone which is subject to a prohibition of continuing without coming to a stop.
+
+Note: this may be in common use at toll plazas, police and other checkpoints, custom checkpoints, etc"""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "passingWithoutStoppingProhibited"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#pedestrianCrossing> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "pedestrianCrossing"^^xsd:string ;
+    dcterms:identifier "pedestrianCrossing"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "A specified part of a road where pedestrians have right of way to cross"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "pedestrianCrossing"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#prohibitedTurn> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "prohibitedTurn"^^xsd:string ;
+    dcterms:identifier "prohibitedTurn"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """Indicating a prohibited turning motion and a junction of roads.
+
+NOTE: Turn restrictions types come in many forms and can be dependent of the type of vehicle; its usage; its load; vehicle occupancy; the capabilities permitted under the licence of the vehicle driver’s driver licence permissions; vehicle physical characteristics; propulsion type; the restrictions may also be time and day dependent, weather dependent, etc."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "prohibitedTurn"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#prohibitionOfOvertaking> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "prohibitionOfOvertaking"^^xsd:string ;
+    dcterms:identifier "prohibitionOfOvertaking"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """Indicating a zone where overtaking of other vehicles is prohibited.
+
+NOTE: Overtaking is normally interpreted as crossing the central dividing line of a single carriageway two-way road, to facilitate the overtaking of another slower-moving vehicle, but can also involve other forms of restriction such as lorries being limited to use of specified slower lanes, and not being permitted to move to other lanes."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "prohibitionOfOvertaking"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#publicTransportStop> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "publicTransportStop"^^xsd:string ;
+    dcterms:identifier "publicTransportStop"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Public transport stop"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "publicTransportStop"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#refillPointGas> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "refillPointGas"^^xsd:string ;
+    dcterms:identifier "refillPointGas"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Refill point for gas is an element in an infrastructure that supplies different kind of gas fuels for recharging for natural gas vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "refillPointGas"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#residentialArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "residentialArea"^^xsd:string ;
+    dcterms:identifier "residentialArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """indicating a zone which is of a residential housing nature.
+
+NOTE: This form of safety feature may be further characterised, or provide reference to common regulations and restrictions that are applicable in a residential area.
+
+A residential area is a road or a zone where most of the buildings are houses and is mostly a traffic-calmed sector, where automatically specific traffic regulations apply, like speed limits."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "residentialArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#restrictionForVehicles> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "restrictionForVehicles"^^xsd:string ;
+    dcterms:identifier "restrictionForVehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Restriction for vehicles regarding weight, height or length"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "restrictionForVehicles"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadForMotorVehicles> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadForMotorVehicles"^^xsd:string ;
+    dcterms:identifier "roadForMotorVehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating a zone which is a road intended for use by motor vehicles."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "roadForMotorVehicles"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadName> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadName"^^xsd:string ;
+    dcterms:identifier "roadName"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "The official name of the road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "roadName"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadSign> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "roadSign"^^xsd:string ;
+    dcterms:identifier "roadSign"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the presence of a road sign "^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "roadSign"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#snowChainsCompulsory> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "snowChainsCompulsory"^^xsd:string ;
+    dcterms:identifier "snowChainsCompulsory"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating a zone where the use of snow chains or equivalent winter equipment is mandatory."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "snowChainsCompulsory"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#speedLimit> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "speedLimit"^^xsd:string ;
+    dcterms:identifier "speedLimit"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Location of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road "^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "speedLimit"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfBuiltUpArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfBuiltUpArea"^^xsd:string ;
+    dcterms:identifier "startOfBuiltUpArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the start of a zone which is of an urban developed nature."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfBuiltUpArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfMotorway> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfMotorway"^^xsd:string ;
+    dcterms:identifier "startOfMotorway"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the start of a motorway."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfMotorway"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfProhibitionOfOvertaking> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfProhibitionOfOvertaking"^^xsd:string ;
+    dcterms:identifier "startOfProhibitionOfOvertaking"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Indicating the start of a zone which is subject to a prohibition of overtaking."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfProhibitionOfOvertaking"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfResidentialArea> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfResidentialArea"^^xsd:string ;
+    dcterms:identifier "startOfResidentialArea"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the start of a zone which is of a residential housing nature"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfResidentialArea"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfRoadForMotorVehicles> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfRoadForMotorVehicles"^^xsd:string ;
+    dcterms:identifier "startOfRoadForMotorVehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "indicating the start of a zone which is a road intended for use by motor vehicles"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfRoadForMotorVehicles"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfSpeedLimit> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfSpeedLimit"^^xsd:string ;
+    dcterms:identifier "startOfSpeedLimit"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Location of the start of a speed restricted zone which defines a speed limit characteristic (e.g. maximum, compulsory minimum, advisory [maximum]) providing context for vehicles travelling on a particular stretch of road"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfSpeedLimit"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfUseOfAudibleWarningDevicesProhibited> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "startOfUseOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    dcterms:identifier "startOfUseOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "The start of a zone which is subject to a prohibition on the use of audible warning devices."^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "startOfUseOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#tollRoad> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "tollRoad"^^xsd:string ;
+    dcterms:identifier "tollRoad"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Public or private roadway for which a road-usage fee or toll is assessed for passage. There are various fee charging concepts and toll collection methods available"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "tollRoad"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#tollStation> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "tollStation"^^xsd:string ;
+    dcterms:identifier "tollStation"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Toll or road usage fee collection point known as toll booths, toll houses, plazas, stations or gates"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "tollStation"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#transferNodeStopPoint> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "transferNodeStopPoint"^^xsd:string ;
+    dcterms:identifier "transferNodeStopPoint"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition "Stop point at a transfer node, e.g. Airport, Railway station, where people or goods may change mode of transport (ISO 19147)"^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "transferNodeStopPoint"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#useOfAudibleWarningDevicesProhibited> a tnits:RoadFeatureType,
+        skos:Concept ;
+    rdfs:label "useOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    dcterms:identifier "useOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeatureTypeCode ;
+    skos:definition """Indicating a zone which is subject to a prohibition on the use of audible warning devices.
+
+NOTE: Audible warning devices include vehicle horns."""^^xsd:string ;
+    skos:inScheme codes:RoadFeatureTypeCode ;
+    skos:prefLabel "useOfAudibleWarningDevicesProhibited"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeatureTypeCode .
+
+codes:RoadFeatureTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadFeatureTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeatureTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeatureType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+

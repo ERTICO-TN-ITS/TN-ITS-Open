@@ -1,0 +1,338 @@
+@prefix codes: <http://spec.tn-its.eu/codelists/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#advisorySpeed> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "advisorySpeed"^^xsd:string ;
+    dcterms:identifier "advisorySpeed"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition " \"ADVISORY SPEED\" shall be used to show the speed at which it is advisable to drive if circumstances permit and if the driver is not required to comply with a lower limit specific to his category of vehicle. [SOURCE: Vienna Convention on Road Signs, 1968]"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "advisorySpeed"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#chargingPointUsageType> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "chargingPointUsageType"^^xsd:string ;
+    dcterms:identifier "chargingPointUsageType"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Specifies usage of the charging point"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "chargingPointUsageType"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#compulsoryMinimumSpeed> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "compulsoryMinimumSpeed"^^xsd:string ;
+    dcterms:identifier "compulsoryMinimumSpeed"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Specifies the compulsory minimum speed, aligned with the concept of compulsort minimum speed of the Vienna Convention on Road Signs, 1968, where this concept is defined as that vehicles using the road at the entrance to which it (the sign) is placed shall travel at not less than the speed specified ... shown on the sign shall express this speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned. "^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "compulsoryMinimumSpeed"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#controlled> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "controlled"^^xsd:string ;
+    dcterms:identifier "controlled"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Property for pedestrian crossing indicating with a boolean value whether the crossing is controlled by traffic signals or not"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "controlled"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#fixedCharge> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "fixedCharge"^^xsd:string ;
+    dcterms:identifier "fixedCharge"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "A fixed charge or pricing assessed for the toll road"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "fixedCharge"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#gasType> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "gasType"^^xsd:string ;
+    dcterms:identifier "gasType"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Type of fuel used by a vehicle; proposed enumerations are taken from the Del. Reg: Compressed natural gas (CNG); liquefied natural gas (LNG); liquefied petroleum gas (LPG)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "gasType"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#iFOPTobjectKey> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "iFOPTobjectKey"^^xsd:string ;
+    dcterms:identifier "iFOPTobjectKey"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition """When referencing public transport stops and stopping points use the European Standard IFOPT (CEN, EN 28701:2012). The syntax of a IFOPT referencing key is:
+country_code:region:stop_number:stop_area:stop_point (e.g. de:9162:1 for Stop Karlsplatz in Munich)"""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "iFOPTobjectKey"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountBothDirections> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountBothDirections"^^xsd:string ;
+    dcterms:identifier "laneCountBothDirections"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Lane count in both directions"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "laneCountBothDirections"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInDirection> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountInDirection"^^xsd:string ;
+    dcterms:identifier "laneCountInDirection"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Lane count in the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "laneCountInDirection"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInOppositeDirection> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "laneCountInOppositeDirection"^^xsd:string ;
+    dcterms:identifier "laneCountInOppositeDirection"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Lane count opposite to the geometry direction"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "laneCountInOppositeDirection"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumDistanceBetweenVehicles> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumDistanceBetweenVehicles"^^xsd:string ;
+    dcterms:identifier "maximumDistanceBetweenVehicles"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum distance between vehicles allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumDistanceBetweenVehicles"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumHeight"^^xsd:string ;
+    dcterms:identifier "maximumHeight"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum height allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumHeight"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumLadenWeight> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumLadenWeight"^^xsd:string ;
+    dcterms:identifier "maximumLadenWeight"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum laden weight allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumLadenWeight"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumLength> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumLength"^^xsd:string ;
+    dcterms:identifier "maximumLength"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum length allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumLength"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumSpeedLimit> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumSpeedLimit"^^xsd:string ;
+    dcterms:identifier "maximumSpeedLimit"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Specifies the maximum speed limit, aligned with the concept of maximum speed limit of the Vienna Convention on Road Signs, 1968, where this concept is defined as the maximum speed in the unit of measurement most commonly used to express the speed of vehicles in the country concerned"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumSpeedLimit"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumWeightPerSingleAxle> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumWeightPerSingleAxle"^^xsd:string ;
+    dcterms:identifier "maximumWeightPerSingleAxle"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum weight per single axle allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumWeightPerSingleAxle"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumWidth> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "maximumWidth"^^xsd:string ;
+    dcterms:identifier "maximumWidth"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The maximum width allowed"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "maximumWidth"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#officialName> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "officialName"^^xsd:string ;
+    dcterms:identifier "officialName"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Official name"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "officialName"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#parkingSite> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "parkingSite"^^xsd:string ;
+    dcterms:identifier "parkingSite"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition """A record containing static details of a parking site. Must be specialised as an 'Urban-' or 'InterUrbanParkingSite' or a 'SpecialLocationParkingSite'.
+UrbanParkingSite = parking site in an urban context (e.g. parking lot, parking garage, on-street-parking, parkAndRide)
+InterUrbanParking = A parking site in an interurban context (like nearby motorway, motorway, ferry terminal, airport terminal, on street parking)
+SpecialLocationParkingSites = A parking site which is located at a special location, often associated with some building."""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "parkingSite"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#paymentMethod> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "paymentMethod"^^xsd:string ;
+    dcterms:identifier "paymentMethod"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The payment method depends on the toll collection method or system in place. For road users it is of interest what kind of payment method is required or accepted"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "paymentMethod"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#roadSignType> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "roadSignType"^^xsd:string ;
+    dcterms:identifier "roadSignType"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "The type of road sign according to separate codelist (see RoadSignType)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "roadSignType"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#siteAccessability> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "siteAccessability"^^xsd:string ;
+    dcterms:identifier "siteAccessability"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Type of accessability to site (e.g. ChargingPoint, RefillPointGas)"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "siteAccessability"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#trafficSignalIdentifier> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "trafficSignalIdentifier"^^xsd:string ;
+    dcterms:identifier "trafficSignalIdentifier"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Specifies a data provider unique value for the identifier for a specific traffic signal site"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "trafficSignalIdentifier"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#tunnelCategory> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "tunnelCategory"^^xsd:string ;
+    dcterms:identifier "tunnelCategory"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition """The used Tunnel Categories are based on the European Agreement Concerning the International Carriage of Dangerous Goods by Road (ADR). If tunnel restrictions on the passage of vehicles carrying dangerous goods are in place, the competent authority shall assign the road tunnel to one or more of the tunnel categories A, B, C, D, E and shall indicate the restriction by means of a road sign and signals as follows:
+
+Tunnel Category A: no sign
+Tunnel Category B: sign and signal with additional panel bearing a letter B
+Tunnel Category C: sign and signal with additional panel bearing a letter C
+Tunnel Category D: sign and signal with additional panel bearing a letter D
+Tunnel Category E: sign and signal with additional panel bearing a letter E
+
+The European Agreement concerning the International Carriage of Dangerous Goods by Road provides more information about the types of dangerous goods that can be transported through different categories of tunnel
+"""^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "tunnelCategory"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+<http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#vMSUnitIdentifier> a tnits:RoadFeaturePropertyType,
+        skos:Concept ;
+    rdfs:label "vMSUnitIdentifier"^^xsd:string ;
+    dcterms:identifier "vMSUnitIdentifier"^^xsd:string ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    reg:status reg:statusStable ;
+    rdfs:isDefinedBy codes:RoadFeaturePropertyTypeCode ;
+    skos:definition "Specifies a data provider unique value for the identifier for a specific variable message sign unit"^^xsd:string ;
+    skos:inScheme codes:RoadFeaturePropertyTypeCode ;
+    skos:prefLabel "vMSUnitIdentifier"^^xsd:string ;
+    skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
+
+codes:RoadFeaturePropertyTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeaturePropertyTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+codes:RoadFeaturePropertyTypeCode a skos:ConceptScheme ;
+    dcterms:creator <https://tn-its.eu/> ;
+    dcterms:identifier "RoadFeaturePropertyTypeCode"^^xsd:token ;
+    dcterms:isFormatOf tnits:RoadFeaturePropertyType ;
+    dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
+    dcterms:publisher <https://tn-its.eu/> ;
+    dcterms:source "http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode.xsd"^^xsd:anyURI ;
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+
