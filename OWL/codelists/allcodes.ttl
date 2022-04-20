@@ -102,6 +102,9 @@
 <http://inspire.ec.europa.eu/featureconcept/SpeedLimit> owl:sameAs <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#speedLimit> .
 
 
+###  http://inspire.ec.europa.eu/featureconcept/NumberOfLanes
+<http://inspire.ec.europa.eu/featureconcept/NumberOfLanes> owl:sameAs <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#numberOfLanes> .
+
 ###  http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection
 <http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
 
