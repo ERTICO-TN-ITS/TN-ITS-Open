@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:ISADLevelCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations ISAD levels"^^xsd:string ;
+    dc:title "TN-ITS Codes for ISADLevelCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/ISADLevelCode#A> a tnits:ISADLevel,
         skos:Concept ;
     rdfs:label "A"^^xsd:string ;
@@ -68,12 +74,6 @@
     skos:prefLabel "E"^^xsd:string ;
     skos:topConceptOf codes:ISADLevelCode .
 
-codes:ISADLevelCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations ISAD levels"^^xsd:string ;
-    dc:title "TN-ITS Codes for ISADLevelCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:ISADLevelCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "ISADLevelCode"^^xsd:token ;
@@ -81,5 +81,10 @@ codes:ISADLevelCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/ISADLevelCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations ISAD levels"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations ISAD levels"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/ISADLevelCode#A>,
+        <http://spec.tn-its.eu/codelists/ISADLevelCode#B>,
+        <http://spec.tn-its.eu/codelists/ISADLevelCode#C>,
+        <http://spec.tn-its.eu/codelists/ISADLevelCode#D>,
+        <http://spec.tn-its.eu/codelists/ISADLevelCode#E> .
 

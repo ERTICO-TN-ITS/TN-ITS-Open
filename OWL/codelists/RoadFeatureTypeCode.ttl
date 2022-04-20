@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:RoadFeatureTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#builtUpArea> a tnits:RoadFeatureType,
         skos:Concept ;
     rdfs:label "builtUpArea"^^xsd:string ;
@@ -510,12 +516,6 @@ NOTE: Audible warning devices include vehicle horns."""^^xsd:string ;
     skos:prefLabel "useOfAudibleWarningDevicesProhibited"^^xsd:string ;
     skos:topConceptOf codes:RoadFeatureTypeCode .
 
-codes:RoadFeatureTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
-    dc:title "TN-ITS Codes for RoadFeatureTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:RoadFeatureTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "RoadFeatureTypeCode"^^xsd:token ;
@@ -523,5 +523,44 @@ codes:RoadFeatureTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#builtUpArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#chargingPoint>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#closedToAllVehiclesInBothDirections>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#compulsoryDirectionForVehicleCarryingDangerousGoods>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#directionToBeFollowed>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfBuiltUpArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfMotorway>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfProhibitionOrRestriction>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfResidentialArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfRoadForMotorVehicles>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#endOfSpeedLimit>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#motorway>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#noEntry>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#numberOfLanes>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#parkingSite>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#passingWithoutStoppingProhibited>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#pedestrianCrossing>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#prohibitedTurn>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#prohibitionOfOvertaking>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#publicTransportStop>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#refillPointGas>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#residentialArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#restrictionForVehicles>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadForMotorVehicles>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadName>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadSign>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#snowChainsCompulsory>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#speedLimit>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfBuiltUpArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfMotorway>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfProhibitionOfOvertaking>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfResidentialArea>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfRoadForMotorVehicles>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfSpeedLimit>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#startOfUseOfAudibleWarningDevicesProhibited>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#tollRoad>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#tollStation>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#transferNodeStopPoint>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#useOfAudibleWarningDevicesProhibited> .
 

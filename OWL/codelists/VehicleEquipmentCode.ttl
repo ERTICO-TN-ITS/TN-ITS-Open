@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:VehicleEquipmentCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string ;
+    dc:title "TN-ITS Codes for VehicleEquipmentCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#notUsingSnowChains> a tnits:VehicleEquipment,
         skos:Concept ;
     rdfs:label "notUsingSnowChains"^^xsd:string ;
@@ -80,12 +86,6 @@
     skos:prefLabel "withoutSnowTyresOrChainsOnBoard"^^xsd:string ;
     skos:topConceptOf codes:VehicleEquipmentCode .
 
-codes:VehicleEquipmentCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string ;
-    dc:title "TN-ITS Codes for VehicleEquipmentCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:VehicleEquipmentCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "VehicleEquipmentCode"^^xsd:token ;
@@ -93,5 +93,11 @@ codes:VehicleEquipmentCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/VehicleEquipmentCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the vehicle equipment types"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#notUsingSnowChains>,
+        <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#notUsingSnowChainsOrTyres>,
+        <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#snowChainsInUse>,
+        <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#snowChainsOrTyresInUse>,
+        <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#snowTyresInUse>,
+        <http://spec.tn-its.eu/codelists/VehicleEquipmentCode#withoutSnowTyresOrChainsOnBoard> .
 

@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:AreaTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string ;
+    dc:title "TN-ITS Codes for AreaTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/AreaTypeCode#inNationalPark> a tnits:AreaType,
         skos:Concept ;
     rdfs:label "inNationalPark"^^xsd:string ;
@@ -80,12 +86,6 @@
     skos:prefLabel "trafficCalmingArea"^^xsd:string ;
     skos:topConceptOf codes:AreaTypeCode .
 
-codes:AreaTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string ;
-    dc:title "TN-ITS Codes for AreaTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:AreaTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "AreaTypeCode"^^xsd:token ;
@@ -93,5 +93,11 @@ codes:AreaTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/AreaTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the area type condition for a road feature "^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/AreaTypeCode#inNationalPark>,
+        <http://spec.tn-its.eu/codelists/AreaTypeCode#insideCities>,
+        <http://spec.tn-its.eu/codelists/AreaTypeCode#nearRailroadCrossing>,
+        <http://spec.tn-its.eu/codelists/AreaTypeCode#nearSchool>,
+        <http://spec.tn-its.eu/codelists/AreaTypeCode#outsideCities>,
+        <http://spec.tn-its.eu/codelists/AreaTypeCode#trafficCalmingArea> .
 

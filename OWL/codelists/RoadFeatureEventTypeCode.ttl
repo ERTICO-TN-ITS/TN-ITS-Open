@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:RoadFeatureEventTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureEventTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationError> a tnits:RoadFeatureEventType,
         skos:Concept ;
     rdfs:label "decodeLocationError"^^xsd:string ;
@@ -68,12 +74,6 @@
     skos:prefLabel "success"^^xsd:string ;
     skos:topConceptOf codes:RoadFeatureEventTypeCode .
 
-codes:RoadFeatureEventTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string ;
-    dc:title "TN-ITS Codes for RoadFeatureEventTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:RoadFeatureEventTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "RoadFeatureEventTypeCode"^^xsd:token ;
@@ -81,5 +81,10 @@ codes:RoadFeatureEventTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the types of Road Feature Events"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationError>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationErrorGeometryMismatch>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#decodeLocationRoadDescriptorMismatch>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#illegalPropertyValue>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureEventTypeCode#success> .
 

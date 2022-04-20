@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:RoadFeatureSourceCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeatureSourceCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#fixedPlateRoadSign> a tnits:RoadFeatureSource,
         skos:Concept ;
     rdfs:label "fixedPlateRoadSign"^^xsd:string ;
@@ -68,12 +74,6 @@
     skos:prefLabel "variableMessageSign"^^xsd:string ;
     skos:topConceptOf codes:RoadFeatureSourceCode .
 
-codes:RoadFeatureSourceCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string ;
-    dc:title "TN-ITS Codes for RoadFeatureSourceCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:RoadFeatureSourceCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "RoadFeatureSourceCode"^^xsd:token ;
@@ -81,5 +81,10 @@ codes:RoadFeatureSourceCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/RoadFeatureSourceCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the various types source concerning road features"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#fixedPlateRoadSign>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#otherRoadFeature>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#temporaryRoadSign>,
+        <http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#variableMessageSign> .
 

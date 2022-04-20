@@ -8,6 +8,16 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:FuzzyTimeTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
+
+Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
+
+"""^^xsd:string ;
+    dc:title "TN-ITS Codes for FuzzyTimeTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#autumn> a tnits:FuzzyTimeType,
         skos:Concept ;
     rdfs:label "autumn"^^xsd:string ;
@@ -236,16 +246,6 @@
     skos:prefLabel "winter"^^xsd:string ;
     skos:topConceptOf codes:FuzzyTimeTypeCode .
 
-codes:FuzzyTimeTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description """Specifies the available list of enumerations for the fuzzy time concepts, which provided the definition of start, end or duration time concepts that support the expression of a non-precise or variable qualified concept, resulting in a non-precise, potentially circumstantial defined time period.
-
-Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
-
-"""^^xsd:string ;
-    dc:title "TN-ITS Codes for FuzzyTimeTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:FuzzyTimeTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "FuzzyTimeTypeCode"^^xsd:token ;
@@ -257,5 +257,24 @@ codes:FuzzyTimeTypeCode a skos:ConceptScheme ;
 
 Note: Example roads closed at the start of winter in mountainous areas, which is based on actual experienced weather conditions and therefore is not pre-defined.
 
-"""^^xsd:string .
+"""^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#autumn>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#dawn>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#day>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#drySeason>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#dusk>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#external>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#highTide>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#highWater>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#holiday>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#lowTide>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#lowWater>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#night>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#offPeakHours>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#peakHours>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#school>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#spring>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#summer>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#wetSeason>,
+        <http://spec.tn-its.eu/codelists/FuzzyTimeTypeCode#winter> .
 

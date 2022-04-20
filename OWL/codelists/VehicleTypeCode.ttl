@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:VehicleTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of vehicle."^^xsd:string ;
+    dc:title "TN-ITS Codes for VehicleTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/VehicleTypeCode#agriculturalVehicle> a tnits:VehicleType,
         skos:Concept ;
     rdfs:label "agriculturalVehicle"^^xsd:string ;
@@ -608,12 +614,6 @@
     skos:prefLabel "withOddNumberedRegistrationPlates"^^xsd:string ;
     skos:topConceptOf codes:VehicleTypeCode .
 
-codes:VehicleTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for types of vehicle."^^xsd:string ;
-    dc:title "TN-ITS Codes for VehicleTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:VehicleTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "VehicleTypeCode"^^xsd:token ;
@@ -621,5 +621,55 @@ codes:VehicleTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/VehicleTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for types of vehicle."^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for types of vehicle."^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/VehicleTypeCode#agriculturalVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#anyVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedBus>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedTrolleyBus>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#articulatedVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#bicycle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#bus>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#car>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#carOrLightVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#carWithCaravan>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#carWithTrailer>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#caravan>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#constructionOrMaintenanceVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#fourWheelDrive>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyDutyTransporter>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyGoodsVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyGoodsVehicleWithTrailer>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#heavyVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#highSidedVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#largeCar>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#largeGoodsVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#lightCommercialVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#lightCommercialVehicleWithTrailer>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#lightRail>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#longHeavyLorry>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#lorry>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#metro>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#minibus>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#moped>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#motorcycle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#motorcycleWithSideCar>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#motorhome>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#motorscooter>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#other>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#passengerCar>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#smallCar>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#tanker>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#threeWheeledVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#trailer>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#tram>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#trolleyBus>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#twoWheeledVehicle>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#unknown>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#van>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithCaravan>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithCatalyticConverter>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithTrailer>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#vehicleWithoutCatalyticConverter>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#withEvenNumberedRegistrationPlates>,
+        <http://spec.tn-its.eu/codelists/VehicleTypeCode#withOddNumberedRegistrationPlates> .
 

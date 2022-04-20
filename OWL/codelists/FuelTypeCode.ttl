@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:FuelTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string ;
+    dc:title "TN-ITS Codes for FuelTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/FuelTypeCode#all> a tnits:FuelType,
         skos:Concept ;
     rdfs:label "all"^^xsd:string ;
@@ -224,12 +230,6 @@
     skos:prefLabel "unknown"^^xsd:string ;
     skos:topConceptOf codes:FuelTypeCode .
 
-codes:FuelTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string ;
-    dc:title "TN-ITS Codes for FuelTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:FuelTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "FuelTypeCode"^^xsd:token ;
@@ -237,5 +237,23 @@ codes:FuelTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/FuelTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the type of fuel used by the vehicle."^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/FuelTypeCode#all>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#battery>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#biodiesel>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#diesel>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#dieselBatteryHybrid>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#ethanol>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#hydrogen>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#liquidGas>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#lpg>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#methane>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#other>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrol>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrol95Octane>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrol98Octane>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrolBatteryHybrid>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrolLeaded>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#petrolUnleaded>,
+        <http://spec.tn-its.eu/codelists/FuelTypeCode#unknown> .
 

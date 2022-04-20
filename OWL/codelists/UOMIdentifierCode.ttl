@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:UOMIdentifierCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string ;
+    dc:title "TN-ITS Codes for UOMIdentifierCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/UOMIdentifierCode#ftin> a tnits:UOMIdentifier,
         skos:Concept ;
     rdfs:label "ftin"^^xsd:string ;
@@ -118,12 +124,6 @@ Note: To enable this to be coded into a single value the following convention sh
     skos:prefLabel "yd"^^xsd:string ;
     skos:topConceptOf codes:UOMIdentifierCode .
 
-codes:UOMIdentifierCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string ;
-    dc:title "TN-ITS Codes for UOMIdentifierCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:UOMIdentifierCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "UOMIdentifierCode"^^xsd:token ;
@@ -131,5 +131,14 @@ codes:UOMIdentifierCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/UOMIdentifierCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string .
+    skos:definition "Specifies the available list of preferred enumerations for identifiers for units of measure"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/UOMIdentifierCode#ftin>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#kg>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#km>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#kph>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#m>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#mi>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#mph>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#t>,
+        <http://spec.tn-its.eu/codelists/UOMIdentifierCode#yd> .
 

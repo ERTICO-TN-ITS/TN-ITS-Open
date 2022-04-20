@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:SpecialDayTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the special days"^^xsd:string ;
+    dc:title "TN-ITS Codes for SpecialDayTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#dayBeforePublicHoliday> a tnits:SpecialDayType,
         skos:Concept ;
     rdfs:label "dayBeforePublicHoliday"^^xsd:string ;
@@ -120,12 +126,6 @@ Note: For example, the day of a Royal Wedding."""^^xsd:string ;
     skos:prefLabel "schoolHolidays"^^xsd:string ;
     skos:topConceptOf codes:SpecialDayTypeCode .
 
-codes:SpecialDayTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the special days"^^xsd:string ;
-    dc:title "TN-ITS Codes for SpecialDayTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:SpecialDayTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "SpecialDayTypeCode"^^xsd:token ;
@@ -133,5 +133,14 @@ codes:SpecialDayTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/SpecialDayTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the special days"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the special days"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#dayBeforePublicHoliday>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#dayFollowingPublicHoliday>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#inLieuOfPublicHoliday>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#longWeekendDay>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#other>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#publicEventDay>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#publicHoliday>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#schoolDay>,
+        <http://spec.tn-its.eu/codelists/SpecialDayTypeCode#schoolHolidays> .
 

@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:LoadTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string ;
+    dc:title "TN-ITS Codes for LoadTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/LoadTypeCode#abnormalLoad> a tnits:LoadType,
         skos:Concept ;
     rdfs:label "abnormalLoad"^^xsd:string ;
@@ -395,12 +401,6 @@ environment or endanger public health."""^^xsd:string ;
     skos:prefLabel "vehicles"^^xsd:string ;
     skos:topConceptOf codes:LoadTypeCode .
 
-codes:LoadTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string ;
-    dc:title "TN-ITS Codes for LoadTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:LoadTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "LoadTypeCode"^^xsd:token ;
@@ -408,5 +408,37 @@ codes:LoadTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/LoadTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for types of vehicle loads"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/LoadTypeCode#abnormalLoad>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#ammunition>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#chemicals>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#combustibleMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#corrosiveMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#debris>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#empty>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#explosiveMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#extraHighLoad>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#extraLongLoad>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#extraWideLoad>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#fuel>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#glass>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#goods>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#hazardousMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#liquid>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#livestock>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#materials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForPeople>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForTheEnvironment>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#materialsDangerousForWater>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#oil>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#ordinary>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#other>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#perishableProducts>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#petrol>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#pharmaceuticalMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#radioactiveMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#refrigeratedGoods>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#refuse>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#toxicMaterials>,
+        <http://spec.tn-its.eu/codelists/LoadTypeCode#vehicles> .
 

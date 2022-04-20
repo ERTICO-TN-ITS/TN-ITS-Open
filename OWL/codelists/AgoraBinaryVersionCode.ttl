@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:AgoraBinaryVersionCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string ;
+    dc:title "TN-ITS Codes for AgoraBinaryVersionCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v1_0> a tnits:AgoraBinaryVersion,
         skos:Concept ;
     rdfs:label "v1_0"^^xsd:string ;
@@ -68,12 +74,6 @@
     skos:prefLabel "v3_0"^^xsd:string ;
     skos:topConceptOf codes:AgoraBinaryVersionCode .
 
-codes:AgoraBinaryVersionCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string ;
-    dc:title "TN-ITS Codes for AgoraBinaryVersionCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:AgoraBinaryVersionCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "AgoraBinaryVersionCode"^^xsd:token ;
@@ -81,5 +81,10 @@ codes:AgoraBinaryVersionCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the version of the AGORA binary specification being used"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v1_0>,
+        <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v1_3>,
+        <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v2_4>,
+        <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v2_5>,
+        <http://spec.tn-its.eu/codelists/AgoraBinaryVersionCode#v3_0> .
 

@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:TunnelCategoryCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string ;
+    dc:title "TN-ITS Codes for TunnelCategoryCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/TunnelCategoryCode#a> a tnits:TunnelCategory,
         skos:Concept ;
     rdfs:label "a"^^xsd:string ;
@@ -68,12 +74,6 @@
     skos:prefLabel "e"^^xsd:string ;
     skos:topConceptOf codes:TunnelCategoryCode .
 
-codes:TunnelCategoryCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string ;
-    dc:title "TN-ITS Codes for TunnelCategoryCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:TunnelCategoryCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "TunnelCategoryCode"^^xsd:token ;
@@ -81,5 +81,10 @@ codes:TunnelCategoryCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/TunnelCategoryCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the categories of tunnel access"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/TunnelCategoryCode#a>,
+        <http://spec.tn-its.eu/codelists/TunnelCategoryCode#b>,
+        <http://spec.tn-its.eu/codelists/TunnelCategoryCode#c>,
+        <http://spec.tn-its.eu/codelists/TunnelCategoryCode#d>,
+        <http://spec.tn-its.eu/codelists/TunnelCategoryCode#e> .
 

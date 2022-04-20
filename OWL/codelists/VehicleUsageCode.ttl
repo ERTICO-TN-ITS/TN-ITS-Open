@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:VehicleUsageCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string ;
+    dc:title "TN-ITS Codes for VehicleUsageCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/VehicleUsageCode#agricultural> a tnits:VehicleUsage,
         skos:Concept ;
     rdfs:label "agricultural"^^xsd:string ;
@@ -152,12 +158,6 @@
     skos:prefLabel "taxi"^^xsd:string ;
     skos:topConceptOf codes:VehicleUsageCode .
 
-codes:VehicleUsageCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string ;
-    dc:title "TN-ITS Codes for VehicleUsageCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:VehicleUsageCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "VehicleUsageCode"^^xsd:token ;
@@ -165,5 +165,17 @@ codes:VehicleUsageCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/VehicleUsageCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for types of usage of vehicles."^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/VehicleUsageCode#agricultural>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#carSharing>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#cityLogistics>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#commercial>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#emergencyServices>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#military>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#nonCommercial>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#patrol>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#recoveryServices>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#roadMaintenanceOrConstruction>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#roadOperator>,
+        <http://spec.tn-its.eu/codelists/VehicleUsageCode#taxi> .
 

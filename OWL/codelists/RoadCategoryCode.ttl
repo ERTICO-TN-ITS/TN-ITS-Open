@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:RoadCategoryCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the road category types"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadCategoryCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/RoadCategoryCode#motorway> a tnits:RoadCategory,
         skos:Concept ;
     rdfs:label "motorway"^^xsd:string ;
@@ -85,12 +91,6 @@ NOTE: the Vienna Convention 1968 indicates a motorway as meet the following:
     skos:prefLabel "urbanRoad"^^xsd:string ;
     skos:topConceptOf codes:RoadCategoryCode .
 
-codes:RoadCategoryCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the road category types"^^xsd:string ;
-    dc:title "TN-ITS Codes for RoadCategoryCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:RoadCategoryCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "RoadCategoryCode"^^xsd:token ;
@@ -98,5 +98,11 @@ codes:RoadCategoryCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/RoadCategoryCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the road category types"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the road category types"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/RoadCategoryCode#motorway>,
+        <http://spec.tn-its.eu/codelists/RoadCategoryCode#otherRoad>,
+        <http://spec.tn-its.eu/codelists/RoadCategoryCode#residentialAreaRoad>,
+        <http://spec.tn-its.eu/codelists/RoadCategoryCode#roadWithDualCarriageway>,
+        <http://spec.tn-its.eu/codelists/RoadCategoryCode#roadWithSingleCarriageway>,
+        <http://spec.tn-its.eu/codelists/RoadCategoryCode#urbanRoad> .
 

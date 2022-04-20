@@ -9,9 +9,7 @@
 
 <http://spec.tn-its.eu/codelists/#allcodes> rdf:type owl:Ontology ;
                                              owl:imports <http://www.w3.org/2004/02/skos/core> ,
-                                                         <https://inspire.ec.europa.eu/codelist/codelist.en.rdf> ,
                                                          <https://inspire.ec.europa.eu/codelist/FormOfWayValue/FormOfWayValue.en.rdf> ,
-                                                         <https://inspire.ec.europa.eu/codelist/ServiceFacilityValue/ServiceFacilityValue.en.rdf> ,
                                                          <https://inspire.ec.europa.eu/featureconcept/featureconcept.en.rdf> ,
                                                          <https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/AgoraBinaryVersionCode.ttl> ,
                                                          <https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/AreaTypeCode.ttl> ,
@@ -68,20 +66,6 @@
 #    Individuals
 #################################################################
 
-###  http://inspire.ec.europa.eu/codelist/FormOfWayValue
-<http://inspire.ec.europa.eu/codelist/FormOfWayValue> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
-
-
-###  http://inspire.ec.europa.eu/codelist/RoadServiceTypeValue
-<http://inspire.ec.europa.eu/codelist/RoadServiceTypeValue> rdf:type owl:NamedIndividual ,
-                                                                     <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
-
-
-###  http://inspire.ec.europa.eu/codelist/ServiceFacilityValue
-<http://inspire.ec.europa.eu/codelist/ServiceFacilityValue> rdf:type owl:NamedIndividual ,
-                                                                     <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
-
-
 ###  http://inspire.ec.europa.eu/featureconcept/FormOfWay
 <http://inspire.ec.europa.eu/featureconcept/FormOfWay> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
 
@@ -104,10 +88,6 @@
 
 ###  http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection
 <http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
-
-
-###  http://spec.tn-its.eu/codelists/LinkDirectionValueCode
-<http://spec.tn-its.eu/codelists/LinkDirectionValueCode> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
 
 
 ###  http://spec.tn-its.eu/codelists/RoadFeatureTypeCode#roadName

@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:LinkDirectionValueCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for types of propellant gas."^^xsd:string ;
+    dc:title "TN-ITS Codes for LinkDirectionValueCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/LinkDirectionValueCode#all> a tnits:LinkDirectionValue,
         skos:Concept ;
     rdfs:label "all"^^xsd:string ;
@@ -44,12 +50,6 @@
     skos:prefLabel "lPG"^^xsd:string ;
     skos:topConceptOf codes:LinkDirectionValueCode .
 
-codes:LinkDirectionValueCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for types of propellant gas."^^xsd:string ;
-    dc:title "TN-ITS Codes for LinkDirectionValueCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:LinkDirectionValueCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "LinkDirectionValueCode"^^xsd:token ;
@@ -57,5 +57,8 @@ codes:LinkDirectionValueCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/LinkDirectionValueCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for types of propellant gas."^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/LinkDirectionValueCode#all>,
+        <http://spec.tn-its.eu/codelists/LinkDirectionValueCode#cNG>,
+        <http://spec.tn-its.eu/codelists/LinkDirectionValueCode#lPG> .
 

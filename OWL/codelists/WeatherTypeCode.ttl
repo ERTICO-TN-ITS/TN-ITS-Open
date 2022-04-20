@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:WeatherTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Types of weather conditions which affect driving conditions."^^xsd:string ;
+    dc:title "TN-ITS Codes for WeatherTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/WeatherTypeCode#airPollution> a tnits:WeatherType,
         skos:Concept ;
     rdfs:label "airPollution"^^xsd:string ;
@@ -92,12 +98,6 @@
     skos:prefLabel "wind"^^xsd:string ;
     skos:topConceptOf codes:WeatherTypeCode .
 
-codes:WeatherTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Types of weather conditions which affect driving conditions."^^xsd:string ;
-    dc:title "TN-ITS Codes for WeatherTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:WeatherTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "WeatherTypeCode"^^xsd:token ;
@@ -105,5 +105,12 @@ codes:WeatherTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/WeatherTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Types of weather conditions which affect driving conditions."^^xsd:string .
+    skos:definition "Types of weather conditions which affect driving conditions."^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/WeatherTypeCode#airPollution>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#fog>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#ice>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#rain>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#snow>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#wet>,
+        <http://spec.tn-its.eu/codelists/WeatherTypeCode#wind> .
 

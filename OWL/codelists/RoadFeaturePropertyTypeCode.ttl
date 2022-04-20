@@ -8,6 +8,12 @@
 @prefix tnits: <http://spec.tn-its.eu/owl/tnits-owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+codes:RoadFeaturePropertyTypeCodeVocabulary a owl:Ontology ;
+    dc:creator "TN-ITS"^^xsd:string ;
+    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    dc:title "TN-ITS Codes for RoadFeaturePropertyTypeCode"^^xsd:string ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> .
+
 <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#advisorySpeed> a tnits:RoadFeaturePropertyType,
         skos:Concept ;
     rdfs:label "advisorySpeed"^^xsd:string ;
@@ -321,12 +327,6 @@ The European Agreement concerning the International Carriage of Dangerous Goods 
     skos:prefLabel "vMSUnitIdentifier"^^xsd:string ;
     skos:topConceptOf codes:RoadFeaturePropertyTypeCode .
 
-codes:RoadFeaturePropertyTypeCodeVocabulary a owl:Ontology ;
-    dc:creator "TN-ITS"^^xsd:string ;
-    dc:description "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
-    dc:title "TN-ITS Codes for RoadFeaturePropertyTypeCode"^^xsd:string ;
-    owl:imports <http://www.w3.org/2004/02/skos/core> .
-
 codes:RoadFeaturePropertyTypeCode a skos:ConceptScheme ;
     dcterms:creator <https://tn-its.eu/> ;
     dcterms:identifier "RoadFeaturePropertyTypeCode"^^xsd:token ;
@@ -334,5 +334,30 @@ codes:RoadFeaturePropertyTypeCode a skos:ConceptScheme ;
     dcterms:provenance "Derived from GML dictionary"^^xsd:string ;
     dcterms:publisher <https://tn-its.eu/> ;
     dcterms:source "http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode.xsd"^^xsd:anyURI ;
-    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string .
+    skos:definition "Specifies the available list of enumerations for the various types of road features"^^xsd:string ;
+    skos:hasTopConcept <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#advisorySpeed>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#chargingPointUsageType>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#compulsoryMinimumSpeed>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#controlled>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#fixedCharge>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#gasType>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#iFOPTobjectKey>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountBothDirections>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInDirection>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#laneCountInOppositeDirection>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumDistanceBetweenVehicles>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumHeight>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumLadenWeight>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumLength>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumSpeedLimit>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumWeightPerSingleAxle>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#maximumWidth>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#officialName>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#parkingSite>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#paymentMethod>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#roadSignType>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#siteAccessability>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#trafficSignalIdentifier>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#tunnelCategory>,
+        <http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#vMSUnitIdentifier> .
 
