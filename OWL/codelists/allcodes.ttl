@@ -86,6 +86,10 @@
 <http://inspire.ec.europa.eu/featureconcept/FormOfWay> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
 
 
+###  http://inspire.ec.europa.eu/featureconcept/AccessRestriction
+<http://inspire.ec.europa.eu/featureconcept/AccessRestriction> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
+
+
 ###  http://inspire.ec.europa.eu/featureconcept/FunctionalRoadClass
 <http://inspire.ec.europa.eu/featureconcept/FunctionalRoadClass> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
 
