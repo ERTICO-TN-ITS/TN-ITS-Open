@@ -112,6 +112,8 @@
 ###  http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection
 <http://inspire.ec.europa.eu/featureconcept/TrafficFlowDirection> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeatureTypeInspire> .
 
+###  http://inspire.ec.europa.eu/codelist/AccessRestrictionValue
+<http://inspire.ec.europa.eu/codelist/AccessRestrictionValue> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
 
 ###  http://spec.tn-its.eu/codelists/LinkDirectionValueCode
 <http://spec.tn-its.eu/codelists/LinkDirectionValueCode> rdf:type <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
