@@ -11,7 +11,7 @@ option explicit
 '-----------------------------------------------------------------------------------------------------------------------------------
 'Constants
 'const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
-const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\core"
+const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\test"
 'const filename = "tnits-owl"
 'const strPrefix = "tnits"
 
