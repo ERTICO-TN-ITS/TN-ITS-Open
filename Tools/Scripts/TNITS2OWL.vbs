@@ -73,13 +73,21 @@ sub heading
 	'SKOS
 	objOTLFile.WriteText "	owl:imports <http://www.w3.org/2004/02/skos/core> ;" & vbCrLf
 	'OGC GeoSparql
-	objOTLFile.WriteText "	owl:imports <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports gsp: ;" & vbCrLf
 	'ISO 19148 from the INTERLINK Ontologies
-	objOTLFile.WriteText "	owl:imports <https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports lr: ;" & vbCrLf
 	'ISO 19115 Metadata
-	objOTLFile.WriteText "	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports <http://def.isotc211.org/iso19115/-1/2014/MetadataInformation> ;" & vbCrLf
 	'TN-ITS Codes
-	objOTLFile.WriteText "	owl:imports <http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes> ;" & vbCrLf
+	objOTLFile.WriteText "	owl:imports <http://spec.tn-its.eu/codelists/allcodes> ;" & vbCrLf
+	
+	
+	'Notes on paths
+	objOTLFile.WriteText vbCrLf
+	objOTLFile.WriteText "	### GeoSPARQL rdf file: http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf" & vbCrLf
+	objOTLFile.WriteText "	### ISO 19148 ttl file: https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl" & vbCrLf
+	objOTLFile.WriteText "	### ISO 19115 rdf file: http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf" & vbCrLf
+	objOTLFile.WriteText vbCrLf
 	
 	
 	' --------------------------------------------------------------------
