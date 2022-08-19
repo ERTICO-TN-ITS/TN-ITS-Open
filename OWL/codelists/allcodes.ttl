@@ -10,6 +10,7 @@
 <http://spec.tn-its.eu/codelists/allcodes> rdf:type owl:Ontology ;
                                              owl:imports <http://www.w3.org/2004/02/skos/core> ,
                                                          <https://inspire.ec.europa.eu/codelist/codelist.en.rdf> ,
+														 <https://inspire.ec.europa.eu/enumeration/enumeration.en.rdf> ,
                                                          <https://inspire.ec.europa.eu/codelist/FormOfWayValue/FormOfWayValue.en.rdf> ,
                                                          <https://inspire.ec.europa.eu/codelist/ServiceFacilityValue/ServiceFacilityValue.en.rdf> ,
                                                          <https://inspire.ec.europa.eu/featureconcept/featureconcept.en.rdf> ,
@@ -80,6 +81,12 @@
 ###  http://inspire.ec.europa.eu/codelist/ServiceFacilityValue
 <http://inspire.ec.europa.eu/codelist/ServiceFacilityValue> rdf:type owl:NamedIndividual ,
                                                                      <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
+
+
+###  https://inspire.ec.europa.eu/enumeration/FunctionalRoadClassValue
+<https://inspire.ec.europa.eu/enumeration/FunctionalRoadClassValue> rdf:type owl:NamedIndividual ,
+                                                                             <http://spec.tn-its.eu/owl/tnits-owl#RoadFeaturePropertyTypeInspire> .
+
 
 
 ###  http://inspire.ec.europa.eu/featureconcept/FormOfWay
