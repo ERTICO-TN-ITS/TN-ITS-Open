@@ -87,9 +87,9 @@
                             </encodedGeometry>
                         </GeometryLocationReference>
                     </locationReference>
-                    
+
                 </RoadFeature>
-            </roadFeatures>       
+            </roadFeatures>
             <roadFeatures>
                 <RoadFeature gml:id="N2">
                     <validFrom>2019-05-17</validFrom>
@@ -135,7 +135,7 @@
                         </GeometryLocationReference>
                     </locationReference>
                 </RoadFeature>
-            </roadFeatures>          
+            </roadFeatures>
             <roadFeatures>
                 <RoadFeature gml:id="N3">
                     <validFrom>2021-05-29</validFrom>
@@ -173,6 +173,80 @@
                     </locationReference>
                 </RoadFeature>
             </roadFeatures>
+            <roadFeatures>
+                <RoadFeature gml:id="N4">
+                    <validFrom>2021-01-01</validFrom>
+                    <validTo>9999-12-31</validTo>
+                    <beginLifespanVersion>2021-01-01T00:00:00</beginLifespanVersion>
+                    <endLifespanVersion>9999-12-31T00:00:00</endLifespanVersion>
+                    <updateInfo>
+                        <UpdateInfo>
+                            <type>Add</type>
+                        </UpdateInfo>
+                    </updateInfo>
+                    <source
+                        xlink:href="http://spec.tn-its.eu/codelists/RoadFeatureSourceCode#regulation"/>
+                    <type xlink:href="https://inspire.ec.europa.eu/featureconcept/AccessRestriction"/>
+                    <properties>
+                        <GenericRoadFeatureProperty>
+                            <type xlink:href="https://inspire.ec.europa.eu/codelist/AccessRestrictionValue"/>
+                            <valueReference xlink:href="https://inspire.ec.europa.eu/codelist/AccessRestrictionValue/physicallyImpossible"/>
+                        </GenericRoadFeatureProperty>
+                    </properties>
+                    <properties>
+                        <GenericRoadFeatureProperty>
+                            <type xlink:href="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCode#barrierType"/>
+                            <valueReference xlink:href="http://spec.tn-its.eu/codelists/BarrierTypeCode#lockedWithKey"/>
+                        </GenericRoadFeatureProperty>
+                    </properties>
+                    <id>
+                        <RoadFeatureId>
+                            <providerId>SE.TrV.NVDB</providerId>
+                            <id>84A4B4B4-4064-4117-AA7C-EF16C6917209</id>
+                        </RoadFeatureId>
+                    </id>
+                    <locationReference>
+                        <OpenLRLocationReference>
+                            <binaryLocationReference>
+                                <BinaryLocationReference>
+                                    <base64String>CwyZ/ipL7CCWAf9p/9IgZhYj</base64String>
+                                    <openLRBinaryVersion
+                                        xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
+                                    />
+                                </BinaryLocationReference>
+                            </binaryLocationReference>
+                        </OpenLRLocationReference>
+                    </locationReference>
+                    <locationReference>
+                        <OpenLRLocationReference>
+                            <binaryLocationReference>
+                                <BinaryLocationReference>
+                                    <base64String>CwyZtypL1iCGAQCXAC4gdiMW</base64String>
+                                    <openLRBinaryVersion
+                                        xlink:href="http://spec.tn-its.eu/codelists/OpenLRBinaryVersionCode#v2_4"
+                                    />
+                                </BinaryLocationReference>
+                            </binaryLocationReference>
+                        </OpenLRLocationReference>
+                    </locationReference>
+                    <locationReference>
+                        <GeometryLocationReference>
+                            <encodedGeometry>
+                                <gml:LineString srsDimension="2" srsName="EPSG:4326">
+                                    <gml:posList>17.720900930813539 59.479554147254831
+                                        17.720778699629459 59.479503933698652 17.720545499065306
+                                        59.479419219903193 17.720267178408395 59.479320719004512
+                                        17.720060732545896 59.47925592381867 17.7198782781915
+                                        59.479207897767949 17.719612323641929 59.479137934605127
+                                        17.719391655565008 59.479085564051395</gml:posList>
+                                </gml:LineString>
+                            </encodedGeometry>
+                        </GeometryLocationReference>
+                    </locationReference>
+
+                </RoadFeature>
+            </roadFeatures>
+
         </RoadFeatureDataset>
     </gml:featureMember>
 

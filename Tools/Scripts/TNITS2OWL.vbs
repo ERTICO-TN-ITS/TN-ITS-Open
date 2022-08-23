@@ -11,7 +11,7 @@ option explicit
 '-----------------------------------------------------------------------------------------------------------------------------------
 'Constants
 'const owlURI = "http://spec.tn-its.eu/owl/tnits-owl"
-const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\test"
+const owlPath = "C:\DATA\GitHub\ERTICO-TN-ITS\TN-ITS-Open\OWL\core"
 'const filename = "tnits-owl"
 'const strPrefix = "tnits"
 
@@ -231,7 +231,11 @@ sub createProperty
 		if not lstCreatedProperties.Contains(propertyName)  then
 			objOTLFile.WriteText vbCrLf
 			objOTLFile.WriteText "### " & owlURI & "#" & propertyName & vbCrLf
-			if dt = "d" then
+			if dt = "p" then
+				Repository.WriteOutput "Script", Now & " Property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
+				objOTLFile.WriteText ":" & propertyName & " rdf:type rdf:Property ;" & vbCrLf
+				hasGlobalRange = false
+			elseif dt = "d" then
 				Repository.WriteOutput "Script", Now & " Datatype property: " & propertyName & " , cardinality: " & lower & ".." & upper & " (Range = " & range & ")", 0 
 				objOTLFile.WriteText ":" & propertyName & " rdf:type owl:DatatypeProperty ;" & vbCrLf
 			else
@@ -277,7 +281,7 @@ sub createProperty
 		objOTLFile.WriteText "         owl:onProperty " & propertyName & ";" & vbCrLf 	
 		if dt = "d" then
 			objOTLFile.WriteText "         owl:onDataRange " & range & ";" & vbCrLf 		
-		else
+		elseif dt = "o" then
 			objOTLFile.WriteText "         owl:onClass " & range & ";" & vbCrLf 		
 		end if
 		if lower = upper then 
@@ -288,11 +292,13 @@ sub createProperty
 		end if
 		objOTLFile.WriteText "         ] ." & vbCrLf
 	end if	
-	'All values from
-	objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
-	objOTLFile.WriteText "         owl:onProperty " & propertyName & ";" & vbCrLf 	
-	objOTLFile.WriteText "         owl:allValuesFrom " & range & ";" & vbCrLf 	
-	objOTLFile.WriteText "         ] ." & vbCrLf
+	if dt = "d" or dt = "o" then
+		'All values from
+		objOTLFile.WriteText ":" & el.Name & " rdfs:subClassOf [ rdf:type owl:Restriction ;" & vbCrLf
+		objOTLFile.WriteText "         owl:onProperty " & propertyName & ";" & vbCrLf 	
+		objOTLFile.WriteText "         owl:allValuesFrom " & range & ";" & vbCrLf 	
+		objOTLFile.WriteText "         ] ." & vbCrLf
+	end if	
 	objOTLFile.WriteText vbCrLf
 		
 end sub
@@ -446,7 +452,9 @@ sub recPackageTraverse(p)
 					'------------------------------------------------------------------------------
 					'Find type of property (data or object) and range
 					Select Case attr.Type
-						Case "CharacterString","Integer","Real","Date","DateTime","Boolean":
+						Case "Any"
+							dt = "p"
+						Case "CharacterString","Integer","Real","Date","Time","DateTime","Boolean":
 							'Datatype property, mapping to XSD Datatypes
 							dt = "d"
 							Select Case attr.Type
@@ -458,6 +466,8 @@ sub recPackageTraverse(p)
 									range = "xsd:double"
 								Case "Date":
 									range = "xsd:date"
+								Case "Time":
+									range = "xsd:time"
 								Case "DateTime":
 									range = "xsd:dateTime"
 								Case "Boolean":
@@ -470,6 +480,38 @@ sub recPackageTraverse(p)
 							'Find related element
 							set relEl = Repository.GetElementByID(attr.ClassifierID)
 							range = ":" & relEl.Name
+							'Hardcoded references - should be configurable in mapping file, as for ShapeChange
+							select case attr.Type
+								case "CI_Citation"
+									'Hardcoded reference to the 19115 ontology
+									range = "<http://def.isotc211.org/iso19115/2003/CitationAndResponsiblePartyInformation#CI_Citation>"
+								case "TM_Period"
+									'Hardcoded reference to the 19103 ontology
+									range = "<http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Period>"					
+								case "Measure"
+									'Hardcoded reference to the 19103 ontology
+									range = "<http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>"					
+								case "Distance"
+									'Hardcoded reference to the 19103 ontology
+									range = "<http://def.isotc211.org/iso19103/2015/MeasureTypes#Distance>"					
+								case "Length"
+									'Hardcoded reference to the 19103 ontology
+									range = "<http://def.isotc211.org/iso19103/2015/MeasureTypes#Length>"					
+								case "Velocity"				
+									'Hardcoded reference to the 19103 ontology
+									range = "<http://def.isotc211.org/iso19103/2015/MeasureTypes#Velocity>"					
+								case "GM_Point"				
+									'Hardcoded reference to GeoSPARQL
+									range = "<http://www.opengis.net/ont/sf#Point>"					
+								case "GM_Curve"				
+									'Hardcoded reference to GeoSPARQL
+									range = "<http://www.opengis.net/ont/sf#Curve>"					
+								case "GM_Surface"				
+									'Hardcoded reference to GeoSPARQL
+									range = "<http://www.opengis.net/ont/sf#Surface>"					
+									
+							End select
+
 							'For external classes: Get URI from attribute tag rangeVocabulary or rangeClass
 							equivalentTo = ""
 							hasURI = false

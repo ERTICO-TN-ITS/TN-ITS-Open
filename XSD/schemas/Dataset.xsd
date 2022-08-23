@@ -75,13 +75,13 @@
       <extension base="tnits:DatasetType">
         <sequence>
           <element name="type" type="tnits:DatasetTypeType"/>
-          <element minOccurs="0" name="defaultLRM" type="gmllr:LinearReferencingMethodPropertyType" />
+          <element minOccurs="0" name="defaultLRM" type="gmllr:LinearReferencingMethodPropertyType"/>
           <element maxOccurs="unbounded" name="roadFeatures">
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
                   <sequence minOccurs="0">
-                    <element ref="tnits:RoadFeature"/>
+                    <element ref="tnits:RoadFeature" maxOccurs="1"/>
                   </sequence>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>

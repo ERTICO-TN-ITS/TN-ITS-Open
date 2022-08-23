@@ -22,7 +22,7 @@
 	### ISO 19115 rdf file: http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf
 
 	dc:creator "TN-ITS" ;
-	dc:date "08.06.2022" ;
+	dc:date "23.08.2022" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
 	dc:title "TN-ITS"@en ;
 	dc:abstract "Ontology for exchange of changes in road attributes" .
@@ -297,26 +297,21 @@
 
 
 ### http://spec.tn-its.eu/owl/tnits-owl#GenericRoadFeatureProperty.value
-:GenericRoadFeatureProperty.value rdf:type owl:ObjectProperty ;
+:GenericRoadFeatureProperty.value rdf:type rdf:Property ;
          skos:definition "The value of the road feature property"@en ;
          rdfs:domain :GenericRoadFeatureProperty;
-         rdfs:range :Any;
          rdfs:label "GenericRoadFeatureProperty.value"@en .
-:GenericRoadFeatureProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :GenericRoadFeatureProperty.value;
-         owl:allValuesFrom :Any;
-         ] .
 
 
 ### http://spec.tn-its.eu/owl/tnits-owl#valueReference
 :valueReference rdf:type owl:ObjectProperty ;
          skos:definition "A reference to an externally defined value"@en ;
          rdfs:domain :GenericRoadFeatureProperty;
-         rdfs:range :PropertyValueReferenceType;
+         rdfs:range <http://www.w3.org/2000/01/rdf-schema#Resource>;
          rdfs:label "valueReference"@en .
 :GenericRoadFeatureProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :valueReference;
-         owl:allValuesFrom :PropertyValueReferenceType;
+         owl:allValuesFrom <http://www.w3.org/2000/01/rdf-schema#Resource>;
          ] .
 
 
@@ -598,16 +593,16 @@
 :RoadSignContent.value rdf:type owl:ObjectProperty ;
          skos:definition "The value of the road sign property "@en ;
          rdfs:domain :RoadSignContent;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdfs:label "RoadSignContent.value"@en .
 :RoadSignContent rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadSignContent.value;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :RoadSignContent rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :RoadSignContent.value;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 
@@ -1276,38 +1271,38 @@
        rdfs:label "TimePeriodOfDay"@en .
 
 ### http://spec.tn-its.eu/owl/tnits-owl#startTimeOfPeriod
-:startTimeOfPeriod rdf:type owl:ObjectProperty ;
+:startTimeOfPeriod rdf:type owl:DatatypeProperty ;
          skos:definition "Start of time period. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:domain :TimePeriodOfDay;
-         rdfs:range :Time;
+         rdfs:range xsd:time;
          rdf:type owl:FunctionalProperty;
          rdfs:label "startTimeOfPeriod"@en .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :startTimeOfPeriod;
-         owl:onClass :Time;
+         owl:onDataRange xsd:time;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :startTimeOfPeriod;
-         owl:allValuesFrom :Time;
+         owl:allValuesFrom xsd:time;
          ] .
 
 
 ### http://spec.tn-its.eu/owl/tnits-owl#endTimeOfPeriod
-:endTimeOfPeriod rdf:type owl:ObjectProperty ;
+:endTimeOfPeriod rdf:type owl:DatatypeProperty ;
          skos:definition "End of time period. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:domain :TimePeriodOfDay;
-         rdfs:range :Time;
+         rdfs:range xsd:time;
          rdf:type owl:FunctionalProperty;
          rdfs:label "endTimeOfPeriod"@en .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :endTimeOfPeriod;
-         owl:onClass :Time;
+         owl:onDataRange xsd:time;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :TimePeriodOfDay rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :endTimeOfPeriod;
-         owl:allValuesFrom :Time;
+         owl:allValuesFrom xsd:time;
          ] .
 
 
@@ -1719,17 +1714,17 @@
 :grossVehicleWeight rdf:type owl:ObjectProperty ;
          skos:definition "The gross weight of the vehicle and its load, including any trailers. [SOURCE: CEN/TS16157-3:2011]"@en ;
          rdfs:domain :GrossWeightCharacteristic;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdf:type owl:FunctionalProperty;
          rdfs:label "grossVehicleWeight"@en .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :grossVehicleWeight;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :grossVehicleWeight;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 
@@ -1771,17 +1766,17 @@
 :heaviestAxleWeight rdf:type owl:ObjectProperty ;
          skos:definition "The weight of the heaviest axle on the vehicle. [SOURCE: CEN/TS161573:2011]"@en ;
          rdfs:domain :HeaviestAxleWeightCharacteristic;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdf:type owl:FunctionalProperty;
          rdfs:label "heaviestAxleWeight"@en .
 :HeaviestAxleWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :heaviestAxleWeight;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :HeaviestAxleWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :heaviestAxleWeight;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 
@@ -1805,17 +1800,17 @@
 :vehicleHeight rdf:type owl:ObjectProperty ;
          skos:definition "The height of the highest part, excluding antennae, of an individual vehicle above the road surface, in metres. [SOURCE: CEN/TS16157-3:2011]"@en ;
          rdfs:domain :HeightCharacteristic;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleHeight"@en .
 :HeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleHeight;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :HeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleHeight;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 
@@ -1839,17 +1834,17 @@
 :vehicleLength rdf:type owl:ObjectProperty ;
          skos:definition "The overall distance between the front and back of an individual vehicle, including the length of any trailers, couplings, etc. [SOURCE: CEN/TS161573:2011] "@en ;
          rdfs:domain :LengthCharacteristic;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleLength"@en .
 :LengthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleLength;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :LengthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleLength;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 
@@ -2155,17 +2150,17 @@
 :vehicleWidth rdf:type owl:ObjectProperty ;
          skos:definition "The maximum width of an individual vehicle, in metres. [SOURCE: CEN/TS16157-3:2011]"@en ;
          rdfs:domain :WidthCharacteristic;
-         rdfs:range :Measure;
+         rdfs:range <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          rdf:type owl:FunctionalProperty;
          rdfs:label "vehicleWidth"@en .
 :WidthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleWidth;
-         owl:onClass :Measure;
+         owl:onClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :WidthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
          owl:onProperty :vehicleWidth;
-         owl:allValuesFrom :Measure;
+         owl:allValuesFrom <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
          ] .
 
 

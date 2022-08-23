@@ -33,9 +33,7 @@
       <extension base="tnits:AbstractRoadFeaturePropertyType">
         <sequence>
           <element name="type" type="gml:ReferenceType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="value">
-
-          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="value"/>
           <element maxOccurs="unbounded" minOccurs="0" name="valueReference" type="gml:ReferenceType"/>
         </sequence>
       </extension>

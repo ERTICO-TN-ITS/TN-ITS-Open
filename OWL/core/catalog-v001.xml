@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.roadotl.eu/iso19148/def/" uri="iso-19148.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://spec.tn-its.eu/codelists/allcodes" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/allcodes.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://ontologi.atlas.vegvesen.no/nvdb/core/iso-19148.ttl" uri="iso-19148.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes" uri="https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/allcodes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#allcodes" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/allcodes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#codevalues" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/tnits-allcodes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#codevalues" uri="https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/tnits-codes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#codevalues" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/tnits-codes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codelists#codevalues" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/tnits-codelists.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codesExtensions" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/Per%20list/ISADLevelCode.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codes" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/tnits-codes.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codesExtension" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/Per%20list/ISADLevelCode.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codes" uri="file:/C:/DATA/GitHub/ERTICO-TN-ITS/TN-ITS-Open/OWL/codelists/Per%20list/ISADLevelCode.ttl"/>
     <uri id="Imports Wizard Entry" name="http://spec.tn-its.eu/owl/tnits-owl/codes" uri="https://raw.githubusercontent.com/ERTICO-TN-ITS/TN-ITS-Open/master/OWL/codelists/tnits-codes.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
