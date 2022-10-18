@@ -22,7 +22,7 @@
 	### ISO 19115 rdf file: http://def.isotc211.org/iso19115/-1/2014/MetadataInformation.rdf
 
 	dc:creator "TN-ITS" ;
-	dc:date "23.08.2022" ;
+	dc:date "18.10.2022" ;
 	dc:description "Ontology for the TN-ITS model for exchange of changes in road attributes"@en ;
 	dc:title "TN-ITS"@en ;
 	dc:abstract "Ontology for exchange of changes in road attributes" .
@@ -278,6 +278,21 @@
        rdfs:label "GenericRoadFeatureProperty"@en .
 :GenericRoadFeatureProperty rdfs:subClassOf :AbstractRoadFeatureProperty .
 
+### http://spec.tn-its.eu/owl/tnits-owl#conditionproperty
+:conditionproperty rdf:type owl:ObjectProperty ;
+         rdfs:range :Condition;
+         rdfs:label "conditionproperty"@en .
+:GenericRoadFeatureProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :conditionproperty;
+         owl:onClass :Condition;
+       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+         ] .
+:GenericRoadFeatureProperty rdfs:subClassOf [ rdf:type owl:Restriction ;
+         owl:onProperty :conditionproperty;
+         owl:allValuesFrom :Condition;
+         ] .
+
+
 ### http://spec.tn-its.eu/owl/tnits-owl#GenericRoadFeatureProperty.type
 :GenericRoadFeatureProperty.type rdf:type owl:ObjectProperty ;
          skos:definition "The type of road feature property by reference to an item in an external code list"@en ;
@@ -392,20 +407,13 @@
          owl:allValuesFrom :AbstractRoadFeatureProperty;
          ] .
 
-
-### http://spec.tn-its.eu/owl/tnits-owl#RoadFeature.condition
-:RoadFeature.condition rdf:type owl:ObjectProperty ;
-         skos:definition "Describes the circumstances when the road feature is applicable.  "@en ;
-         rdfs:domain :RoadFeature;
-         rdfs:range :Condition;
-         rdfs:label "RoadFeature.condition"@en .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeature.condition;
+         owl:onProperty :conditionproperty;
          owl:onClass :Condition;
        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :RoadFeature rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :RoadFeature.condition;
+         owl:onProperty :conditionproperty;
          owl:allValuesFrom :Condition;
          ] .
 
@@ -1694,18 +1702,18 @@
          skos:definition "Gross weight characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "GrossWeightCharacteristic"@en .
 
-### http://spec.tn-its.eu/owl/tnits-owl#comparisonOperator
-:comparisonOperator rdf:type owl:ObjectProperty ;
+### http://spec.tn-its.eu/owl/tnits-owl#comparisonOperatorproperty
+:comparisonOperatorproperty rdf:type owl:ObjectProperty ;
          skos:definition "The operator to be used in the vehicle characteristic comparison operation. [SOURCE: CEN/TS16157-3:2011] "@en ;
          rdfs:range :ComparisonOperator;
-         rdfs:label "comparisonOperator"@en .
+         rdfs:label "comparisonOperatorproperty"@en .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :GrossWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
@@ -1752,12 +1760,12 @@
          skos:definition "Weight characteristic of the heaviest axle on the vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "HeaviestAxleWeightCharacteristic"@en .
 :HeaviestAxleWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :HeaviestAxleWeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
@@ -1786,12 +1794,12 @@
          skos:definition "Height characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "HeightCharacteristic"@en .
 :HeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :HeightCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
@@ -1820,12 +1828,12 @@
          skos:definition "Length characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "LengthCharacteristic"@en .
 :LengthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :LengthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
@@ -1876,12 +1884,12 @@
          skos:definition "Number of axles characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "NumberOfAxlesCharacteristic"@en .
 :NumberOfAxlesCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :NumberOfAxlesCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
@@ -2136,12 +2144,12 @@
          skos:definition "Width characteristic of a vehicle. [SOURCE: CEN/TS16157-3:2011] "@en ;
        rdfs:label "WidthCharacteristic"@en .
 :WidthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:onClass :ComparisonOperator;
        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
          ] .
 :WidthCharacteristic rdfs:subClassOf [ rdf:type owl:Restriction ;
-         owl:onProperty :comparisonOperator;
+         owl:onProperty :comparisonOperatorproperty;
          owl:allValuesFrom :ComparisonOperator;
          ] .
 
