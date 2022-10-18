@@ -211,11 +211,15 @@ sub createProperty
 'Create property and set restrictions
 	'Only for internal properties, not if hasURI = true (external properties shall not be created)
 	if not hasURI then
+		dim orgName
+		orgName = propertyName
 		'Set unique property name and check whether range shall be set 
 		if lstGlobalPropertyNames.Contains(propertyName) then
 			'Check for global range - global properties may have different ranges for different classes
 			i = lstGlobalPropertyNames.IndexofKey(propertyName)
 			hasGlobalRange = lstGlobalPropertyNames.GetByIndex(i)
+			'Avoid name conflicts between properties and classes
+			if lstClasses.Contains(UCASE(propertyName)) then propertyName = propertyName & "property"
 		elseif not lstGlobalPropertyNames.Contains(propertyName) then
 			'Make sure the property name is unique
 			if lstClasses.Contains(UCASE(propertyName)) or lstDuplicatePropertyNames.Contains(propertyName) then 
@@ -254,12 +258,12 @@ sub createProperty
 			if not equivalentTo = "" then objOTLFile.WriteText "         owl:equivalentProperty " & equivalentTo & " ;" & vbCrLf
 			'---------------------------
 			'Set domain if not global property
-			if not lstGlobalPropertyNames.Contains(propertyName) then objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
+			if not lstGlobalPropertyNames.Contains(orgName) then objOTLFile.WriteText "         rdfs:domain :" & el.Name & ";" & vbCrLf
 			'---------------------------
 			'Set range if hasGlobalRange
 			if hasGlobalRange then objOTLFile.WriteText "         rdfs:range " & range & ";" & vbCrLf
 			'Set functional property if cardinality = 1 and not global. 
-			if (not lstGlobalPropertyNames.Contains(propertyName)) and lower = "1" and upper = "1" then objOTLFile.WriteText "         rdf:type owl:FunctionalProperty;" & vbCrLf
+			if (not lstGlobalPropertyNames.Contains(orgName)) and lower = "1" and upper = "1" then objOTLFile.WriteText "         rdf:type owl:FunctionalProperty;" & vbCrLf
 
 			'Close property statement with "."
 			objOTLFile.WriteText "         rdfs:label """ & propertyName & """@en ." & vbCrLf 	
