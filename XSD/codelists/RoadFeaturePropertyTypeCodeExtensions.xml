@@ -43,4 +43,28 @@
 			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">isadLevel</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadPartValue">
+			<gml:description>Road part value</gml:description>
+			<gml:identifier codeSpace="https://inspire.ec.europa.eu/codelist/">roadPartValue</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="width">
+			<gml:description>The width value</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">width</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="horizontalGradient">
+			<gml:description>Horizontal gradient value</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">horizontalGradient</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="verticalGradient">
+			<gml:description>Vertical gradient value</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeaturePropertyTypeCodeExtensions">verticalGradient</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
 </gml:Dictionary>

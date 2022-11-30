@@ -31,4 +31,15 @@
 			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">ccamLevel</gml:identifier>
 		</gml:Definition>
 	</gml:dictionaryEntry>
-</gml:Dictionary>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="roadWidth">
+			<gml:description>Road width</gml:description>
+			<gml:identifier codeSpace="https://inspire.ec.europa.eu/featureconcept/">roadWidth</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gradient">
+			<gml:description>Gradient of....</gml:description>
+			<gml:identifier codeSpace="http://spec.tn-its.eu/codelists/RoadFeatureTypeCodeExtensions">gradient</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry></gml:Dictionary>
